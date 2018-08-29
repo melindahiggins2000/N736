@@ -1,0 +1,54 @@
+---
+title: "Data Cleaning and Assessment - Part I"
+---
+
+## Reviewing the dataset - for Homework 01
+
+In today's class we'll get started exploring and finding the issues and problems with the dataset you'll be working with for Homework 01. All of the files are uploaded into this Github repository [https://github.com/melindahiggins2000/N736Homework01](https://github.com/melindahiggins2000/N736Homework01). Feel free to download the files (as a ZIP), or fork the repository to work with in your own Github repo.
+
+## Exploring this test dataset
+
+During class we identified a number of issues and put them up on the whiteboard. Here is a screenshot of the issues we found:
+
+[https://raw.githubusercontent.com/melindahiggins2000/N736Homework01/master/screenshot_20170830_150136.jpg](https://raw.githubusercontent.com/melindahiggins2000/N736Homework01/master/screenshot_20170830_150136.jpg)
+
+## Class discussion and video
+
+The discussion and video of my lecture on 08/30/2017 is now posted on Echo360 available through canvas and at this link: [https://echo360.org/lesson/2ca62f2a-5cad-41b9-b111-596d4e5e55b4/classroom#sortDirection=desc](https://echo360.org/lesson/2ca62f2a-5cad-41b9-b111-596d4e5e55b4/classroom#sortDirection=desc) _**You will need to login "via institution" - choose Emory and use your Emory login credentials to see the video.**_
+
+Weblinks discussed in the video and during class:
+
+* Journal of Biostatistics - author guidelines for "Reproducible Research" [https://academic.oup.com/biostatistics/pages/General_Instructions](https://academic.oup.com/biostatistics/pages/General_Instructions).
+
+* Gitbook [https://www.gitbook.com/](https://www.gitbook.com/).
+
+* Bookdown [https://bookdown.org](https://bookdown.org).
+
+* Yihui Xie's book on the `bookdown` package [https://bookdown.org/yihui/bookdown/](https://bookdown.org/yihui/bookdown/).
+
+* Github repo for Yihui Xie's "Dynamic Documents with R and knitr" - 1st 3 chapters available online  [https://github.com/yihui/knitr-book](https://github.com/yihui/knitr-book).
+
+* Garrett Grolemund and Hadley Wickham's book "R for Data Science" - also online at [http://r4ds.had.co.nz/](http://r4ds.had.co.nz/) & if you're interested, here is the Github repo for their book [https://github.com/hadley/r4ds](https://github.com/hadley/r4ds).
+
+* Tidyverse [https://www.tidyverse.org/](https://www.tidyverse.org/).
+
+* Washington Post Article on "An Alarming Number of Scientific Papers Contain Excel Errors" [https://www.washingtonpost.com/news/wonk/wp/2016/08/26/an-alarming-number-of-scientific-papers-contain-excel-errors/?utm_term=.8ec47ce8bc16](https://www.washingtonpost.com/news/wonk/wp/2016/08/26/an-alarming-number-of-scientific-papers-contain-excel-errors/?utm_term=.8ec47ce8bc16).
+
+* Genome Biology 2016 Paper on "Gene name error are widespread in the scientific literature" [https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7).
+
+* "The Excel Error heard Around the World" [https://newrepublic.com/article/112951/rogoff-reinhart-and-world-excel-error-research](https://newrepublic.com/article/112951/rogoff-reinhart-and-world-excel-error-research) & more at [http://nymag.com/daily/intelligencer/2013/04/grad-student-who-shook-global-austerity-movement.html](http://nymag.com/daily/intelligencer/2013/04/grad-student-who-shook-global-austerity-movement.html).
+
+* "How Bright Promise in Cancer Testing Fell Apart" - Duke cancer trials controversy [http://www.nytimes.com/2011/07/08/health/research/08genes.html?mcubz=1](http://www.nytimes.com/2011/07/08/health/research/08genes.html?mcubz=1) & "An array of errors" [http://www.economist.com/node/21528593](http://www.economist.com/node/21528593).
+
+* "A Manifesto for Reproducible Science" [https://www.nature.com/articles/s41562-016-0021](https://www.nature.com/articles/s41562-016-0021).
+
+* Center for Open Science [https://cos.io/](https://cos.io/) & COS History [https://cos.io/about/brief-history-cos-2013-2017/](https://cos.io/about/brief-history-cos-2013-2017/).
+
+* Science "One in Five Genetics Papers Contains Errors Thanks to Microsoft Excel" [http://www.sciencemag.org/news/sifter/one-five-genetics-papers-contains-errors-thanks-microsoft-excel](http://www.sciencemag.org/news/sifter/one-five-genetics-papers-contains-errors-thanks-microsoft-excel).
+
+
+
+
+
+
+

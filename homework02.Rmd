@@ -1,0 +1,32 @@
+---
+title: "Homework 02"
+---
+
+## Homework 02 - due 09/20/2017
+
+For Homework 02 – due Wed 9/20/2017 at 11:59pm EST upload your files in Canvas. _[The details below are also now posted in Canvas for the Homework 02 assignment.]_
+
+1. Find a journal article in your field and on a topic you’re interested in that has been published recently (in the last 5 years).
+
+2. Read through the paper along with any supporting files (supplementary documents, code, data, etc).
+
+3. Your goal is to try to find as many “yes’s” as you can to these questions: _[I realize some fields of study are likely to have more yes’s than others so I know this will be challenging – just find as many as you can. I’m hoping you’ll get at least 1 yes.]_
+
+    a. Did the authors clearly define all of their data sources?
+    b. How many data sources were there? _[this is not a yes/no question]_
+    c. Did the authors provide instructions on how to request their data?
+    d. Did the authors provide a link to their data either pointing to a cloud-based resource or even as supplementary material with their paper
+    e. Did the authors provide (in your opinion) enough detail that if you has their original data, that you would be able to reproduce their analyses?
+    f. Did the authors provide (in your opinion) enough detail on their data manipulation and analysis steps (i.e. software codes and procedures), that you would be able to reproduce their analyses?
+    g. Did the authors clearly define any bias, misrepresentations (i.e. under or over representation of their intended study population), or limitations in their data and analysis procedures?
+    h. Did the authors provide summary tables and/or graphics providing good descriptive statistical summaries of the data they used in their analyses?
+    
+4. Prepare a report with the following information:
+
+    a. Your name, date
+    b. Article citation details (title, authors, journal, volume, number, date, DOI, etc) – enough so I can look up the article
+    c. Data Provenance – using the information you reviewed to find the answers to my questions above, write a paragraph or two at most on the origins and data management and manipulation trail the authors followed that led to their analyses and conclusions (i.e. what all did they say they did to the data and what do you think they did to the data that was maybe not well described in their final paper)
+    d. Data Summary and Presentation – write a paragraph summarizing how well (or not) the authors did presenting their underlying data (via tables, figures or text descriptions), including any limitations or biases, and whether or not you think these were adequate to support their analyses and conclusions.
+    e. Limitations – write a short paragraph on what you think was not well described or presented in the paper. If you were a reviewer, what additional information would you ask the authors to provide – especially if you would like to either (a) reproduce their findings or (b) take their data, code, findings to apply in your own work to advance your research interests. _[Keep in mind this is not us being judgmental per se – many journals have very limited word count limits which makes it extremely hard to get all of these details in – often these important data source, manipulation, handling and processing details are thought to be boring and not germane to the findings so these sections are often way too short, which is why some journals allow supplementary materials to be uploaded… thus, the point of this homework 02 exercise…]_
+    
+5. Upload a copy of your summary report

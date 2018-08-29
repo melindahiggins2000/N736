@@ -1,0 +1,87 @@
+name: "NRSG 736: Quantitative Analysis of Clinical Research Data"
+output_dir: "docs"
+navbar:
+  title: "N736"
+  left:
+    - text: "Home"
+      icon: fa-home
+      href: index.html
+    - text: "Lessons"
+      icon: fa-archive
+      menu:
+        - text: "1. Introduction"
+          href: intro.html
+        - text: "2. Intro Git, Github, Exploring Data"
+        - text: "3. Data Cleaning and Assessment - Part I"
+        - text: "4. Data Cleaning and Assessment - Part II"
+        - text: "5. Data Wrangling"
+        - text: "6. Data Wrangling - Part 2"
+        - text: "7. Univariate Descriptive Stats"
+        - text: "8. Bivariate Statistics"
+        - text: "9. Introduction to Bootstrapping"
+        - text: "10. Missing Data"
+        - text: "11. Building Models"
+        - text: "12. Simple Regression & ANOVA"
+        - text: "13. Multivariate Regression & Variable Selection"
+        - text: "14,15. Interactions, Moderators, Covariates, Factors"
+        - text: "16. Power, Sample Size, Effect Size"
+        - text: "17. Analysis of Covariance (ANCOVA)"
+        - text: "18,19. Logistic Regression and Generalized Linear Regression"
+        - text: "20. Poisson and Negative Binomial Regression"
+        - text: "21. Dependent/Paired data and Repeated Measures"
+        - text: "22. Repeated Measures ANOVA"
+        - text: "23. RM-ANOVA and Multilevel (Mixed) Linear Models (MLM)"
+        - text: "24. Reliability and Factor Analysis"
+        - text: "25. Discriminant Analysis/MANOVA"
+        - text: "26. Mediators and SEM (structural equation modeling)"
+    - text: "Assignments"
+      icon: fa-file-text
+      menu:
+        - text: "Homework 01 - due 09/12/2018"
+          href: homework01.html
+        - text: "Homework 02 - due 09/26/2018"
+        - text: "Homework 03 - due 10/10/2018"
+        - text: "Project - Milestone 01 - due 10/10/2018"
+          href: project01.html
+        - text: "Homework 04 - due 10/24/2018"
+        - text: "Homework 05 - due 11/07/2018"
+        - text: "Homework 06 - due 11/26/2018"
+        - text: "Homework 07 - due 12/05/2018"
+        - text: "Project - Milestone 2 & 3 - due 12/10/2018 & 12/17/2018"
+          href: project.html
+    - text: "Files"
+      icon: fa-files-o
+      href: files.html
+    - text: "Instructor"
+      icon: fa-users
+      href: about.html
+    - text: "Syllabus"
+      icon: fa-file-text
+      menu:
+        - text: "Overview"
+          href: syllabus.html
+    - text: "Useful Stuff"
+      icon: fa-cog
+      menu:
+        - text: "SPSS Student Grad Pack"
+          href: spss.html
+        - text: "SAS University - FREE"
+          href: sas.html
+        - text: "R, RStudio, Git, Github - FREE"
+          href: help.html
+        - text: "Stata Student Versions"
+          href: stata.html
+  right:
+    - text: "Colophon"
+      icon: fa-info-circle
+      href: colophon.html
+output:
+  html_document:
+    theme: lumen
+    toc: true
+    toc_float: true
+    highlight: kate
+    include:
+      after_body: footer.html
+    css: [styles.css, font-awesome-4.7.0/css/font-awesome.css]
+    self_contained: yes

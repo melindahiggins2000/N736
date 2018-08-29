@@ -1,0 +1,23 @@
+---
+title: "Textbook: Practical Data Science with R"
+---
+
+## Practical Data Science with R - Website
+
+The website for the textbook, _"Practical Data Science with R"_ is [http://www.win-vector.com/blog/practical-data-science-with-r/](http://www.win-vector.com/blog/practical-data-science-with-r/). This supporting website has links to the code and datasets used in the book.
+
+## Github Repository for the Textbook
+
+In fact, the majority of the links on the textbook website point to their <i class="fa fa-github fa-2x"></i> **Github** repository at [https://github.com/WinVector/zmPDSwR](https://github.com/WinVector/zmPDSwR). If you wish, you can "Clone or Download (as a ZIP)" the entire repository for easy offline reference.
+
+## Datasets Used in Textbook
+
+The direct link to the Github `zmPDSwR` Repository folders is [https://github.com/WinVector/zmPDSwR](https://github.com/WinVector/zmPDSwR).
+
+The `README` file which loads at the bottom of the page linked above, lists the example datasets. Each dataset has a link to the folder with the data, associated files, and a description of the data and suggested analysis examples as presented within the textbook. 
+
+For example, see the worked example (done in Rmarkdown) for `bioavailability` [https://github.com/WinVector/zmPDSwR/tree/master/bioavailability](https://github.com/WinVector/zmPDSwR/tree/master/bioavailability), which presents an example of evaluating the "Caco-2 permeability assay".
+
+## "Reproducible" Examples
+
+The textbook repository also provides the `Rmarkdown` code/templates for worked examples from the book. See [https://github.com/WinVector/zmPDSwR/tree/master/RunExamples](https://github.com/WinVector/zmPDSwR/tree/master/RunExamples) for complete files that can be _"knitted"_ to "...set up the correct context to run each and every snippet extracted from the book..."

@@ -1,0 +1,23 @@
+---
+title: "N736 Quantitative Analysis of Clinical Research Data"
+---
+
+## COURSE NUMBER, TITLE:		
+N736: Quantitative Analysis of Clinical Research Data
+
+## Course Objective:
+To build and expand upon the statistical theory and methods learned in BIOS 500 and 501 and improve the student’s statistical software experience and programming skills with SAS, SPSS or R to improve research scholarship and dissemination.
+
+## Course Description: 
+This course builds on the required statistical sequence and focuses on practical application of statistics including understanding clinical research questions. Analyzing data is the major emphasis of the course including examining if assumptions of the statistical analysis are being met and interpreting the findings.  Course assignments focus on using statistical software and computing resources to analyze data sets from actual clinical research studies and interpretation of output and literature. 
+
+## Planned Topics:
+* Computing Environment (SAS, SPSS, R, Other Supporting Software)
+* Getting data into and out of statistical software (import, export features)
+* Reproducible Research Principles (documentation, reporting, version control)
+* Initial data assessments: univariate and bivariate methods, parametric and non-parametric
+* Regression methods: linear, logistic and introduction to “generalized”
+* Analysis of (co)Variance: univariate and multivariate, ANOVA, ANCOVA, MANOVA, MANCOVA 
+* Longitudinal analysis: repeated measures with introduction to multi-level models (MLM)
+* Assessment and testing of data & model assumptions (including missing data)
+* Introduction to Factor Analysis, Reliability and Discriminant Analysis, and SEM (structural equation modeling) as time allows

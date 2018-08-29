@@ -1,0 +1,36 @@
+---
+title: "Files for the Course"
+---
+
+## <i class="fa fa-github fa-1x"></i> **Github** Repositories
+
+Some files (code, data, files, etc) for this course may be shared and placed into various **Github** repositories. Each of these repositories can be "Cloned or Downloaded (as a ZIP)" to your local harddrive for easy offline reference OR they can be "forked" so that a copy of the repository is "copied" into YOUR Github account. If you "fork" a copy be sure you are logged into your Github account first. Here are the **Github** repositories to date:
+
+1. Gapminder Example (given in N741 on 01/18/2017) [https://github.com/melindahiggins2000/N741gapminder1](https://github.com/melindahiggins2000/N741gapminder1)
+    + This repository contains the `Rmarkdown` (RMD) and related files associated with a lesson done in N741 ("Lesson 2" done on 01/18/2017). These RMD files showed some initial `Rmarkdown` syntax with `R` chunks showcasing examples from the `gapminder` package, based on the vignette at [https://github.com/jennybc/gapminder](https://github.com/jennybc/gapminder).
+    + This repository also contains an RMD file with some examples.
+
+## <i class="fa fa-youtube fa-1x"></i> **YouTube** Videos for N741
+
+Short helpful videos - posted on YouTube for N741 Spring 2017:
+
+1. Installing R, RStudio, Creating and "knitting" your first simple `Rmarkdown` file
+    + [https://youtu.be/MsV5dJ2reQ4](https://youtu.be/MsV5dJ2reQ4)
+
+2. Installing Git for Windows
+    + [https://youtu.be/2HKwywX7Wls](https://youtu.be/2HKwywX7Wls)
+    
+3. Worked Example and Hints for Homework 01
+    + [https://youtu.be/WlqyYwwEC8w](https://youtu.be/WlqyYwwEC8w)
+    
+4. Video tutorial for creating the Github output MD format at [https://youtu.be/SY-Uo3hLC18](https://youtu.be/SY-Uo3hLC18)
+    + This short (~5 min) video is on creating a “Github-flavored” markdown file. If you haven’t noticed yet, take a look back at your Github repository and look at one of your RMD files. You’ll notice that for the RMD file you can view the text and R code but no R output is shown. This is because the R code is not executed via Github (remember R is on your local machine not “in the cloud”). Instead, you need to create a “markdown” MD file that does have the R output included. To do this, there is a “github_document” output format you can use that will create a “github-flavored” MD (markdown) file that Github will display with both your R code and R output in the same document. See the RStudio documentation at [http://rmarkdown.rstudio.com/github_document_format.html](http://rmarkdown.rstudio.com/github_document_format.html) 
+
+5. Video on Publishing Your Reports to RPubs [https://youtu.be/nW2TJ134ea0](https://youtu.be/nW2TJ134ea0)
+
+### YouTube Playlist for N741
+
+* All of these Videos have been compiled into a N741 You Tube “playlist” at [https://www.youtube.com/playlist?list=PLUDpSUA5mvSzL7XwtIZjxeZpP9aLMk4C6](https://www.youtube.com/playlist?list=PLUDpSUA5mvSzL7XwtIZjxeZpP9aLMk4C6)
+
+
+

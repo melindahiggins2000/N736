@@ -1,0 +1,35 @@
+---
+title: "Project - Milestone 01"
+---
+
+## Project - Milestone 01 - due 10/10/2018
+
+For your class project (30% of your final grade), there will be 3 milestones. For this first milestone, please prepare a report with the following:
+
+1. [Cover Page] 
+    - Your name, 
+    - date and 
+    - a title for your project (for milestone 1 the title can be a draft idea you can update later as needed)
+2. [Dataset Description] A description of your data/dataset - include:
+    - a description of the source(s) of your data files and elements
+    - what protocol you followed to request/obtain the data
+    - do you have any/all or part of your data? if not, how soon do you expect to have all of the data you need to complete your project? what hurdles do you/did you have to overcome in getting the data
+3. [Background/Rationale] 
+    - Provide background details on your project and dataset; 
+    - provide a rationale for why you are doing these analyses and 
+    - what you hope to find and 
+    - what questions you plan to address
+4. [Research Questions/Aims] 
+    - List 2 to 3 research questions you wish to answer with your project
+    - what are the aims of your project? and 
+    - why are these important?
+5. [Anticipated Problems/Limitations] Given what you know at the moment,
+    - what problems do you anticipate 
+        - (hurdles to get the data; 
+        - data that may be missing/incomplete; 
+        - data that may not measure exactly what you want but are reasonable proxies/representative of what you wanted to measure/evaluate)
+    - and any other limitations to note 
+        - (sample is not the best representation of your intended population; 
+        - under/oversampling issues; 
+        - convenience sample/observational data versus randomized clinical trial); 
+    - etc.

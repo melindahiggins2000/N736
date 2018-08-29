@@ -1,0 +1,9 @@
+---
+title: "N736 Fall 2017 - Lesson 22 Repeated Measures ANOVA"
+---
+
+## Github Repository for Lesson 22
+
+See [https://github.com/melindahiggins2000/N736Fall2017_lesson22](https://github.com/melindahiggins2000/N736Fall2017_lesson22)
+
+

@@ -1,0 +1,21 @@
+---
+title: "N736 Fall 2017 - Lesson 18 & 19 - Logistic Regression & Generalized Linear Models"
+---
+
+## Github Repository for Lessons 18 & 19
+
+See [https://github.com/melindahiggins2000/N736Fall2017_lesson1819](https://github.com/melindahiggins2000/N736Fall2017_lesson1819)
+
+## Lesson 18 - given on Monday October 20, 2017
+
+In this lesson, we will cover the logit function and the basics of logistic regression. We will also cover the basic components of "generalized" linear models including a discussion of the "exponential families" of distributions and their corresponding "canonical link" functions"
+
+## Lesson 19 - given on Wednesday Nov 1, 2017
+
+In this lesson, we will run through a logistic regression exercise (with coded examples in SPSS, SAS and R). I will also show you an initial example of a "generalized" linear model approach for a count variable using Poisson and Negative Binomial Regression.
+
+
+
+
+
+

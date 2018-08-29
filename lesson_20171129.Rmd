@@ -1,0 +1,9 @@
+---
+title: "N736 Fall 2017 - Lesson 26. 11/29/2017 Mediators and SEM (structural equation modeling)"
+---
+
+## Github Repository for Lesson 26. 11/29/2017 Mediators and SEM (structural equation modeling)
+
+See [https://github.com/melindahiggins2000/N736Fall2017_lesson26](https://github.com/melindahiggins2000/N736Fall2017_lesson26)
+
+

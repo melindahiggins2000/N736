@@ -1,0 +1,27 @@
+---
+title: "Article Critique"
+---
+
+## Directions: 
+
+Critique one of the assigned articles using the format provided below. The completed assignment should not exceed two pages, double spaced. Upload the completed assignment to the course blackboard site.
+
+## Purpose / Hypothesis:
+
+State the Hypothesis of the article and the hypothesis to be tested with big data analytics.
+
+## Methods:
+
+* Identify the research protocol used and how the authors may or may not have addressed the stated hypothesis.
+* How did the researchers ensure reproducibility?
+
+## Analysis, Interpretation, and Ethics
+
+* Does the analysis appear appropriate?
+* Do the authors reach a conclusion that is fully supported by the data presented? If not, what do the data support?
+* Are there any ethical concerns? If so, how might the ethical concerns have been addressed?
+
+## Reflection: 
+
+* What other big data analytic techniques might have been useful in this study to test the hypothesis?
+* Would these other techniques offer any additional fidelity?

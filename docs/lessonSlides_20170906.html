@@ -9,11 +9,11 @@
 <meta name="generator" content="pandoc" />
 
 
-<meta name="author" content="Melinda Higgins" />
+<meta name="author" content="Melinda K. Higgins, PhD." />
 
-<meta name="date" content="2018-08-27" />
+<meta name="date" content="2017-11-19" />
 
-<title>test1</title>
+<title>Data Cleaning and Assessment - Part II</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -25,85 +25,9 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
-<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
-<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 
-<style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; position: absolute; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; }
-pre.numberSource a.sourceLine:empty
-  { position: absolute; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
-    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    background-color: #ffffff;
-    color: #a0a0a0;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #a0a0a0;  padding-left: 4px; }
-div.sourceCode
-  { color: #1f1c1b; background-color: #ffffff; }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span. { color: #1f1c1b; } /* Normal */
-code span.al { color: #bf0303; background-color: #f7e6e6; font-weight: bold; } /* Alert */
-code span.an { color: #ca60ca; } /* Annotation */
-code span.at { color: #0057ae; } /* Attribute */
-code span.bn { color: #b08000; } /* BaseN */
-code span.bu { color: #644a9b; font-weight: bold; } /* BuiltIn */
-code span.cf { color: #1f1c1b; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #924c9d; } /* Char */
-code span.cn { color: #aa5500; } /* Constant */
-code span.co { color: #898887; } /* Comment */
-code span.cv { color: #0095ff; } /* CommentVar */
-code span.do { color: #607880; } /* Documentation */
-code span.dt { color: #0057ae; } /* DataType */
-code span.dv { color: #b08000; } /* DecVal */
-code span.er { color: #bf0303; text-decoration: underline; } /* Error */
-code span.ex { color: #0095ff; font-weight: bold; } /* Extension */
-code span.fl { color: #b08000; } /* Float */
-code span.fu { color: #644a9b; } /* Function */
-code span.im { color: #ff5500; } /* Import */
-code span.in { color: #b08000; } /* Information */
-code span.kw { color: #1f1c1b; font-weight: bold; } /* Keyword */
-code span.op { color: #1f1c1b; } /* Operator */
-code span.ot { color: #006e28; } /* Other */
-code span.pp { color: #006e28; } /* Preprocessor */
-code span.re { color: #0057ae; background-color: #e0e9f8; } /* RegionMarker */
-code span.sc { color: #3daee9; } /* SpecialChar */
-code span.ss { color: #ff5500; } /* SpecialString */
-code span.st { color: #bf0303; } /* String */
-code span.va { color: #0057ae; } /* Variable */
-code span.vs { color: #bf0303; } /* VerbatimString */
-code span.wa { color: #bf0303; } /* Warning */
-</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 
 
 <style type="text/css">
@@ -133,8 +57,8 @@ h6 {
 }
 </style>
 
-<link rel="stylesheet" href="styles.css" type="text/css" />
-<link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.css" type="text/css" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.css" />
 
 </head>
 
@@ -156,9 +80,6 @@ img {
 }
 .tabbed-pane {
   padding-top: 12px;
-}
-.html-widget {
-  margin-bottom: 20px;
 }
 button.code-folding-btn:focus {
   outline: none;
@@ -338,7 +259,7 @@ div.tocify {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">N736</a>
+      <a class="navbar-brand" href="index.html">N736 Fall 2017</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -359,31 +280,68 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="intro.html">1. Introduction</a>
+      <a href="intro.html">1. 08/23/2017 Introduction</a>
     </li>
-    <li class="dropdown-header">2. Intro Git, Github, Exploring Data</li>
-    <li class="dropdown-header">3. Data Cleaning and Assessment - Part I</li>
-    <li class="dropdown-header">4. Data Cleaning and Assessment - Part II</li>
-    <li class="dropdown-header">5. Data Wrangling</li>
-    <li class="dropdown-header">6. Data Wrangling - Part 2</li>
-    <li class="dropdown-header">7. Univariate Descriptive Stats</li>
-    <li class="dropdown-header">8. Bivariate Statistics</li>
-    <li class="dropdown-header">9. Introduction to Bootstrapping</li>
-    <li class="dropdown-header">10. Missing Data</li>
-    <li class="dropdown-header">11. Building Models</li>
-    <li class="dropdown-header">12. Simple Regression &amp; ANOVA</li>
-    <li class="dropdown-header">13. Multivariate Regression &amp; Variable Selection</li>
-    <li class="dropdown-header">14,15. Interactions, Moderators, Covariates, Factors</li>
-    <li class="dropdown-header">16. Power, Sample Size, Effect Size</li>
-    <li class="dropdown-header">17. Analysis of Covariance (ANCOVA)</li>
-    <li class="dropdown-header">18,19. Logistic Regression and Generalized Linear Regression</li>
-    <li class="dropdown-header">20. Poisson and Negative Binomial Regression</li>
-    <li class="dropdown-header">21. Dependent/Paired data and Repeated Measures</li>
-    <li class="dropdown-header">22. Repeated Measures ANOVA</li>
-    <li class="dropdown-header">23. RM-ANOVA and Multilevel (Mixed) Linear Models (MLM)</li>
-    <li class="dropdown-header">24. Reliability and Factor Analysis</li>
-    <li class="dropdown-header">25. Discriminant Analysis/MANOVA</li>
-    <li class="dropdown-header">26. Mediators and SEM (structural equation modeling)</li>
+    <li>
+      <a href="lesson_20170828.html">2. 08/28/2017 Intro Git, Github, Exploring Data</a>
+    </li>
+    <li>
+      <a href="lesson_20170830.html">3. 08/30/2017 Data Cleaning and Assessment - Part I</a>
+    </li>
+    <li>
+      <a href="lesson_20170906.html">4. 09/06/2017 Data Cleaning and Assessment - Part II</a>
+    </li>
+    <li>
+      <a href="lesson_20170911.html">5. 09/11/2017 Data Wrangling</a>
+    </li>
+    <li>
+      <a href="lesson_20170913.html">6. 09/13/2017 Data Wrangling - Part 2</a>
+    </li>
+    <li>
+      <a href="lesson_20170918.html">7. 09/18/2017 Univariate Descriptive Stats</a>
+    </li>
+    <li>
+      <a href="lesson_20170920.html">8. 09/20/2017 Bivariate Statistics</a>
+    </li>
+    <li>
+      <a href="lesson_20170925.html">9. 09/25/2017 Introduction to Bootstrapping</a>
+    </li>
+    <li>
+      <a href="lesson_20170927.html">10. 09/27/2017 Missing Data</a>
+    </li>
+    <li>
+      <a href="lesson_20171002.html">11. 10/02/2017 Building Models</a>
+    </li>
+    <li>
+      <a href="lesson_20171004.html">12. 10/04/2017 Simple Regression &amp; ANOVA</a>
+    </li>
+    <li>
+      <a href="lesson_20171011.html">13. 10/11/2017 Multivariate Regression &amp; Variable Selection</a>
+    </li>
+    <li>
+      <a href="lesson_2017101618.html">14,15. 10/16&amp;18/2017 Interactions, Moderators, Covariates, Factors</a>
+    </li>
+    <li>
+      <a href="lesson_20171023.html">16. 10/23/2017 Power, Sample Size, Effect Size</a>
+    </li>
+    <li>
+      <a href="lesson_20171025.html">17. 10/25/2017 Analysis of Covariance (ANCOVA)</a>
+    </li>
+    <li>
+      <a href="lesson_20171030.html">18,19. 10/30 &amp; 11/1/2017 Logistic Regression and Generalized Linear Regression</a>
+    </li>
+    <li>
+      <a href="lesson_20171106.html">20. 11/06/2017 Poisson and Negative Binomial Regression</a>
+    </li>
+    <li>
+      <a href="lesson_20171108.html">21. 11/08/2017 Dependent/Paired data and Repeated Measures</a>
+    </li>
+    <li>
+      <a href="lesson_20171113.html">22. 11/13/2017 Repeated Measures ANOVA</a>
+    </li>
+    <li>
+      <a href="lesson_20171115.html">23. 11/15/2017 RM-ANOVA and Multilevel (Mixed) Linear Models (MLM)</a>
+    </li>
   </ul>
 </li>
 <li class="dropdown">
@@ -396,19 +354,31 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="homework01.html">Homework 01 - due 09/12/2018</a>
+      <a href="homework01.html">Homework 01 - due 09/06/2017</a>
     </li>
-    <li class="dropdown-header">Homework 02 - due 09/26/2018</li>
-    <li class="dropdown-header">Homework 03 - due 10/10/2018</li>
     <li>
-      <a href="project01.html">Project - Milestone 01 - due 10/10/2018</a>
+      <a href="homework02.html">Homework 02 - due 09/20/2017</a>
     </li>
-    <li class="dropdown-header">Homework 04 - due 10/24/2018</li>
-    <li class="dropdown-header">Homework 05 - due 11/07/2018</li>
-    <li class="dropdown-header">Homework 06 - due 11/26/2018</li>
-    <li class="dropdown-header">Homework 07 - due 12/05/2018</li>
     <li>
-      <a href="project.html">Project - Milestone 2 &amp; 3 - due 12/10/2018 &amp; 12/17/2018</a>
+      <a href="homework03.html">Homework 03 - due 10/04/2017</a>
+    </li>
+    <li>
+      <a href="project01.html">Project - Milestone 01 - due 10/04/2017</a>
+    </li>
+    <li>
+      <a href="homework04.html">Homework 04 - due 10/18/2017</a>
+    </li>
+    <li>
+      <a href="homework05.html">Homework 05 - due 11/01/2017</a>
+    </li>
+    <li>
+      <a href="homework06.html">Homework 06 - due 11/22/2017</a>
+    </li>
+    <li>
+      <a href="homework07.html">Homework 07 - due 11/29/2017</a>
+    </li>
+    <li>
+      <a href="project.html">Project - Milestone 2 &amp; 3 - due 12/4/2017 &amp; 12/15/2017</a>
     </li>
   </ul>
 </li>
@@ -481,32 +451,24 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">test1</h1>
-<h4 class="author"><em>Melinda Higgins</em></h4>
-<h4 class="date"><em>August 27, 2018</em></h4>
+<h1 class="title toc-ignore">Data Cleaning and Assessment - Part II</h1>
+<h3 class="subtitle"><em>Steps and Things to Keep in Mind</em></h3>
+<h4 class="author"><em><a href="https://melindahiggins.netlify.com/">Melinda K. Higgins, PhD.</a></em></h4>
+<h4 class="date"><em>2017-11-19<br><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="by-nc-sa-4.0-88x31.png" style="border-width:0" src="images/by-nc-sa-4.0-88x31.png" /></a></em></h4>
 
 </div>
 
 
-<div id="r-markdown" class="section level2">
-<h2>R Markdown</h2>
-<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
-<p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">summary</span>(cars)</a></code></pre></div>
-<pre><code>##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00</code></pre>
-</div>
-<div id="including-plots" class="section level2">
-<h2>Including Plots</h2>
-<p>You can also embed plots, for example:</p>
-<p><img src="test1_files/figure-html/pressure-1.png" width="672" /></p>
-<p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot.</p>
-</div>
+<section id="outline" class="level2">
+<h2>Outline</h2>
+<ul>
+<li>Missing data</li>
+<li>Outliers</li>
+<li>Odd Distributions; Skewed Distributions</li>
+<li>Illogical Values</li>
+<li></li>
+</ul>
+</section>
 
 <hr>
 

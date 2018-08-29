@@ -1,0 +1,15 @@
+---
+title: "Colophon of Website"
+---
+
+## Colophon of Website
+
+This website was built using [`R`](https://cran.r-project.org/) and [`Rstudio`](https://www.rstudio.com/) using the [`rmarkdown`](http://rmarkdown.rstudio.com/rmarkdown_websites.html) website support.
+
+## Session Info
+
+Website was last updated on `r date()` and built under the following `sessionInfo()`:
+
+```{r, child="_sessioninfo.Rmd"}
+```
+

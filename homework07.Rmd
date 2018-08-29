@@ -1,0 +1,68 @@
+---
+title: "Homework 07"
+---
+
+## Homework 07 - due 11/29/2017
+
+### Repeated Measures ANOVA and Multilevel (MIXED) Linear Models
+
+For Homework 07, you will be using the HELP dataset, learn more at:
+
+* [https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/](https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/) &
+* [https://github.com/melindahiggins2000/N736Fall2017_HELPdataset](https://github.com/melindahiggins2000/N736Fall2017_HELPdataset)
+
+Refer to the repeated measures ANOVA and MLM lessons 21, 22 and 23. See
+
+* Lesson 21 [https://github.com/melindahiggins2000/N736Fall2017_lesson21](https://github.com/melindahiggins2000/N736Fall2017_lesson21)
+* Lesson 22 [https://github.com/melindahiggins2000/N736Fall2017_lesson22](https://github.com/melindahiggins2000/N736Fall2017_lesson22)
+* Lesson 23 [https://github.com/melindahiggins2000/N736Fall2017_lesson23](https://github.com/melindahiggins2000/N736Fall2017_lesson23)
+
+For the HELP dataset:
+
+* OUTCOME VARIABLE: consider the 5 measurements of depressive symptoms (CESD) at baseline, 6m, 12m, 18m and 24m. Use variables `cesd`, `cesd1`, `cesd2`, `cesd3`, `cesd4`
+* BETWEEN GROUP VARIABLE: Also consider the treatment group variable `treat`
+* FYI: You will also need the `id` to
+    a. properly restructure the data from WIDE to LONG format; and
+    b. treat subjects as a random effect for the random intercepts approach to MLM
+
+### For Homework 7, complete the following:
+
+1. Perform a repeated measures analysis of variance (RM-ANOVA) for the 5 CESD measurements across time by treatment group.
+    a. treat time as a continuous variable (not as a factor) - this is your WITHIN group effect
+    b. treat the treatment group `treat` as a factor - this is your BETWEEN group effect
+    c. TABLE: present the table of the intercept, time, treat and time*treat interaction effects including the tests of significance. _[Remember this significance might change depending on the treatment group coding - try flipping the 0 and 1 and run the model again to see if the significance changes]_
+    d. FIGURE: make a plot of the CESD means across time by group - if you can make it an error bar plot which has the means and CI's (confidence intervals) or SE's (standard errors)
+
+2. Repeate the "repeated measures/longitudinal" analysis using a random intercepts MLM model
+    a. REMEMBER to restructure the data from WIDE to LONG format
+    b. TABLE: present the table of the intercept, time, treat and time*treat interaction effects including the tests of significance. _[Remember this significance might change depending on the treatment group coding - try flipping the 0 and 1 and run the model again to see if the significance changes]_
+    
+3. Compare the results between the 2 approaches
+    a. compare the sample size differences
+    b. why do you think the results are different or are similar?
+
+## Variables in HELP dataset to be used for Homework 07:
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+helpdata <- readRDS("helpmkh.rds")
+library(tidyverse)
+sub1 <- helpdata %>%
+  select(id, treat, cesd, cesd1, cesd2, cesd3, cesd4)
+
+# create a function to get the label
+# label output from the attributes() function
+getlabel <- function(x) attributes(x)$label
+# getlabel(sub1$age)
+
+library(purrr)
+ldf <- purrr::map_df(sub1, getlabel) # this is a 1x15 tibble data.frame
+# t(ldf) # transpose for easier reading to a 15x1 single column list
+
+# using knitr to get a table of these
+# variable names for Rmarkdown
+library(knitr)
+knitr::kable(t(ldf),
+             col.names = c("Variable Label"),
+             caption="Use these variables from HELP dataset for Homework 07")
+```
+

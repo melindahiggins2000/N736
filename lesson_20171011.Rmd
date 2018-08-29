@@ -1,0 +1,11 @@
+---
+title: "Multivariate Regression & Variable Selection"
+---
+
+## Lesson 13: Multivariate Regression & Variable Selection
+
+See Github repository for lesson 13: [https://github.com/melindahiggins2000/N736Fall2017_lesson13](https://github.com/melindahiggins2000/N736Fall2017_lesson13)
+
+
+
+

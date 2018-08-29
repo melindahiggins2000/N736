@@ -1,0 +1,9 @@
+---
+title: "N736 Fall 2017 - Lesson 23: 11/15/2017 RM-ANOVA and Multilevel (Mixed) Linear Models (MLM)"
+---
+
+## Github Repository for Lesson 23: 11/15/2017 RM-ANOVA and Multilevel (Mixed) Linear Models (MLM)
+
+See [https://github.com/melindahiggins2000/N736Fall2017_lesson23](https://github.com/melindahiggins2000/N736Fall2017_lesson23)
+
+

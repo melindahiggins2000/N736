@@ -1,0 +1,33 @@
+---
+title: "Homework 03"
+---
+
+## Homework 03 - due 10/04/2017
+
+Using the HELP dataset:
+
+* create a first draft of "Table 1" (see example below)
+* provide the summary stats for the baseline data - overall and by gender
+* determine whether you want to provide parametric or non-parametric stats
+* include the appropriate statistical test comparing the baseline measurements and variables by gender
+* write a statistical methods section on the methods you used to create Table 1 and make the comparisons by gender
+* write 1-2 paragraphs describing the sample overall at baseline and by group (use the data in table 1 to help you)
+
+## Table 1
+
+----------------------------------------------------------------
+                                          
+  variable   N   Overall mean (SD)   N   Male mean (SD)   N   Female mean (SD) 
+----------- --- ------------------- --- ---------------- --- ------------------
+  age        x    x.x(x.x)           x   x.x(x.x)         x   x.x(x.x)
+----------- --- ------------------- --- ---------------- --- ------------------
+  variable   N   Overall med [IQR]   N   Male med [IQR]   N   Female med [IQR]
+----------- --- ------------------- --- ---------------- --- ------------------
+  mcs        x  x.x[x.x,x.x]         x  x.x[x.x,x.x]      x   x.x[x.x,x.x]
+----------- --- ------------------- --- ---------------- --- ------------------
+  variable   N   Overall n [(%)      N   Male n (%)       N   Female n (%)
+----------- --- ------------------- --- ---------------- --- ------------------
+  female     x   x (x%)              x   x (x%)           x   x (x%)
+----------- --- ------------------- --- ---------------- --- ------------------
+
+

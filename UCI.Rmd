@@ -1,0 +1,32 @@
+---
+title: "UC Irvine Machine Learning Repository"
+---
+
+## UC Irvine Machine Learning Repository
+
+The website for the UC Irvine Machine Learning Repository is [http://archive.ics.uci.edu/ml/](http://archive.ics.uci.edu/ml/).
+
+As of 12/29/2016 they state that they currently maintain 360 data sets as a service to the machine learning community. You may view all data sets through our searchable interface. 
+
+## Scope of Datasets Available
+
+The datasets available range across many topics and vary quite a bit in terms of size from only a few cases (or "instances") up to over 43 million and from only 1 or 2 variables (or "attributes") to over 3 million variables (although most have fewer than 100 up to about 1000 or so variables).
+
+## Dataset Details
+
+Each dataset has a link with a page describing the data's origins and any relevant information on how it was obtained and its intended use. Often previous papers published using the dataset or on the originating study are also listed and are helpful for understanding the dataset and how to analyze it. Each dataset's webpage had a link to "Data Set Description" and a "Data Folder". The Data Folder is where you will find a listing and links for downloading the data. 
+
+## Decompressing Large Datasets
+
+The "data" provided is often in multiple files and many are compressed or zipped. Usual decompression software (such as available on Windows systems for ZIP files) should work to access these. However, some are provided as `*.tar` or `*.tar.Z` files. For these you will need software such as:
+
+* **7-ZIP**
+    + available at [http://www.7-zip.org/](http://www.7-zip.org/)
+    + **7-ZIP** is OPEN SOURCE and is FREE distributed mostly under the _GNU LGPL_ license [http://www.7-zip.org/license.txt](http://www.7-zip.org/license.txt).
+* or **WINZIP** is another option
+    + available at [http://www.winzip.com/](http://www.winzip.com/)
+    + there is a FREE trial but it is a limited time trial
+    + when it expires you have to purchase the software which is not that expensive ($30 for standard and $50 for pro).
+  * and there are others online.
+
+

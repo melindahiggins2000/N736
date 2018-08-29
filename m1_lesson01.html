@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="Melinda K. Higgins, PhD." />
+
+<meta name="date" content="2017-11-19" />
+
+<title>Module 1 - Lesson 01</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 54px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+
+.section h2 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h3 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h4 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h5 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h6 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">N736 Fall 2017</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Home
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-archive"></span>
+     
+    Lessons
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="intro.html">1. 08/23/2017 Introduction</a>
+    </li>
+    <li>
+      <a href="lesson_20170828.html">2. 08/28/2017 Intro Git, Github, Exploring Data</a>
+    </li>
+    <li>
+      <a href="lesson_20170830.html">3. 08/30/2017 Data Cleaning and Assessment - Part I</a>
+    </li>
+    <li>
+      <a href="lesson_20170906.html">4. 09/06/2017 Data Cleaning and Assessment - Part II</a>
+    </li>
+    <li>
+      <a href="lesson_20170911.html">5. 09/11/2017 Data Wrangling</a>
+    </li>
+    <li>
+      <a href="lesson_20170913.html">6. 09/13/2017 Data Wrangling - Part 2</a>
+    </li>
+    <li>
+      <a href="lesson_20170918.html">7. 09/18/2017 Univariate Descriptive Stats</a>
+    </li>
+    <li>
+      <a href="lesson_20170920.html">8. 09/20/2017 Bivariate Statistics</a>
+    </li>
+    <li>
+      <a href="lesson_20170925.html">9. 09/25/2017 Introduction to Bootstrapping</a>
+    </li>
+    <li>
+      <a href="lesson_20170927.html">10. 09/27/2017 Missing Data</a>
+    </li>
+    <li>
+      <a href="lesson_20171002.html">11. 10/02/2017 Building Models</a>
+    </li>
+    <li>
+      <a href="lesson_20171004.html">12. 10/04/2017 Simple Regression &amp; ANOVA</a>
+    </li>
+    <li>
+      <a href="lesson_20171011.html">13. 10/11/2017 Multivariate Regression &amp; Variable Selection</a>
+    </li>
+    <li>
+      <a href="lesson_2017101618.html">14,15. 10/16&amp;18/2017 Interactions, Moderators, Covariates, Factors</a>
+    </li>
+    <li>
+      <a href="lesson_20171023.html">16. 10/23/2017 Power, Sample Size, Effect Size</a>
+    </li>
+    <li>
+      <a href="lesson_20171025.html">17. 10/25/2017 Analysis of Covariance (ANCOVA)</a>
+    </li>
+    <li>
+      <a href="lesson_20171030.html">18,19. 10/30 &amp; 11/1/2017 Logistic Regression and Generalized Linear Regression</a>
+    </li>
+    <li>
+      <a href="lesson_20171106.html">20. 11/06/2017 Poisson and Negative Binomial Regression</a>
+    </li>
+    <li>
+      <a href="lesson_20171108.html">21. 11/08/2017 Dependent/Paired data and Repeated Measures</a>
+    </li>
+    <li>
+      <a href="lesson_20171113.html">22. 11/13/2017 Repeated Measures ANOVA</a>
+    </li>
+    <li>
+      <a href="lesson_20171115.html">23. 11/15/2017 RM-ANOVA and Multilevel (Mixed) Linear Models (MLM)</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-file-text"></span>
+     
+    Assignments
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="homework01.html">Homework 01 - due 09/06/2017</a>
+    </li>
+    <li>
+      <a href="homework02.html">Homework 02 - due 09/20/2017</a>
+    </li>
+    <li>
+      <a href="homework03.html">Homework 03 - due 10/04/2017</a>
+    </li>
+    <li>
+      <a href="project01.html">Project - Milestone 01 - due 10/04/2017</a>
+    </li>
+    <li>
+      <a href="homework04.html">Homework 04 - due 10/18/2017</a>
+    </li>
+    <li>
+      <a href="homework05.html">Homework 05 - due 11/01/2017</a>
+    </li>
+    <li>
+      <a href="homework06.html">Homework 06 - due 11/22/2017</a>
+    </li>
+    <li>
+      <a href="homework07.html">Homework 07 - due 11/29/2017</a>
+    </li>
+    <li>
+      <a href="project.html">Project - Milestone 2 &amp; 3 - due 12/4/2017 &amp; 12/15/2017</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="files.html">
+    <span class="fa fa-files-o"></span>
+     
+    Files
+  </a>
+</li>
+<li>
+  <a href="about.html">
+    <span class="fa fa-users"></span>
+     
+    Instructor
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-file-text"></span>
+     
+    Syllabus
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="syllabus.html">Overview</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-cog"></span>
+     
+    Useful Stuff
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="spss.html">SPSS Student Grad Pack</a>
+    </li>
+    <li>
+      <a href="sas.html">SAS University - FREE</a>
+    </li>
+    <li>
+      <a href="help.html">R, RStudio, Git, Github - FREE</a>
+    </li>
+    <li>
+      <a href="stata.html">Stata Student Versions</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="colophon.html">
+    <span class="fa fa-info-circle"></span>
+     
+    Colophon
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Module 1 - Lesson 01</h1>
+<h3 class="subtitle"><em>History &amp; Importance of Reproducibility &amp; Transparency</em></h3>
+<h4 class="author"><em><a href="https://melindahiggins.netlify.com/">Melinda K. Higgins, PhD.</a></em></h4>
+<h4 class="date"><em>2017-11-19<br><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="by-nc-sa-4.0-88x31.png" style="border-width:0" src="images/by-nc-sa-4.0-88x31.png" /></a></em></h4>
+
+</div>
+
+
+<section id="outline" class="level2">
+<h2>Outline</h2>
+<ul>
+<li>Timeline Reproducible Research &amp; Transparency</li>
+<li>People</li>
+<li>Books</li>
+<li>Literate Programming &gt; Dynamic Documentation &gt; [R]Markdown</li>
+<li>The Big Picture</li>
+</ul>
+</section>
+<section id="timeline-reproducible-research-transparencytimeline-partially-based-on-plos-blog-december-2016httpblogs.plos.orgabsolutely-maybe20161205reproducibility-crisis-timeline-milestones-in-tackling-research-reliability" class="level2">
+<h2>Timeline Reproducible Research &amp; Transparency<footnote>Timeline partially based on PLOS Blog December 2016<a href="http://blogs.plos.org/absolutely-maybe/2016/12/05/reproducibility-crisis-timeline-milestones-in-tackling-research-reliability/" class="uri">http://blogs.plos.org/absolutely-maybe/2016/12/05/reproducibility-crisis-timeline-milestones-in-tackling-research-reliability/</a></footnote></h2>
+<table style="width:64%;">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">YEAR</th>
+<th style="text-align: left;">Event</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1992</td>
+<td style="text-align: left;">Jon Claerbout coined the term “reproducible research” in his book “EARTH SOUNDINGS ANALYSIS: Processing versus Inversion (PVI)” <footnote><a href="http://sepwww.stanford.edu/sep/jon/reproducible.html" class="uri">http://sepwww.stanford.edu/sep/jon/reproducible.html</a></footnote></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1996</td>
+<td style="text-align: left;">CONSORT statement introduced standards for reporting clinical trials <footnote>Begg C, Cho M, Eastwood S, Horton R, Moher D, Olkin I, Pitkin R, Rennie D, Schulz KF, Simel D, Stroup DF (1996). Improving the quality of reporting of randomized controlled trials. The CONSORT statement. JAMA 276:637-639.</footnote></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2004</td>
+<td style="text-align: left;">International Committee of Medical Journal Editors (ICMJE) stated they would not publish a clinical trial that had not been registered. <footnote><a href="http://www.icmje.org/news-and-editorials/update_2005.html" class="uri">http://www.icmje.org/news-and-editorials/update_2005.html</a></footnote></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2005</td>
+<td style="text-align: left;">Ioannidis, J. P. A. Why most published research findings are false. PLoS Med. 2, e124 (2005) <footnote><a href="https://doi.org/10.1371/journal.pmed.0020124" class="uri">https://doi.org/10.1371/journal.pmed.0020124</a></footnote></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="timeline-reproducible-research-transparency" class="level2">
+<h2>Timeline Reproducible Research &amp; Transparency</h2>
+<table style="width:64%;">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">YEAR</th>
+<th style="text-align: left;">Event</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">2007</td>
+<td style="text-align: left;">FDA Amendments Act (FDAAA) required more types of clinical trials to be registered (final rules took effect January 2017) <footnote><a href="https://clinicaltrials.gov/ct2/manage-recs/fdaaa" class="uri">https://clinicaltrials.gov/ct2/manage-recs/fdaaa</a></footnote></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2009</td>
+<td style="text-align: left;">Journal of Biostatistics institutes policy to work with authors to publish articles that meet a standard of reproducibility.<footnote><a href="https://academic.oup.com/biostatistics/article/10/3/405/293660/Reproducible-research-and-Biostatistics" class="uri">https://academic.oup.com/biostatistics/article/10/3/405/293660/Reproducible-research-and-Biostatistics</a> &amp; <a href="https://academic.oup.com/biostatistics/pages/General_Instructions" class="uri">https://academic.oup.com/biostatistics/pages/General_Instructions</a></footnote></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2011</td>
+<td style="text-align: left;">Alsheikh-Ali, et.al. (2011), report the low percentage of researchers satisfying the policies regarding the availability and sharing of their data.<footnote>Alsheikh-Ali, A. A., Qureshi, W., Al-Mallah, M. H. &amp; Ioannidis, J. P. Public availability of published research data in high-impact journals. PloS ONE 6, e24357, 2011; <a href="https://doi.org/10.1371/journal.pone.0024357" class="uri">https://doi.org/10.1371/journal.pone.0024357</a></footnote></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="cancer-testing-falls-apart" class="level2 centered">
+<h2>Cancer Testing Falls Apart</h2>
+<div class="columns-2">
+<p><img src="images/baggerly.PNG" alt="baggerly" style="width:370px;height:403px;"></p>
+<p>&lt;img src=“images/baggerly2.PNG” alt=“baggerly2” 332 x 397 style=“width:332px;height:397px;”&gt;</p>
+</div>
+<p><a href="http://www.nytimes.com/2011/07/08/health/research/08genes.html" class="uri">http://www.nytimes.com/2011/07/08/health/research/08genes.html</a></p>
+<p>2010 Video Presentation by Keith A. Baggerly <a href="http://videolectures.net/cancerbioinformatics2010_baggerly_irrh/" class="uri">http://videolectures.net/cancerbioinformatics2010_baggerly_irrh/</a></p>
+</section>
+<section id="the-excel-error-heard-around-the-world" class="level2 centered">
+<h2>The Excel-Error Heard Around the World</h2>
+<p><img src="images/rogoff.PNG" alt="rogoff" style="width:621px;height:486px;"> <a href="https://newrepublic.com/article/112951/rogoff-reinhart-and-world-excel-error-research" class="uri">https://newrepublic.com/article/112951/rogoff-reinhart-and-world-excel-error-research</a></p>
+</section>
+<section id="timeline-reproducible-research-transparency-1" class="level2">
+<h2>Timeline Reproducible Research &amp; Transparency</h2>
+<table style="width:64%;">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">YEAR</th>
+<th style="text-align: left;">Event</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">2012</td>
+<td style="text-align: left;">Begley and Ellis reviewed 53 “landmark” studies and only 6 (11%) had the scientific findings confirmed.<footnote><a href="http://www.nature.com/nature/journal/v483/n7391/full/483531a.html" class="uri">http://www.nature.com/nature/journal/v483/n7391/full/483531a.html</a></footnote></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2013</td>
+<td style="text-align: left;">Center for Open Science launches &amp; by 2014 the Open Science Framework has 7000 users with more than 45,000+ and over 15 institutions by 2017<footnote><a href="https://cos.io/about/brief-history-cos-2013-2017/" class="uri">https://cos.io/about/brief-history-cos-2013-2017/</a> &amp; <a href="https://osf.io/" class="uri">https://osf.io/</a></footnote></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2014</td>
+<td style="text-align: left;">NIH publishes their guidelines for addressing reproducibility<footnote><a href="https://www.nih.gov/research-training/rigor-reproducibility" class="uri">https://www.nih.gov/research-training/rigor-reproducibility</a></footnote></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2015</td>
+<td style="text-align: left;">The Open Science Collaboration reports that they were only able to replicate between 1/3 to 1/2 of the results from 100 studies<footnote>Science, 28 Aug 2015: Vol. 349, Issue 6251, aac4716; DOI: 10.1126/science.aac4716; <a href="http://science.sciencemag.org/content/349/6251/aac4716" class="uri">http://science.sciencemag.org/content/349/6251/aac4716</a></footnote></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="wide-spread-gene-name-errors" class="level2 centered">
+<h2>Wide-Spread Gene Name Errors</h2>
+<p><img src="images/geneerrors.PNG" alt="geneerrors" style="width:643px;height:449px;"> <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7" class="uri">https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7</a></p>
+</section>
+<section id="wide-spread-gene-name-errors-1" class="level2 centered">
+<h2>Wide-Spread Gene Name Errors</h2>
+<p>&lt;img src=“images/economist.PNG” alt=“economist” 398 x 416 style=“width:398px;height:416px;”&gt; <a href="https://www.economist.com/blogs/graphicdetail/2016/09/daily-chart-3" class="uri">https://www.economist.com/blogs/graphicdetail/2016/09/daily-chart-3</a></p>
+</section>
+<section id="people" class="level2">
+<h2>People</h2>
+<ul>
+<li>Victoria Stodden <a href="https://ischool.illinois.edu/people/faculty/vcs" class="uri">https://ischool.illinois.edu/people/faculty/vcs</a>
+<ul>
+<li>presentation on History of the Reproducibility Movement <a href="https://web.stanford.edu/~vcs/talks/ICERM-Dec102012STODDEN.pdf" class="uri">https://web.stanford.edu/~vcs/talks/ICERM-Dec102012STODDEN.pdf</a></li>
+<li>co-author “Implementing Reproducible Research” book <a href="https://www.crcpress.com/Implementing-Reproducible-Research/Stodden-Leisch-Peng/p/book/9781466561595" class="uri">https://www.crcpress.com/Implementing-Reproducible-Research/Stodden-Leisch-Peng/p/book/9781466561595</a></li>
+</ul></li>
+<li>Roger Peng <a href="http://www.biostat.jhsph.edu/~rpeng/index.html" class="uri">http://www.biostat.jhsph.edu/~rpeng/index.html</a>
+<ul>
+<li>Associate Editor for Reproducible Research - Biostatistics Journal <a href="https://academic.oup.com/biostatistics/pages/Editorial_Board" class="uri">https://academic.oup.com/biostatistics/pages/Editorial_Board</a></li>
+<li>co-author “Implementing Reproducible Research” book <a href="https://www.crcpress.com/Implementing-Reproducible-Research/Stodden-Leisch-Peng/p/book/9781466561595" class="uri">https://www.crcpress.com/Implementing-Reproducible-Research/Stodden-Leisch-Peng/p/book/9781466561595</a></li>
+</ul></li>
+</ul>
+</section>
+<section id="people-1" class="level2">
+<h2>People</h2>
+<ul>
+<li>John P.A. Ioannidis <a href="https://profiles.stanford.edu/john-ioannidis?tab=publications" class="uri">https://profiles.stanford.edu/john-ioannidis?tab=publications</a>
+<ul>
+<li>Professor of Medicine and of Health Research and Policy at Stanford University School of Medicine and a Professor of Statistics at Stanford University School of Humanities and Sciences</li>
+</ul></li>
+<li>Christopher Gandrud <a href="https://www.iq.harvard.edu/people/christopher-gandrud" class="uri">https://www.iq.harvard.edu/people/christopher-gandrud</a>
+<ul>
+<li>research fellow at IQSS (Institute for Quantitative Social Science)</li>
+<li>Book Author “Reproducible Research with R and RStudio” <a href="https://www.crcpress.com/Reproducible-Research-with-R-and-R-Studio/Gandrud/p/book/9781466572843" class="uri">https://www.crcpress.com/Reproducible-Research-with-R-and-R-Studio/Gandrud/p/book/9781466572843</a></li>
+</ul></li>
+</ul>
+</section>
+<section id="people-2" class="level2">
+<h2>People</h2>
+<ul>
+<li>Yihui Xie
+<ul>
+<li>software engineer for RStudio<a href="https://www.rstudio.com/about/" class="uri">https://www.rstudio.com/about/</a></li>
+<li>author of “Dynamic Documents with R and knitr”<a href="https://www.crcpress.com/Dynamic-Documents-with-R-and-knitr/Xie/p/book/9781482203530" class="uri">https://www.crcpress.com/Dynamic-Documents-with-R-and-knitr/Xie/p/book/9781482203530</a></li>
+<li>author of “Bookdown: Authoring Books and Technical Documents with R Markdown” book <a href="https://www.crcpress.com/bookdown-Authoring-Books-and-Technical-Documents-with-R-Markdown/Xie/p/book/9781138700109" class="uri">https://www.crcpress.com/bookdown-Authoring-Books-and-Technical-Documents-with-R-Markdown/Xie/p/book/9781138700109</a> and <code>bookdown</code> R package <a href="https://cran.r-project.org/web/packages/bookdown/index.html" class="uri">https://cran.r-project.org/web/packages/bookdown/index.html</a></li>
+<li>author of <code>blogdown</code> R package <a href="https://cran.r-project.org/web/packages/blogdown/index.html" class="uri">https://cran.r-project.org/web/packages/blogdown/index.html</a></li>
+</ul></li>
+</ul>
+</section>
+<section id="people-3" class="level2">
+<h2>People</h2>
+<ul>
+<li>Friedrich Leisch
+<ul>
+<li>Professor of Applied Statistics at the University of Natural Resources and Life Sciences, Vienna</li>
+<li>developer of Sweave for creating dynamic reports <a href="https://leisch.userweb.mwn.de/Sweave/" class="uri">https://leisch.userweb.mwn.de/Sweave/</a></li>
+<li>co-author “Implementing Reproducible Research” book <a href="https://www.crcpress.com/Implementing-Reproducible-Research/Stodden-Leisch-Peng/p/book/9781466561595" class="uri">https://www.crcpress.com/Implementing-Reproducible-Research/Stodden-Leisch-Peng/p/book/9781466561595</a></li>
+</ul></li>
+</ul>
+</section>
+<section id="myImagePage" class="level2">
+<h2>Books on Reproducibility and Tools of the Trade</h2>
+<table style="width:76%;">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Image</th>
+<th style="text-align: left;">Book</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><img src="images/book_implementRepRes.PNG" alt="book_implementRepRes" /></td>
+<td style="text-align: left;">Implementing Reproducible Research by Victoria Stodden, Friedrich Leisch, Roger D. Peng <a href="https://www.crcpress.com/Implementing-Reproducible-Research/Stodden-Leisch-Peng/p/book/9781466561595" class="uri">https://www.crcpress.com/Implementing-Reproducible-Research/Stodden-Leisch-Peng/p/book/9781466561595</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="images/book_XieKnitr.PNG" alt="book_XieKnitr" /></td>
+<td style="text-align: left;">Dynamic Documents with R and knitr (Chapman &amp; Hall/CRC The R Series) 1st Edition by Yihui Xie <a href="https://www.crcpress.com/Dynamic-Documents-with-R-and-knitr/Xie/p/book/9781482203530" class="uri">https://www.crcpress.com/Dynamic-Documents-with-R-and-knitr/Xie/p/book/9781482203530</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><img src="images/book_bookdown.PNG" alt="book_bookdown" /></td>
+<td style="text-align: left;">bookdown: Authoring Books and Technical Documents with R Markdown by Yihui Xie <a href="https://www.crcpress.com/bookdown-Authoring-Books-and-Technical-Documents-with-R-Markdown/Xie/p/book/9781138700109" class="uri">https://www.crcpress.com/bookdown-Authoring-Books-and-Technical-Documents-with-R-Markdown/Xie/p/book/9781138700109</a> &amp; read online <a href="https://bookdown.org/yihui/bookdown/" class="uri">https://bookdown.org/yihui/bookdown/</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="myImagePage" class="level2">
+<h2>more books</h2>
+<table style="width:76%;">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Image</th>
+<th style="text-align: left;">Book</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><img src="images/jennyBryan.PNG" alt="jennyBryan" /></td>
+<td style="text-align: left;">Happy Git and GitHub for the useR by Jenny Bryan; read online <a href="http://happygitwithr.com/" class="uri">http://happygitwithr.com/</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="images/book_HortonKleinman.PNG" alt="book_HortonKleinman" /></td>
+<td style="text-align: left;">Using R and RStudio for Data Management, Statistical Analysis, and Graphics, Second Edition by Nicholas J. Horton &amp; Ken Kleinman <a href="https://www.crcpress.com/Using-R-and-RStudio-for-Data-Management-Statistical-Analysis-and-Graphics/Horton-Kleinman/p/book/9781482237368" class="uri">https://www.crcpress.com/Using-R-and-RStudio-for-Data-Management-Statistical-Analysis-and-Graphics/Horton-Kleinman/p/book/9781482237368</a>; also see <a href="http://mosaic-web.org/">Project MOSAIC, http://mosaic-web.org/</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><img src="images/book_ModernDive.PNG" alt="book_ModernDive" /> &amp; <img src="images/book_GettingUsedR.PNG" alt="book_GettingUsedR" /></td>
+<td style="text-align: left;">ModernDive: An Introduction to Statistical and Data Sciences via R by Chester Ismay and Albert Y. Kim; read online <a href="https://ismayc.github.io/moderndiver-book/" class="uri">https://ismayc.github.io/moderndiver-book/</a> &amp; Getting used to R, RStudio, and R Markdown by Chester Ismay <a href="https://ismayc.github.io/rbasics-book/" class="uri">https://ismayc.github.io/rbasics-book/</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">.</td>
+<td style="text-align: left;">… and lots more … see <a href="https://bookdown.org/" class="uri">https://bookdown.org/</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="literate-programming-dynamic-documentation-rmarkdown" class="level2">
+<h2>Literate Programming &gt; Dynamic Documentation &gt; [R]Markdown</h2>
+<table style="width:97%;">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 88%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">YEAR</th>
+<th style="text-align: left;">Event</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1992</td>
+<td style="text-align: left;">“Literate Programming” is introduced by Donald Knuth as “that (which) combines a programming language with a documentation language, thereby making programs more robust, more portable, more easily maintained, and arguably more fun to write than programs that are written only in a high-level language. <strong>The main idea is to treat a program as a piece of literature, addressed to human beings rather than to a computer.</strong>” <a href="http://www-cs-faculty.stanford.edu/~knuth/lp.html" class="uri">http://www-cs-faculty.stanford.edu/~knuth/lp.html</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2002</td>
+<td style="text-align: left;">Friedrich Leisch introduces <code>SWEAVE</code> a program for “Dynamic generation of statistical reports using literate data analysis” <a href="https://leisch.userweb.mwn.de/Sweave/" class="uri">https://leisch.userweb.mwn.de/Sweave/</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="literate-programming-dynamic-documentation-rmarkdown-1" class="level2">
+<h2>Literate Programming &gt; Dynamic Documentation &gt; [R]Markdown</h2>
+<table style="width:97%;">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 88%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">YEAR</th>
+<th style="text-align: left;">Event</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">2004</td>
+<td style="text-align: left;">John Gruber created the <code>Markdown</code> language in 2004 in collaboration with Aaron Swartz - their goal was to “write using an easy-to-read, easy-to-write plain text format, and optionally convert it to structurally valid XHTML (or HTML)” <a href="https://daringfireball.net/projects/markdown/" class="uri">https://daringfireball.net/projects/markdown/</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2012</td>
+<td style="text-align: left;">Yihui Xie releases <code>knitr</code> R package released - <code>knitr</code> was inspired by <code>SWEAVE</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2014</td>
+<td style="text-align: left;"><code>rmarkdown</code> R package released - extends <code>Markdown</code> to work with R/RStudio environment</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="bigpic" class="level2">
+<h2>The Big Picture</h2>
+<p><img src="images/TheBigPic01a.PNG" /></p>
+</section>
+<section id="bigpic" class="level2">
+<h2>The Big Picture</h2>
+<p><img src="images/TheBigPic02a.PNG" /></p>
+</section>
+<section id="bigpic" class="level2">
+<h2>The Big Picture</h2>
+<p><img src="images/TheBigPic03a.PNG" /></p>
+</section>
+<section id="bigpic" class="level2">
+<h2>The Big Picture</h2>
+<p><img src="images/TheBigPic04a.PNG" /></p>
+</section>
+<section id="bigpic" class="level2">
+<h2>The Big Picture</h2>
+<p><img src="images/TheBigPic05a.PNG" /></p>
+</section>
+<section id="next-in-lesson-02" class="level2 flexbox vcenter">
+<h2>Next in Lesson 02 …</h2>
+<p>Literate Programming</p>
+<p>&amp;</p>
+<p>Dynamic Documentation</p>
+</section>
+
+<hr>
+
+<p>Copyright &copy; <a href="http://melindahiggins2000.github.io/web2">Melinda Higgins, Ph.D.</a>. All contents under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">(CC) BY-NC-SA license</a>,<img src="ccbyncsa_88x31.png" alt="CC-BY-NC-SA" style="width:88px;height:31px;"> unless otherwise noted.
+</p>
+
+<p>
+	<a href=mailto:melinda.higgins@emory.edu>Feedback, Comments (email me)?</a> 
+</p>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+---
+title: "Bivariate Statistics"
+---
+
+## Lesson 08: Bivariate Statistics
+
+This lesson focuses on describing and summarizing your data by groups and/or looking at bi-variate associations.
+
+1. See lesson posted at [https://melindahiggins2000.github.io/N736Fall2017_lesson08/lesson08_BivarStats.html](https://melindahiggins2000.github.io/N736Fall2017_lesson08/lesson08_BivarStats.html)
+
+2. Github repo for Lesson 08 at [https://github.com/melindahiggins2000/N736Fall2017_lesson08](https://github.com/melindahiggins2000/N736Fall2017_lesson08)

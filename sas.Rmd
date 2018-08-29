@@ -1,0 +1,18 @@
+---
+title: "SAS University - where to purchase, download and install"
+---
+
+## SAS University
+
+https://www.sas.com/en_us/software/university-edition.html#for-students-learners 
+
+Download the Direct Download so you’ll have the software available when offline. The Amazon Web Services requires an internet connection, costs money, and your data has to be uploaded to the cloud. The Direct Download is FREE, runs on your local machine, and is the one you want.
+
+See https://www.sas.com/en_us/software/university-edition/download-software.html 
+
+You can download versions for Windows, Mac or Linux. Be sure to read the quick start PDF and watch the quick start video.
+
+You will need to download and install the Oracle Virtual Box software and then download the SAS University Edition App. The App runs inside the Oracle virtual machine you will set up. NOTE: The App is over 1.7GB – you will need to be on a fast network connection and even then it will take some time to download.
+
+Additional help and guidance is located at http://support.sas.com/software/products/university-edition/faq/main.htm. Definitely read through the section on “Working with Your Data and Results” to understand how to access your local hard drive(s) from inside the SAS University App. For example, from here you should see the page on “How do I use my existing SAS data, raw data, or Microsoft Excel data in SAS Studio?” http://support.sas.com/software/products/university-edition/faq/data_access_import.htm 
+

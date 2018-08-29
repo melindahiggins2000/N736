@@ -1,0 +1,14 @@
+---
+title: N736 Fall 2017 - Lessons 16; October 23, 2017 - Power, Sample Size, Effect
+  Size
+---
+
+## Lesson16: Power, Sample Size, Effect Size
+
+See Github repository for lesson 16: [https://github.com/melindahiggins2000/N736Fall2017_lesson16](https://github.com/melindahiggins2000/N736Fall2017_lesson16)
+
+We'll do a few example using `G*Power` in class - you can download `G*Power` (free) at [http://www.gpower.hhu.de/en.html](http://www.gpower.hhu.de/en.html)
+
+
+
+

@@ -1,0 +1,55 @@
+---
+title: "Homework 05"
+---
+
+## Homework 05 - due 11/01/2017
+
+### ANCOVA - Analysis of Covariance Exercise
+
+For Homework 05, you will be using the HELP dataset, learn more at:
+
+* [https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/](https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/) &
+* [https://github.com/melindahiggins2000/N736Fall2017_HELPdataset](https://github.com/melindahiggins2000/N736Fall2017_HELPdataset)
+
+Complete the following for these variables:
+
+* OUTCOME VARIABLE (Y): `indtot`
+* INDEPENDENT VARIABLE (X): `mcs`
+* COVARIATES (other X's): `pss_fr` or `female`
+
+1. Run ANCOVA _(using a regression, ANOVA, or GLM approach - your choice)_ for the association between the SF36 Mental Component Score (`mcs`) and Inventory of Drug Use (`indtot`) adjusting for perceived social support from friends (`pss_fr`). Remember to:
+    * mean center continuous variables before computing the interaction term _(i.e. create a new mean-centered variable by subtracting the mean)_
+    * check for the assumption of homogenity of variance _(i.e. is the interaction term significant?)_
+    * make an "effects plot" plot of the interaction between `mcs` and `pss_fr` 
+    
+2. Run ANCOVA _(using a regression, ANOVA, or GLM approach - your choice)_ for the association between the SF36 Mental Component Score (`mcs`) and Inventory of Drug Use (`indtot`) adjusting for gender (`female`). Remember to:
+    * mean center continuous variables before computing the interaction term _(i.e. create a new mean-centered variable by subtracting the mean)_
+    * check for the assumption of homogenity of variance _(i.e. is the interaction term significant?)_
+    * make an "effects plot" plot of the interaction between `mcs` and `female` 
+
+## Variables in HELP dataset to be used for Homework 05
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+helpdata <- readRDS("helpmkh.rds")
+library(tidyverse)
+sub1 <- helpdata %>%
+  select(indtot,mcs,pss_fr,female)
+
+# create a function to get the label
+# label output from the attributes() function
+getlabel <- function(x) attributes(x)$label
+# getlabel(sub1$age)
+
+library(purrr)
+ldf <- purrr::map_df(sub1, getlabel) # this is a 1x15 tibble data.frame
+# t(ldf) # transpose for easier reading to a 15x1 single column list
+
+# using knitr to get a table of these
+# variable names for Rmarkdown
+library(knitr)
+knitr::kable(t(ldf),
+             col.names = c("Variable Label"),
+             caption="Use these variables from HELP dataset for Homework 05")
+
+```
+

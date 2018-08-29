@@ -1,0 +1,18 @@
+---
+title: 'Data Wrangling: January 25, 2017'
+---
+
+## Data Wrangling: January 25, 2017
+
+For today's class, we will be working with the "N741 Data Wrangling" Github repository [https://github.com/melindahiggins2000/N741DataWrangling](https://github.com/melindahiggins2000/N741DataWrangling).
+
+1. Go to this repository
+2. Fork a copy to your Github Account
+3. Open RStudio, create a project for N741 Data Wrangling - using Version Control and Git
+4. Get the "N741 Data Wrangling" URL from YOUR Github repository ("Clone or Download" - select copy URL to clipboard)
+5. Paste in the URL and click "Create New Project"
+6. You should now have a local copy to use for today's exercises.
+
+
+
+

@@ -1,0 +1,62 @@
+---
+title: "Homework 06"
+---
+
+## Homework 06 - due 11/22/2017
+
+### Logistic Regression
+
+For Homework 06, you will be using the HELP dataset, learn more at:
+
+* [https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/](https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/) &
+* [https://github.com/melindahiggins2000/N736Fall2017_HELPdataset](https://github.com/melindahiggins2000/N736Fall2017_HELPdataset)
+
+Refer to the logistic regression analysis example and codes we ran during lesson 18 and 19 - see [https://github.com/melindahiggins2000/N736Fall2017_lesson1819](https://github.com/melindahiggins2000/N736Fall2017_lesson1819)
+
+For the HELP dataset:
+
+* OUTCOME VARIABLE: consider the variable `g1b` "Experienced serious thoughts of suicide (last 30 days) - Baseline"
+* PREDICTOR VARIABLE: consider these variables as potential predictors for `g1b`:
+    - `age`, `female`, `pss_fr`, `homeless`, `pcs`, `mcs`, `cesd`, `indtot`
+
+Complete the following:
+
+1. Consider the continuous variable `cesd` as a predictor for `g1b`
+    a. run a logistic regression of the probability of suicidal thoughts (`g1b`) given their depressive symptoms scores (`cesd`)
+    b. make a plot of the the predicted probability of suicidal thoughts (`g1b`) by the depressive symptoms scores (`cesd`)
+    c. what value of the `cesd` leads to a probability of suicidal thoughts => 0.5? _(hint: use the plot you just made)_
+    
+2. Using variable selection methods, develop a logistic regression model for the probability of suicidal thoughts (`g1b`) considering all of these variables for possible inclusion: `age`, `female`, `pss_fr`, `homeless`, `pcs`, `mcs`, `cesd`, `indtot`
+    a. present the final model results
+    b. write a few sentences describing your results including:
+        i. model fit
+        ii. model classification table results - remember to report the threshold used for the classification table - you can change it from 0.5 if you think a different threshold might work better
+        iii. odds ratios for each significant predictor in the model
+
+## Variables in HELP dataset to be used for Homework 06:
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+helpdata <- readRDS("helpmkh.rds")
+library(tidyverse)
+sub1 <- helpdata %>%
+  select(g1b, age, female, pss_fr,
+         homeless, pcs, mcs, cesd, indtot)
+
+# create a function to get the label
+# label output from the attributes() function
+getlabel <- function(x) attributes(x)$label
+# getlabel(sub1$age)
+
+library(purrr)
+ldf <- purrr::map_df(sub1, getlabel) # this is a 1x15 tibble data.frame
+# t(ldf) # transpose for easier reading to a 15x1 single column list
+
+# using knitr to get a table of these
+# variable names for Rmarkdown
+library(knitr)
+knitr::kable(t(ldf),
+             col.names = c("Variable Label"),
+             caption="Use these variables from HELP dataset for Homework 06")
+
+```
+

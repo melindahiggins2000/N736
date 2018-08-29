@@ -1,0 +1,16 @@
+---
+title: "Missing Data"
+---
+
+## Lesson 10: An Introduction and Discussion of Missing Data
+
+This lesson introduces you to missing data:
+
+* how to find, identify and review missing data
+* how to visualize missing data
+* types of missing data mechanisms
+* what to do next
+
+1. See lesson posted at [https://melindahiggins2000.github.io/N736Fall2017_lesson10/lesson10_missing.html](https://melindahiggins2000.github.io/N736Fall2017_lesson10/lesson10_missing.html)
+
+2. Github repo for Lesson 10 at [https://github.com/melindahiggins2000/N736Fall2017_lesson10](https://github.com/melindahiggins2000/N736Fall2017_lesson10)

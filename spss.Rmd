@@ -1,0 +1,36 @@
+---
+title: "SPSS - where to purchase, download and install"
+---
+
+## SPSS
+
+Go to IBM’s website for student grad pack versions at https://www-03.ibm.com/software/products/en/spss-stats-gradpack 
+
+There are several links at this website for purchasing students versions of SPSS. There are 3 options:
+
+* The Base edition (approximately $35); 
+* The Standard edition (approximately $49); and
+* The Premium edition (approximately $89)
+
+The Standard edition would be the minimal version to purchase as it has the necessary statistical modeling procedures included. However, it is recommended to purchase the Premium Grad Pack which also includes bootstrapping, missing data analysis, customized tables, and other helpful tools. Version 25 is the most current version. Here is a quick comparison between the 3 editions (available at this reseller https://www.hearne.software/Software/SPSS-Grad-Packs-for-Students-by-IBM/Editions) 
+
+Features                                                 | Premium | Standard
+---------------------------------------------------------|---------|----------
+Core statistical and graphics capabilities to take standard analytic projects from start to finish | x | x
+Seamless integration with R, Python and other environments to easily and effectively expand statistical capabilities and programmability | x | x
+Advanced statistical procedures, including GLM, GLMM, HLM, GENLIN and GEE to more accurately identify and analyze complex relationships | x | x
+Nonlinear regression, including MLR, Binary Logistic Regression, NLR, CNLR and Probit Analysis, to improve the accuracy of predictions | x | x
+Simulation modeling to build better models and assess risk when inputs are uncertain | x | x
+Customized tables to analyze and report on numerical and categorical data (not available in Statistics Standard Grad Pack Edition)| x | 	
+High-end charts, graphs and mapping capabilities to aid analysis and reporting | x | x
+Missing value analysis (with multiple imputation) to address issues of “dirty data” for more complete analysis and better decision-making | x | 	
+Advanced data preparation to identify anomalies and the other data that can skew results | x | 	
+Decision trees to better identify groups, discover relationships between groups, and predict future events | x | 	
+Forecasting to predict trends and build expert time-series forecasts quickly and easily | x | 	
+Categories to obtain clear insight into complex categorical and numeric data, as well as high dimensional data. | x | 	
+Power Analysis (SamplePower) | x | 	
+Bootstrapping to test the stability and reliability of predictive models | x | 	
+Advanced sampling assessment and testing procedures | x | 	
+Direct marketing and product decision-making procedures to identify best customers and the product attributes that appeal to them | x | 	
+
+

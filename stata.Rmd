@@ -1,0 +1,17 @@
+---
+title: "Stata - where to purchase, download and install"
+---
+
+## Stata
+
+http://www.stata.com/order/new/edu/gradplans/student-pricing/
+
+Stata/IC should be adequate for nearly all nursing research studies
+
+Produce Features                        | Stata/IC | Stata/SE | Stata/MP
+----------------------------------------|----------|----------|----------
+Annual License $	| $ 89	| $ 235	| $ 395 - $ 545
+Maximum number of variables	| 2,048	| 32,767	| 120,000
+Maximum number of observations	| 2.14 billion	| 2.14 billion	| Up to 20 billion
+Maximum number of independent variables	| 798	| 10,998	| 10,998
+Multicore Support	| 1-core	| 1-core	| 2-core or 4 core to 4+

@@ -1,0 +1,74 @@
+---
+title: "Homework 04"
+---
+
+## Homework 04 - due 10/18/2017
+
+For Homework 04, you will be using the HELP dataset, learn more at:
+
+* [https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/](https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/) &
+* [https://github.com/melindahiggins2000/N736Fall2017_HELPdataset](https://github.com/melindahiggins2000/N736Fall2017_HELPdataset)
+
+Complete the following:
+
+1. Perform a Simple Linear Regression for:
+    - OUTCOME variable `indtot`: "Inventory of Drug Use Consequences (InDue) total score - Baseline"
+    - PREDICTOR variable `mcs`: "SF36 Mental Composite Score - Baseline"
+    - decide if you want to transform either variable `indtot` or `mcs` and if so, what transformation you applied and why
+    
+2. Perform regression diagnostics:
+    - check the normality of the residuals (histogram and Q-Q plots)
+    - check for linearity - is there any systematic relationship between the residuals and the predicted (or fitted) values?
+    - homoscedasticity - plot of standardized residuals versus fitted values - this is known as a "Scale-Location" graph.
+    - check for outliers and data points with high leverage or influence: outliers are often identified with standardized residuals > 3 (or <-3) and influential observations are often identified using Cook's D
+    
+3. Provide a summary of the regression results.
+    - provide a **FIGURE** of the model, in this case a scatterplot with the fitted line overlaid and 95% confidence intervals if you can
+    - Make a **TABLE** presenting the fitted regression model (coefficients and tests of significance for those coefficients)
+    - describe the variance explained by the model (based on r2)
+    - describe the model itself based on the y-intercept and slope terms
+    - note any limitations or issues with the model fit or interpretation of the model
+    
+4. Perform a One-way ANOVA for:
+    - OUTCOME variable `indtot`: "Inventory of Drug Use Consequences (InDue) total score - Baseline"
+    - GROUP variable `racegrp`: "Racial Group of Respondent"
+    - I would suggest merging "other" and "hispanic" together and create a 3-group variable for race, since the "other" category is only about 6% of the sample.
+    - options - you can use either an ANOVA or GLM modeling approach
+    - if the GROUP variable is significant, also perform _post hoc_ tests - use some kind of pairwise error rate adjustment (i.e. bonferroni, sidak, Tukey's HSD, etc) - be sure to report which one you used and why
+    
+5. Perform model diagnostics:
+    - homoscedasticity - look at a test for equal variance (Levene's test or Bartlett's test).
+    - if this test of equal variances fails, you may want to report a modified F-test (e.g. Welch's test)
+
+6. Present a summary of the ANOVA results.
+    - Make a **FIGURE** of the group mean differences - either an error-bar plot or a series of boxplots one for each group to show the group differences in the outcome
+    - Make a **TABLE** presenting the ANOVA results
+    - describe the model results - was the GROUP (`racegrp`) significant?
+    - If GROUP is significant, what did the post hoc tests reveal?
+
+## Variables in HELP dataset to be used for Homework 04
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+helpdata <- readRDS("helpmkh.rds")
+library(tidyverse)
+sub1 <- helpdata %>%
+  select(racegrp,indtot,mcs)
+
+# create a function to get the label
+# label output from the attributes() function
+getlabel <- function(x) attributes(x)$label
+# getlabel(sub1$age)
+
+library(purrr)
+ldf <- purrr::map_df(sub1, getlabel) # this is a 1x15 tibble data.frame
+# t(ldf) # transpose for easier reading to a 15x1 single column list
+
+# using knitr to get a table of these
+# variable names for Rmarkdown
+library(knitr)
+knitr::kable(t(ldf),
+             col.names = c("Variable Label"),
+             caption="Use these variables from HELP dataset for Homework 04")
+
+```
+

@@ -1,0 +1,20 @@
+---
+title: "About the Instructor"
+---
+
+## Melinda Higgins <i class="fa fa-github fa-1x"></i> [Melinda's **Github** Repositories](https://github.com/melindahiggins2000)
+
+[Melinda Higgins, Ph.D.](http://nursing.emory.edu/faculty-and-research/directory/profile.html?id=980) holds dual degrees in Chemometrics and Statistics. She has over 24+ years research experience focused on pattern recognition, characterization and modeling of high-dimensional, multivariate datasets. She provides statistical and data management consultation for faculty and students at all stages of research. She also conducts workshops, lectures and courses on statistical methods and software (including SPSS, SAS, R and power/sample size packages PASS and G*Power).
+
+You can also get additional information about Melinda at [http://melindahiggins2000.github.io/web2/](http://melindahiggins2000.github.io/web2/)
+
+### Contact Information
+
+> Melinda Higgins, PhD <br>
+  Associate Professor <br>
+  Nell Hodgson Woodruff School of Nursing <br>
+  Office 260, office hours by appointment <br>
+  Office phone: 404-727-5180 <br>
+  Email: [mkhiggi@emory.edu](mailto: mkhiggi@emory.edu) <br>
+  
+  

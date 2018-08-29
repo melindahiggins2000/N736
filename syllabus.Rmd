@@ -1,0 +1,160 @@
+---
+title: "Syllabus"
+---
+
+## _**Syllabus - Updated 08/28/2018**_
+
+_Please note that some of the topics have been updated slightly in the "Class Calendar" section below._
+
+## COURSE NUMBER, TITLE:
+NRSG 736, Quantitative Analysis of Clinical Research Data
+
+## Prerequisites:			
+BIOS 500 and 501	
+
+## Credits:		
+2 credit hours (lecture 1 hr/week; computer lab 2 hr/week)
+
+## Course Time & Locations:		
+
+DAY         | TIME | LOCATION
+-----------:|:-----|:-----------------
+Mondays     | 11:00 – 11:50 am  | NRSG Room 110
+__Exception | Mon Aug 28, 2017  | NRSG Room 120
+__Exception | Mon Sept 18, 2017 | NRSG Room 120
+            |                   |
+Wednesdays  |  1:00-2:50 pm     | NRSG Room 108
+__Exception | Wed Aug 30, 2017  | NRSG Room 124
+__Exception | Wed Sept 20, 2017 | NRSG Room 124
+__Exception | Wed Oct 18, 2017  | NRSG Room 124
+
+## Dates:			
+
+* Classes begin August 23 – end December 5, 2017
+* Exam Period December 6 - 16, 2017
+
+## Course Objective:
+
+To build and expand upon the statistical theory and methods learned in BIOS 500 and 501 and improve the student’s statistical software experience and programming skills with SAS, SPSS or R to improve research scholarship and dissemination.
+
+## Course Description: 
+
+This course builds on the required statistical sequence and focuses on practical application of statistics including understanding clinical research questions. Analyzing data is the major emphasis of the course including examining if assumptions of the statistical analysis are being met and interpreting the findings.  Course assignments focus on using statistical software and computing resources to analyze data sets from actual clinical research studies and interpretation of output and literature.
+
+## General Outline:
+
+1. Computing Environment (SAS, SPSS, R, Other Supporting Software)
+2. Getting data into and out of statistical software (import, export features)
+3. Reproducible Research Principles (documentation, reporting, version control)
+4. Initial data assessments: univariate and bivariate methods, parametric and non-parametric
+5. Regression methods: linear, logistic and introduction to “generalized”
+6. Analysis of (co)Variance: univariate and multivariate, ANOVA, ANCOVA, MANOVA, MANCOVA 
+7. Longitudinal analysis: repeated measures with introduction to multi-level models (MLM)
+8. Assessment and testing of data & model assumptions (including missing data)
+9. Introduction to Factor Analysis, Reliability and Discriminant Analysis, and SEM (structural equation modeling) as time allows
+
+## Primary text (Highly Recommended):
+
+* Andy Field (Author); Discovering Statistics using IBM SPSS Statistics [Paperback: 952 pages], Publisher: SAGE Publications Ltd; Fourth Edition edition (January 24, 2013), Language: English, ISBN-10: 1446249182, ISBN-13: 978-1446249185 
+* Andy Field (Author); Discovering Statistics using R; First Edition [Paperback: 992 pages], Publisher: SAGE Publications Ltd; First Edition edition (April 5, 2012), Language: English, ISBN-10: 1446200469, ISBN-13: 978-1446200469
+* Andy Field (Author); Discovering Statistics using SAS; First Edition [Paperback: 752 pages], Publisher: SAGE Publications Ltd; First Edition edition (February 10, 2010), Language: English, ISBN-10: 1849200920, ISBN-13: 978-1849200929
+
+## Other texts that may be referenced during the semester:
+
+* Jacob Cohen, Patricia Cohen, Stephen G. West, Leona S. Aiken. “Applied Multiple Regression/Correlation Analysis for the Behavioral Sciences, 3rd Edition [Hardcover]”, Publisher: Routledge; Third edition (August 1, 2002), Language: English, ISBN-10: 0805822232 , ISBN-13: 978-0805822236 
+* Barbara G. Tabachnick and Linda S. Fidell , “Using Multivariate Statistics (6th Edition) [Hardcover]”, Publisher: Pearson; 6th edition (June 25, 2012), Language: English, ISBN-10: 0205849571, ISBN-13: 978-0205849574 {although the instructor may also draw from the 5th edition as well}
+* Publication Manual of the American Psychological Association, 6th Edition [Paperback], Publisher: American Psychological Association (APA); 6th edition (July 15, 2009), Language: English, ISBN-10: 1433805618, ISBN-13: 978-1433805615 
+* Muenchen, Robert A. (2011). R for SPSS and SAS Users. Springer Science: New York. Book website at http://r4stats.com/books/r4sas-spss/ 
+
+## Other texts recommended in previous versions of this course:
+
+* George, D. & Mallery, P. (2006). SPSS for Windows Step by Step: A Simple Guide and Reference 13.0 Update (6th ed.) Boston: Allyn and Bacon.
+* Portney, L. G. & Watkins, M.P. (2000). Foundations of clinical research: Applications to practice (2nd ed.) Upper Saddle River, NJ:  Prentice Hall Health.
+* Rosner, B. (2006). Fundalmentals of Biostatistics (6th ed.). Boston: Duxbury Press.
+* Kutner, M. H., C. J. Nachtsheim, J. Neter and W. Li (2005), Applied Linear Statistical Models (5th ed.). Chicago, IL: McGraw Hill/Richard D. Irwin, Inc.
+
+## Canvas:
+
+* Notes, Assignments and associated datasets and instructions will be posted on Emory Canvas (https://classes.emory.edu/) Grades will also be posted on Canvas
+* In addition to Canvas, the website built for N736 is https://melindahiggins2000.github.io/N736Fall2017/ When applicable, helpful videos, handouts and materials for each class lecture will be posted at this website
+* I will also occasionally post data, code, files and other materials using Github repositories – these can be access at my Github account https://github.com/melindahiggins2000 
+* When applicable, videos will be done of the class lectures which will be posted on this website for your referral after class or if you miss a class. In addition to posting links from the website listed above, https://melindahiggins2000.github.io/N736Fall2017/, you can also access the video on my YouTube channel at https://www.youtube.com/channel/UCbviURGGI2sqdIBmkkdzOzg 
+
+## Other Helpful Resources:
+
+* Emory Health Library http://health.library.emory.edu/what-we-do/computing/software 
+    - “The Specialized Software Lab located on the plaza level of the Woodruff Health Sciences Center Library provides access to various software packages.”
+    - “The Specialized Software Lab offers unlimited access to LYNDA.COM. Users can download practice files and watch video tutorials for more than 1,500 courses on various software programs.” Go to http://www.lynda.com/software/all for a complete list of programs on Lynda.” SIGNIN – use your organizations’ login for emory.edu – this will take you to the Emory login page where you can use your Emory credentials to get logged into Lynda.com
+    
+* Andy Field’s website links (somewhat unorthodox but useful with handouts and instructional videos):
+    - You Tube Channel https://www.youtube.com/user/ProfAndyField 
+    - http://www.statisticshell.com/html/cocytus.html
+    - http://www.statisticshell.com/html/limbo.html
+    - http://www.statisticshell.com/html/woodofsuicides.html
+    - http://www.statisticshell.com/html/malbowges.html
+    
+* Discovering Statistics Using SAS/SPSS/R Book website(s)
+    - R site https://studysites.sagepub.com/dsur/main.htm 
+    - SPSS site https://studysites.sagepub.com/field4e/main.htm 
+    - SAS site https://us.sagepub.com/en-us/nam/discovering-statistics-using-sas/book234095 
+    
+* Other SAS/SPSS/R Resources and Tutorials
+    - http://www.spsstools.net/spss.htm 
+    - http://www.ats.ucla.edu/stat/dae/ 
+    - https://stats.idre.ucla.edu/r/ 
+    - https://stats.idre.ucla.edu/sas/ 
+    - http://www.ats.ucla.edu/stat/spss/ 
+    - http://www.statmethods.net/  
+
+## Evaluations:
+
+* 7 Homework assignments		70% (10% each)
+* FINAL Project				30% (3 milestones: 5%, 5%, 20%)
+
+## Homework:
+
+Homework will be assigned every 1 to 2 weeks (total of 7 assignments). Detailed instructions will be provided with each homework. However, the goal of each assignment is two-fold: (1) to demonstrate that you know how to use your statistical software to execute the appropriate analyses requested in each assignment and (2) present your results in a professional manner equivalent to what is required for peer-reviewed research journal submissions.
+
+## FINAL Data Analysis Project (more details to come later in semester) [100 points]:
+
+1. Datasets will be provided to choose from or you can bring in an appropriate one of your choice, but the dataset must be approved by the instructor prior to executing your final analysis.
+2. [10 points] Develop a short proposal including a description of the dataset, how it was acquired, sampling design, hypotheses, and analysis plan(s)
+3. Analyze the data using your statistical software
+4. Write up “journal-ready” (APA formatting guidelines) sections for each of the following:
+    a. [5 points] (brief) Background of data and purpose of the planned analyses (i.e. your hypotheses)
+    b. [20 points] Methods section
+    c. [15 points] Results
+    d. [15 points] Tables and Figures as needed
+    e. [15 points] Discussion of results and conclusions drawn
+5. [20 points] Provide a copy of your dataset (with appropriate details on your labels and “codebook/formats”) and complete analysis syntax/code used to complete your analyses
+
+## Grading:
+
+I will strive to post grades for each assignment within a week of turning in your homework and project milestones. You are welcome to inquire about your grades at any time during the semester. The instructor will strive to provide continuous feedback throughout the semester relative to your projected final grade for the course.
+
+## Instructor provided help as needed/as requested: 
+
+Additional help outside of class time will be provided as requested (please send email to [mailto:melinda.higgins@emory.edu](mailto:melinda.higgins@emory.edu).
+
+## Class Calendar – Fall 2017
+
+Mon	| Wed	| Lessons | Topic                                        	| Homework DUE
+----|-----|--------:|-----------------------------------------------|--------------
+---	| 8/23	| --, 1 | Introductions; Course Overview; Getting Started with your stats software (getting setup, get access to your data, getting started); Using Github repositories	| 
+8/28| 8/30	| 2, 3  | Your statistical computing Environment, Data Import and Export (formats), Viewing, Variables, File handling, and Workflow; Data labels, value and missing data coding, other coding considerations, variable types (impact on modeling and graphics);Describing your data, evaluate missing	| H01 due 9/6
+---	| 9/6	| --, 4 |Creating new variables; recoding; data cleaning and data formats; summarizing your data	| 
+9/11 | 9/13	| 5, 6  | Data Wrangling (Part 1 & 2)	| H02 due 9/20
+9/18 | 9/20	| 7, 8  | Univariate and Bivariate Statistics (tests and graphics) - continued	| 
+9/25| 9/27	| 9, 10 | Introduction to Bootstrapping & Missing Data	| H03 & Milestone 1 due 10/4
+10/2 | 10/4	| 11, 12 | More than 2 groups: Introduction to One-way ANOVA and Simple Linear Regression; Building Models; and Introduction to regression/model diagnostics | 
+---	| 10/11	| --, 13 | Multivariate Linear Regression –  Understanding the impact of the Correlation Matrix (confounding, multicollinearity, sequential regression); reviewing multicollinearity and regression assumptions – model building and variable selection methods| H04 due 10/18
+10/16 | 10/18	| 14, 15 | Understanding Factors and Covariates & Evaluating “Theoretical” Covariates (in ANOVA and Regression) and Interaction Effects (Moderation and Testing Homogenity of Slopes assumptions) | 
+10/23 | 10/25	| 16, 17 | Sample Size, Power and Effect Sizes; More than 2: Introduction to Two-way/multivariate ANOVA - blending regression/ANOVA and the GLM (general linear model) | H05 due 11/1
+10/30	| 11/1	| 18, 19 | Begin Non-normal, Non-continuous outcomes (Logistic Regression), introduction to “Generalized” Linear Regression); brief intro to Poisson, Negative Binomial and other distributions that can be fit to your outcomes	| 
+11/6 | 11/8	| 20, 21 | Modeling Time/Longitudinal Data: 2 Time points (PRE-POST); Analysis of Covariance; Paired t-tests and Wilcoxon Rank Sum Test; Repeated Measures ANOVA (pros and cons), Data structure (restructuring); correlated time points; considerations of Missing Data; 	| H06 due 11/22
+11/13 | 11/15	| 22, 23 | More on longitudinal data modeling; intro to Multilevel “Mixed” Models (nested, clustered, correlated data structures)	| 
+11/20 | 11/22 (on own)	| 24, -- | Introduction to “Psychometrics” (Survey/Questionnaire) Instruments, Scoring, missing/skipped items, Factor Analysis, Reliability	| H07 due 12/4
+11/27 | 11/29	| 25, 26 | Brief Overview of Structural Equation Modeling: Mediation and Moderation; Correlated and Non-Normal Outcomes: MANOVA, Discriminant Analysis; Survival Analysis	| Milestone 2 due 12/4
+12/4 |	---	| --, -- | In class Help on Projects	| 
+. | . |	--, -- | FINAL PROJECT (Milestone #3) DUE NO LATER THAN 12/15/2015 | 	Final Project
+

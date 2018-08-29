@@ -9,11 +9,9 @@
 <meta name="generator" content="pandoc" />
 
 
-<meta name="author" content="Melinda Higgins" />
 
-<meta name="date" content="2018-08-27" />
 
-<title>test1</title>
+<title>Building Models</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -30,80 +28,6 @@
 <script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
 
 
-<style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; position: absolute; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; }
-pre.numberSource a.sourceLine:empty
-  { position: absolute; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
-    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    background-color: #ffffff;
-    color: #a0a0a0;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #a0a0a0;  padding-left: 4px; }
-div.sourceCode
-  { color: #1f1c1b; background-color: #ffffff; }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span. { color: #1f1c1b; } /* Normal */
-code span.al { color: #bf0303; background-color: #f7e6e6; font-weight: bold; } /* Alert */
-code span.an { color: #ca60ca; } /* Annotation */
-code span.at { color: #0057ae; } /* Attribute */
-code span.bn { color: #b08000; } /* BaseN */
-code span.bu { color: #644a9b; font-weight: bold; } /* BuiltIn */
-code span.cf { color: #1f1c1b; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #924c9d; } /* Char */
-code span.cn { color: #aa5500; } /* Constant */
-code span.co { color: #898887; } /* Comment */
-code span.cv { color: #0095ff; } /* CommentVar */
-code span.do { color: #607880; } /* Documentation */
-code span.dt { color: #0057ae; } /* DataType */
-code span.dv { color: #b08000; } /* DecVal */
-code span.er { color: #bf0303; text-decoration: underline; } /* Error */
-code span.ex { color: #0095ff; font-weight: bold; } /* Extension */
-code span.fl { color: #b08000; } /* Float */
-code span.fu { color: #644a9b; } /* Function */
-code span.im { color: #ff5500; } /* Import */
-code span.in { color: #b08000; } /* Information */
-code span.kw { color: #1f1c1b; font-weight: bold; } /* Keyword */
-code span.op { color: #1f1c1b; } /* Operator */
-code span.ot { color: #006e28; } /* Other */
-code span.pp { color: #006e28; } /* Preprocessor */
-code span.re { color: #0057ae; background-color: #e0e9f8; } /* RegionMarker */
-code span.sc { color: #3daee9; } /* SpecialChar */
-code span.ss { color: #ff5500; } /* SpecialString */
-code span.st { color: #bf0303; } /* String */
-code span.va { color: #0057ae; } /* Variable */
-code span.vs { color: #bf0303; } /* VerbatimString */
-code span.wa { color: #bf0303; } /* Warning */
-</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 
 
 <style type="text/css">
@@ -481,31 +405,59 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">test1</h1>
-<h4 class="author"><em>Melinda Higgins</em></h4>
-<h4 class="date"><em>August 27, 2018</em></h4>
+<h1 class="title toc-ignore">Building Models</h1>
 
 </div>
 
 
-<div id="r-markdown" class="section level2">
-<h2>R Markdown</h2>
-<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
-<p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">summary</span>(cars)</a></code></pre></div>
-<pre><code>##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00</code></pre>
+<div id="lesson-11-building-models---regression-anova-etc" class="section level2">
+<h2>Lesson 11: Building Models - Regression &amp; ANOVA, etc…</h2>
+<p>This lesson begins the discussion of building models - regression models (linear regression, logistic regression, generalized linear models) and ANOVA (one-way, two-way, mixed) and others…</p>
+<p>We will be referring to the PPT/PDF slides:</p>
+<ul>
+<li><code>ResearchRoundtableBuildRegressionModel_final14Nov08.ppt</code> <a href="https://github.com/melindahiggins2000/N736Fall2017/blob/master/ResearchRoundtableBuildRegressionModel_final14Nov08.ppt" class="uri">https://github.com/melindahiggins2000/N736Fall2017/blob/master/ResearchRoundtableBuildRegressionModel_final14Nov08.ppt</a></li>
+<li><code>ResearchRoundtableBuildRegressionModel_final14Nov08.pdf</code> <a href="https://github.com/melindahiggins2000/N736Fall2017/blob/master/ResearchRoundtableBuildRegressionModel_final14Nov08.pdf" class="uri">https://github.com/melindahiggins2000/N736Fall2017/blob/master/ResearchRoundtableBuildRegressionModel_final14Nov08.pdf</a></li>
+</ul>
 </div>
-<div id="including-plots" class="section level2">
-<h2>Including Plots</h2>
-<p>You can also embed plots, for example:</p>
-<p><img src="test1_files/figure-html/pressure-1.png" width="672" /></p>
-<p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot.</p>
+<div id="consider-steps-checklists-assumptions" class="section level2">
+<h2>Consider Steps, checklists, assumptions, …</h2>
+<ol style="list-style-type: decimal">
+<li><p>Assume that the terms are “linearly”&quot; related to the outcome - that relationship is linear (either directly or through transformations)</p></li>
+<li>The “slope” or “relationship” between X &amp; Y is assumed to be “constant” / “consistent” across all levels of X
+<ul>
+<li>same slope from 1-to-2 as from 200-to-201</li>
+<li>changing from “strongly disagree” - to - “disagree” is assumed to have the same impact on Y as going from “neutral” - to - “agree” [e.g. LiKert scale data] - useful case when looking at both “regression” and “ANOVA” type models can be useful
+<ul>
+<li>5 = “strongly agree”</li>
+<li>4 = “agree”</li>
+<li>3 = “neutral”</li>
+<li>2 = “disagree”</li>
+<li>1 = “strongly disagree”</li>
+</ul></li>
+<li>a “similar” type case for longitudinal data (“repeated measures”) where there are 3 sequential “time” points 0, 1, 2. Could treat “time” as continuous (slope over time), but:
+<ul>
+<li>0 = “baseline”</li>
+<li>1 = “immediately post-treatment” - usually greatest measure of treatment effect</li>
+<li>2 = “next follow-up post treatment” - typically no further intervention or treatment was received - this is really a measure of sustained effect, often not a measure of continued “dose” response</li>
+</ul></li>
+</ul></li>
+<li><p>We assume that Y was observed for all levels of X and that it was observed “evenly” (“balanced” experimental design) - “Anscome Quartet”</p></li>
+<li><p>The independent variables are independent of one another (no multicollinearity) – although some “mild/minor” correlation may be tolerated (VIF/TOL).</p></li>
+<li><p>Any case which has “missing” data on any of the IVs or DV will be eliminated from the analysis (listwise deletion).</p></li>
+<li><p>The intercept and all coefficients for the IVs are “Fixed.” <em>[“Random Coefficient Models” to be discussed later.]</em></p></li>
+<li><p>We assume that the variance of Y is constant across all levels of X (assumption of homogeneity of variance) - important for regression and ANOVA (e.g. “Levene’s test”)</p></li>
+<li><p>The “error” term is additive (not multiplicative)</p></li>
+<li>Assume “errors” (“residuals”) are normally distributed, identical and independent ~iid N(mu,sigma).
+<ul>
+<li>normality checks</li>
+<li>check to see if residuals are independent - trend by sequnce (collection order of data) - related to sampling independence (e.g. family members are not independent)</li>
+<li>see if residuals are related to other X’s either in or out of the model (plots of “e” vs X’s)</li>
+<li>see if residuals are related to Y (plot “e” vs Y)</li>
+<li>look for outliers</li>
+<li>look for influential values</li>
+</ul></li>
+</ol>
+<p><em>[next lesson - discussion of Type I, II and III sums of squares - differences in SPSS, SAS and R]</em></p>
 </div>
 
 <hr>

@@ -1,0 +1,116 @@
+name: "NRSG 736: Quantitative Analysis of Clinical Research Data"
+output_dir: "docs"
+navbar:
+  title: "N736"
+  left:
+    - text: "Home"
+      icon: fa-home
+      href: index.html
+    - text: "Lessons"
+      icon: fa-archive
+      menu:
+        - text: "1. Introduction"
+          href: intro.html
+        - text: "2. Intro Git, Github, Exploring Data"
+          href: lesson_20170828.html
+        - text: "3. Data Cleaning and Assessment - Part I"
+          href: lesson_20170830.html
+        - text: "4. Data Cleaning and Assessment - Part II"
+          href: lesson_20170906.html
+        - text: "5. Data Wrangling"
+          href: lesson_20170911.html
+        - text: "6. Data Wrangling - Part 2"
+          href: lesson_20170913.html
+        - text: "7. Univariate Descriptive Stats"
+          href: lesson_20170918.html
+        - text: "8. Bivariate Statistics"
+          href: lesson_20170920.html
+        - text: "9. Introduction to Bootstrapping"
+          href: lesson_20170925.html
+        - text: "10. Missing Data"
+          href: lesson_20170927.html
+        - text: "11. Building Models"
+          href: lesson_20171002.html
+        - text: "12. Simple Regression & ANOVA"
+          href: lesson_20171004.html
+        - text: "13. Multivariate Regression & Variable Selection"
+          href: lesson_20171011.html
+        - text: "14,15. Interactions, Moderators, Covariates, Factors"
+          href: lesson_2017101618.html
+        - text: "16. Power, Sample Size, Effect Size"
+          href: lesson_20171023.html
+        - text: "17. Analysis of Covariance (ANCOVA)"
+          href: lesson_20171025.html
+        - text: "18,19. Logistic Regression and Generalized Linear Regression"
+          href: lesson_20171030.html
+        - text: "20. Poisson and Negative Binomial Regression"
+          href: lesson_20171106.html
+        - text: "21. Dependent/Paired data and Repeated Measures"
+          href: lesson_20171108.html
+        - text: "22. Repeated Measures ANOVA"
+          href: lesson_20171113.html
+        - text: "23. RM-ANOVA and Multilevel (Mixed) Linear Models (MLM)"
+          href: lesson_20171115.html
+        - text: "24. Reliability and Factor Analysis"
+          href: lesson_20171120.html
+        - text: "25. Discriminant Analysis/MANOVA"
+          href: lesson_20171127.html
+        - text: "26. Mediators and SEM (structural equation modeling)"
+          href: lesson_20171129.html
+    - text: "Assignments"
+      icon: fa-file-text
+      menu:
+        - text: "Homework 01 - due 09/06/2017"
+          href: homework01.html
+        - text: "Homework 02 - due 09/20/2017"
+          href: homework02.html
+        - text: "Homework 03 - due 10/04/2017"
+          href: homework03.html
+        - text: "Project - Milestone 01 - due 10/04/2017"
+          href: project01.html
+        - text: "Homework 04 - due 10/18/2017"
+          href: homework04.html
+        - text: "Homework 05 - due 11/01/2017"
+          href: homework05.html
+        - text: "Homework 06 - due 11/22/2017"
+          href: homework06.html
+        - text: "Homework 07 - due 11/29/2017"
+          href: homework07.html
+        - text: "Project - Milestone 2 & 3 - due 12/4/2017 & 12/15/2017"
+          href: project.html
+    - text: "Files"
+      icon: fa-files-o
+      href: files.html
+    - text: "Instructor"
+      icon: fa-users
+      href: about.html
+    - text: "Syllabus"
+      icon: fa-file-text
+      menu:
+        - text: "Overview"
+          href: syllabus.html
+    - text: "Useful Stuff"
+      icon: fa-cog
+      menu:
+        - text: "SPSS Student Grad Pack"
+          href: spss.html
+        - text: "SAS University - FREE"
+          href: sas.html
+        - text: "R, RStudio, Git, Github - FREE"
+          href: help.html
+        - text: "Stata Student Versions"
+          href: stata.html
+  right:
+    - text: "Colophon"
+      icon: fa-info-circle
+      href: colophon.html
+output:
+  html_document:
+    theme: lumen
+    toc: true
+    toc_float: true
+    highlight: kate
+    include:
+      after_body: footer.html
+    css: [styles.css, font-awesome-4.7.0/css/font-awesome.css]
+    self_contained: yes

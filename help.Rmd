@@ -1,0 +1,61 @@
+---
+title: "Helpful Links and Refs for R, RStudio, Git & Github"
+---
+
+## R
+
+See YouTube Video for Installing R, RStudio and Rmarkdown at [https://youtu.be/MsV5dJ2reQ4](https://youtu.be/MsV5dJ2reQ4)
+
+* Download R from [https://cran.r-project.org/](https://cran.r-project.org/)
+* Download RStudio Desktop from [https://www.rstudio.com/products/rstudio/download/](https://www.rstudio.com/products/rstudio/download/)
+
+
+### Learning R
+
+* [Code School - TRYR](http://tryr.codeschool.com/)
+    + **DO THIS FIRST** Code School is an online learning environment. The **TRYR** site is completely free and is a great place to start learning r. You don't even need to have the R software installed! I highly encourage you to run through at least module 1 - but the more you complete, the better!
+* [Data Camp](https://www.datacamp.com/)
+    + DataCamp is another great place to start learning online. You need to create an account to get started. There are many FREE courses available on R.
+* [RStudio Online Learning](https://www.rstudio.com/resources/training/online-learning/)
+    + RStudio also provides a wealth of tutorials, articles, and examples exist to help you learn R and its extensions.
+* [UCLA Institute for Digital Research and Education (IDRE)](http://www.ats.ucla.edu/stat/r/)
+    + The IDRE by UCLA is an excellent source for help with many statistical software pages and analyses including R.
+* [SWIRL](http://swirlstats.com/)
+    + `swirl` is actually an R package you install from within R. `swirl` teaches you R programming and data science interactively, at your own pace, and right in the R console!
+* [Quick-R](http://www.statmethods.net/index.html)
+    + This is an excellent site for quick help and resources for using R and statistical analyses in general. The site is owned and maintained by Rob Kabacoff, who also authored the very good book "R in Action".
+* [R Tutorial - Kelly Black at UGA](http://www.cyclismo.org/tutorial/R/)
+
+### Getting Help with R
+
+The websites listed below all provide information on how to get help in R.
+
+* [Quick-R Help](http://www.statmethods.net/interface/help.html)
+* ["How to ask for R help" blog post](http://blog.revolutionanalytics.com/2014/01/how-to-ask-for-r-help.html)
+* [R-help mailing list](https://stat.ethz.ch/mailman/listinfo/r-help)
+* [R Section of StackOverflow](http://stackoverflow.com/questions/tagged/r)
+ 
+## RStudio
+
+On the main RStudio website [https://www.rstudio.com/products/rstudio/](https://www.rstudio.com/products/rstudio/) there is a short overview video. But also check out:
+
+* Feature overview [https://www.rstudio.com/products/rstudio/features/](https://www.rstudio.com/products/rstudio/features/)
+* Online learning for R, Rmarkdown, RStudio and more [https://www.rstudio.com/online-learning/](https://www.rstudio.com/online-learning/)
+* Webinars [https://www.rstudio.com/resources/webinars/](https://www.rstudio.com/resources/webinars/)
+* lots of helpful cheatsheets [https://www.rstudio.com/resources/cheatsheets/](https://www.rstudio.com/resources/cheatsheets/)
+
+## Github
+
+* Set up your own account at Gtithub [https://github.com/](https://github.com/)
+* Learn more at [https://guides.github.com/activities/hello-world/](https://guides.github.com/activities/hello-world/)
+* Jenny Bryan has a fantastic online book _"Happy Git and Github for the useR"_ about using Git and Github with R and RStudio at [http://happygitwithr.com/](http://happygitwithr.com/) - I HIGHLY reccommend looking through this book.
+
+## Git
+
+* Learn about downloading and installing Git at [http://happygitwithr.com/install-git.html](http://happygitwithr.com/install-git.html)
+* Git for Windows [https://git-for-windows.github.io/](https://git-for-windows.github.io/)
+* Git for Mac - in addition to Jenny Bryan's instructions at [http://happygitwithr.com/install-git.html#mac-os](http://happygitwithr.com/install-git.html#mac-os), you can also check out [https://git-scm.com/downloads](https://git-scm.com/downloads)
+* We will mainly use Git with the RStudio IDE to minimize the pain, but you can learn more about the Git commands at TryGit [https://try.github.io/](https://try.github.io/)
+
+
+

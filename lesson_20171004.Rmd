@@ -1,0 +1,11 @@
+---
+title: "Simple Regression and ANOVA (one-way)"
+---
+
+## Lesson 12: Simple Linear Regression & ANOVA
+
+See Github repository for lesson 12: [https://github.com/melindahiggins2000/N736Fall2017_lesson12](https://github.com/melindahiggins2000/N736Fall2017_lesson12)
+
+
+
+

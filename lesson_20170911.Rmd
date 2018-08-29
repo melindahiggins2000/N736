@@ -1,0 +1,11 @@
+---
+title: "Data Wrangling"
+---
+
+## Lesson 05: Data Wrangling
+
+1. See lesson posted at [https://melindahiggins2000.github.io/N736Fall2017_lesson05/lesson05_dataWrangling.html](https://melindahiggins2000.github.io/N736Fall2017_lesson05/lesson05_dataWrangling.html)
+
+2. Github repo for Lesson 05 at [https://github.com/melindahiggins2000/N736Fall2017_lesson05](https://github.com/melindahiggins2000/N736Fall2017_lesson05)
+
+
