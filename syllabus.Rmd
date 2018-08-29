@@ -19,19 +19,15 @@ BIOS 500 and 501
 
 DAY         | TIME | LOCATION
 -----------:|:-----|:-----------------
-Mondays     | 11:00 – 11:50 am  | NRSG Room 110
-__Exception | Mon Aug 28, 2017  | NRSG Room 120
-__Exception | Mon Sept 18, 2017 | NRSG Room 120
+Mondays     | 11:00 – 11:50 am  | NRSG Room 107
             |                   |
-Wednesdays  |  1:00-2:50 pm     | NRSG Room 108
-__Exception | Wed Aug 30, 2017  | NRSG Room 124
-__Exception | Wed Sept 20, 2017 | NRSG Room 124
-__Exception | Wed Oct 18, 2017  | NRSG Room 124
+Wednesdays  |  1:00-2:50 pm     | NRSG Room 107
+__Exception | Wed Sept 12, 2018 | NRSG Room 124
 
 ## Dates:			
 
-* Classes begin August 23 – end December 5, 2017
-* Exam Period December 6 - 16, 2017
+* Classes begin August 29 – end December 11, 2018
+* Exam Period December 12 - 22, 2018
 
 ## Course Objective:
 
@@ -76,9 +72,9 @@ This course builds on the required statistical sequence and focuses on practical
 ## Canvas:
 
 * Notes, Assignments and associated datasets and instructions will be posted on Emory Canvas (https://classes.emory.edu/) Grades will also be posted on Canvas
-* In addition to Canvas, the website built for N736 is https://melindahiggins2000.github.io/N736Fall2017/ When applicable, helpful videos, handouts and materials for each class lecture will be posted at this website
+* In addition to Canvas, the website built for N736 is https://melindahiggins2000.github.io/N736/index.html When applicable, helpful videos, handouts and materials for each class lecture will be posted at this website
 * I will also occasionally post data, code, files and other materials using Github repositories – these can be access at my Github account https://github.com/melindahiggins2000 
-* When applicable, videos will be done of the class lectures which will be posted on this website for your referral after class or if you miss a class. In addition to posting links from the website listed above, https://melindahiggins2000.github.io/N736Fall2017/, you can also access the video on my YouTube channel at https://www.youtube.com/channel/UCbviURGGI2sqdIBmkkdzOzg 
+* When applicable, videos will be done of the class lectures which will be posted on this website for your referral after class or if you miss a class. In addition to posting links from the website listed above, https://melindahiggins2000.github.io/N736/index.html, you can also access the video on my YouTube channel at https://www.youtube.com/channel/UCbviURGGI2sqdIBmkkdzOzg 
 
 ## Other Helpful Resources:
 
@@ -88,10 +84,7 @@ This course builds on the required statistical sequence and focuses on practical
     
 * Andy Field’s website links (somewhat unorthodox but useful with handouts and instructional videos):
     - You Tube Channel https://www.youtube.com/user/ProfAndyField 
-    - http://www.statisticshell.com/html/cocytus.html
-    - http://www.statisticshell.com/html/limbo.html
-    - http://www.statisticshell.com/html/woodofsuicides.html
-    - http://www.statisticshell.com/html/malbowges.html
+    - https://www.discoveringstatistics.com/ 
     
 * Discovering Statistics Using SAS/SPSS/R Book website(s)
     - R site https://studysites.sagepub.com/dsur/main.htm 
@@ -100,16 +93,16 @@ This course builds on the required statistical sequence and focuses on practical
     
 * Other SAS/SPSS/R Resources and Tutorials
     - http://www.spsstools.net/spss.htm 
-    - http://www.ats.ucla.edu/stat/dae/ 
+    - https://stats.idre.ucla.edu/other/dae/  
     - https://stats.idre.ucla.edu/r/ 
     - https://stats.idre.ucla.edu/sas/ 
-    - http://www.ats.ucla.edu/stat/spss/ 
+    - https://stats.idre.ucla.edu/spss/  
     - http://www.statmethods.net/  
 
 ## Evaluations:
 
-* 7 Homework assignments		70% (10% each)
-* FINAL Project				30% (3 milestones: 5%, 5%, 20%)
+* 7 Homework assignments  70% (10% each)
+* FINAL Project           30% (3 milestones: 5%, 5%, 20%)
 
 ## Homework:
 
@@ -136,25 +129,25 @@ I will strive to post grades for each assignment within a week of turning in you
 
 Additional help outside of class time will be provided as requested (please send email to [mailto:melinda.higgins@emory.edu](mailto:melinda.higgins@emory.edu).
 
-## Class Calendar – Fall 2017
+## Class Calendar – Fall 2018
 
 Mon	| Wed	| Lessons | Topic                                        	| Homework DUE
 ----|-----|--------:|-----------------------------------------------|--------------
----	| 8/23	| --, 1 | Introductions; Course Overview; Getting Started with your stats software (getting setup, get access to your data, getting started); Using Github repositories	| 
-8/28| 8/30	| 2, 3  | Your statistical computing Environment, Data Import and Export (formats), Viewing, Variables, File handling, and Workflow; Data labels, value and missing data coding, other coding considerations, variable types (impact on modeling and graphics);Describing your data, evaluate missing	| H01 due 9/6
----	| 9/6	| --, 4 |Creating new variables; recoding; data cleaning and data formats; summarizing your data	| 
-9/11 | 9/13	| 5, 6  | Data Wrangling (Part 1 & 2)	| H02 due 9/20
-9/18 | 9/20	| 7, 8  | Univariate and Bivariate Statistics (tests and graphics) - continued	| 
-9/25| 9/27	| 9, 10 | Introduction to Bootstrapping & Missing Data	| H03 & Milestone 1 due 10/4
-10/2 | 10/4	| 11, 12 | More than 2 groups: Introduction to One-way ANOVA and Simple Linear Regression; Building Models; and Introduction to regression/model diagnostics | 
----	| 10/11	| --, 13 | Multivariate Linear Regression –  Understanding the impact of the Correlation Matrix (confounding, multicollinearity, sequential regression); reviewing multicollinearity and regression assumptions – model building and variable selection methods| H04 due 10/18
-10/16 | 10/18	| 14, 15 | Understanding Factors and Covariates & Evaluating “Theoretical” Covariates (in ANOVA and Regression) and Interaction Effects (Moderation and Testing Homogenity of Slopes assumptions) | 
-10/23 | 10/25	| 16, 17 | Sample Size, Power and Effect Sizes; More than 2: Introduction to Two-way/multivariate ANOVA - blending regression/ANOVA and the GLM (general linear model) | H05 due 11/1
-10/30	| 11/1	| 18, 19 | Begin Non-normal, Non-continuous outcomes (Logistic Regression), introduction to “Generalized” Linear Regression); brief intro to Poisson, Negative Binomial and other distributions that can be fit to your outcomes	| 
-11/6 | 11/8	| 20, 21 | Modeling Time/Longitudinal Data: 2 Time points (PRE-POST); Analysis of Covariance; Paired t-tests and Wilcoxon Rank Sum Test; Repeated Measures ANOVA (pros and cons), Data structure (restructuring); correlated time points; considerations of Missing Data; 	| H06 due 11/22
-11/13 | 11/15	| 22, 23 | More on longitudinal data modeling; intro to Multilevel “Mixed” Models (nested, clustered, correlated data structures)	| 
-11/20 | 11/22 (on own)	| 24, -- | Introduction to “Psychometrics” (Survey/Questionnaire) Instruments, Scoring, missing/skipped items, Factor Analysis, Reliability	| H07 due 12/4
-11/27 | 11/29	| 25, 26 | Brief Overview of Structural Equation Modeling: Mediation and Moderation; Correlated and Non-Normal Outcomes: MANOVA, Discriminant Analysis; Survival Analysis	| Milestone 2 due 12/4
-12/4 |	---	| --, -- | In class Help on Projects	| 
-. | . |	--, -- | FINAL PROJECT (Milestone #3) DUE NO LATER THAN 12/15/2015 | 	Final Project
+---	| 8/29	| --, 1 | Introductions; Course Overview; Getting Started with your stats software (getting setup, get access to your data, getting started); Using Github repositories	| 
+--- | 9/5	| --, 2 | Your statistical computing Environment, Data Import and Export (formats), Viewing, Variables, File handling, and Workflow; Data labels, value and missing data coding, other coding considerations, variable types (impact on modeling and graphics);Describing your data, evaluate missing	| H01 due 9/12
+9/10	| 9/12	| 3, 4 |Creating new variables; recoding; data cleaning and data formats; summarizing your data	| 
+9/17 | 9/19	| 5, 6  | Data Wrangling (Part 1 & 2)	| H02 due 9/26
+9/24 | 9/26	| 7, 8  | Univariate and Bivariate Statistics (tests and graphics) - continued	| 
+10/1| 10/3	| 9, 10 | Introduction to Bootstrapping & Missing Data	| H03 & Milestone 1 due 10/10
+--- | 10/10	| --, 11 | More than 2 groups: Introduction to One-way ANOVA and Simple Linear Regression; Building Models; and Introduction to regression/model diagnostics | 
+10/15	| 10/17 (H.Wickham)	| 12, 13 | Multivariate Linear Regression –  Understanding the impact of the Correlation Matrix (confounding, multicollinearity, sequential regression); reviewing multicollinearity and regression assumptions – model building and variable selection methods| H04 due 10/24
+10/22 | 10/24	| 14, 15 | Understanding Factors and Covariates & Evaluating “Theoretical” Covariates (in ANOVA and Regression) and Interaction Effects (Moderation and Testing Homogenity of Slopes assumptions) | 
+10/29 | 10/31	| 16, 17 | Sample Size, Power and Effect Sizes; More than 2: Introduction to Two-way/multivariate ANOVA - blending regression/ANOVA and the GLM (general linear model) | H05 due 11/07
+11/05	| 11/07	| 18, 19 | Begin Non-normal, Non-continuous outcomes (Logistic Regression), introduction to “Generalized” Linear Regression); brief intro to Poisson, Negative Binomial and other distributions that can be fit to your outcomes	| 
+11/12 | 11/14	| 20, 21 | Modeling Time/Longitudinal Data: 2 Time points (PRE-POST); Analysis of Covariance; Paired t-tests and Wilcoxon Rank Sum Test; Repeated Measures ANOVA (pros and cons), Data structure (restructuring); correlated time points; considerations of Missing Data; 	| H06 due 11/26
+11/19 | 11/21 (on own)	| 22, -- | More on longitudinal data modeling; intro to Multilevel “Mixed” Models (nested, clustered, correlated data structures)	| 
+11/26 | 11/28 | 23, 24 | Introduction to “Psychometrics” (Survey/Questionnaire) Instruments, Scoring, missing/skipped items, Factor Analysis, Reliability	| H07 due 12/05
+12/3 | 12/05	| 25, 26 | Brief Overview of Structural Equation Modeling: Mediation and Moderation; Correlated and Non-Normal Outcomes: MANOVA, Discriminant Analysis; Survival Analysis	| Milestone 2 due 12/10
+12/10 |	---	| --, -- | In class Help on Projects	| 
+. | . |	--, -- | FINAL PROJECT (Milestone #3) DUE NO LATER THAN 12/17/2015 | 	Final Project
 
