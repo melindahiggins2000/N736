@@ -1,0 +1,12 @@
+---
+title: "Datacamp"
+---
+
+## Datacamp 
+
+![datacamp logo](datacampLogoHorizontal.png)
+
+As a student in this course, I have created a learners group for education at [https://www.datacamp.com/](https://www.datacamp.com/). You should all have received an invitation to join this group at Datacamp.
+
+While enrolled you will have access to the 160+ courses on R, Python and other programming courses for 6 months for free.
+

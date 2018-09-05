@@ -64,6 +64,8 @@ navbar:
     - text: "Useful Stuff"
       icon: fa-cog
       menu:
+        - text: "Datacamp"
+          href: datacamp.html
         - text: "SPSS Student Grad Pack"
           href: spss.html
         - text: "SAS University - FREE"
