@@ -11,7 +11,8 @@ navbar:
       menu:
         - text: "1. Introduction"
           href: intro.html
-        - text: "2. Intro Git, Github, Exploring Data"
+        - text: "2. Exploring Data, Cleaning, Assessment"
+          href: lesson_2_dataCleaning.html
         - text: "3. Data Cleaning and Assessment - Part I"
         - text: "4. Data Cleaning and Assessment - Part II"
         - text: "5. Data Wrangling"
