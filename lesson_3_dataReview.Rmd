@@ -46,9 +46,9 @@ title: "Data Review and Assessment"
     - symptom ratings 0-10, where 0=not present; 
     - 1-10 rates severity or frequency (really 2 questions in 1)
 * physical functioning: 
-    - 0's indicate cannot perform task, 
-    - >0 measures how well/how far/how much they did activity 
-    - (again 2 measures/questions in 1)
+    - `0`'s indicate cannot perform task, 
+    - `>0` measures how well/how far/how much they did activity 
+    - again 2 measures/questions in 1
 * adherence & knowledge tests 
     - lots of zero's, lots of 100's
     - will often have floor or ceiling effects
