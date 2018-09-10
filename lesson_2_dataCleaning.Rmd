@@ -10,6 +10,8 @@ In today's class we'll get started exploring and finding the issues and problems
 
 During class we will discuss and identify some of the issues with this dataset.
 
+**NOTES from Class Today** [homework1_notes.txt](homework1_notes.txt)
+
 ## Class discussion and video
 
 Today's class will be recorded and the video posted at the **EchoALP** link on Canvas for NRSG 736.

@@ -14,9 +14,17 @@ Download Links - click each link to download the file you want:
 * [XLSX Excel Datafile](https://github.com/melindahiggins2000/N736Testdataset/raw/master/Dataset_02.xlsx)
 * CODEBOOK for dataset [Codebook PDF](https://github.com/melindahiggins2000/N736Homework01/blob/master/Dataset_02_Codebook.pdf)
 
+**NOTES from Class 09/05/2018** [homework1_notes.txt](homework1_notes.txt)
+
 ## Other files that _might_ help you get started:
 
+* **UPDATED Dataset** - after the MANUAL fix to the "q2" column shifted up 1 row. You could/should start with this updated (fixed) dataset at
+    - [Dataset_02_fixq2.csv](https://github.com/melindahiggins2000/N736Homework01/raw/master/Dataset_02_fixq2.csv)
+    - [Dataset_02_fixq2.xls](https://github.com/melindahiggins2000/N736Homework01/raw/master/Dataset_02_fixq2.xls)
+    - [Dataset_02_fixq2.xlsx](https://github.com/melindahiggins2000/N736Homework01/raw/master/Dataset_02_fixq2.xlsx)
+
 * Getting started with the data in R [https://github.com/melindahiggins2000/N736Homework01/blob/master/hmwk01_getStarted.pdf](https://github.com/melindahiggins2000/N736Homework01/blob/master/hmwk01_getStarted.pdf)
+* R program to import the data
 * Getting started with the data in SAS [https://github.com/melindahiggins2000/N736Homework01/blob/master/hmwk01_getStarted.sas](https://github.com/melindahiggins2000/N736Homework01/blob/master/hmwk01_getStarted.sas)
 * other helpful datasets and files at [https://github.com/melindahiggins2000/N736Homework01](https://github.com/melindahiggins2000/N736Homework01)
 

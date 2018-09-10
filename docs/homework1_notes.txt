@@ -1,0 +1,12 @@
+notes on dataset
+
+1. some missing values - blank cells
+2. there are some 9's that should also be missing
+3. there is a 99 for Age - is this missing or an actual Age? unsure - would need to ask the project director - odds are this is missing since everyone else is approx middle aged
+4. gender - open text (column G) used different ways of capturing the same gender
+5. weightPRE there are 2 values < 100 (68 and 60) - why? odds are these are kg and not lbs
+6. height there is someone listed as 2.6 (row 19) - why? could be 6.2? 
+7. q2 - rows are displaced - need to shift up by 1
+8. q1 - there is an 11 - odds are this is a typo and should be a 1
+9. q4 - same thing there is a 40 - this is probably a 4
+10. q3,q4,q5 and all missing for IDs 28.30.32 - good to note that a section of these items are missing for these 3 subjects - possibly procedure error
