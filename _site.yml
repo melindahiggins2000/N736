@@ -13,8 +13,8 @@ navbar:
           href: intro.html
         - text: "2. Exploring Data, Cleaning, Assessment"
           href: lesson_2_dataCleaning.html
-        - text: "3. Data Cleaning and Assessment - Part I"
-        - text: "4. Data Cleaning and Assessment - Part II"
+        - text: "3. Data Review and Assessment"
+          href: lesson_3_dataReview.html
         - text: "5. Data Wrangling"
         - text: "6. Data Wrangling - Part 2"
         - text: "7. Univariate Descriptive Stats"

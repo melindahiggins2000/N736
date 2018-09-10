@@ -11,7 +11,7 @@
 
 
 
-<title>Helpful Links and Refs for R, RStudio, Git &amp; Github</title>
+<title>Data Review and Assessment</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -411,85 +411,146 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Helpful Links and Refs for R, RStudio, Git &amp; Github</h1>
+<h1 class="title toc-ignore">Data Review and Assessment</h1>
 
 </div>
 
 
-<div id="r" class="section level2">
-<h2>R</h2>
-<p>See YouTube Video for Installing R, RStudio and Rmarkdown at <a href="https://youtu.be/MsV5dJ2reQ4" class="uri">https://youtu.be/MsV5dJ2reQ4</a></p>
+<div id="data-review-and-quality-assessment" class="section level2">
+<h2>Data Review and Quality Assessment</h2>
+<div id="ranges-and-acceptable-numbers" class="section level3">
+<h3>Ranges and Acceptable Numbers</h3>
 <ul>
-<li>Download R from <a href="https://cran.r-project.org/" class="uri">https://cran.r-project.org/</a></li>
-<li>Download RStudio Desktop from <a href="https://www.rstudio.com/products/rstudio/download/" class="uri">https://www.rstudio.com/products/rstudio/download/</a></li>
-</ul>
-<div id="learning-r" class="section level3">
-<h3>Learning R</h3>
+<li>Always check to see if the range of the numeric values are reasonable and acceptable
 <ul>
-<li><a href="http://tryr.codeschool.com/">Code School - TRYR</a>
-<ul>
-<li><strong>DO THIS FIRST</strong> Code School is an online learning environment. The <strong>TRYR</strong> site is completely free and is a great place to start learning r. You don’t even need to have the R software installed! I highly encourage you to run through at least module 1 - but the more you complete, the better!</li>
+<li>10 point scale - are all 10 levels shown &amp; how are they coded: is the range 0-9 or perhaps 1-10? <em>[what are the advantages or disadvantages of starting at 0 versus starting at 1?]</em></li>
+<li>does the scale start at 0, if not why are there 0’s in your data?</li>
+<li><strong>ZEROS are IMPORTANT</strong> and should always be investigated and confirmed</li>
 </ul></li>
-<li><a href="https://www.datacamp.com/">Data Camp</a>
-<ul>
-<li>DataCamp is another great place to start learning online. You need to create an account to get started. There are many FREE courses available on R.</li>
-</ul></li>
-<li><a href="https://www.rstudio.com/resources/training/online-learning/">RStudio Online Learning</a>
-<ul>
-<li>RStudio also provides a wealth of tutorials, articles, and examples exist to help you learn R and its extensions.</li>
-</ul></li>
-<li><a href="http://www.ats.ucla.edu/stat/r/">UCLA Institute for Digital Research and Education (IDRE)</a>
-<ul>
-<li>The IDRE by UCLA is an excellent source for help with many statistical software pages and analyses including R.</li>
-</ul></li>
-<li><a href="http://swirlstats.com/">SWIRL</a>
-<ul>
-<li><code>swirl</code> is actually an R package you install from within R. <code>swirl</code> teaches you R programming and data science interactively, at your own pace, and right in the R console!</li>
-</ul></li>
-<li><a href="http://www.statmethods.net/index.html">Quick-R</a>
-<ul>
-<li>This is an excellent site for quick help and resources for using R and statistical analyses in general. The site is owned and maintained by Rob Kabacoff, who also authored the very good book “R in Action”.</li>
-</ul></li>
-<li><a href="http://www.cyclismo.org/tutorial/R/">R Tutorial - Kelly Black at UGA</a></li>
+<li>are there negative numbers, should there be?</li>
+<li>are the numbers evenly distributed, should they be?</li>
+<li>should these data be processed numerically or treated as ordinal/categorical levels (e.g. race, income levels, age groups) - does computing the mean make sense? (e.g. Likert scale)</li>
+<li>are some of the values outside of your expected scale due to missing data or other coding you need to adjust for prior to analysis</li>
 </ul>
 </div>
-<div id="getting-help-with-r" class="section level3">
-<h3>Getting Help with R</h3>
-<p>The websites listed below all provide information on how to get help in R.</p>
+<div id="missing-data" class="section level3">
+<h3>Missing data</h3>
 <ul>
-<li><a href="http://www.statmethods.net/interface/help.html">Quick-R Help</a></li>
-<li><a href="http://blog.revolutionanalytics.com/2014/01/how-to-ask-for-r-help.html">“How to ask for R help” blog post</a></li>
-<li><a href="https://stat.ethz.ch/mailman/listinfo/r-help">R-help mailing list</a></li>
-<li><a href="http://stackoverflow.com/questions/tagged/r">R Section of StackOverflow</a></li>
+<li>check that numeric codes for missing have been treated as such</li>
+<li>how much is missing per variable</li>
+<li>how much is missing per subject</li>
+<li>are there any obvious patterns
+<ul>
+<li>people at end of study - missingness correlated with time</li>
+<li>other predictors of missing - depressed subjects more likely not to complete study</li>
+<li>variables/measures with more missing - sensitive items people refuse to answer, income, risky sexual behaviors, …</li>
+</ul></li>
+<li>we’ll explore this more in future sessions</li>
+<li><strong>REMEMBER MISSING DATA IS DATA!</strong></li>
+<li>Pros and Cons of Missing Data imputation
+<ul>
+<li>bias in the presence of missing data</li>
+<li>bias introduced by imputation</li>
+</ul></li>
 </ul>
 </div>
-</div>
-<div id="rstudio" class="section level2">
-<h2>RStudio</h2>
-<p>On the main RStudio website <a href="https://www.rstudio.com/products/rstudio/" class="uri">https://www.rstudio.com/products/rstudio/</a> there is a short overview video. But also check out:</p>
+<div id="outliers-aka.-extreme-values" class="section level3">
+<h3>Outliers <em>(aka. “extreme” values)</em></h3>
 <ul>
-<li>Feature overview <a href="https://www.rstudio.com/products/rstudio/features/" class="uri">https://www.rstudio.com/products/rstudio/features/</a></li>
-<li>Online learning for R, Rmarkdown, RStudio and more <a href="https://www.rstudio.com/online-learning/" class="uri">https://www.rstudio.com/online-learning/</a></li>
-<li>Webinars <a href="https://www.rstudio.com/resources/webinars/" class="uri">https://www.rstudio.com/resources/webinars/</a></li>
-<li>lots of helpful cheatsheets <a href="https://www.rstudio.com/resources/cheatsheets/" class="uri">https://www.rstudio.com/resources/cheatsheets/</a></li>
+<li>assuming a normal distributions, outliers often defined as outside +/- 2 standard deviations or +/- 3 standard deviations</li>
+<li>but what if the distribution is NOT normal (income, biomarkers, count data)</li>
+<li>extreme values (LVAD heart transplant cost) - can almost be treated like missing imputation - non-parametrics - bootstrapping - robustized stats</li>
+<li>illogical values - possible typos</li>
 </ul>
 </div>
-<div id="github" class="section level2">
-<h2>Github</h2>
+<div id="odd-distributions-skewed-distributions" class="section level3">
+<h3>Odd Distributions; Skewed Distributions</h3>
 <ul>
-<li>Set up your own account at Gtithub <a href="https://github.com/" class="uri">https://github.com/</a></li>
-<li>Learn more at <a href="https://guides.github.com/activities/hello-world/" class="uri">https://guides.github.com/activities/hello-world/</a></li>
-<li>Jenny Bryan has a fantastic online book <em>“Happy Git and Github for the useR”</em> about using Git and Github with R and RStudio at <a href="http://happygitwithr.com/" class="uri">http://happygitwithr.com/</a> - I HIGHLY reccommend looking through this book.</li>
+<li>mathematical transformations
+<ul>
+<li>square root, log, others (useful for right skewed tailed distributions)</li>
+<li>left skewed distributions use inverse (REF - value)</li>
+<li>approaches used to help “noramlize” the distribution</li>
+<li>pros and cons - nice distribution but complicated to interpret</li>
+</ul></li>
+<li>distributions expected based on response patterns
+<ul>
+<li>possible bimodal or other clusters defined by other factors like gender, race, etc.</li>
+</ul></li>
+<li>zero-inflated or hurdle type questions
+<ul>
+<li>symptom ratings 0-10, where 0=not present;</li>
+<li>1-10 rates severity or frequency (really 2 questions in 1)</li>
+</ul></li>
+<li>physical functioning:
+<ul>
+<li>0’s indicate cannot perform task,</li>
+<li><blockquote>
+<p>0 measures how well/how far/how much they did activity</p>
+</blockquote></li>
+<li>(again 2 measures/questions in 1)</li>
+</ul></li>
+<li>adherence &amp; knowledge tests
+<ul>
+<li>lots of zero’s, lots of 100’s</li>
+<li>will often have floor or ceiling effects</li>
+<li>could be bimodal</li>
+</ul></li>
+<li>counts (“poisson” distribution)
+<ul>
+<li>number of children;</li>
+<li>days in hospital (length of stay);</li>
+<li>even Age</li>
+</ul></li>
+<li>time to event (“gamma” related distributions)
+<ul>
+<li>time to disease onset or health event (heart attack, stroke)</li>
+<li>time to readmit</li>
+</ul></li>
 </ul>
 </div>
-<div id="git" class="section level2">
-<h2>Git</h2>
+<div id="illogical-values" class="section level3">
+<h3>Illogical Values</h3>
 <ul>
-<li>Learn about downloading and installing Git at <a href="http://happygitwithr.com/install-git.html" class="uri">http://happygitwithr.com/install-git.html</a></li>
-<li>Git for Windows <a href="https://git-for-windows.github.io/" class="uri">https://git-for-windows.github.io/</a></li>
-<li>Git for Mac - in addition to Jenny Bryan’s instructions at <a href="http://happygitwithr.com/install-git.html#mac-os" class="uri">http://happygitwithr.com/install-git.html#mac-os</a>, you can also check out <a href="https://git-scm.com/downloads" class="uri">https://git-scm.com/downloads</a></li>
-<li>We will mainly use Git with the RStudio IDE to minimize the pain, but you can learn more about the Git commands at TryGit <a href="https://try.github.io/" class="uri">https://try.github.io/</a></li>
+<li>look for typos (2.6 versus 6.2; 11 instead of 1; 40 instead of 4)</li>
+<li>unit mismatches (inches instead of cm; feet vs meters; kg versus pounds)</li>
+<li>extreme values (biomarkers, costs, income)</li>
+<li>income
+<ul>
+<li>often yearly instead of monthly</li>
+<li>be sure common reporting units are used</li>
+</ul></li>
+<li>negative numbers used to indicate missing</li>
+<li>really high values to indicate missing</li>
+<li>negative values or odd value occurring after performing date math (i.e. date of event happening before date of birth; date of discharge before date of admission; length of stay in years and you’re expecting days - possible year typo (often occurring in Dec-Jan change over))</li>
 </ul>
+</div>
+<div id="mixing-of-text-strings-and-numeric" class="section level3">
+<h3>mixing of text (strings) and numeric</h3>
+<ul>
+<li>always check to see if the data came in as a number if that what’s you’re expecting
+<ul>
+<li>especially if the imported data accidently had text somewhere in the column</li>
+<li>for example, labs often report low values below detection as &lt;x.xx or high values above the saturation limit of the detector as &gt;x.xx. Look at for these leading (or following) text characters before or after the number of interest</li>
+</ul></li>
+<li>in SPSS switch from string to numeric - watch for value deletion insertion of missing values</li>
+<li>in R check for auto-creation of “factors”</li>
+</ul>
+</div>
+<div id="incorrect-dates---data-type-in-general" class="section level3">
+<h3>incorrect dates - &amp; data type in general</h3>
+<ul>
+<li>often dates come in as text due to inconsistent formatting</li>
+<li>watch for Excel conversion from date format to number format (the articles we discussed in previous lecture)</li>
+<li>issues moving between Excel and other software
+<ul>
+<li>the “REFERENCE” data van vary between software, i.s. number of days since January 1, 1900, see <a href="https://support.office.com/en-us/article/datevalue-function-df8b07d4-7761-4a93-bc33-b7471bbff252" class="uri">https://support.office.com/en-us/article/datevalue-function-df8b07d4-7761-4a93-bc33-b7471bbff252</a></li>
+<li>and this is different from EXCEL for MAC, see <a href="https://support.microsoft.com/en-us/help/214330/differences-between-the-1900-and-the-1904-date-system-in-excel" class="uri">https://support.microsoft.com/en-us/help/214330/differences-between-the-1900-and-the-1904-date-system-in-excel</a></li>
+<li>SAS stored dates as the number of days since 01/01/1960, see <a href="https://communities.sas.com/t5/SAS-Enterprise-Guide/Date-conversion-to-integer/td-p/157849" class="uri">https://communities.sas.com/t5/SAS-Enterprise-Guide/Date-conversion-to-integer/td-p/157849</a> and <a href="https://communities.sas.com/t5/SAS-Procedures/How-to-convert-date-to-numeric/td-p/295961" class="uri">https://communities.sas.com/t5/SAS-Procedures/How-to-convert-date-to-numeric/td-p/295961</a></li>
+<li>and SPSS stores dates as the number of days since the beginning of the Gregorian calendar October 14, 1582, see this article discussing converting dates between SAS, Stata and SPSS, <a href="https://stats.idre.ucla.edu/spss/code/converting-sas-or-stata-dates-to-spss-dates/" class="uri">https://stats.idre.ucla.edu/spss/code/converting-sas-or-stata-dates-to-spss-dates/</a></li>
+</ul></li>
+</ul>
+</div>
 </div>
 
 <hr>

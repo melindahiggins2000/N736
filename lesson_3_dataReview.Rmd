@@ -1,0 +1,90 @@
+---
+title: "Data Review and Assessment"
+---
+
+## Data Review and Quality Assessment
+
+### Ranges and Acceptable Numbers
+* Always check to see if the range of the numeric values are reasonable and acceptable
+    - 10 point scale - are all 10 levels shown & how are they coded: is the range 0-9 or perhaps 1-10? _[what are the advantages or disadvantages of starting at 0 versus starting at 1?]_
+    - does the scale start at 0, if not why are there 0's in your data?
+    - **ZEROS are IMPORTANT** and should always be investigated and confirmed
+* are there negative numbers, should there be? 
+* are the numbers evenly distributed, should they be?
+* should these data be processed numerically or treated as ordinal/categorical levels (e.g. race, income levels, age groups) - does computing the mean make sense? (e.g. Likert scale)
+* are some of the values outside of your expected scale due to missing data or other coding you need to adjust for prior to analysis
+
+### Missing data
+* check that numeric codes for missing have been treated as such
+* how much is missing per variable
+* how much is missing per subject
+* are there any obvious patterns
+    - people at end of study - missingness correlated with time
+    - other predictors of missing - depressed subjects more likely not to complete study
+    - variables/measures with more missing - sensitive items people refuse to answer, income, risky sexual behaviors, ...
+* we'll explore this more in future sessions
+* **REMEMBER MISSING DATA IS DATA!**
+* Pros and Cons of Missing Data imputation
+    - bias in the presence of missing data
+    - bias introduced by imputation
+
+### Outliers _(aka. "extreme" values)_
+* assuming a normal distributions, outliers often defined as outside +/- 2 standard deviations or +/- 3 standard deviations
+* but what if the distribution is NOT normal (income, biomarkers, count data)
+* extreme values (LVAD heart transplant cost) - can almost be treated like missing imputation - non-parametrics - bootstrapping - robustized stats
+* illogical values - possible typos
+
+### Odd Distributions; Skewed Distributions
+* mathematical transformations
+    - square root, log, others (useful for right skewed tailed distributions)
+    - left skewed distributions use inverse (REF - value)
+    - approaches used to help "noramlize" the distribution
+    - pros and cons - nice distribution but complicated to interpret
+* distributions expected based on response patterns
+    - possible bimodal or other clusters defined by other factors like gender, race, etc.
+* zero-inflated or hurdle type questions
+    - symptom ratings 0-10, where 0=not present; 
+    - 1-10 rates severity or frequency (really 2 questions in 1)
+* physical functioning: 
+    - 0's indicate cannot perform task, 
+    - >0 measures how well/how far/how much they did activity 
+    - (again 2 measures/questions in 1)
+* adherence & knowledge tests 
+    - lots of zero's, lots of 100's
+    - will often have floor or ceiling effects
+    - could be bimodal
+* counts ("poisson" distribution)
+    - number of children; 
+    - days in hospital (length of stay); 
+    - even Age
+* time to event ("gamma" related distributions)
+    - time to disease onset or health event (heart attack, stroke)
+    - time to readmit
+
+### Illogical Values
+* look for typos (2.6 versus 6.2; 11 instead of 1; 40 instead of 4)
+* unit mismatches (inches instead of cm; feet vs meters; kg versus pounds)
+* extreme values (biomarkers, costs, income)
+* income 
+    - often yearly instead of monthly
+    - be sure common reporting units are used
+* negative numbers used to indicate missing
+* really high values to indicate missing
+* negative values or odd value occurring after performing date math (i.e. date of event happening before date of birth; date of discharge before date of admission; length of stay in years and you're expecting days - possible year typo (often occurring in Dec-Jan change over))
+
+### mixing of text (strings) and numeric
+* always check to see if the data came in as a number if that what's you're expecting
+    - especially if the imported data accidently had text somewhere in the column
+    - for example, labs often report low values below detection as <x.xx or high values above the saturation limit of the detector as >x.xx. Look at for these leading (or following) text characters before or after the number of interest
+* in SPSS switch from string to numeric - watch for value deletion insertion of missing values
+* in R check for auto-creation of "factors"
+
+### incorrect dates - & data type in general
+* often dates come in as text due to inconsistent formatting
+* watch for Excel conversion from date format to number format (the articles we discussed in previous lecture)
+* issues moving between Excel and other software 
+    - the "REFERENCE" data van vary between software, i.s. number of days since January 1, 1900, see [https://support.office.com/en-us/article/datevalue-function-df8b07d4-7761-4a93-bc33-b7471bbff252](https://support.office.com/en-us/article/datevalue-function-df8b07d4-7761-4a93-bc33-b7471bbff252)
+    - and this is different from EXCEL for MAC, see [https://support.microsoft.com/en-us/help/214330/differences-between-the-1900-and-the-1904-date-system-in-excel](https://support.microsoft.com/en-us/help/214330/differences-between-the-1900-and-the-1904-date-system-in-excel)
+    - SAS stored dates as the number of days since 01/01/1960, see [https://communities.sas.com/t5/SAS-Enterprise-Guide/Date-conversion-to-integer/td-p/157849](https://communities.sas.com/t5/SAS-Enterprise-Guide/Date-conversion-to-integer/td-p/157849) and [https://communities.sas.com/t5/SAS-Procedures/How-to-convert-date-to-numeric/td-p/295961](https://communities.sas.com/t5/SAS-Procedures/How-to-convert-date-to-numeric/td-p/295961)
+    - and SPSS stores dates as the number of days since the beginning of the Gregorian calendar October 14, 1582, see this article discussing converting dates between SAS, Stata and SPSS,  [https://stats.idre.ucla.edu/spss/code/converting-sas-or-stata-dates-to-spss-dates/](https://stats.idre.ucla.edu/spss/code/converting-sas-or-stata-dates-to-spss-dates/)
+
