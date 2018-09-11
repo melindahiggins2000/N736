@@ -2,11 +2,11 @@
 title: "Homework 02"
 ---
 
-## Homework 02 - due 09/20/2017
+## Homework 02 - due 09/26/2018
 
-For Homework 02 – due Wed 9/20/2017 at 11:59pm EST upload your files in Canvas. _[The details below are also now posted in Canvas for the Homework 02 assignment.]_
+For Homework 02 – due Wed 9/26/2018 at 11:59pm EST upload your files in Canvas. _[The details below are also now posted in Canvas for the Homework 02 assignment.]_
 
-1. Find a journal article in your field and on a topic you’re interested in that has been published recently (in the last 5 years).
+1. Find a journal article in your field and on a topic you’re interested in that has been published recently (ideally published within the last 5 years).
 
 2. Read through the paper along with any supporting files (supplementary documents, code, data, etc).
 
