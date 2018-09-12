@@ -1,0 +1,21 @@
+---
+title: "Data Wrangling"
+---
+
+## Data Wrangling
+
+* see notes at [https://melindahiggins2000.github.io/N736Fall2017_lesson05/lesson05_dataWrangling.html](https://melindahiggins2000.github.io/N736Fall2017_lesson05/lesson05_dataWrangling.html)
+
+* for this lesson, download the following 3 datasets:
+    - [dataA.csv](https://github.com/melindahiggins2000/N736Fall2017_lesson05/raw/master/dataA.csv)
+    - [dataB.csv](https://github.com/melindahiggins2000/N736Fall2017_lesson05/raw/master/dataB.csv)
+    - [dataC.csv](https://github.com/melindahiggins2000/N736Fall2017_lesson05/raw/master/dataC.csv)
+    
+* here are some code examples
+    - [`R` code](https://github.com/melindahiggins2000/N736Fall2017_lesson05/raw/master/lesson05_Rcode.R)
+    - [`SAS` code](https://github.com/melindahiggins2000/N736Fall2017_lesson05/raw/master/lesson05_SAScode.sas)
+    
+* If we have time, we might also look at:
+    - some more data wrangling and formatting issues [https://melindahiggins2000.github.io/N736Fall2017_lesson06/lesson06_dataWranglingPt2.html](https://melindahiggins2000.github.io/N736Fall2017_lesson06/lesson06_dataWranglingPt2.html)
+    - [`R` code](https://github.com/melindahiggins2000/N736Fall2017_lesson06/raw/master/lesson06_Rcode.R)
+    - [`SAS` code](https://github.com/melindahiggins2000/N736Fall2017_lesson06/raw/master/lesson06_SAScode.sas)
