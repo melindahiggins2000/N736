@@ -6,7 +6,7 @@ title: "Descriptive (Univariate) Stats"
 
 This lesson focuses on describing and summarizing your data well. We will cover not only descriptive statistics appropriate for each type of variable, but other considerations such as sample size and missing data which may vary for each measurement and variable in your dataset. Try to think of everything you want to cover in the methods section of your manuscript (project report) and the beginning of your results section. The stats computed here will be used to help layout "Table 1" which typically summarizes the data used in all analyses within the manuscript/report.
 
-1. See WORD Document on "Getting Started with Data and Stats"
+1. See WORD Document on "Getting Started with Data and Stats" [https://github.com/melindahiggins2000/N736/raw/master/Stats_getStarted_dataSession01_09132018.docx](https://github.com/melindahiggins2000/N736/raw/master/Stats_getStarted_dataSession01_09132018.docx)
 
 2. See lesson posted at [https://melindahiggins2000.github.io/N736Fall2017_lesson07/lesson07_univStats.html](https://melindahiggins2000.github.io/N736Fall2017_lesson07/lesson07_univStats.html)
 
