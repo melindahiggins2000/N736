@@ -18,4 +18,23 @@ For today and several future lessons, we'll be working with the HELP (Health Eva
     
 * See details on the HELP dataset at [https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/](https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/)
 
+## Download the HELP Dataset
 
+* Data in `SAS7BDAT` format [https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/helpmkh.sas7bdat](https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/helpmkh.sas7bdat)
+* Formats in `SAS7BDAT` format [https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/formats.sas7bcat](https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/formats.sas7bcat)
+* `SPSS` format [https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/helpmkh.sav](https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/helpmkh.sav)
+* `.RData` format [https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/helpmkh.RData](https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/helpmkh.RData)
+
+
+## Getting Started with HELP Dataset
+
+* `R` Scripts
+    - R Script to load HELP dataset [https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/loadHELPdata.R](https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/loadHELPdata.R)
+    - R Script for beginning univariate analyses [https://github.com/melindahiggins2000/N736Fall2017_lesson07/raw/master/lesson07_Rcode.R](https://github.com/melindahiggins2000/N736Fall2017_lesson07/raw/master/lesson07_Rcode.R)
+    
+* `SAS` Programs
+    - SAS Programs to load HELP dataset - formatting [https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/helpmkh.sas](https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/helpmkh.sas)
+    - SAS Programs to load HELP dataset - load [https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/loadHELPdata.sas](https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/loadHELPdata.sas)
+    - SAS Program to begin univariate analyses [https://github.com/melindahiggins2000/N736Fall2017_lesson07/raw/master/lesson07_SAScode.sas](https://github.com/melindahiggins2000/N736Fall2017_lesson07/raw/master/lesson07_SAScode.sas)
+    
+    
