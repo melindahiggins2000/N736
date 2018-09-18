@@ -19,6 +19,8 @@ navbar:
           href: lesson_4_dataWrangling.html
         - text: "5. Univariate Descriptive Stats"
           href: lesson_5_descriptiveStats
+        - text: "6. Hands-on Descriptive Stats"
+          href: lesson_6_descriptiveStats_pt2
         - text: "8. Bivariate Statistics"
         - text: "9. Introduction to Bootstrapping"
         - text: "10. Missing Data"

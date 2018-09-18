@@ -1,0 +1,71 @@
+---
+title: "Univariate Descriptive Stats"
+author: "Melinda K. Higgins, PhD."
+date: "September 18, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(message = FALSE)
+knitr::opts_chunk$set(warning = FALSE)
+```
+
+## Univariate Descriptive Stats
+
+This lesson focuses on describing and summarizing your data well. We will cover not only descriptive statistics appropriate for each type of variable, but other considerations such as sample size and missing data which may vary for each measurement and variable in your dataset. Try to think of everything you want to cover in the methods section of your manuscript (project report) and the beginning of your results section. The stats computed here will be used to help layout "Table 1" which typically summarizes the data used in all analyses within the manuscript/report.
+
+## The HELP Dataset 
+
+For today and several future lessons, we'll be working with the HELP (Health Evaluation and Linkage to Primary Care) dataset. You can learn more about this dataset at [https://nhorton.people.amherst.edu/sasr2/datasets.php](https://nhorton.people.amherst.edu/sasr2/datasets.php). This dataset is also used by Ken Kleinman and Nicholas J. Horton for their book "SAS and R: Data Management, Statistical Analysis, and Graphics" _(which is another helpful textbook)_.
+
+* You can download the datasets from their website [https://nhorton.people.amherst.edu/sasr2/datasets.php](https://nhorton.people.amherst.edu/sasr2/datasets.php)
+* The original publication is referenced at [https://www.ncbi.nlm.nih.gov/pubmed/12653820?ordinalpos=17&itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_DefaultReportPanel.Pubmed_RVDocSum](https://www.ncbi.nlm.nih.gov/pubmed/12653820?ordinalpos=17&itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_DefaultReportPanel.Pubmed_RVDocSum)
+* The HELP documentation (including all forms/surveys/instruments used) are located at [https://nhorton.people.amherst.edu/help/](https://nhorton.people.amherst.edu/help/)
+    - specifically the details on all BASELINE assessments are located in this PDF [https://nhorton.people.amherst.edu/help/HELP-baseline.pdf](https://nhorton.people.amherst.edu/help/HELP-baseline.pdf)
+    - with the follow up time points described in the PDF [https://nhorton.people.amherst.edu/help/HELP-followup.pdf](https://nhorton.people.amherst.edu/help/HELP-followup.pdf)
+    
+## Descriptive Stats
+
+When putting together your descriptive statistical summaries, it is usually easiest to summarize continuous/numerical data separately from categorical/ordinal data types.
+
+### Continuous/Numerical Data
+
+* Sample Size
+* Amount of Missing Data
+* Range [min, max]
+* Measure of Centrality - mean (parametric) or median (non-parametric)
+* Measure of Variance (spread) - standard deviation (parametric), IQR [25th, 75th] or other percentiles [2.5th, 97.5th] (non-parametric)
+* Distribution - normal, symmetric, skewed, multi-modal, etc.
+    - use to help assess parametric or non-parametric stats
+    - determine if/how to mathematical transform the data (sqrt, LN, 1/x, others...)
+    - determine if/how to (perhaps) recode 
+        - median split, 
+        - zero-inflated (or ceiling-inflated) splits, 
+        - ordinalize the data (break into thirds, quartiles, etc)
+        - break along clinical cutpoints
+        
+### Categorical/Ordinal Data
+
+* Sample Size
+* Amount of Missing Data
+* Range [min, max]
+* Review frequency tables (counts and percents)
+    - look for "distribution" of large % or low % (>95%, <5%)
+    - look for counts (expected counts < 5) 
+    - may want to collapse categories together
+    - might consider dichotomizing the categories
+        - married/partnered vs single/divorced/widowed
+        - caucasian vs minorities
+        - heterosexual vs homosexual/bisexual/transexual/other
+    - may want to drop categories 
+        - _(does it make sense to merge 2 subjects without disease but with a rare condition with other subjects without the disease) - or if this rare condition may be important to the outcome(s) of interest and is under-represented, these 2 subjects might be removed until a future study can investigate this issue further_
+        
+## R Code
+
+Run examples shown in `lesson07_Rcode.R`
+
+## SAS Code
+
+Run examples shown in `lesson07_SAScode.sas`
+

@@ -9,9 +9,11 @@
 <meta name="generator" content="pandoc" />
 
 
+<meta name="author" content="Melinda K. Higgins, PhD." />
 
+<meta name="date" content="2017-09-18" />
 
-<title>Homework 05</title>
+<title>Univariate Descriptive Stats</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -419,71 +421,87 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Homework 05</h1>
+<h1 class="title toc-ignore">Univariate Descriptive Stats</h1>
+<h4 class="author"><em>Melinda K. Higgins, PhD.</em></h4>
+<h4 class="date"><em>September 18, 2017</em></h4>
 
 </div>
 
 
-<div id="homework-05---due-11012017" class="section level2">
-<h2>Homework 05 - due 11/01/2017</h2>
-<div id="ancova---analysis-of-covariance-exercise" class="section level3">
-<h3>ANCOVA - Analysis of Covariance Exercise</h3>
-<p>For Homework 05, you will be using the HELP dataset, learn more at:</p>
+<div id="univariate-descriptive-stats" class="section level2">
+<h2>Univariate Descriptive Stats</h2>
+<p>This lesson focuses on describing and summarizing your data well. We will cover not only descriptive statistics appropriate for each type of variable, but other considerations such as sample size and missing data which may vary for each measurement and variable in your dataset. Try to think of everything you want to cover in the methods section of your manuscript (project report) and the beginning of your results section. The stats computed here will be used to help layout “Table 1” which typically summarizes the data used in all analyses within the manuscript/report.</p>
+</div>
+<div id="the-help-dataset" class="section level2">
+<h2>The HELP Dataset</h2>
+<p>For today and several future lessons, we’ll be working with the HELP (Health Evaluation and Linkage to Primary Care) dataset. You can learn more about this dataset at <a href="https://nhorton.people.amherst.edu/sasr2/datasets.php" class="uri">https://nhorton.people.amherst.edu/sasr2/datasets.php</a>. This dataset is also used by Ken Kleinman and Nicholas J. Horton for their book “SAS and R: Data Management, Statistical Analysis, and Graphics” <em>(which is another helpful textbook)</em>.</p>
 <ul>
-<li><a href="https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/" class="uri">https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/</a> &amp;</li>
-<li><a href="https://github.com/melindahiggins2000/N736Fall2017_HELPdataset" class="uri">https://github.com/melindahiggins2000/N736Fall2017_HELPdataset</a></li>
-</ul>
-<p>Complete the following for these variables:</p>
+<li>You can download the datasets from their website <a href="https://nhorton.people.amherst.edu/sasr2/datasets.php" class="uri">https://nhorton.people.amherst.edu/sasr2/datasets.php</a></li>
+<li>The original publication is referenced at <a href="https://www.ncbi.nlm.nih.gov/pubmed/12653820?ordinalpos=17&amp;itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_DefaultReportPanel.Pubmed_RVDocSum" class="uri">https://www.ncbi.nlm.nih.gov/pubmed/12653820?ordinalpos=17&amp;itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_DefaultReportPanel.Pubmed_RVDocSum</a></li>
+<li>The HELP documentation (including all forms/surveys/instruments used) are located at <a href="https://nhorton.people.amherst.edu/help/" class="uri">https://nhorton.people.amherst.edu/help/</a>
 <ul>
-<li>OUTCOME VARIABLE (Y): <code>indtot</code></li>
-<li>INDEPENDENT VARIABLE (X): <code>mcs</code></li>
-<li>COVARIATES (other X’s): <code>pss_fr</code> or <code>female</code></li>
-</ul>
-<ol style="list-style-type: decimal">
-<li>Run ANCOVA <em>(using a regression, ANOVA, or GLM approach - your choice)</em> for the association between the SF36 Mental Component Score (<code>mcs</code>) and Inventory of Drug Use (<code>indtot</code>) adjusting for perceived social support from friends (<code>pss_fr</code>). Remember to:
-<ul>
-<li>mean center continuous variables before computing the interaction term <em>(i.e. create a new mean-centered variable by subtracting the mean)</em></li>
-<li>check for the assumption of homogenity of variance <em>(i.e. is the interaction term significant?)</em></li>
-<li>make an “effects plot” plot of the interaction between <code>mcs</code> and <code>pss_fr</code></li>
+<li>specifically the details on all BASELINE assessments are located in this PDF <a href="https://nhorton.people.amherst.edu/help/HELP-baseline.pdf" class="uri">https://nhorton.people.amherst.edu/help/HELP-baseline.pdf</a></li>
+<li>with the follow up time points described in the PDF <a href="https://nhorton.people.amherst.edu/help/HELP-followup.pdf" class="uri">https://nhorton.people.amherst.edu/help/HELP-followup.pdf</a></li>
 </ul></li>
-<li>Run ANCOVA <em>(using a regression, ANOVA, or GLM approach - your choice)</em> for the association between the SF36 Mental Component Score (<code>mcs</code>) and Inventory of Drug Use (<code>indtot</code>) adjusting for gender (<code>female</code>). Remember to:
+</ul>
+</div>
+<div id="descriptive-stats" class="section level2">
+<h2>Descriptive Stats</h2>
+<p>When putting together your descriptive statistical summaries, it is usually easiest to summarize continuous/numerical data separately from categorical/ordinal data types.</p>
+<div id="continuousnumerical-data" class="section level3">
+<h3>Continuous/Numerical Data</h3>
 <ul>
-<li>mean center continuous variables before computing the interaction term <em>(i.e. create a new mean-centered variable by subtracting the mean)</em></li>
-<li>check for the assumption of homogenity of variance <em>(i.e. is the interaction term significant?)</em></li>
-<li>make an “effects plot” plot of the interaction between <code>mcs</code> and <code>female</code></li>
+<li>Sample Size</li>
+<li>Amount of Missing Data</li>
+<li>Range [min, max]</li>
+<li>Measure of Centrality - mean (parametric) or median (non-parametric)</li>
+<li>Measure of Variance (spread) - standard deviation (parametric), IQR [25th, 75th] or other percentiles [2.5th, 97.5th] (non-parametric)</li>
+<li>Distribution - normal, symmetric, skewed, multi-modal, etc.
+<ul>
+<li>use to help assess parametric or non-parametric stats</li>
+<li>determine if/how to mathematical transform the data (sqrt, LN, 1/x, others…)</li>
+<li>determine if/how to (perhaps) recode
+<ul>
+<li>median split,</li>
+<li>zero-inflated (or ceiling-inflated) splits,</li>
+<li>ordinalize the data (break into thirds, quartiles, etc)</li>
+<li>break along clinical cutpoints</li>
 </ul></li>
-</ol>
+</ul></li>
+</ul>
+</div>
+<div id="categoricalordinal-data" class="section level3">
+<h3>Categorical/Ordinal Data</h3>
+<ul>
+<li>Sample Size</li>
+<li>Amount of Missing Data</li>
+<li>Range [min, max]</li>
+<li>Review frequency tables (counts and percents)
+<ul>
+<li>look for “distribution” of large % or low % (&gt;95%, &lt;5%)</li>
+<li>look for counts (expected counts &lt; 5)</li>
+<li>may want to collapse categories together</li>
+<li>might consider dichotomizing the categories
+<ul>
+<li>married/partnered vs single/divorced/widowed</li>
+<li>caucasian vs minorities</li>
+<li>heterosexual vs homosexual/bisexual/transexual/other</li>
+</ul></li>
+<li>may want to drop categories
+<ul>
+<li><em>(does it make sense to merge 2 subjects without disease but with a rare condition with other subjects without the disease) - or if this rare condition may be important to the outcome(s) of interest and is under-represented, these 2 subjects might be removed until a future study can investigate this issue further</em></li>
+</ul></li>
+</ul></li>
+</ul>
 </div>
 </div>
-<div id="variables-in-help-dataset-to-be-used-for-homework-05" class="section level2">
-<h2>Variables in HELP dataset to be used for Homework 05</h2>
-<table>
-<caption>Use these variables from HELP dataset for Homework 05</caption>
-<thead>
-<tr class="header">
-<th></th>
-<th align="left">Variable Label</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>indtot</td>
-<td align="left">Inventory of Drug Use Consequences (InDue) total score - Baseline</td>
-</tr>
-<tr class="even">
-<td>mcs</td>
-<td align="left">SF36 Mental Composite Score - Baseline</td>
-</tr>
-<tr class="odd">
-<td>pss_fr</td>
-<td align="left">Perceived Social Support - friends</td>
-</tr>
-<tr class="even">
-<td>female</td>
-<td align="left">Gender of respondent</td>
-</tr>
-</tbody>
-</table>
+<div id="r-code" class="section level2">
+<h2>R Code</h2>
+<p>Run examples shown in <code>lesson07_Rcode.R</code></p>
+</div>
+<div id="sas-code" class="section level2">
+<h2>SAS Code</h2>
+<p>Run examples shown in <code>lesson07_SAScode.sas</code></p>
 </div>
 
 <hr>
