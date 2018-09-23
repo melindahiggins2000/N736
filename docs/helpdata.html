@@ -11,7 +11,7 @@
 
 
 
-<title>Descriptive (Univariate) Stats</title>
+<title>H.E.L.P. Dataset</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -426,19 +426,49 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Descriptive (Univariate) Stats</h1>
+<h1 class="title toc-ignore">H.E.L.P. Dataset</h1>
 
 </div>
 
 
-<div id="lesson-05-descriptive-univariate-stats" class="section level2">
-<h2>Lesson 05: Descriptive (Univariate) Stats</h2>
-<p>This lesson focuses on describing and summarizing your data well. We will cover not only descriptive statistics appropriate for each type of variable, but other considerations such as sample size and missing data which may vary for each measurement and variable in your dataset. Try to think of everything you want to cover in the methods section of your manuscript (project report) and the beginning of your results section. The stats computed here will be used to help layout “Table 1” which typically summarizes the data used in all analyses within the manuscript/report.</p>
-<ol style="list-style-type: decimal">
-<li><p>See WORD Document on “Getting Started with Data and Stats” <a href="https://github.com/melindahiggins2000/N736/raw/master/Stats_getStarted_dataSession01_09132018.docx" class="uri">https://github.com/melindahiggins2000/N736/raw/master/Stats_getStarted_dataSession01_09132018.docx</a></p></li>
-<li><p>See lesson posted at <a href="https://melindahiggins2000.github.io/N736Fall2017_lesson07/lesson07_univStats.html" class="uri">https://melindahiggins2000.github.io/N736Fall2017_lesson07/lesson07_univStats.html</a></p></li>
-<li><p><em>[optional]</em> Github repo for Lesson 07 at <a href="https://github.com/melindahiggins2000/N736Fall2017_lesson07" class="uri">https://github.com/melindahiggins2000/N736Fall2017_lesson07</a></p></li>
-</ol>
+<div id="h.e.l.p.-dataset" class="section level2">
+<h2>H.E.L.P. Dataset</h2>
+<p>For much of this course, we’ll be working with the HELP (Health Evaluation and Linkage to Primary Care) dataset. You can learn more about this dataset at <a href="https://nhorton.people.amherst.edu/sasr2/datasets.php" class="uri">https://nhorton.people.amherst.edu/sasr2/datasets.php</a>. This dataset is also used by Ken Kleinman and Nicholas J. Horton for their book “SAS and R: Data Management, Statistical Analysis, and Graphics” <em>(which is another helpful textbook)</em>.</p>
+<ul>
+<li>You can download the datasets from their website <a href="https://nhorton.people.amherst.edu/sasr2/datasets.php" class="uri">https://nhorton.people.amherst.edu/sasr2/datasets.php</a></li>
+<li>The original publication is referenced at <a href="https://www.ncbi.nlm.nih.gov/pubmed/12653820?ordinalpos=17&amp;itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_DefaultReportPanel.Pubmed_RVDocSum" class="uri">https://www.ncbi.nlm.nih.gov/pubmed/12653820?ordinalpos=17&amp;itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_DefaultReportPanel.Pubmed_RVDocSum</a></li>
+<li>The HELP documentation (including all forms/surveys/instruments used) are located at <a href="https://nhorton.people.amherst.edu/help/" class="uri">https://nhorton.people.amherst.edu/help/</a>
+<ul>
+<li>specifically the details on all BASELINE assessments are located in this PDF <a href="https://nhorton.people.amherst.edu/help/HELP-baseline.pdf" class="uri">https://nhorton.people.amherst.edu/help/HELP-baseline.pdf</a></li>
+<li>with the follow up time points described in the PDF <a href="https://nhorton.people.amherst.edu/help/HELP-followup.pdf" class="uri">https://nhorton.people.amherst.edu/help/HELP-followup.pdf</a></li>
+</ul></li>
+<li>See details on the HELP dataset at <a href="https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/" class="uri">https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/</a></li>
+</ul>
+</div>
+<div id="download-the-help-dataset" class="section level2">
+<h2>Download the HELP Dataset</h2>
+<ul>
+<li>Data in <code>SAS7BDAT</code> format <a href="https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/helpmkh.sas7bdat" class="uri">https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/helpmkh.sas7bdat</a></li>
+<li>Formats in <code>SAS7BDAT</code> format <a href="https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/formats.sas7bcat" class="uri">https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/formats.sas7bcat</a></li>
+<li><code>SPSS</code> format <a href="https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/helpmkh.sav" class="uri">https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/helpmkh.sav</a></li>
+<li><code>.RData</code> format <a href="https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/helpmkh.RData" class="uri">https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/helpmkh.RData</a></li>
+</ul>
+</div>
+<div id="getting-started-with-help-dataset" class="section level2">
+<h2>Getting Started with HELP Dataset</h2>
+<ul>
+<li><code>R</code> Scripts
+<ul>
+<li>R Script to load HELP dataset <a href="https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/loadHELPdata.R" class="uri">https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/loadHELPdata.R</a></li>
+<li>R Script for beginning univariate analyses <a href="https://github.com/melindahiggins2000/N736Fall2017_lesson07/raw/master/lesson07_Rcode.R" class="uri">https://github.com/melindahiggins2000/N736Fall2017_lesson07/raw/master/lesson07_Rcode.R</a></li>
+</ul></li>
+<li><code>SAS</code> Programs
+<ul>
+<li>SAS Programs to load HELP dataset - formatting <a href="https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/helpmkh.sas" class="uri">https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/helpmkh.sas</a></li>
+<li>SAS Programs to load HELP dataset - load <a href="https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/loadHELPdata.sas" class="uri">https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/loadHELPdata.sas</a></li>
+<li>SAS Program to begin univariate analyses <a href="https://github.com/melindahiggins2000/N736Fall2017_lesson07/raw/master/lesson07_SAScode.sas" class="uri">https://github.com/melindahiggins2000/N736Fall2017_lesson07/raw/master/lesson07_SAScode.sas</a></li>
+</ul></li>
+</ul>
 </div>
 
 <hr>

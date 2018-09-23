@@ -54,9 +54,9 @@ navbar:
         - text: "Homework 07 - due 12/05/2018"
         - text: "Project - Milestone 2 & 3 - due 12/10/2018 & 12/17/2018"
           href: project.html
-    - text: "Files"
-      icon: fa-files-o
-      href: files.html
+    - text: "H.E.L.P. Dataset"
+      icon: fa-database
+      href: helpdata.html
     - text: "Instructor"
       icon: fa-users
       href: about.html
@@ -78,6 +78,9 @@ navbar:
           href: help.html
         - text: "Stata Student Versions"
           href: stata.html
+    - text: "Other Files"
+      icon: fa-files-o
+      href: files.html
   right:
     - text: "Colophon"
       icon: fa-info-circle
