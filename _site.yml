@@ -18,9 +18,11 @@ navbar:
         - text: "4. Data Wrangling"
           href: lesson_4_dataWrangling.html
         - text: "5. Univariate Descriptive Stats"
-          href: lesson_5_descriptiveStats
+          href: lesson_5_descriptiveStats.html
         - text: "6. Hands-on Descriptive Stats"
-          href: lesson_6_descriptiveStats_pt2
+          href: lesson_6_descriptiveStats_pt2.html
+        - text: "7. Homework 01 Answer Key Review"
+          href: lesson_7_Homework01_AnswerKeyReview.html
         - text: "8. Bivariate Statistics"
         - text: "9. Introduction to Bootstrapping"
         - text: "10. Missing Data"
@@ -46,6 +48,7 @@ navbar:
         - text: "Homework 02 - due 09/26/2018"
           href: homework02.html
         - text: "Homework 03 - due 10/10/2018"
+          href: homework03.html
         - text: "Project - Milestone 01 - due 10/10/2018"
           href: project01.html
         - text: "Homework 04 - due 10/24/2018"

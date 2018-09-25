@@ -2,7 +2,7 @@
 title: "Homework 03"
 ---
 
-## Homework 03 - due 10/04/2017
+## Homework 03 - due 10/10/2017
 
 Using the HELP dataset:
 
