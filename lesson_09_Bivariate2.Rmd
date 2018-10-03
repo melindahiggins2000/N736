@@ -1,12 +1,10 @@
 ---
-title: "Lesson 09: Bivariate Stats"
+title: "Lesson 10. Bootstrapping and Missing Data"
 ---
 
-## Lesson 09: Bivariate Stats
+## Lesson 10. Bootstrapping and Missing Data
 
-Today's lesson focused on running bivariate statistics to continue filling out "Table 1" which has univariate statistics for each variable of interest and getting the statistics and associates comparison tests of these variables on 2 groups.
-
-This lesson will also help you complete Homework 3 [https://melindahiggins2000.github.io/N736/homework03.html](https://melindahiggins2000.github.io/N736/homework03.html).
+Today's lesson will cover bootstrapping and (if time) missing data assessment. Lesson notes posted at: [https://melindahiggins2000.github.io/N736Fall2017_lesson09/lesson09_boot.html](https://melindahiggins2000.github.io/N736Fall2017_lesson09/lesson09_boot.html)
 
 ## Data and Code for Today
 
@@ -14,20 +12,29 @@ Here are direct links for the data and code files for today's lesson: _(right cl
 
 ### `SPSS`
 
-* HELP Dataset - SPSS format [https://github.com/melindahiggins2000/N736_lesson_Bivariate/raw/master/helpmkh.sav](https://github.com/melindahiggins2000/N736_lesson_Bivariate/raw/master/helpmkh.sav)
-* SPSS SYNTAX - Code for Bivariate Statistics [https://github.com/melindahiggins2000/N736_lesson_Bivariate/raw/master/HELP_bivariate_SPSSsyntax.sps](https://github.com/melindahiggins2000/N736_lesson_Bivariate/raw/master/HELP_bivariate_SPSSsyntax.sps)
+* HELP Dataset - SPSS format [https://github.com/melindahiggins2000/N736Fall2017_lesson09/raw/master/helpmkh.sav](https://github.com/melindahiggins2000/N736Fall2017_lesson09/raw/master/helpmkh.sav)
+* SPSS SYNTAX - Code for Bootstrapping [https://github.com/melindahiggins2000/N736Fall2017_lesson09/raw/master/Syntax_bootmean_spss.sps](https://github.com/melindahiggins2000/N736Fall2017_lesson09/raw/master/Syntax_bootmean_spss.sps)
     
 ### `SAS`
 
-* HELP Dataset - SAS Format [https://github.com/melindahiggins2000/N736_lesson_Bivariate/raw/master/helpmkh.sas7bdat](https://github.com/melindahiggins2000/N736_lesson_Bivariate/raw/master/helpmkh.sas7bdat)
-* HELP Dataset Formats - SAS Format [https://github.com/melindahiggins2000/N736_lesson_Bivariate/raw/master/formats.sas7bcat](https://github.com/melindahiggins2000/N736_lesson_Bivariate/raw/master/formats.sas7bcat)
-* SAS Program - Code for Bivariate Statistics [https://github.com/melindahiggins2000/N736_lesson_Bivariate/raw/master/HELP_bivariate_SAScode.sas](https://github.com/melindahiggins2000/N736_lesson_Bivariate/raw/master/HELP_bivariate_SAScode.sas)
+* HELP Dataset - SAS Format [https://github.com/melindahiggins2000/N736Fall2017_lesson09/raw/master/helpmkh.sas7bdat](https://github.com/melindahiggins2000/N736Fall2017_lesson09/raw/master/helpmkh.sas7bdat)
+* HELP Dataset Formats - SAS Format [https://github.com/melindahiggins2000/N736Fall2017_lesson09/raw/master/formats.sas7bcat](https://github.com/melindahiggins2000/N736Fall2017_lesson09/raw/master/formats.sas7bcat)
+* SAS Program - Code for Bootstrapping [https://github.com/melindahiggins2000/N736Fall2017_lesson09/raw/master/lesson09_SAScode.sas](https://github.com/melindahiggins2000/N736Fall2017_lesson09/raw/master/lesson09_SAScode.sas)
+* SAS Program - `jackboot.sas` - needed to run macro in lesson code [https://github.com/melindahiggins2000/N736Fall2017_lesson09/raw/master/jackboot.sas](https://github.com/melindahiggins2000/N736Fall2017_lesson09/raw/master/jackboot.sas)
     
 ### `R`
 
-* HELP Dataset - R Format [https://github.com/melindahiggins2000/N736_lesson_Bivariate/raw/master/help.Rdata](https://github.com/melindahiggins2000/N736_lesson_Bivariate/raw/master/help.Rdata)
-* R Program - Code for Univariate Statistics [https://github.com/melindahiggins2000/N736_lesson_Bivariate/raw/master/HELP_bivariate_Rcode.R](https://github.com/melindahiggins2000/N736_lesson_Bivariate/raw/master/HELP_bivariate_Rcode.R)
+* HELP Dataset - R Format [https://github.com/melindahiggins2000/N736Fall2017_lesson09/raw/master/help.Rdata](https://github.com/melindahiggins2000/N736Fall2017_lesson09/raw/master/help.Rdata)
+* R Program - Code for Bootstrapping [https://github.com/melindahiggins2000/N736Fall2017_lesson09/raw/master/lesson09_Rcode.R](https://github.com/melindahiggins2000/N736Fall2017_lesson09/raw/master/lesson09_Rcode.R)
 
 ## Github repository with data, code and files
 
-The Github repository for today's lesson with all of the data, code and files, is located at [https://github.com/melindahiggins2000/N736_lesson_Bivariate](https://github.com/melindahiggins2000/N736_lesson_Bivariate). You can click on "CLONE or DOWNLOAD" to download the entire set of files in the repository as a ZIP file to your hard drvie. Remember to UNZIP (EXTRACT) these compressed files BEFORE you try running or editing the code. Alternatively, if you have your own Github account, feel free to "fork" a copy of my repository to your own account.
+The Github repository for today's lesson on bootstrapping with all of the data, code and files, are located at:
+* [https://github.com/melindahiggins2000/N736_lesson_Bivariate](https://github.com/melindahiggins2000/N736_lesson_Bivariate).
+
+You can click on "CLONE or DOWNLOAD" to download the entire set of files in the repository as a ZIP file to your hard drvie. Remember to UNZIP (EXTRACT) these compressed files BEFORE you try running or editing the code. Alternatively, if you have your own Github account, feel free to "fork" a copy of my repository to your own account.
+
+## MISSING Data - Notes
+
+See the lesson on Missing Data at [https://melindahiggins2000.github.io/N736Fall2017_lesson10/lesson10_missing.html](https://melindahiggins2000.github.io/N736Fall2017_lesson10/lesson10_missing.html)
+

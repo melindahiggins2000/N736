@@ -27,7 +27,8 @@ navbar:
           href: lesson_08_UnivariateBivariate.html
         - text: "9. Bivariate Stats"
           href: lesson_09_Bivariate2.html
-        - text: "9. Introduction to Bootstrapping"
+        - text: "10. Bootstrapping and Missing Data"
+          href: lesson_10_bootmiss.html
         - text: "10. Missing Data"
         - text: "11. Building Models"
         - text: "12. Simple Regression & ANOVA"
