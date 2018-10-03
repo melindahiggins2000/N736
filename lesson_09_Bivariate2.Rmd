@@ -1,0 +1,33 @@
+---
+title: "Lesson 09: Bivariate Stats"
+---
+
+## Lesson 09: Bivariate Stats
+
+Today's lesson focused on running bivariate statistics to continue filling out "Table 1" which has univariate statistics for each variable of interest and getting the statistics and associates comparison tests of these variables on 2 groups.
+
+This lesson will also help you complete Homework 3 [https://melindahiggins2000.github.io/N736/homework03.html](https://melindahiggins2000.github.io/N736/homework03.html).
+
+## Data and Code for Today
+
+Here are direct links for the data and code files for today's lesson: _(right click these to save the file to your computer)_
+
+### `SPSS`
+
+* HELP Dataset - SPSS format [https://github.com/melindahiggins2000/N736_lesson_Bivariate/raw/master/helpmkh.sav](https://github.com/melindahiggins2000/N736_lesson_Bivariate/raw/master/helpmkh.sav)
+* SPSS SYNTAX - Code for Bivariate Statistics [https://github.com/melindahiggins2000/N736_lesson_Bivariate/raw/master/HELP_bivariate_SPSSsyntax.sps](https://github.com/melindahiggins2000/N736_lesson_Bivariate/raw/master/HELP_bivariate_SPSSsyntax.sps)
+    
+### `SAS`
+
+* HELP Dataset - SAS Format [https://github.com/melindahiggins2000/N736_lesson_Bivariate/raw/master/helpmkh.sas7bdat](https://github.com/melindahiggins2000/N736_lesson_Bivariate/raw/master/helpmkh.sas7bdat)
+* HELP Dataset Formats - SAS Format [https://github.com/melindahiggins2000/N736_lesson_Bivariate/raw/master/formats.sas7bcat](https://github.com/melindahiggins2000/N736_lesson_Bivariate/raw/master/formats.sas7bcat)
+* SAS Program - Code for Bivariate Statistics [https://github.com/melindahiggins2000/N736_lesson_Bivariate/raw/master/HELP_bivariate_SAScode.sas](https://github.com/melindahiggins2000/N736_lesson_Bivariate/raw/master/HELP_bivariate_SAScode.sas)
+    
+### `R`
+
+* HELP Dataset - R Format [https://github.com/melindahiggins2000/N736_lesson_Bivariate/raw/master/help.Rdata](https://github.com/melindahiggins2000/N736_lesson_Bivariate/raw/master/help.Rdata)
+* R Program - Code for Univariate Statistics [https://github.com/melindahiggins2000/N736_lesson_Bivariate/raw/master/HELP_bivariate_Rcode.R](https://github.com/melindahiggins2000/N736_lesson_Bivariate/raw/master/HELP_bivariate_Rcode.R)
+
+## Github repository with data, code and files
+
+The Github repository for today's lesson with all of the data, code and files, is located at [https://github.com/melindahiggins2000/N736_lesson_Bivariate](https://github.com/melindahiggins2000/N736_lesson_Bivariate). You can click on "CLONE or DOWNLOAD" to download the entire set of files in the repository as a ZIP file to your hard drvie. Remember to UNZIP (EXTRACT) these compressed files BEFORE you try running or editing the code. Alternatively, if you have your own Github account, feel free to "fork" a copy of my repository to your own account.

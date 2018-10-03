@@ -11,7 +11,7 @@
 
 
 
-<title>Homework 03</title>
+<title>Hands-on Exercise - Descriptive (Univariate) Stats</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -436,107 +436,53 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Homework 03</h1>
+<h1 class="title toc-ignore">Hands-on Exercise - Descriptive (Univariate) Stats</h1>
 
 </div>
 
 
-<div id="homework-03---due-10102018" class="section level2">
-<h2>Homework 03 - due 10/10/2018</h2>
-<p>Using the HELP dataset:</p>
+<div id="lesson-06-descriptive-univariate-stats" class="section level2">
+<h2>Lesson 06: Descriptive (Univariate) Stats</h2>
+<p>This lesson focuses on describing and summarizing data using univariate stats. We will be working with the H.E.L.P. dataset.</p>
+</div>
+<div id="the-help-dataset" class="section level2">
+<h2>The HELP Dataset</h2>
+<p>For today and several future lessons, we’ll be working with the HELP (Health Evaluation and Linkage to Primary Care) dataset. You can learn more about this dataset at <a href="https://nhorton.people.amherst.edu/sasr2/datasets.php" class="uri">https://nhorton.people.amherst.edu/sasr2/datasets.php</a>. This dataset is also used by Ken Kleinman and Nicholas J. Horton for their book “SAS and R: Data Management, Statistical Analysis, and Graphics” <em>(which is another helpful textbook)</em>.</p>
 <ul>
-<li>create “Table 1”</li>
-<li>provide the summary stats for the baseline data - overall and by randomization group (Usual Care versus the HELP Clinic)
+<li>You can download the datasets from their website <a href="https://nhorton.people.amherst.edu/sasr2/datasets.php" class="uri">https://nhorton.people.amherst.edu/sasr2/datasets.php</a></li>
+<li>The original publication is referenced at <a href="https://www.ncbi.nlm.nih.gov/pubmed/12653820?ordinalpos=17&amp;itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_DefaultReportPanel.Pubmed_RVDocSum" class="uri">https://www.ncbi.nlm.nih.gov/pubmed/12653820?ordinalpos=17&amp;itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_DefaultReportPanel.Pubmed_RVDocSum</a></li>
+<li>The HELP documentation (including all forms/surveys/instruments used) are located at <a href="https://nhorton.people.amherst.edu/help/" class="uri">https://nhorton.people.amherst.edu/help/</a>
 <ul>
-<li>HELP dataset variables to include: <code>age, female, racegrp, homeless, a15a, a15b, d1, e2b, g1b, i1, i2, pss_fr, pcs, mcs, cesd, treat</code>.</li>
+<li>specifically the details on all BASELINE assessments are located in this PDF <a href="https://nhorton.people.amherst.edu/help/HELP-baseline.pdf" class="uri">https://nhorton.people.amherst.edu/help/HELP-baseline.pdf</a></li>
+<li>with the follow up time points described in the PDF <a href="https://nhorton.people.amherst.edu/help/HELP-followup.pdf" class="uri">https://nhorton.people.amherst.edu/help/HELP-followup.pdf</a></li>
 </ul></li>
-<li>determine whether you want to provide parametric or non-parametric stats - based on your determination of normality assumptions, sample size considerations, appropriateness of the statistical test and communication with your audience.</li>
-<li>include the appropriate statistical test comparing the group measurements and subject characteristics at baseline</li>
-<li>write a statistical methods section describing (and explaining to your readers) the methods you used to create Table 1 and why you choose those methods to make the comparisons between the groups</li>
-<li>write 1-2 paragraphs (as the beginning of a results section) describing the sample overall at baseline and by group (use the data you presented in Table 1 to help you).</li>
+<li>See details on the HELP dataset at <a href="https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/" class="uri">https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/</a></li>
 </ul>
 </div>
-<div id="report-template-for-homework-03" class="section level2">
-<h2>Report Template for Homework 03</h2>
-<p>See the WORD document template <code>N736Homework03_Template.docx</code> you can download from <a href="https://github.com/melindahiggins2000/N736Fall2017/blob/master/N736Homework03_Template.docx" class="uri">https://github.com/melindahiggins2000/N736Fall2017/blob/master/N736Homework03_Template.docx</a> - click “Download”.</p>
+<div id="download-the-help-dataset" class="section level2">
+<h2>Download the HELP Dataset</h2>
+<ul>
+<li>Data in <code>SAS7BDAT</code> format <a href="https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/helpmkh.sas7bdat" class="uri">https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/helpmkh.sas7bdat</a></li>
+<li>Formats in <code>SAS7BDAT</code> format <a href="https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/formats.sas7bcat" class="uri">https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/formats.sas7bcat</a></li>
+<li><code>SPSS</code> format <a href="https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/helpmkh.sav" class="uri">https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/helpmkh.sav</a></li>
+<li><code>.RData</code> format <a href="https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/helpmkh.RData" class="uri">https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/helpmkh.RData</a></li>
+</ul>
 </div>
-<div id="variables-in-help-dataset-to-be-used-for-homework-03" class="section level2">
-<h2>Variables in HELP dataset to be used for Homework 03</h2>
-<table>
-<caption>Use these variables from HELP dataset for Homework 03</caption>
-<thead>
-<tr class="header">
-<th></th>
-<th align="left">Variable Label</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>age</td>
-<td align="left">Age at baseline (in years)</td>
-</tr>
-<tr class="even">
-<td>female</td>
-<td align="left">Gender of respondent</td>
-</tr>
-<tr class="odd">
-<td>racegrp</td>
-<td align="left">Racial Group of Respondent</td>
-</tr>
-<tr class="even">
-<td>homeless</td>
-<td align="left">One or more nights on the street or shelter in past 6 months</td>
-</tr>
-<tr class="odd">
-<td>a15a</td>
-<td align="left">Number of nights in overnigh shelter in past 6 months</td>
-</tr>
-<tr class="even">
-<td>a15b</td>
-<td align="left">Number of nights on the street in past 6 months</td>
-</tr>
-<tr class="odd">
-<td>d1</td>
-<td align="left">How many times hospitalized for medical problems (lifetime)</td>
-</tr>
-<tr class="even">
-<td>e2b</td>
-<td align="left">Number of times in past 6 months entered a detox program - Baseline</td>
-</tr>
-<tr class="odd">
-<td>g1b</td>
-<td align="left">Experienced serious thoughts of suicide (last 30 days) - Baseline</td>
-</tr>
-<tr class="even">
-<td>i1</td>
-<td align="left">Average number of drinks (standard units) consumed per day (in past 30 days) - Baseline</td>
-</tr>
-<tr class="odd">
-<td>i2</td>
-<td align="left">Maximum number of drinks (standard units) consumed per day (in past 30 days)</td>
-</tr>
-<tr class="even">
-<td>pcs</td>
-<td align="left">SF36 Physical Composite Score - Baseline</td>
-</tr>
-<tr class="odd">
-<td>mcs</td>
-<td align="left">SF36 Mental Composite Score - Baseline</td>
-</tr>
-<tr class="even">
-<td>cesd</td>
-<td align="left">CESD total score - Baseline</td>
-</tr>
-<tr class="odd">
-<td>treat</td>
-<td align="left">Randomization Group</td>
-</tr>
-<tr class="even">
-<td>pss_fr</td>
-<td align="left">Perceived Social Support - friends</td>
-</tr>
-</tbody>
-</table>
+<div id="getting-started-with-help-dataset" class="section level2">
+<h2>Getting Started with HELP Dataset</h2>
+<ul>
+<li><code>R</code> Scripts
+<ul>
+<li>R Script to load HELP dataset <a href="https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/loadHELPdata.R" class="uri">https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/loadHELPdata.R</a></li>
+<li>R Script for beginning univariate analyses <a href="https://github.com/melindahiggins2000/N736Fall2017_lesson07/raw/master/lesson07_Rcode.R" class="uri">https://github.com/melindahiggins2000/N736Fall2017_lesson07/raw/master/lesson07_Rcode.R</a></li>
+</ul></li>
+<li><code>SAS</code> Programs
+<ul>
+<li>SAS Programs to load HELP dataset - formatting <a href="https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/helpmkh.sas" class="uri">https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/helpmkh.sas</a></li>
+<li>SAS Programs to load HELP dataset - load <a href="https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/loadHELPdata.sas" class="uri">https://github.com/melindahiggins2000/N736Fall2017_HELPdataset/raw/master/loadHELPdata.sas</a></li>
+<li>SAS Program to begin univariate analyses <a href="https://github.com/melindahiggins2000/N736Fall2017_lesson07/raw/master/lesson07_SAScode.sas" class="uri">https://github.com/melindahiggins2000/N736Fall2017_lesson07/raw/master/lesson07_SAScode.sas</a></li>
+</ul></li>
+</ul>
 </div>
 
 <hr>

@@ -11,7 +11,7 @@
 
 
 
-<title>Homework 03</title>
+<title>Data Review and Assessment</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -436,107 +436,144 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Homework 03</h1>
+<h1 class="title toc-ignore">Data Review and Assessment</h1>
 
 </div>
 
 
-<div id="homework-03---due-10102018" class="section level2">
-<h2>Homework 03 - due 10/10/2018</h2>
-<p>Using the HELP dataset:</p>
+<div id="data-review-and-quality-assessment" class="section level2">
+<h2>Data Review and Quality Assessment</h2>
+<div id="ranges-and-acceptable-numbers" class="section level3">
+<h3>Ranges and Acceptable Numbers</h3>
 <ul>
-<li>create “Table 1”</li>
-<li>provide the summary stats for the baseline data - overall and by randomization group (Usual Care versus the HELP Clinic)
+<li>Always check to see if the range of the numeric values are reasonable and acceptable
 <ul>
-<li>HELP dataset variables to include: <code>age, female, racegrp, homeless, a15a, a15b, d1, e2b, g1b, i1, i2, pss_fr, pcs, mcs, cesd, treat</code>.</li>
+<li>10 point scale - are all 10 levels shown &amp; how are they coded: is the range 0-9 or perhaps 1-10? <em>[what are the advantages or disadvantages of starting at 0 versus starting at 1?]</em></li>
+<li>does the scale start at 0, if not why are there 0’s in your data?</li>
+<li><strong>ZEROS are IMPORTANT</strong> and should always be investigated and confirmed</li>
 </ul></li>
-<li>determine whether you want to provide parametric or non-parametric stats - based on your determination of normality assumptions, sample size considerations, appropriateness of the statistical test and communication with your audience.</li>
-<li>include the appropriate statistical test comparing the group measurements and subject characteristics at baseline</li>
-<li>write a statistical methods section describing (and explaining to your readers) the methods you used to create Table 1 and why you choose those methods to make the comparisons between the groups</li>
-<li>write 1-2 paragraphs (as the beginning of a results section) describing the sample overall at baseline and by group (use the data you presented in Table 1 to help you).</li>
+<li>are there negative numbers, should there be?</li>
+<li>are the numbers evenly distributed, should they be?</li>
+<li>should these data be processed numerically or treated as ordinal/categorical levels (e.g. race, income levels, age groups) - does computing the mean make sense? (e.g. Likert scale)</li>
+<li>are some of the values outside of your expected scale due to missing data or other coding you need to adjust for prior to analysis</li>
 </ul>
 </div>
-<div id="report-template-for-homework-03" class="section level2">
-<h2>Report Template for Homework 03</h2>
-<p>See the WORD document template <code>N736Homework03_Template.docx</code> you can download from <a href="https://github.com/melindahiggins2000/N736Fall2017/blob/master/N736Homework03_Template.docx" class="uri">https://github.com/melindahiggins2000/N736Fall2017/blob/master/N736Homework03_Template.docx</a> - click “Download”.</p>
+<div id="missing-data" class="section level3">
+<h3>Missing data</h3>
+<ul>
+<li>check that numeric codes for missing have been treated as such</li>
+<li>how much is missing per variable</li>
+<li>how much is missing per subject</li>
+<li>are there any obvious patterns
+<ul>
+<li>people at end of study - missingness correlated with time</li>
+<li>other predictors of missing - depressed subjects more likely not to complete study</li>
+<li>variables/measures with more missing - sensitive items people refuse to answer, income, risky sexual behaviors, …</li>
+</ul></li>
+<li>we’ll explore this more in future sessions</li>
+<li><strong>REMEMBER MISSING DATA IS DATA!</strong></li>
+<li>Pros and Cons of Missing Data imputation
+<ul>
+<li>bias in the presence of missing data</li>
+<li>bias introduced by imputation</li>
+</ul></li>
+</ul>
 </div>
-<div id="variables-in-help-dataset-to-be-used-for-homework-03" class="section level2">
-<h2>Variables in HELP dataset to be used for Homework 03</h2>
-<table>
-<caption>Use these variables from HELP dataset for Homework 03</caption>
-<thead>
-<tr class="header">
-<th></th>
-<th align="left">Variable Label</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>age</td>
-<td align="left">Age at baseline (in years)</td>
-</tr>
-<tr class="even">
-<td>female</td>
-<td align="left">Gender of respondent</td>
-</tr>
-<tr class="odd">
-<td>racegrp</td>
-<td align="left">Racial Group of Respondent</td>
-</tr>
-<tr class="even">
-<td>homeless</td>
-<td align="left">One or more nights on the street or shelter in past 6 months</td>
-</tr>
-<tr class="odd">
-<td>a15a</td>
-<td align="left">Number of nights in overnigh shelter in past 6 months</td>
-</tr>
-<tr class="even">
-<td>a15b</td>
-<td align="left">Number of nights on the street in past 6 months</td>
-</tr>
-<tr class="odd">
-<td>d1</td>
-<td align="left">How many times hospitalized for medical problems (lifetime)</td>
-</tr>
-<tr class="even">
-<td>e2b</td>
-<td align="left">Number of times in past 6 months entered a detox program - Baseline</td>
-</tr>
-<tr class="odd">
-<td>g1b</td>
-<td align="left">Experienced serious thoughts of suicide (last 30 days) - Baseline</td>
-</tr>
-<tr class="even">
-<td>i1</td>
-<td align="left">Average number of drinks (standard units) consumed per day (in past 30 days) - Baseline</td>
-</tr>
-<tr class="odd">
-<td>i2</td>
-<td align="left">Maximum number of drinks (standard units) consumed per day (in past 30 days)</td>
-</tr>
-<tr class="even">
-<td>pcs</td>
-<td align="left">SF36 Physical Composite Score - Baseline</td>
-</tr>
-<tr class="odd">
-<td>mcs</td>
-<td align="left">SF36 Mental Composite Score - Baseline</td>
-</tr>
-<tr class="even">
-<td>cesd</td>
-<td align="left">CESD total score - Baseline</td>
-</tr>
-<tr class="odd">
-<td>treat</td>
-<td align="left">Randomization Group</td>
-</tr>
-<tr class="even">
-<td>pss_fr</td>
-<td align="left">Perceived Social Support - friends</td>
-</tr>
-</tbody>
-</table>
+<div id="outliers-aka.-extreme-values" class="section level3">
+<h3>Outliers <em>(aka. “extreme” values)</em></h3>
+<ul>
+<li>assuming a normal distributions, outliers often defined as outside +/- 2 standard deviations or +/- 3 standard deviations</li>
+<li>but what if the distribution is NOT normal (income, biomarkers, count data)</li>
+<li>extreme values (LVAD heart transplant cost) - can almost be treated like missing imputation - non-parametrics - bootstrapping - robustized stats</li>
+<li>illogical values - possible typos</li>
+</ul>
+</div>
+<div id="odd-distributions-skewed-distributions" class="section level3">
+<h3>Odd Distributions; Skewed Distributions</h3>
+<ul>
+<li>mathematical transformations
+<ul>
+<li>square root, log, others (useful for right skewed tailed distributions)</li>
+<li>left skewed distributions use inverse (REF - value)</li>
+<li>approaches used to help “noramlize” the distribution</li>
+<li>pros and cons - nice distribution but complicated to interpret</li>
+</ul></li>
+<li>distributions expected based on response patterns
+<ul>
+<li>possible bimodal or other clusters defined by other factors like gender, race, etc.</li>
+</ul></li>
+<li>zero-inflated or hurdle type questions
+<ul>
+<li>symptom ratings 0-10, where 0=not present;</li>
+<li>1-10 rates severity or frequency (really 2 questions in 1)</li>
+</ul></li>
+<li>physical functioning:
+<ul>
+<li><code>0</code>’s indicate cannot perform task,</li>
+<li><code>&gt;0</code> measures how well/how far/how much they did activity</li>
+<li>again 2 measures/questions in 1</li>
+</ul></li>
+<li>adherence &amp; knowledge tests
+<ul>
+<li>lots of zero’s, lots of 100’s</li>
+<li>will often have floor or ceiling effects</li>
+<li>could be bimodal</li>
+</ul></li>
+<li>counts (“poisson” distribution)
+<ul>
+<li>number of children;</li>
+<li>days in hospital (length of stay);</li>
+<li>even Age</li>
+</ul></li>
+<li>time to event (“gamma” related distributions)
+<ul>
+<li>time to disease onset or health event (heart attack, stroke)</li>
+<li>time to readmit</li>
+</ul></li>
+</ul>
+</div>
+<div id="illogical-values" class="section level3">
+<h3>Illogical Values</h3>
+<ul>
+<li>look for typos (2.6 versus 6.2; 11 instead of 1; 40 instead of 4)</li>
+<li>unit mismatches (inches instead of cm; feet vs meters; kg versus pounds)</li>
+<li>extreme values (biomarkers, costs, income)</li>
+<li>income
+<ul>
+<li>often yearly instead of monthly</li>
+<li>be sure common reporting units are used</li>
+</ul></li>
+<li>negative numbers used to indicate missing</li>
+<li>really high values to indicate missing</li>
+<li>negative values or odd value occurring after performing date math (i.e. date of event happening before date of birth; date of discharge before date of admission; length of stay in years and you’re expecting days - possible year typo (often occurring in Dec-Jan change over))</li>
+</ul>
+</div>
+<div id="mixing-of-text-strings-and-numeric" class="section level3">
+<h3>mixing of text (strings) and numeric</h3>
+<ul>
+<li>always check to see if the data came in as a number if that what’s you’re expecting
+<ul>
+<li>especially if the imported data accidently had text somewhere in the column</li>
+<li>for example, labs often report low values below detection as &lt;x.xx or high values above the saturation limit of the detector as &gt;x.xx. Look at for these leading (or following) text characters before or after the number of interest</li>
+</ul></li>
+<li>in SPSS switch from string to numeric - watch for value deletion insertion of missing values</li>
+<li>in R check for auto-creation of “factors”</li>
+</ul>
+</div>
+<div id="incorrect-dates---data-type-in-general" class="section level3">
+<h3>incorrect dates - &amp; data type in general</h3>
+<ul>
+<li>often dates come in as text due to inconsistent formatting</li>
+<li>watch for Excel conversion from date format to number format (the articles we discussed in previous lecture)</li>
+<li>issues moving between Excel and other software
+<ul>
+<li>the “REFERENCE” data van vary between software, i.s. number of days since January 1, 1900, see <a href="https://support.office.com/en-us/article/datevalue-function-df8b07d4-7761-4a93-bc33-b7471bbff252" class="uri">https://support.office.com/en-us/article/datevalue-function-df8b07d4-7761-4a93-bc33-b7471bbff252</a></li>
+<li>and this is different from EXCEL for MAC, see <a href="https://support.microsoft.com/en-us/help/214330/differences-between-the-1900-and-the-1904-date-system-in-excel" class="uri">https://support.microsoft.com/en-us/help/214330/differences-between-the-1900-and-the-1904-date-system-in-excel</a></li>
+<li>SAS stored dates as the number of days since 01/01/1960, see <a href="https://communities.sas.com/t5/SAS-Enterprise-Guide/Date-conversion-to-integer/td-p/157849" class="uri">https://communities.sas.com/t5/SAS-Enterprise-Guide/Date-conversion-to-integer/td-p/157849</a> and <a href="https://communities.sas.com/t5/SAS-Procedures/How-to-convert-date-to-numeric/td-p/295961" class="uri">https://communities.sas.com/t5/SAS-Procedures/How-to-convert-date-to-numeric/td-p/295961</a></li>
+<li>and SPSS stores dates as the number of days since the beginning of the Gregorian calendar October 14, 1582, see this article discussing converting dates between SAS, Stata and SPSS, <a href="https://stats.idre.ucla.edu/spss/code/converting-sas-or-stata-dates-to-spss-dates/" class="uri">https://stats.idre.ucla.edu/spss/code/converting-sas-or-stata-dates-to-spss-dates/</a></li>
+</ul></li>
+</ul>
+</div>
 </div>
 
 <hr>

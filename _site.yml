@@ -12,18 +12,21 @@ navbar:
         - text: "1. Introduction"
           href: intro.html
         - text: "2. Exploring Data, Cleaning, Assessment"
-          href: lesson_2_dataCleaning.html
+          href: lesson_02_dataCleaning.html
         - text: "3. Data Review and Assessment"
-          href: lesson_3_dataReview.html
+          href: lesson_03_dataReview.html
         - text: "4. Data Wrangling"
-          href: lesson_4_dataWrangling.html
+          href: lesson_04_dataWrangling.html
         - text: "5. Univariate Descriptive Stats"
-          href: lesson_5_descriptiveStats.html
+          href: lesson_05_descriptiveStats.html
         - text: "6. Hands-on Descriptive Stats"
-          href: lesson_6_descriptiveStats_pt2.html
+          href: lesson_06_descriptiveStats_pt2.html
         - text: "7. Homework 01 Answer Key Review"
-          href: lesson_7_Homework01_AnswerKeyReview.html
-        - text: "8. Bivariate Statistics"
+          href: lesson_07_Homework01_AnswerKeyReview.html
+        - text: "8. Univariate Statistics"
+          href: lesson_08_UnivariateBivariate.html
+        - text: "9. Bivariate Stats"
+          href: lesson_09_Bivariate2.html
         - text: "9. Introduction to Bootstrapping"
         - text: "10. Missing Data"
         - text: "11. Building Models"

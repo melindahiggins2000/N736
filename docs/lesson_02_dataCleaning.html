@@ -11,7 +11,7 @@
 
 
 
-<title>Data Wrangling</title>
+<title>Exploring Data, Cleaning, Assessment</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -286,24 +286,29 @@ div.tocify {
       <a href="intro.html">1. Introduction</a>
     </li>
     <li>
-      <a href="lesson_2_dataCleaning.html">2. Exploring Data, Cleaning, Assessment</a>
+      <a href="lesson_02_dataCleaning.html">2. Exploring Data, Cleaning, Assessment</a>
     </li>
     <li>
-      <a href="lesson_3_dataReview.html">3. Data Review and Assessment</a>
+      <a href="lesson_03_dataReview.html">3. Data Review and Assessment</a>
     </li>
     <li>
-      <a href="lesson_4_dataWrangling.html">4. Data Wrangling</a>
+      <a href="lesson_04_dataWrangling.html">4. Data Wrangling</a>
     </li>
     <li>
-      <a href="lesson_5_descriptiveStats.html">5. Univariate Descriptive Stats</a>
+      <a href="lesson_05_descriptiveStats.html">5. Univariate Descriptive Stats</a>
     </li>
     <li>
-      <a href="lesson_6_descriptiveStats_pt2.html">6. Hands-on Descriptive Stats</a>
+      <a href="lesson_06_descriptiveStats_pt2.html">6. Hands-on Descriptive Stats</a>
     </li>
     <li>
-      <a href="lesson_7_Homework01_AnswerKeyReview.html">7. Homework 01 Answer Key Review</a>
+      <a href="lesson_07_Homework01_AnswerKeyReview.html">7. Homework 01 Answer Key Review</a>
     </li>
-    <li class="dropdown-header">8. Bivariate Statistics</li>
+    <li>
+      <a href="lesson_08_UnivariateBivariate.html">8. Univariate Statistics</a>
+    </li>
+    <li>
+      <a href="lesson_09_Bivariate2.html">9. Bivariate Stats</a>
+    </li>
     <li class="dropdown-header">9. Introduction to Bootstrapping</li>
     <li class="dropdown-header">10. Missing Data</li>
     <li class="dropdown-header">11. Building Models</li>
@@ -431,32 +436,44 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Data Wrangling</h1>
+<h1 class="title toc-ignore">Exploring Data, Cleaning, Assessment</h1>
 
 </div>
 
 
-<div id="data-wrangling" class="section level2">
-<h2>Data Wrangling</h2>
+<div id="reviewing-the-dataset---for-homework-01" class="section level2">
+<h2>Reviewing the dataset - for Homework 01</h2>
+<p>In today’s class we’ll get started exploring and finding the issues and problems with the dataset you’ll be working with for Homework 01. See Homework 1 instructions.</p>
+</div>
+<div id="exploring-this-test-dataset" class="section level2">
+<h2>Exploring this test dataset</h2>
+<p>During class we will discuss and identify some of the issues with this dataset.</p>
+<p><strong>NOTES from Class Today</strong> <a href="homework1_notes.txt" class="uri">homework1_notes.txt</a></p>
+</div>
+<div id="class-discussion-and-video" class="section level2">
+<h2>Class discussion and video</h2>
+<p>Today’s class will be recorded and the video posted at the <strong>EchoALP</strong> link on Canvas for NRSG 736.</p>
+<p>Weblinks to be discussed during class:</p>
 <ul>
-<li><p>see notes at <a href="https://melindahiggins2000.github.io/N736Fall2017_lesson05/lesson05_dataWrangling.html" class="uri">https://melindahiggins2000.github.io/N736Fall2017_lesson05/lesson05_dataWrangling.html</a></p></li>
-<li>for this lesson, download the following 3 datasets:
+<li><p>Journal of Biostatistics - author guidelines for “Reproducible Research” <a href="https://academic.oup.com/biostatistics/pages/General_Instructions" class="uri">https://academic.oup.com/biostatistics/pages/General_Instructions</a>.</p></li>
+<li><p>Washington Post Article on “An Alarming Number of Scientific Papers Contain Excel Errors” <a href="https://www.washingtonpost.com/news/wonk/wp/2016/08/26/an-alarming-number-of-scientific-papers-contain-excel-errors/?utm_term=.8ec47ce8bc16" class="uri">https://www.washingtonpost.com/news/wonk/wp/2016/08/26/an-alarming-number-of-scientific-papers-contain-excel-errors/?utm_term=.8ec47ce8bc16</a>.</p></li>
+<li><p>Genome Biology 2016 Paper on “Gene name error are widespread in the scientific literature” <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7" class="uri">https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7</a>.</p></li>
+<li><p>“The Excel Error heard Around the World” <a href="https://newrepublic.com/article/112951/rogoff-reinhart-and-world-excel-error-research" class="uri">https://newrepublic.com/article/112951/rogoff-reinhart-and-world-excel-error-research</a> &amp; more at <a href="http://nymag.com/daily/intelligencer/2013/04/grad-student-who-shook-global-austerity-movement.html" class="uri">http://nymag.com/daily/intelligencer/2013/04/grad-student-who-shook-global-austerity-movement.html</a>.</p></li>
+<li><p>“How Bright Promise in Cancer Testing Fell Apart” - Duke cancer trials controversy <a href="http://www.nytimes.com/2011/07/08/health/research/08genes.html?mcubz=1" class="uri">http://www.nytimes.com/2011/07/08/health/research/08genes.html?mcubz=1</a> &amp; “An array of errors” <a href="http://www.economist.com/node/21528593" class="uri">http://www.economist.com/node/21528593</a>.</p></li>
+<li><p>“A Manifesto for Reproducible Science” <a href="https://www.nature.com/articles/s41562-016-0021" class="uri">https://www.nature.com/articles/s41562-016-0021</a>.</p></li>
+<li><p>Center for Open Science <a href="https://cos.io/" class="uri">https://cos.io/</a> &amp; COS History <a href="https://cos.io/about/brief-history-cos-2013-2017/" class="uri">https://cos.io/about/brief-history-cos-2013-2017/</a>.</p></li>
+<li><p>Science “One in Five Genetics Papers Contains Errors Thanks to Microsoft Excel” <a href="http://www.sciencemag.org/news/sifter/one-five-genetics-papers-contains-errors-thanks-microsoft-excel" class="uri">http://www.sciencemag.org/news/sifter/one-five-genetics-papers-contains-errors-thanks-microsoft-excel</a>.</p></li>
+</ul>
+</div>
+<div id="other-links-you-might-want-to-explore" class="section level2">
+<h2>Other links you might want to explore</h2>
 <ul>
-<li><a href="https://github.com/melindahiggins2000/N736Fall2017_lesson05/raw/master/dataA.csv">dataA.csv</a></li>
-<li><a href="https://github.com/melindahiggins2000/N736Fall2017_lesson05/raw/master/dataB.csv">dataB.csv</a></li>
-<li><a href="https://github.com/melindahiggins2000/N736Fall2017_lesson05/raw/master/dataC.csv">dataC.csv</a></li>
-</ul></li>
-<li>here are some code examples
-<ul>
-<li><a href="https://github.com/melindahiggins2000/N736Fall2017_lesson05/raw/master/lesson05_Rcode.R"><code>R</code> code</a></li>
-<li><a href="https://github.com/melindahiggins2000/N736Fall2017_lesson05/raw/master/lesson05_SAScode.sas"><code>SAS</code> code</a></li>
-</ul></li>
-<li>If we have time, we might also look at:
-<ul>
-<li>some more data wrangling and formatting issues <a href="https://melindahiggins2000.github.io/N736Fall2017_lesson06/lesson06_dataWranglingPt2.html" class="uri">https://melindahiggins2000.github.io/N736Fall2017_lesson06/lesson06_dataWranglingPt2.html</a></li>
-<li><a href="https://github.com/melindahiggins2000/N736Fall2017_lesson06/raw/master/lesson06_Rcode.R"><code>R</code> code</a></li>
-<li><a href="https://github.com/melindahiggins2000/N736Fall2017_lesson06/raw/master/lesson06_SAScode.sas"><code>SAS</code> code</a></li>
-</ul></li>
+<li><p>Gitbook <a href="https://www.gitbook.com/" class="uri">https://www.gitbook.com/</a>.</p></li>
+<li><p>Bookdown <a href="https://bookdown.org" class="uri">https://bookdown.org</a>.</p></li>
+<li><p>Yihui Xie’s book on the <code>bookdown</code> package <a href="https://bookdown.org/yihui/bookdown/" class="uri">https://bookdown.org/yihui/bookdown/</a>.</p></li>
+<li><p>Github repo for Yihui Xie’s “Dynamic Documents with R and knitr” - 1st 3 chapters available online <a href="https://github.com/yihui/knitr-book" class="uri">https://github.com/yihui/knitr-book</a>.</p></li>
+<li><p>Garrett Grolemund and Hadley Wickham’s book “R for Data Science” - also online at <a href="http://r4ds.had.co.nz/" class="uri">http://r4ds.had.co.nz/</a> &amp; if you’re interested, here is the Github repo for their book <a href="https://github.com/hadley/r4ds" class="uri">https://github.com/hadley/r4ds</a>.</p></li>
+<li><p>Tidyverse <a href="https://www.tidyverse.org/" class="uri">https://www.tidyverse.org/</a>.</p></li>
 </ul>
 </div>
 
