@@ -29,8 +29,8 @@ navbar:
           href: lesson_09_Bivariate2.html
         - text: "10. Bootstrapping and Missing Data"
           href: lesson_10_bootmiss.html
-        - text: "10. Missing Data"
         - text: "11. Building Models"
+          href: lesson_11_BuildModels.html
         - text: "12. Simple Regression & ANOVA"
         - text: "13. Multivariate Regression & Variable Selection"
         - text: "14,15. Interactions, Moderators, Covariates, Factors"

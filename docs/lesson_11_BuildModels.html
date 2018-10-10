@@ -11,7 +11,7 @@
 
 
 
-<title>Homework 05</title>
+<title>Lesson 11: Building Models</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -439,71 +439,64 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Homework 05</h1>
+<h1 class="title toc-ignore">Lesson 11: Building Models</h1>
 
 </div>
 
 
-<div id="homework-05---due-11012017" class="section level2">
-<h2>Homework 05 - due 11/01/2017</h2>
-<div id="ancova---analysis-of-covariance-exercise" class="section level3">
-<h3>ANCOVA - Analysis of Covariance Exercise</h3>
-<p>For Homework 05, you will be using the HELP dataset, learn more at:</p>
+<div id="lesson-11-building-models" class="section level2">
+<h2>Lesson 11: Building Models</h2>
+<p>This lesson begins the discussion of building models - regression models (linear regression, logistic regression, generalized linear models) and ANOVA (one-way, two-way, mixed) and others…</p>
+<p>We will be referring to the PPT/PDF slides: <em>(click on the links to download the files)</em></p>
 <ul>
-<li><a href="https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/" class="uri">https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/</a> &amp;</li>
-<li><a href="https://github.com/melindahiggins2000/N736Fall2017_HELPdataset" class="uri">https://github.com/melindahiggins2000/N736Fall2017_HELPdataset</a></li>
+<li><p><code>ResearchRoundtableBuildRegressionModel_final14Nov08.ppt</code> <a href="https://github.com/melindahiggins2000/N736Fall2017/raw/master/ResearchRoundtableBuildRegressionModel_final14Nov08.ppt" class="uri">https://github.com/melindahiggins2000/N736Fall2017/raw/master/ResearchRoundtableBuildRegressionModel_final14Nov08.ppt</a></p></li>
+<li><p><code>ResearchRoundtableBuildRegressionModel_final14Nov08.pdf</code> <a href="https://github.com/melindahiggins2000/N736Fall2017/raw/master/ResearchRoundtableBuildRegressionModel_final14Nov08.pdf" class="uri">https://github.com/melindahiggins2000/N736Fall2017/raw/master/ResearchRoundtableBuildRegressionModel_final14Nov08.pdf</a></p></li>
 </ul>
-<p>Complete the following for these variables:</p>
-<ul>
-<li>OUTCOME VARIABLE (Y): <code>indtot</code></li>
-<li>INDEPENDENT VARIABLE (X): <code>mcs</code></li>
-<li>COVARIATES (other X’s): <code>pss_fr</code> or <code>female</code></li>
-</ul>
+</div>
+<div id="consider-steps-checklists-assumptions" class="section level2">
+<h2>Consider Steps, checklists, assumptions, …</h2>
 <ol style="list-style-type: decimal">
-<li>Run ANCOVA <em>(using a regression, ANOVA, or GLM approach - your choice)</em> for the association between the SF36 Mental Component Score (<code>mcs</code>) and Inventory of Drug Use (<code>indtot</code>) adjusting for perceived social support from friends (<code>pss_fr</code>). Remember to:
+<li><p>Assume that the terms are “linearly”&quot; related to the outcome - that relationship is linear (either directly or through transformations)</p></li>
+<li>The “slope” or “relationship” between X &amp; Y is assumed to be “constant” / “consistent” across all levels of X
 <ul>
-<li>mean center continuous variables before computing the interaction term <em>(i.e. create a new mean-centered variable by subtracting the mean)</em></li>
-<li>check for the assumption of homogenity of variance <em>(i.e. is the interaction term significant?)</em></li>
-<li>make an “effects plot” plot of the interaction between <code>mcs</code> and <code>pss_fr</code></li>
+<li>same slope from 1-to-2 as from 200-to-201</li>
+<li>changing from “strongly disagree” - to - “disagree” is assumed to have the same impact on Y as going from “neutral” - to - “agree” [e.g. LiKert scale data] - useful case when looking at both “regression” and “ANOVA” type models can be useful
+<ul>
+<li>5 = “strongly agree”</li>
+<li>4 = “agree”</li>
+<li>3 = “neutral”</li>
+<li>2 = “disagree”</li>
+<li>1 = “strongly disagree”</li>
 </ul></li>
-<li>Run ANCOVA <em>(using a regression, ANOVA, or GLM approach - your choice)</em> for the association between the SF36 Mental Component Score (<code>mcs</code>) and Inventory of Drug Use (<code>indtot</code>) adjusting for gender (<code>female</code>). Remember to:
+<li>a “similar” type case for longitudinal data (“repeated measures”) where there are 3 sequential “time” points 0, 1, 2. Could treat “time” as continuous (slope over time), but:
 <ul>
-<li>mean center continuous variables before computing the interaction term <em>(i.e. create a new mean-centered variable by subtracting the mean)</em></li>
-<li>check for the assumption of homogenity of variance <em>(i.e. is the interaction term significant?)</em></li>
-<li>make an “effects plot” plot of the interaction between <code>mcs</code> and <code>female</code></li>
+<li>0 = “baseline”</li>
+<li>1 = “immediately post-treatment” - usually greatest measure of treatment effect</li>
+<li>2 = “next follow-up post treatment” - typically no further intervention or treatment was received - this is really a measure of sustained effect, often not a measure of continued “dose” response</li>
+</ul></li>
+</ul></li>
+<li><p>We assume that Y was observed for all levels of X and that it was observed “evenly” (“balanced” experimental design) - “Anscome Quartet”</p></li>
+<li>The independent variables are independent of one another (no multicollinearity) – although some “mild/minor” correlation may be tolerated. Check the Variance Inflation Factor <strong>(VIF)</strong> and/or the Tolerance <strong>(TOL)</strong>, which is the inverse of the <strong>VIF</strong>.
+<ul>
+<li><strong>VIF</strong> ’s should be &lt;10, some people say <strong>VIF</strong> &lt;5.</li>
+<li>I usually start getting suspicious when <strong>VIF</strong> &gt; 2.</li>
+<li>Also always check the <strong>Condition Index</strong>, which should be &lt;30.</li>
+</ul></li>
+<li><p>Any case which has “missing” data on any of the IVs or DV will be eliminated from the analysis (listwise deletion).</p></li>
+<li><p>The intercept and all coefficients for the IVs are “Fixed.” <em>[“Random Coefficient Models” to be discussed later.]</em></p></li>
+<li><p>We assume that the variance of Y is constant across all levels of X (assumption of homogeneity of variance) - important for regression and ANOVA (e.g. “Levene’s test”)</p></li>
+<li><p>The “error” term is additive (not multiplicative)</p></li>
+<li>Assume “errors” (“residuals”) are normally distributed, identical and independent ~iid N(mu,sigma).
+<ul>
+<li>normality checks</li>
+<li>check to see if residuals are independent - trend by sequnce (collection order of data) - related to sampling independence (e.g. family members are not independent)</li>
+<li>see if residuals are related to other X’s either in or out of the model (plots of “e” vs X’s)</li>
+<li>see if residuals are related to Y (plot “e” vs Y)</li>
+<li>look for outliers</li>
+<li>look for influential values</li>
 </ul></li>
 </ol>
-</div>
-</div>
-<div id="variables-in-help-dataset-to-be-used-for-homework-05" class="section level2">
-<h2>Variables in HELP dataset to be used for Homework 05</h2>
-<table>
-<caption>Use these variables from HELP dataset for Homework 05</caption>
-<thead>
-<tr class="header">
-<th></th>
-<th align="left">Variable Label</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>indtot</td>
-<td align="left">Inventory of Drug Use Consequences (InDue) total score - Baseline</td>
-</tr>
-<tr class="even">
-<td>mcs</td>
-<td align="left">SF36 Mental Composite Score - Baseline</td>
-</tr>
-<tr class="odd">
-<td>pss_fr</td>
-<td align="left">Perceived Social Support - friends</td>
-</tr>
-<tr class="even">
-<td>female</td>
-<td align="left">Gender of respondent</td>
-</tr>
-</tbody>
-</table>
+<p><em>[next lesson - discussion of Type I, II and III sums of squares - differences in SPSS, SAS and R]</em></p>
 </div>
 
 <hr>
