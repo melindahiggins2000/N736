@@ -11,7 +11,7 @@
 
 
 
-<title>Homework 07</title>
+<title>Lesson 12: Simple Regression and ANOVA</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -441,101 +441,40 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Homework 07</h1>
+<h1 class="title toc-ignore">Lesson 12: Simple Regression and ANOVA</h1>
 
 </div>
 
 
-<div id="homework-07---due-11292017" class="section level2">
-<h2>Homework 07 - due 11/29/2017</h2>
-<div id="repeated-measures-anova-and-multilevel-mixed-linear-models" class="section level3">
-<h3>Repeated Measures ANOVA and Multilevel (MIXED) Linear Models</h3>
-<p>For Homework 07, you will be using the HELP dataset, learn more at:</p>
+<div id="lesson-12-simple-regression-and-anova" class="section level2">
+<h2>Lesson 12: Simple Regression and ANOVA</h2>
+<p>For this lesson we will be working with the HELP dataset. See more details on the HELP dataset at:</p>
 <ul>
-<li><a href="https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/" class="uri">https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/</a> &amp;</li>
 <li><a href="https://github.com/melindahiggins2000/N736Fall2017_HELPdataset" class="uri">https://github.com/melindahiggins2000/N736Fall2017_HELPdataset</a></li>
+<li><a href="https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/" class="uri">https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/</a></li>
 </ul>
-<p>Refer to the repeated measures ANOVA and MLM lessons 21, 22 and 23. See</p>
+</div>
+<div id="variables-in-help" class="section level2">
+<h2>Variables in HELP</h2>
+<p><em>{remember to review the HELP documentation}</em></p>
+<p>OUTCOME - For today’s exercise, we will focus on the total score from the “Inventory of Drug Use Consequences”, which is variable <code>indtot</code>.</p>
+<p>Learn more about this survey tool at:</p>
 <ul>
-<li>Lesson 21 <a href="https://github.com/melindahiggins2000/N736Fall2017_lesson21" class="uri">https://github.com/melindahiggins2000/N736Fall2017_lesson21</a></li>
-<li>Lesson 22 <a href="https://github.com/melindahiggins2000/N736Fall2017_lesson22" class="uri">https://github.com/melindahiggins2000/N736Fall2017_lesson22</a></li>
-<li>Lesson 23 <a href="https://github.com/melindahiggins2000/N736Fall2017_lesson23" class="uri">https://github.com/melindahiggins2000/N736Fall2017_lesson23</a></li>
+<li><a href="http://lib.adai.washington.edu/dbtw-wpd/exec/dbtwpub.dll?BU=http%3A//lib.adai.washington.edu/instrumentsearch.htm&amp;TN=Instruments&amp;CS=0&amp;QY=find%20(AccessNo%20ct%20143)&amp;RF=Full&amp;DF=Full&amp;MR=&amp;NP=3&amp;RL=0&amp;DL=0&amp;XC=&amp;ID=&amp;AC=QBE_QUERY">http://lib.adai.washington.edu/dbtw-wpd/exec/dbtwpub.dll?BU=http%3A//lib.adai.washington.edu/instrumentsearch.htm&amp;TN=Instruments&amp;CS=0&amp;QY=find%20(AccessNo%20ct%20143)&amp;RF=Full&amp;DF=Full&amp;MR=&amp;NP=3&amp;RL=0&amp;DL=0&amp;XC=&amp;ID=&amp;AC=QBE_QUERY</a></li>
 </ul>
-<p>For the HELP dataset:</p>
+<p>CONTINUOUS “predictor” - for the simple linear regression we will use the CESD (depression) score, variable <code>cesd</code>.</p>
+<p>GROUP/“Factor” - for the one-way ANOVA we will create 3 groups (low, moderate and high) from the PSS-fr (perceived social support from friends scale) using “cutpoints” defined by thirds (33rd and 67th percentiles), variable <code>pss_fr</code>.</p>
+</div>
+<div id="data-and-code-for-today" class="section level2">
+<h2>Data and Code for Today</h2>
 <ul>
-<li>OUTCOME VARIABLE: consider the 5 measurements of depressive symptoms (CESD) at baseline, 6m, 12m, 18m and 24m. Use variables <code>cesd</code>, <code>cesd1</code>, <code>cesd2</code>, <code>cesd3</code>, <code>cesd4</code></li>
-<li>BETWEEN GROUP VARIABLE: Also consider the treatment group variable <code>treat</code></li>
-<li>FYI: You will also need the <code>id</code> to
-<ol style="list-style-type: lower-alpha">
-<li>properly restructure the data from WIDE to LONG format; and</li>
-<li>treat subjects as a random effect for the random intercepts approach to MLM</li>
-</ol></li>
+<li>HELP Dataset for R and SPSS <a href="https://github.com/melindahiggins2000/N736Fall2017_lesson12/raw/master/helpmkh.sav" class="uri">https://github.com/melindahiggins2000/N736Fall2017_lesson12/raw/master/helpmkh.sav</a></li>
+<li>HELP Dataset for SAS <a href="https://github.com/melindahiggins2000/N736Fall2017_lesson12/raw/master/helpmkh.sas7bdat" class="uri">https://github.com/melindahiggins2000/N736Fall2017_lesson12/raw/master/helpmkh.sas7bdat</a></li>
+<li>HELP Formats for SAS <a href="https://github.com/melindahiggins2000/N736Fall2017_lesson12/raw/master/formats.sas7bcat" class="uri">https://github.com/melindahiggins2000/N736Fall2017_lesson12/raw/master/formats.sas7bcat</a></li>
+<li>R Program <a href="https://github.com/melindahiggins2000/N736Fall2017_lesson12/raw/master/lesson12.R" class="uri">https://github.com/melindahiggins2000/N736Fall2017_lesson12/raw/master/lesson12.R</a></li>
+<li>SAS Program <a href="https://github.com/melindahiggins2000/N736Fall2017_lesson12/raw/master/lesson12all.sas" class="uri">https://github.com/melindahiggins2000/N736Fall2017_lesson12/raw/master/lesson12all.sas</a></li>
+<li>SPSS Program (Syntax) <a href="https://github.com/melindahiggins2000/N736Fall2017_lesson12/raw/master/Lesson_12_SPSSSyntax.sps" class="uri">https://github.com/melindahiggins2000/N736Fall2017_lesson12/raw/master/Lesson_12_SPSSSyntax.sps</a></li>
 </ul>
-</div>
-<div id="for-homework-7-complete-the-following" class="section level3">
-<h3>For Homework 7, complete the following:</h3>
-<ol style="list-style-type: decimal">
-<li>Perform a repeated measures analysis of variance (RM-ANOVA) for the 5 CESD measurements across time by treatment group.
-<ol style="list-style-type: lower-alpha">
-<li>treat time as a continuous variable (not as a factor) - this is your WITHIN group effect</li>
-<li>treat the treatment group <code>treat</code> as a factor - this is your BETWEEN group effect</li>
-<li>TABLE: present the table of the intercept, time, treat and time*treat interaction effects including the tests of significance. <em>[Remember this significance might change depending on the treatment group coding - try flipping the 0 and 1 and run the model again to see if the significance changes]</em></li>
-<li>FIGURE: make a plot of the CESD means across time by group - if you can make it an error bar plot which has the means and CI’s (confidence intervals) or SE’s (standard errors)</li>
-</ol></li>
-<li>Repeate the “repeated measures/longitudinal” analysis using a random intercepts MLM model
-<ol style="list-style-type: lower-alpha">
-<li>REMEMBER to restructure the data from WIDE to LONG format</li>
-<li>TABLE: present the table of the intercept, time, treat and time*treat interaction effects including the tests of significance. <em>[Remember this significance might change depending on the treatment group coding - try flipping the 0 and 1 and run the model again to see if the significance changes]</em></li>
-</ol></li>
-<li>Compare the results between the 2 approaches
-<ol style="list-style-type: lower-alpha">
-<li>compare the sample size differences</li>
-<li>why do you think the results are different or are similar?</li>
-</ol></li>
-</ol>
-</div>
-</div>
-<div id="variables-in-help-dataset-to-be-used-for-homework-07" class="section level2">
-<h2>Variables in HELP dataset to be used for Homework 07:</h2>
-<table>
-<caption>Use these variables from HELP dataset for Homework 07</caption>
-<thead>
-<tr class="header">
-<th></th>
-<th align="left">Variable Label</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>id</td>
-<td align="left">Subject ID</td>
-</tr>
-<tr class="even">
-<td>treat</td>
-<td align="left">Randomization Group</td>
-</tr>
-<tr class="odd">
-<td>cesd</td>
-<td align="left">CESD total score - Baseline</td>
-</tr>
-<tr class="even">
-<td>cesd1</td>
-<td align="left">CESD total score - 6mo</td>
-</tr>
-<tr class="odd">
-<td>cesd2</td>
-<td align="left">CESD total score - 12mo</td>
-</tr>
-<tr class="even">
-<td>cesd3</td>
-<td align="left">CESD total score - 18mo</td>
-</tr>
-<tr class="odd">
-<td>cesd4</td>
-<td align="left">CESD total score - 24mo</td>
-</tr>
-</tbody>
-</table>
 </div>
 
 <hr>

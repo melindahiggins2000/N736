@@ -2,7 +2,7 @@
 title: "Syllabus"
 ---
 
-## _**Syllabus - Updated 08/28/2018**_
+## _**Syllabus - Updated 10/14/2018**_
 
 _Please note that some of the topics have been updated slightly in the "Class Calendar" section below._
 
@@ -138,7 +138,7 @@ Mon	| Wed	| Lessons | Topic                                        	| Homework D
 9/10	| 9/12	| 3, 4 |Creating new variables; recoding; data cleaning and data formats; summarizing your data	| 
 9/17 | 9/19	| 5, 6  | Data Wrangling (Part 1 & 2)	| H02 due 9/26
 9/24 | 9/26	| 7, 8  | Univariate and Bivariate Statistics (tests and graphics) - continued	| 
-10/1| 10/3	| 9, 10 | Introduction to Bootstrapping & Missing Data	| H03 & Milestone 1 due 10/10
+10/1| 10/3	| 9, 10 | Introduction to Bootstrapping & Missing Data	| H03 due 10/10 & PROJECT Milestone 1 due 10/17
 --- | 10/10	| --, 11 | More than 2 groups: Introduction to One-way ANOVA and Simple Linear Regression; Building Models; and Introduction to regression/model diagnostics | 
 10/15	| 10/17 (H.Wickham)	| 12, 13 | Multivariate Linear Regression –  Understanding the impact of the Correlation Matrix (confounding, multicollinearity, sequential regression); reviewing multicollinearity and regression assumptions – model building and variable selection methods| H04 due 10/24
 10/22 | 10/24	| 14, 15 | Understanding Factors and Covariates & Evaluating “Theoretical” Covariates (in ANOVA and Regression) and Interaction Effects (Moderation and Testing Homogenity of Slopes assumptions) | 
