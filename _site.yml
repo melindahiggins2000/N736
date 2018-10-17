@@ -34,6 +34,7 @@ navbar:
         - text: "12. Simple Regression & ANOVA"
           href: lesson_12_SimpleRegANOVA.html
         - text: "13. Multivariate Regression & Variable Selection"
+          href: lesson_13_MVRegVarSelection.html
         - text: "14,15. Interactions, Moderators, Covariates, Factors"
         - text: "16. Power, Sample Size, Effect Size"
         - text: "17. Analysis of Covariance (ANCOVA)"
@@ -57,6 +58,7 @@ navbar:
         - text: "Project - Milestone 01 - due 10/17/2018"
           href: project01.html
         - text: "Homework 04 - due 10/24/2018"
+          href: homework04.html
         - text: "Homework 05 - due 11/07/2018"
         - text: "Homework 06 - due 11/26/2018"
         - text: "Homework 07 - due 12/05/2018"

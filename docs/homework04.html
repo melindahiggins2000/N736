@@ -318,7 +318,9 @@ div.tocify {
     <li>
       <a href="lesson_12_SimpleRegANOVA.html">12. Simple Regression &amp; ANOVA</a>
     </li>
-    <li class="dropdown-header">13. Multivariate Regression &amp; Variable Selection</li>
+    <li>
+      <a href="lesson_13_MVRegVarSelection.html">13. Multivariate Regression &amp; Variable Selection</a>
+    </li>
     <li class="dropdown-header">14,15. Interactions, Moderators, Covariates, Factors</li>
     <li class="dropdown-header">16. Power, Sample Size, Effect Size</li>
     <li class="dropdown-header">17. Analysis of Covariance (ANCOVA)</li>
@@ -353,7 +355,9 @@ div.tocify {
     <li>
       <a href="project01.html">Project - Milestone 01 - due 10/17/2018</a>
     </li>
-    <li class="dropdown-header">Homework 04 - due 10/24/2018</li>
+    <li>
+      <a href="homework04.html">Homework 04 - due 10/24/2018</a>
+    </li>
     <li class="dropdown-header">Homework 05 - due 11/07/2018</li>
     <li class="dropdown-header">Homework 06 - due 11/26/2018</li>
     <li class="dropdown-header">Homework 07 - due 12/05/2018</li>
@@ -446,8 +450,8 @@ div.tocify {
 </div>
 
 
-<div id="homework-04---due-10182017" class="section level2">
-<h2>Homework 04 - due 10/18/2017</h2>
+<div id="homework-04---due-10242017" class="section level2">
+<h2>Homework 04 - due 10/24/2017</h2>
 <p>For Homework 04, you will be using the HELP dataset, learn more at:</p>
 <ul>
 <li><a href="https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/" class="uri">https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/</a> &amp;</li>
@@ -457,9 +461,9 @@ div.tocify {
 <ol style="list-style-type: decimal">
 <li>Perform a Simple Linear Regression for:
 <ul>
-<li>OUTCOME variable <code>indtot</code>: “Inventory of Drug Use Consequences (InDue) total score - Baseline”</li>
-<li>PREDICTOR variable <code>mcs</code>: “SF36 Mental Composite Score - Baseline”</li>
-<li>decide if you want to transform either variable <code>indtot</code> or <code>mcs</code> and if so, what transformation you applied and why</li>
+<li>OUTCOME variable <code>cesd</code>: “Center for Epidemiological Studies-Depression (CESD) total score - Baseline”</li>
+<li>PREDICTOR variable <code>indtot</code>: ““Inventory of Drug Use Consequences (InDue) total score - Baseline””</li>
+<li>decide if you want to transform either variable <code>cesd</code> or <code>indtot</code> and if so, what transformation you applied and why - you can also decide not to transform (i.e. tradeoffs between model fit and interpretability of your results) - discuss your reasoning</li>
 </ul></li>
 <li>Perform regression diagnostics:
 <ul>
@@ -478,15 +482,14 @@ div.tocify {
 </ul></li>
 <li>Perform a One-way ANOVA for:
 <ul>
-<li>OUTCOME variable <code>indtot</code>: “Inventory of Drug Use Consequences (InDue) total score - Baseline”</li>
+<li>OUTCOME variable <code>cesd</code>: “Center for Epidemiological Studies-Depression (CESD) total score - Baseline”</li>
 <li>GROUP variable <code>racegrp</code>: “Racial Group of Respondent”</li>
-<li>I would suggest merging “other” and “hispanic” together and create a 3-group variable for race, since the “other” category is only about 6% of the sample.</li>
 <li>options - you can use either an ANOVA or GLM modeling approach</li>
 <li>if the GROUP variable is significant, also perform <em>post hoc</em> tests - use some kind of pairwise error rate adjustment (i.e. bonferroni, sidak, Tukey’s HSD, etc) - be sure to report which one you used and why</li>
 </ul></li>
 <li>Perform model diagnostics:
 <ul>
-<li>homoscedasticity - look at a test for equal variance (Levene’s test or Bartlett’s test).</li>
+<li>homoscedasticity - look at a test for equal variance (Levene’s test or Bartlett’s test or equivalent).</li>
 <li>if this test of equal variances fails, you may want to report a modified F-test (e.g. Welch’s test)</li>
 </ul></li>
 <li>Present a summary of the ANOVA results.
@@ -510,16 +513,16 @@ div.tocify {
 </thead>
 <tbody>
 <tr class="odd">
+<td>cesd</td>
+<td align="left">CESD total score - Baseline</td>
+</tr>
+<tr class="even">
 <td>racegrp</td>
 <td align="left">Racial Group of Respondent</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>indtot</td>
 <td align="left">Inventory of Drug Use Consequences (InDue) total score - Baseline</td>
-</tr>
-<tr class="odd">
-<td>mcs</td>
-<td align="left">SF36 Mental Composite Score - Baseline</td>
 </tr>
 </tbody>
 </table>

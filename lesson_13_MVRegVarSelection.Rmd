@@ -1,0 +1,20 @@
+---
+title: 'Lesson 13: Multivariate Regression and Variable Selection'
+---
+
+## Lesson 13: Multivariate Regression and Variable Selection
+
+For this lesson we will be working with the HELP dataset. See more details on the HELP dataset at:
+
+* [https://github.com/melindahiggins2000/N736Fall2017_HELPdataset](https://github.com/melindahiggins2000/N736Fall2017_HELPdataset)
+* [https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/](https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/)
+
+## Data and Code for Today
+
+* HELP Dataset for R and SPSS [https://github.com/melindahiggins2000/N736Fall2017_lesson12/raw/master/helpmkh.sav](https://github.com/melindahiggins2000/N736Fall2017_lesson12/raw/master/helpmkh.sav)
+* HELP Dataset for SAS [https://github.com/melindahiggins2000/N736Fall2017_lesson12/raw/master/helpmkh.sas7bdat](https://github.com/melindahiggins2000/N736Fall2017_lesson12/raw/master/helpmkh.sas7bdat)
+* HELP Formats for SAS [https://github.com/melindahiggins2000/N736Fall2017_lesson12/raw/master/formats.sas7bcat](https://github.com/melindahiggins2000/N736Fall2017_lesson12/raw/master/formats.sas7bcat)
+* R Program [https://github.com/melindahiggins2000/N736Fall2017_lesson13/raw/master/lesson13.R](https://github.com/melindahiggins2000/N736Fall2017_lesson13/raw/master/lesson13.R)
+* SAS Program [https://github.com/melindahiggins2000/N736Fall2017_lesson13/raw/master/lesson13.sas](https://github.com/melindahiggins2000/N736Fall2017_lesson13/raw/master/lesson13.sas)
+* SPSS Program (Syntax) [https://github.com/melindahiggins2000/N736Fall2017_lesson13/raw/master/SPSSSyntax_lesson13.sps](https://github.com/melindahiggins2000/N736Fall2017_lesson13/raw/master/SPSSSyntax_lesson13.sps)
+
