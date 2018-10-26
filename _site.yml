@@ -37,9 +37,10 @@ navbar:
           href: lesson_13_MVRegVarSelection.html
         - text: "14,15 Regression Diagnostics and Variable Selection (cont'd)"
           href: lesson_1415_review.html
-        - text: "16. Interactions, Moderators, Covariates, Factors"
-          href: lesson_16_IntCovMod.html
-        - text: "17. Power, Sample Size, Effect Size"
+        - text: "16. Power, Sample Size, Effect Size"
+          href: lesson_16_powerEffectsize.html
+        - text: "17. Interactions, Moderators, Covariates, Factors"
+          href: lesson_17_IntCovMod.html
         - text: "18. Analysis of Covariance (ANCOVA)"
         - text: "19. Logistic Regression and Generalized Linear Regression"
         - text: "20. Poisson and Negative Binomial Regression"
