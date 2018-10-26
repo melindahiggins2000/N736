@@ -35,10 +35,13 @@ navbar:
           href: lesson_12_SimpleRegANOVA.html
         - text: "13. Multivariate Regression & Variable Selection"
           href: lesson_13_MVRegVarSelection.html
-        - text: "14,15. Interactions, Moderators, Covariates, Factors"
-        - text: "16. Power, Sample Size, Effect Size"
-        - text: "17. Analysis of Covariance (ANCOVA)"
-        - text: "18,19. Logistic Regression and Generalized Linear Regression"
+        - text: "14,15 Regression Diagnostics and Variable Selection (cont'd)"
+          href: lesson_1415_review.html
+        - text: "16. Interactions, Moderators, Covariates, Factors"
+          href: lesson_16_IntCovMod.html
+        - text: "17. Power, Sample Size, Effect Size"
+        - text: "18. Analysis of Covariance (ANCOVA)"
+        - text: "19. Logistic Regression and Generalized Linear Regression"
         - text: "20. Poisson and Negative Binomial Regression"
         - text: "21. Dependent/Paired data and Repeated Measures"
         - text: "22. Repeated Measures ANOVA"

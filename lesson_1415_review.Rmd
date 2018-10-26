@@ -1,0 +1,7 @@
+---
+title: 'Lesson 14 and 15: Continue Regression Diagnostics, Multivariate Regression and Variable Selection'
+---
+
+## Lesson 14 and 15: Continue Regression Diagnostics, Multivariate Regression and Variable Selection
+
+In these 2 lessons, we continued to review the regression diagnostics and tasks requested to complete [Homework 4](https://melindahiggins2000.github.io/N736/homework04.html) (based on material presented in [lesson 12](https://melindahiggins2000.github.io/N736/lesson_12_SimpleRegANOVA.html)) and continued the discussion and examples of multivariate regression and variable selection approaches (materials presented in [lesson 13](https://melindahiggins2000.github.io/N736/lesson_13_MVRegVarSelection.html))

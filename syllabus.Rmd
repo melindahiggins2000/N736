@@ -2,7 +2,7 @@
 title: "Syllabus"
 ---
 
-## _**Syllabus - Updated 10/14/2018**_
+## _**Syllabus - Updated 10/26/2018**_
 
 _Please note that some of the topics have been updated slightly in the "Class Calendar" section below._
 
@@ -135,14 +135,14 @@ Mon	| Wed	| Lessons | Topic                                        	| Homework D
 ----|-----|--------:|-----------------------------------------------|--------------
 ---	| 8/29	| --, 1 | Introductions; Course Overview; Getting Started with your stats software (getting setup, get access to your data, getting started); Using Github repositories	| 
 --- | 9/5	| --, 2 | Your statistical computing Environment, Data Import and Export (formats), Viewing, Variables, File handling, and Workflow; Data labels, value and missing data coding, other coding considerations, variable types (impact on modeling and graphics);Describing your data, evaluate missing	| H01 due 9/12
-9/10	| 9/12	| 3, 4 |Creating new variables; recoding; data cleaning and data formats; summarizing your data	| 
-9/17 | 9/19	| 5, 6  | Data Wrangling (Part 1 & 2)	| H02 due 9/26
-9/24 | 9/26	| 7, 8  | Univariate and Bivariate Statistics (tests and graphics) - continued	| 
-10/1| 10/3	| 9, 10 | Introduction to Bootstrapping & Missing Data	| H03 due 10/10 & PROJECT Milestone 1 due 10/17
---- | 10/10	| --, 11 | More than 2 groups: Introduction to One-way ANOVA and Simple Linear Regression; Building Models; and Introduction to regression/model diagnostics | 
-10/15	| 10/17 (H.Wickham)	| 12, 13 | Multivariate Linear Regression –  Understanding the impact of the Correlation Matrix (confounding, multicollinearity, sequential regression); reviewing multicollinearity and regression assumptions – model building and variable selection methods| H04 due 10/24
-10/22 | 10/24	| 14, 15 | Understanding Factors and Covariates & Evaluating “Theoretical” Covariates (in ANOVA and Regression) and Interaction Effects (Moderation and Testing Homogenity of Slopes assumptions) | 
-10/29 | 10/31	| 16, 17 | Sample Size, Power and Effect Sizes; More than 2: Introduction to Two-way/multivariate ANOVA - blending regression/ANOVA and the GLM (general linear model) | H05 due 11/07
+9/10	| 9/12	| 3, 4 |Creating new variables; recoding; data cleaning and data formats; summarizing your data; Data Wrangling	| 
+9/17 | 9/19	| 5, 6  | Univariate, Descriptive Statistics	| H02 due 9/26
+9/24 | 9/26	| 7, 8  | Homework 01 Review and Univariate Statistics (tests and graphics) - continued	| 
+10/1| 10/3	| 9, 10 | Bivariate Stats & Introduction to Bootstrapping & Missing Data	| H03 due 10/10 & PROJECT Milestone 1 due 10/17
+--- | 10/10	| --, 11 | Building Models; and Introduction to regression/model diagnostics | 
+10/15	| 10/17	| 12, 13 | More than 2 groups: Introduction to One-way ANOVA and Simple Linear Regression; Multivariate Linear Regression –  Understanding the impact of the Correlation Matrix (confounding, multicollinearity, sequential regression); reviewing multicollinearity and regression assumptions – model building and variable selection methods| H04 due 10/24
+10/22 | 10/24	| 14, 15 | Regression Diagnostics Review for Homework 4; More on Model Building Multivariate Regression and Variable Selection | 
+10/29 | 10/31	| 16, 17 | Understanding Factors and Covariates & Evaluating “Theoretical” Covariates (in ANOVA and Regression) and Interaction Effects (Moderation and Testing Homogenity of Slopes assumptions); Sample Size, Power and Effect Sizes; More than 2: Introduction to Two-way/multivariate ANOVA - blending regression/ANOVA and the GLM (general linear model) | H05 due 11/07
 11/05	| 11/07	| 18, 19 | Begin Non-normal, Non-continuous outcomes (Logistic Regression), introduction to “Generalized” Linear Regression); brief intro to Poisson, Negative Binomial and other distributions that can be fit to your outcomes	| 
 11/12 | 11/14	| 20, 21 | Modeling Time/Longitudinal Data: 2 Time points (PRE-POST); Analysis of Covariance; Paired t-tests and Wilcoxon Rank Sum Test; Repeated Measures ANOVA (pros and cons), Data structure (restructuring); correlated time points; considerations of Missing Data; 	| H06 due 11/26
 11/19 | 11/21 (on own)	| 22, -- | More on longitudinal data modeling; intro to Multilevel “Mixed” Models (nested, clustered, correlated data structures)	| 

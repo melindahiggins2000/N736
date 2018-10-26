@@ -1,0 +1,7 @@
+---
+title: 'Lesson 16. Interactions, Moderators, Covariates, Factors'
+---
+
+## Lesson 16. Interactions, Moderators, Covariates, Factors
+
+Interactions, Moderators and Covariates "oh my"
