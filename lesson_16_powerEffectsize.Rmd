@@ -5,3 +5,16 @@ title: 'Lesson 16. Power, Sample Size, Effect Size'
 ## Lesson 16. Power, Sample Size, Effect Size
 
 Discussion of Power, Sample Size and Effect Size - "Good, Fast, Cheap - pick 2"
+
+We will be discussing the information in these slides - feel free to download my files:
+
+* PPT Slides - 1  [https://github.com/melindahiggins2000/N736/raw/master/HigginsLecture_Power_30Jan2013.ppt](https://github.com/melindahiggins2000/N736/raw/master/HigginsLecture_Power_30Jan2013.ppt)
+* PPT Slides - 2 []()
+* Converting Effect Sizes EXCEL file [https://github.com/melindahiggins2000/N736/raw/master/Copy%20of%20Converting%20effect%20sizes%202009-06-25.xls](https://github.com/melindahiggins2000/N736/raw/master/Copy%20of%20Converting%20effect%20sizes%202009-06-25.xls)
+* EXCEL File showing n=80-120 for moderate effect sizes regardless of method [https://github.com/melindahiggins2000/N736/raw/master/EffectSizes_Power_SampleSizes_Higgins_09172013.xlsx](https://github.com/melindahiggins2000/N736/raw/master/EffectSizes_Power_SampleSizes_Higgins_09172013.xlsx)
+* Post Hoc Power Paper [https://github.com/melindahiggins2000/N736/raw/master/LevinePostHocPower-1.pdf](https://github.com/melindahiggins2000/N736/raw/master/LevinePostHocPower-1.pdf)
+* The Abuse of Power Paper [https://github.com/melindahiggins2000/N736/raw/master/TheAbuseOfPower_AmStat_2001.pdf](https://github.com/melindahiggins2000/N736/raw/master/TheAbuseOfPower_AmStat_2001.pdf)
+
+
+
+* 
