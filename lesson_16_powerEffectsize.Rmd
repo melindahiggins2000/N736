@@ -15,6 +15,4 @@ We will be discussing the information in these slides - feel free to download my
 * Post Hoc Power Paper [https://github.com/melindahiggins2000/N736/raw/master/LevinePostHocPower-1.pdf](https://github.com/melindahiggins2000/N736/raw/master/LevinePostHocPower-1.pdf)
 * The Abuse of Power Paper [https://github.com/melindahiggins2000/N736/raw/master/TheAbuseOfPower_AmStat_2001.pdf](https://github.com/melindahiggins2000/N736/raw/master/TheAbuseOfPower_AmStat_2001.pdf)
 
-
-
-* 
+* OPTIONAL Download **G*Power** Power, Sample Size Software (yes, it is FREE) [http://www.gpower.hhu.de/](http://www.gpower.hhu.de/) - scroll about halfway down to download the installer for either Windows or Mac operating systems.
