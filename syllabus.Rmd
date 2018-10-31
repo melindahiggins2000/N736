@@ -149,5 +149,5 @@ Mon	| Wed	| Lessons | Topic                                        	| Homework D
 11/26 | 11/28 | 23, 24 | Repeated Measures ANOVA (pros and cons), Data structure (restructuring); correlated time points; considerations of Missing Data;  More on longitudinal data modeling; intro to Multilevel “Mixed” Models (nested, clustered, correlated data structures) | H07 due 12/05
 12/3 | 12/05	| 25, 26 | Introduction to “Psychometrics” (Survey/Questionnaire) Instruments, Scoring, missing/skipped items, Factor Analysis, Reliability; Brief Overview of Structural Equation Modeling: Mediation and Moderation; Correlated and Non-Normal Outcomes: MANOVA, Discriminant Analysis; Survival Analysis	| Milestone 2 due 12/10
 12/10 |	---	| --, -- | In class Help on Projects	| 
-. | . |	--, -- | FINAL PROJECT (Milestone #3) DUE NO LATER THAN 12/17/2015 | 	Final Project
+. | . |	--, -- | FINAL PROJECT (Milestone #3) DUE NO LATER THAN 12/17/2018 | 	Final Project
 
