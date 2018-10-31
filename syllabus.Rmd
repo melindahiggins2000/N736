@@ -2,7 +2,7 @@
 title: "Syllabus"
 ---
 
-## _**Syllabus - Updated 10/26/2018**_
+## _**Syllabus - Updated 10/31/2018**_
 
 _Please note that some of the topics have been updated slightly in the "Class Calendar" section below._
 
@@ -142,12 +142,12 @@ Mon	| Wed	| Lessons | Topic                                        	| Homework D
 --- | 10/10	| --, 11 | Building Models; and Introduction to regression/model diagnostics | 
 10/15	| 10/17	| 12, 13 | More than 2 groups: Introduction to One-way ANOVA and Simple Linear Regression; Multivariate Linear Regression –  Understanding the impact of the Correlation Matrix (confounding, multicollinearity, sequential regression); reviewing multicollinearity and regression assumptions – model building and variable selection methods| H04 due 10/24
 10/22 | 10/24	| 14, 15 | Regression Diagnostics Review for Homework 4; More on Model Building Multivariate Regression and Variable Selection | 
-10/29 | 10/31	| 16, 17 | Power and Effect Sizes; Understanding Factors and Covariates & Evaluating “Theoretical” Covariates (in ANOVA and Regression) and Interaction Effects (Moderation and Testing Homogenity of Slopes assumptions); Sample Size, More than 2: Introduction to Two-way/multivariate ANOVA - blending regression/ANOVA and the GLM (general linear model) | H05 due 11/07
-11/05	| 11/07	| 18, 19 | Begin Non-normal, Non-continuous outcomes (Logistic Regression), introduction to “Generalized” Linear Regression); brief intro to Poisson, Negative Binomial and other distributions that can be fit to your outcomes	| 
-11/12 | 11/14	| 20, 21 | Modeling Time/Longitudinal Data: 2 Time points (PRE-POST); Analysis of Covariance; Paired t-tests and Wilcoxon Rank Sum Test; Repeated Measures ANOVA (pros and cons), Data structure (restructuring); correlated time points; considerations of Missing Data; 	| H06 due 11/26
-11/19 | 11/21 (on own)	| 22, -- | More on longitudinal data modeling; intro to Multilevel “Mixed” Models (nested, clustered, correlated data structures)	| 
-11/26 | 11/28 | 23, 24 | Introduction to “Psychometrics” (Survey/Questionnaire) Instruments, Scoring, missing/skipped items, Factor Analysis, Reliability	| H07 due 12/05
-12/3 | 12/05	| 25, 26 | Brief Overview of Structural Equation Modeling: Mediation and Moderation; Correlated and Non-Normal Outcomes: MANOVA, Discriminant Analysis; Survival Analysis	| Milestone 2 due 12/10
+10/29 | 10/31	| 16, 17 | Power, Sample Size and Effect Sizes; Understanding Factors and Covariates & Evaluating “Theoretical” Covariates (in ANOVA and Regression) and Interaction Effects (Moderation and Testing Homogenity of Slopes assumptions) | H05 due 11/14
+11/05	| 11/07	| 18, 19 | More on modeling covariates, interactions and covariates; ANCOVA - Analysis of Covariance; More than 2: Introduction to Two-way/multivariate ANOVA - blending regression/ANOVA and the GLM (General Linear Model)	| 
+11/12 | 11/14	| 20, 21 | Introduction to “Generalized” Linear Regression - Non-normal and/or Non-continuous outcomes; e.g. binary outcomes via Logistic Regression; brief intro to Poisson, Negative Binomial and other distributions that can be fit to your outcomes | H06 due 11/28
+11/19 | 11/21 (on own)	| 22, -- | Modeling Time/Longitudinal Data: 2 Time points (PRE-POST); Paired t-tests and Wilcoxon Rank Sum Test | 
+11/26 | 11/28 | 23, 24 | Repeated Measures ANOVA (pros and cons), Data structure (restructuring); correlated time points; considerations of Missing Data;  More on longitudinal data modeling; intro to Multilevel “Mixed” Models (nested, clustered, correlated data structures) | H07 due 12/05
+12/3 | 12/05	| 25, 26 | Introduction to “Psychometrics” (Survey/Questionnaire) Instruments, Scoring, missing/skipped items, Factor Analysis, Reliability; Brief Overview of Structural Equation Modeling: Mediation and Moderation; Correlated and Non-Normal Outcomes: MANOVA, Discriminant Analysis; Survival Analysis	| Milestone 2 due 12/10
 12/10 |	---	| --, -- | In class Help on Projects	| 
 . | . |	--, -- | FINAL PROJECT (Milestone #3) DUE NO LATER THAN 12/17/2015 | 	Final Project
 

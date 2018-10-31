@@ -2,6 +2,15 @@
 title: 'Lesson 17. Interactions, Moderators, Covariates, Factors'
 ---
 
-## Lesson 17. Interactions, Moderators, Covariates, Factors
+## Lesson 17. More on Power & Interactions, Moderators, Covariates, Factors
 
-Interactions, Moderators and Covariates "oh my"
+### More on Power, Sample Size and Effect Size
+
+Today's lesson will finish up the lecture and demonstrations of computing power and sample size for effect sizes from various analyses.
+
+Refer back to the slides and files at lesson 16 [https://melindahiggins2000.github.io/N736/lesson_16_powerEffectsize.html](https://melindahiggins2000.github.io/N736/lesson_16_powerEffectsize.html)
+
+### Covariates, Interactions, & Moderators "oh my"
+
+* PPT Slides on Covariates, Moderators and Mediators [https://github.com/melindahiggins2000/N736/raw/master/ModeratorMediators_21Nov08.ppt](https://github.com/melindahiggins2000/N736/raw/master/ModeratorMediators_21Nov08.ppt)
+* Slides in PDF format on Covariates, Moderators & Mediators [https://github.com/melindahiggins2000/N736/raw/master/ModeratorMediators_21Nov08.pdf](https://github.com/melindahiggins2000/N736/raw/master/ModeratorMediators_21Nov08.pdf)
