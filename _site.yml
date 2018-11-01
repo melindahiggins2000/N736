@@ -41,15 +41,17 @@ navbar:
           href: lesson_16_powerEffectsize.html
         - text: "17. Interactions, Moderators, Covariates, Factors"
           href: lesson_17_IntCovMod.html
-        - text: "18. Analysis of Covariance (ANCOVA)"
-        - text: "19. Logistic Regression and Generalized Linear Regression"
-        - text: "20. Poisson and Negative Binomial Regression"
-        - text: "21. Dependent/Paired data and Repeated Measures"
-        - text: "22. Repeated Measures ANOVA"
-        - text: "23. RM-ANOVA and Multilevel (Mixed) Linear Models (MLM)"
-        - text: "24. Reliability and Factor Analysis"
-        - text: "25. Discriminant Analysis/MANOVA"
-        - text: "26. Mediators and SEM (structural equation modeling)"
+        - text: "18. Modeling Covariates and Interaction/Moderator Effects"
+          href: lesson_18_IntCovMod2.html
+        - text: "19. Analysis of Covariance (ANCOVA)"
+          href: lesson_19_ancova.html
+        - text: "20. Logistic Regression and Generalized Linear Regression"
+        - text: "21. Poisson and Negative Binomial Regression"
+        - text: "22. Dependent/Paired data and Repeated Measures"
+        - text: "23. Repeated Measures ANOVA"
+        - text: "24. RM-ANOVA and Multilevel (Mixed) Linear Models (MLM)"
+        - text: "25. Reliability and Factor Analysis"
+        - text: "26. Discriminant Analysis/MANOVA, Mediators and SEM"
     - text: "Assignments"
       icon: fa-file-text
       menu:

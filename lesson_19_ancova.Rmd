@@ -1,0 +1,9 @@
+---
+title: 'Lesson 19. Analysis of Covariance (ANCOVA)'
+---
+
+## Lesson 19. Analysis of Covariance (ANCOVA)
+
+### Covariates, Interactions, & Moderators "oh my"
+
+hhhhh

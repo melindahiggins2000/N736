@@ -1,0 +1,10 @@
+---
+title: 'Lesson 18. Interactions, Moderators, Covariates, Factors'
+---
+
+## Lesson 18. Interactions, Moderators, Covariates, Factors
+
+### Covariates, Interactions, & Moderators "oh my"
+
+* PPT Slides on Covariates, Moderators and Mediators [https://github.com/melindahiggins2000/N736/raw/master/ModeratorMediators_21Nov08.ppt](https://github.com/melindahiggins2000/N736/raw/master/ModeratorMediators_21Nov08.ppt)
+* Slides in PDF format on Covariates, Moderators & Mediators [https://github.com/melindahiggins2000/N736/raw/master/ModeratorMediators_21Nov08.pdf](https://github.com/melindahiggins2000/N736/raw/master/ModeratorMediators_21Nov08.pdf)
