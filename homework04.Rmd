@@ -12,20 +12,16 @@ Here are the answer key files for Homework 4:
 * SPSS Data [https://github.com/melindahiggins2000/N736Fall2017_Homework4Key/raw/master/helpmkh.sav](https://github.com/melindahiggins2000/N736Fall2017_Homework4Key/raw/master/helpmkh.sav)
 * SPSS Answer Key SYNTAX Code [https://github.com/melindahiggins2000/N736Fall2017_Homework4Key/raw/master/SPSS_Syntax_hmwk4Key.sps](https://github.com/melindahiggins2000/N736Fall2017_Homework4Key/raw/master/SPSS_Syntax_hmwk4Key.sps)
 * SPSS Answer Key Output 
-    - HTML []()
+    - HTML [https://melindahiggins2000.github.io/N736Fall2017_Homework4Key/SPSS_Output_hmwk4key.htm](https://melindahiggins2000.github.io/N736Fall2017_Homework4Key/SPSS_Output_hmwk4key.htm)
     - SPV SPSS format [https://github.com/melindahiggins2000/N736Fall2017_Homework4Key/raw/master/SPSS_Output_hmwk4key.spv](https://github.com/melindahiggins2000/N736Fall2017_Homework4Key/raw/master/SPSS_Output_hmwk4key.spv)
 * SAS Data [https://github.com/melindahiggins2000/N736Fall2017_Homework4Key/raw/master/helpmkh.sas7bdat](https://github.com/melindahiggins2000/N736Fall2017_Homework4Key/raw/master/helpmkh.sas7bdat)
 * SAS Answer Key Code [https://github.com/melindahiggins2000/N736Fall2017_Homework4Key/raw/master/SAS_homwork4_key.sas](https://github.com/melindahiggins2000/N736Fall2017_Homework4Key/raw/master/SAS_homwork4_key.sas)
-* SAS Answer Key Output []()
+* SAS Answer Key Output - in HTML format [https://melindahiggins2000.github.io/N736Fall2017_Homework4Key/SASOutput_hmwk4key.htm](https://melindahiggins2000.github.io/N736Fall2017_Homework4Key/SASOutput_hmwk4key.htm)
 * R Data - _same as SPSS Data_
 * R Answer Key Code [https://github.com/melindahiggins2000/N736Fall2017_Homework4Key/raw/master/R_homework04_key.R](https://github.com/melindahiggins2000/N736Fall2017_Homework4Key/raw/master/R_homework04_key.R)
-* R Answer Key Output []()
+* R Answer Key Output - HTML output from Rmarkdown [https://melindahiggins2000.github.io/N736Fall2017_Homework4Key/R_homework04_key.html](https://melindahiggins2000.github.io/N736Fall2017_Homework4Key/R_homework04_key.html)
 
 You are also welcome to refer to my Github Repository for Homework 4 Answer Key [https://github.com/melindahiggins2000/N736Fall2017_Homework4Key](https://github.com/melindahiggins2000/N736Fall2017_Homework4Key)
-
-
-
-
 
 ## Assignment - Homework 04 - due 10/24/2017
 
