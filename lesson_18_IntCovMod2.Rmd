@@ -4,7 +4,14 @@ title: 'Lesson 18. Interactions, Moderators, Covariates, Factors'
 
 ## Lesson 18. Interactions, Moderators, Covariates, Factors
 
-### Covariates, Interactions, & Moderators "oh my"
+### Code and Models
+
+* HELP Dataset SPSS Format [https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sav](https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sav)
+* SPSS SYNTAX Code[https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/lesson17_SPSS_Syntax_2018.sps](https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/lesson17_SPSS_Syntax_2018.sps)
+* SPSS Output [https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/lesson17_SPSS_Output_2018.spv](https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/lesson17_SPSS_Output_2018.spv)
+* SPSS Output in HTML format [https://melindahiggins2000.github.io/N736Fall2017_lesson17/lesson17_SPSS_Output_2018.htm](https://melindahiggins2000.github.io/N736Fall2017_lesson17/lesson17_SPSS_Output_2018.htm)
+
+### Slides
 
 * PPT Slides on Covariates, Moderators and Mediators [https://github.com/melindahiggins2000/N736/raw/master/ModeratorMediators_21Nov08.ppt](https://github.com/melindahiggins2000/N736/raw/master/ModeratorMediators_21Nov08.ppt)
 * Slides in PDF format on Covariates, Moderators & Mediators [https://github.com/melindahiggins2000/N736/raw/master/ModeratorMediators_21Nov08.pdf](https://github.com/melindahiggins2000/N736/raw/master/ModeratorMediators_21Nov08.pdf)
