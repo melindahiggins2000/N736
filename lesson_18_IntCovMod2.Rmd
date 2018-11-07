@@ -10,6 +10,9 @@ title: 'Lesson 18. Interactions, Moderators, Covariates, Factors'
 * SPSS SYNTAX Code[https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/lesson17_SPSS_Syntax_2018.sps](https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/lesson17_SPSS_Syntax_2018.sps)
 * SPSS Output [https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/lesson17_SPSS_Output_2018.spv](https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/lesson17_SPSS_Output_2018.spv)
 * SPSS Output in HTML format [https://melindahiggins2000.github.io/N736Fall2017_lesson17/lesson17_SPSS_Output_2018.htm](https://melindahiggins2000.github.io/N736Fall2017_lesson17/lesson17_SPSS_Output_2018.htm)
+* SAS Dataset [https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sas7bdat](https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sas7bdat)
+* SAS Code [https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/lesson17_SAS_2018.sas](https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/lesson17_SAS_2018.sas)
+* R Code [https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/lesson18_2018_R.R](https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/lesson18_2018_R.R)
 
 ### Slides
 

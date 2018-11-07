@@ -44,7 +44,7 @@ navbar:
         - text: "18. Modeling Covariates and Interaction/Moderator Effects"
           href: lesson_18_IntCovMod2.html
         - text: "19. Analysis of Covariance (ANCOVA)"
-          href: lesson_19_ancova.html
+          href: lesson_18_IntCovMod2.html
         - text: "20. Logistic Regression and Generalized Linear Regression"
         - text: "21. Poisson and Negative Binomial Regression"
         - text: "22. Dependent/Paired data and Repeated Measures"
