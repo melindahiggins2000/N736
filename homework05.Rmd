@@ -4,6 +4,59 @@ title: "Homework 05"
 
 ## Homework 05 - due 11/14/2018
 
-### ANCOVA - Analysis of Covariance Exercise
+### Analysis of Covariance and Moderation Exercise
 
-placeholder
+For Homework 05, you will be using the HELP dataset, learn more at:
+
+* [https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/](https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/) &
+* [https://github.com/melindahiggins2000/N736Fall2017_HELPdataset](https://github.com/melindahiggins2000/N736Fall2017_HELPdataset)
+
+Complete the following for these variables:
+
+* OUTCOME VARIABLE (Y): `mcs`
+* INDEPENDENT VARIABLE (X): `age`
+* COVARIATES (other X's): `homeless`
+
+1. [MODEL 1] Run a model testing to see if there is a difference in mental health `mcs` scores by homelessness (`homeless`) _(run as a regression model with `mcs` as the outcome)_ 
+    * Discuss the interpretation of the intercept _(i.e. when `homeless` = 0)_ and 
+    * discuss the interpretation of the slope _(i.e. what happens to `mcs` scores when going from not homeless (`homeless`=0) to homeless (`homeless`=1))_.
+    
+2. [MODEL 2] Run a model testing for an association between `mcs` as the outcome with `age` as the predictor adjusting for homelessness (`homeless`) as a "covariate". 
+    * Use a regression approach and show the stepwise approach comparing 
+        - model 1: mcs = homeless
+        - model 2: mcs = homeless + age
+    * present the change in R2 between these 2 models and the test for significant change in R2
+    * discuss these results - is there a significant association between `mcs` and `age` after adjusting for `homeless`?
+    
+3. [MODEL 3] Run a full model with both main effects and an interaction (moderation) effect _(using a regression, ANOVA, or GLM approach - your choice)_ for the association between the SF36 Mental Component Score (`mcs`) and Age (`age`) adjusting for homelessness (`homeless`). Remember to:
+    * check for the assumption of homogenity of variance _(i.e. is the interaction term significant?)_
+    * make an "effects plot" plot of the interaction between `age` and `homeless` 
+    * and additionally report the change in R2 for
+        - model 3: mcs = homless + age + homeless_x_age
+    * discuss the results - does homelessness moderate the association between `mcs` and `age`?
+    
+## Variables in HELP dataset to be used for Homework 05
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+helpdata <- readRDS("helpmkh.rds")
+library(tidyverse)
+sub1 <- helpdata %>%
+  select(mcs,age,homeless)
+
+# create a function to get the label
+# label output from the attributes() function
+getlabel <- function(x) attributes(x)$label
+# getlabel(sub1$age)
+
+library(purrr)
+ldf <- purrr::map_df(sub1, getlabel) # this is a 1x15 tibble data.frame
+# t(ldf) # transpose for easier reading to a 15x1 single column list
+
+# using knitr to get a table of these
+# variable names for Rmarkdown
+library(knitr)
+knitr::kable(t(ldf),
+             col.names = c("Variable Label"),
+             caption="Use these variables from HELP dataset for Homework 05")
+
+```

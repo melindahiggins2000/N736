@@ -469,10 +469,73 @@ div.tocify {
 
 <div id="homework-05---due-11142018" class="section level2">
 <h2>Homework 05 - due 11/14/2018</h2>
-<div id="ancova---analysis-of-covariance-exercise" class="section level3">
-<h3>ANCOVA - Analysis of Covariance Exercise</h3>
-<p>placeholder</p>
+<div id="analysis-of-covariance-and-moderation-exercise" class="section level3">
+<h3>Analysis of Covariance and Moderation Exercise</h3>
+<p>For Homework 05, you will be using the HELP dataset, learn more at:</p>
+<ul>
+<li><a href="https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/" class="uri">https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/</a> &amp;</li>
+<li><a href="https://github.com/melindahiggins2000/N736Fall2017_HELPdataset" class="uri">https://github.com/melindahiggins2000/N736Fall2017_HELPdataset</a></li>
+</ul>
+<p>Complete the following for these variables:</p>
+<ul>
+<li>OUTCOME VARIABLE (Y): <code>mcs</code></li>
+<li>INDEPENDENT VARIABLE (X): <code>age</code></li>
+<li>COVARIATES (other X’s): <code>homeless</code></li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>[MODEL 1] Run a model testing to see if there is a difference in mental health <code>mcs</code> scores by homelessness (<code>homeless</code>) <em>(run as a regression model with <code>mcs</code> as the outcome)</em>
+<ul>
+<li>Discuss the interpretation of the intercept <em>(i.e. when <code>homeless</code> = 0)</em> and</li>
+<li>discuss the interpretation of the slope <em>(i.e. what happens to <code>mcs</code> scores when going from not homeless (<code>homeless</code>=0) to homeless (<code>homeless</code>=1))</em>.</li>
+</ul></li>
+<li>[MODEL 2] Run a model testing for an association between <code>mcs</code> as the outcome with <code>age</code> as the predictor adjusting for homelessness (<code>homeless</code>) as a “covariate”.
+<ul>
+<li>Use a regression approach and show the stepwise approach comparing
+<ul>
+<li>model 1: mcs = homeless</li>
+<li>model 2: mcs = homeless + age</li>
+</ul></li>
+<li>present the change in R2 between these 2 models and the test for significant change in R2</li>
+<li>discuss these results - is there a significant association between <code>mcs</code> and <code>age</code> after adjusting for <code>homeless</code>?</li>
+</ul></li>
+<li>[MODEL 3] Run a full model with both main effects and an interaction (moderation) effect <em>(using a regression, ANOVA, or GLM approach - your choice)</em> for the association between the SF36 Mental Component Score (<code>mcs</code>) and Age (<code>age</code>) adjusting for homelessness (<code>homeless</code>). Remember to:
+<ul>
+<li>check for the assumption of homogenity of variance <em>(i.e. is the interaction term significant?)</em></li>
+<li>make an “effects plot” plot of the interaction between <code>age</code> and <code>homeless</code></li>
+<li>and additionally report the change in R2 for
+<ul>
+<li>model 3: mcs = homless + age + homeless_x_age</li>
+</ul></li>
+<li>discuss the results - does homelessness moderate the association between <code>mcs</code> and <code>age</code>?</li>
+</ul></li>
+</ol>
 </div>
+</div>
+<div id="variables-in-help-dataset-to-be-used-for-homework-05" class="section level2">
+<h2>Variables in HELP dataset to be used for Homework 05</h2>
+<table>
+<caption>Use these variables from HELP dataset for Homework 05</caption>
+<thead>
+<tr class="header">
+<th></th>
+<th align="left">Variable Label</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>mcs</td>
+<td align="left">SF36 Mental Composite Score - Baseline</td>
+</tr>
+<tr class="even">
+<td>age</td>
+<td align="left">Age at baseline (in years)</td>
+</tr>
+<tr class="odd">
+<td>homeless</td>
+<td align="left">One or more nights on the street or shelter in past 6 months</td>
+</tr>
+</tbody>
+</table>
 </div>
 
 <hr>
