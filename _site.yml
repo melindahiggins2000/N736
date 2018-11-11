@@ -46,6 +46,7 @@ navbar:
         - text: "19. Analysis of Covariance (ANCOVA)"
           href: lesson_18_IntCovMod2.html
         - text: "20. Logistic Regression and Generalized Linear Regression"
+          href: lesson_20_logreg.html
         - text: "21. Poisson and Negative Binomial Regression"
         - text: "22. Dependent/Paired data and Repeated Measures"
         - text: "23. Repeated Measures ANOVA"

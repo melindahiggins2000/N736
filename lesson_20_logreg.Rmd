@@ -1,0 +1,18 @@
+---
+title: 'Lesson 20. Logistic Regression'
+---
+
+## Lesson 20. Logistic Regression
+
+### Overview of "Generalized" Linear Models
+
+See discussion and overview at [https://melindahiggins2000.github.io/N736Fall2017_lesson1819/](https://melindahiggins2000.github.io/N736Fall2017_lesson1819/)
+
+### Code and Models
+
+* HELP Dataset SPSS Format [https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sav](https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sav)
+* SPSS SYNTAX Code[https://github.com/melindahiggins2000/N736Fall2017_lesson1819/raw/master/lesson19_Syntax_SPSS.sps](https://github.com/melindahiggins2000/N736Fall2017_lesson1819/raw/master/lesson19_Syntax_SPSS.sps)
+* SAS Dataset [https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sas7bdat](https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sas7bdat)
+* SAS Code [https://github.com/melindahiggins2000/N736Fall2017_lesson1819/raw/master/lesson19.sas](https://github.com/melindahiggins2000/N736Fall2017_lesson1819/raw/master/lesson19.sas)
+* R Code [https://github.com/melindahiggins2000/N736Fall2017_lesson1819/raw/master/lesson19_Rcode.R](https://github.com/melindahiggins2000/N736Fall2017_lesson1819/raw/master/lesson19_Rcode.R)
+
