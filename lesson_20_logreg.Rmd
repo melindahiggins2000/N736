@@ -1,18 +1,24 @@
 ---
-title: 'Lesson 20. Logistic Regression'
+title: 'Lesson 20 & 21. Logistic & Poisson Regression'
 ---
 
-## Lesson 20. Logistic Regression
+## Lesson 20 & 21. Logistic & Poisson Regression
 
 ### Overview of "Generalized" Linear Models
 
 See discussion and overview at [https://melindahiggins2000.github.io/N736Fall2017_lesson1819/](https://melindahiggins2000.github.io/N736Fall2017_lesson1819/)
 
-### Code and Models
+### Code and Models - Logistic Regression
 
 * HELP Dataset SPSS Format [https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sav](https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sav)
 * SPSS SYNTAX Code[https://github.com/melindahiggins2000/N736Fall2017_lesson1819/raw/master/lesson19_Syntax_SPSS.sps](https://github.com/melindahiggins2000/N736Fall2017_lesson1819/raw/master/lesson19_Syntax_SPSS.sps)
 * SAS Dataset [https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sas7bdat](https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sas7bdat)
 * SAS Code [https://github.com/melindahiggins2000/N736Fall2017_lesson1819/raw/master/lesson19.sas](https://github.com/melindahiggins2000/N736Fall2017_lesson1819/raw/master/lesson19.sas)
 * R Code [https://github.com/melindahiggins2000/N736Fall2017_lesson1819/raw/master/lesson19_Rcode.R](https://github.com/melindahiggins2000/N736Fall2017_lesson1819/raw/master/lesson19_Rcode.R)
+
+### Code for Poisson and Negative Binomial Regression
+
+* SPSS SYNTAX Code [https://github.com/melindahiggins2000/N736Fall2017_lesson20/raw/master/SPSS_Syntax_lesson20.sps](https://github.com/melindahiggins2000/N736Fall2017_lesson20/raw/master/SPSS_Syntax_lesson20.sps)
+* SAS Code [https://github.com/melindahiggins2000/N736Fall2017_lesson20/raw/master/lesson20.sas](https://github.com/melindahiggins2000/N736Fall2017_lesson20/raw/master/lesson20.sas)
+* R Code [https://github.com/melindahiggins2000/N736Fall2017_lesson20/raw/master/lesson20_Rcode.R](https://github.com/melindahiggins2000/N736Fall2017_lesson20/raw/master/lesson20_Rcode.R)
 
