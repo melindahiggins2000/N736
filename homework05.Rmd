@@ -29,7 +29,7 @@ Complete the following for these variables:
     * discuss these results - is there a significant association between `mcs` and `age` after adjusting for `homeless`?
     
 3. [MODEL 3] Run a full model with both main effects and an interaction (moderation) effect _(using a regression, ANOVA, or GLM approach - your choice)_ for the association between the SF36 Mental Component Score (`mcs`) and Age (`age`) adjusting for homelessness (`homeless`). Remember to:
-    * check for the assumption of homogenity of variance _(i.e. is the interaction term significant?)_
+    * check for the assumption of homogenity of slopes _(i.e. is the interaction term significant?)_
     * make an "effects plot" plot of the interaction between `age` and `homeless` 
     * and additionally report the change in R2 for
         - model 3: mcs = homless + age + homeless_x_age
