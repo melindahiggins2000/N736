@@ -1,0 +1,20 @@
+---
+title: 'Lesson 24. Multilevel (Mixed or Nested) Linear Models (MLM)'
+---
+
+## Lesson 24. Multilevel (Mixed or Nested) Linear Models (MLM)
+
+### Overview of MLM
+
+We will discuss the power of this modeling approach and compare and contrast these models with those from RM-ANOVA.
+
+We will also discuss the "structure" of the data needed - long versus wide formats.
+
+### Analysis Code for MLM
+
+* HELP Dataset SPSS Format [https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sav](https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sav)
+* SPSS SYNTAX Code [https://github.com/melindahiggins2000/N736Fall2017_lesson23/raw/master/SPSS_Syntax_lesson23.sps](https://github.com/melindahiggins2000/N736Fall2017_lesson23/raw/master/SPSS_Syntax_lesson23.sps)
+* SAS Dataset [https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sas7bdat](https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sas7bdat)
+* SAS Code [https://github.com/melindahiggins2000/N736Fall2017_lesson23/raw/master/lesson23.sas](https://github.com/melindahiggins2000/N736Fall2017_lesson23/raw/master/lesson23.sas)
+* R Code v.1 [https://github.com/melindahiggins2000/N736Fall2017_lesson23/raw/master/lesson23_Rcode.R](https://github.com/melindahiggins2000/N736Fall2017_lesson23/raw/master/lesson23_Rcode.R)
+* R Code v.2 [https://github.com/melindahiggins2000/N736Fall2017_lesson23/raw/master/lesson23_rmanovaUpdate_Rcode.R](https://github.com/melindahiggins2000/N736Fall2017_lesson23/raw/master/lesson23_rmanovaUpdate_Rcode.R)

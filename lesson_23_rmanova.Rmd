@@ -1,0 +1,19 @@
+---
+title: 'Lesson 23. Repeated Measures ANOVA'
+---
+
+## Lesson 23. Repeated Measures ANOVA - a "good"/"ok" place to start
+
+### Overview of "Repeated Measures"
+
+We will discuss terms and assumptions of these models.
+
+### Analysis Code for RM-ANOVA
+
+* HELP Dataset SPSS Format [https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sav](https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sav)
+* SPSS SYNTAX Code [https://github.com/melindahiggins2000/N736Fall2017_lesson22/raw/master/SPSS_Syntax_lesson22.sps](https://github.com/melindahiggins2000/N736Fall2017_lesson22/raw/master/SPSS_Syntax_lesson22.sps)
+* SAS Dataset [https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sas7bdat](https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sas7bdat)
+* SAS Code [https://github.com/melindahiggins2000/N736Fall2017_lesson22/raw/master/lesson22.sas](https://github.com/melindahiggins2000/N736Fall2017_lesson22/raw/master/lesson22.sas)
+* R Code [https://github.com/melindahiggins2000/N736Fall2017_lesson22/raw/master/lesson22_Rcode.R](https://github.com/melindahiggins2000/N736Fall2017_lesson22/raw/master/lesson22_Rcode.R)
+
+

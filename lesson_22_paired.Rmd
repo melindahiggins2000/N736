@@ -1,0 +1,18 @@
+---
+title: 'Lesson 22. Dependent/Paired data and Repeated Measures'
+---
+
+## Lesson 22. Dependent/Paired data and Repeated Measures
+
+### Discussion of Paired, Dependent or Correlated Data
+
+For the first part of this lecture, I will layout the pros and cons of paired data. These data are also called "dependent" or "correlated" data. I'll discuss some of the underlying assumptions for the various modeling approaches for this kind of data.
+
+### Analysis Codes for "paired" data
+
+* HELP Dataset SPSS Format [https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sav](https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sav)
+* SPSS SYNTAX Code [https://github.com/melindahiggins2000/N736Fall2017_lesson21/raw/master/SPSS_Syntax_lesson21.sps](https://github.com/melindahiggins2000/N736Fall2017_lesson21/raw/master/SPSS_Syntax_lesson21.sps)
+* SAS Dataset [https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sas7bdat](https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sas7bdat)
+* SAS Code [https://github.com/melindahiggins2000/N736Fall2017_lesson21/raw/master/lesson21.sas](https://github.com/melindahiggins2000/N736Fall2017_lesson21/raw/master/lesson21.sas)
+* R Code [https://github.com/melindahiggins2000/N736Fall2017_lesson21/raw/master/lesson21_Rcode.R](https://github.com/melindahiggins2000/N736Fall2017_lesson21/raw/master/lesson21_Rcode.R)
+
