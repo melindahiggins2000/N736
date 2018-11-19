@@ -50,7 +50,7 @@ navbar:
         - text: "22. Dependent/Paired data and Repeated Measures"
           href: lesson_22_paired.html
         - text: "23. Repeated Measures ANOVA"
-          href: lesson_23_rmanova.thml
+          href: lesson_23_rmanova.html
         - text: "24. Multilevel (Mixed or Nested) Linear Models (MLM)"
           href: lesson_24_mlm.html
         - text: "25. Reliability and Factor Analysis"
