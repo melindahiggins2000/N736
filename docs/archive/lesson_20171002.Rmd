@@ -1,0 +1,54 @@
+---
+title: "Building Models"
+---
+
+## Lesson 11: Building Models - Regression & ANOVA, etc...
+
+This lesson begins the discussion of building models - regression models (linear regression, logistic regression, generalized linear models) and ANOVA (one-way, two-way, mixed) and others...
+
+We will be referring to the PPT/PDF slides:
+
+* `ResearchRoundtableBuildRegressionModel_final14Nov08.ppt` [https://github.com/melindahiggins2000/N736Fall2017/blob/master/ResearchRoundtableBuildRegressionModel_final14Nov08.ppt](https://github.com/melindahiggins2000/N736Fall2017/blob/master/ResearchRoundtableBuildRegressionModel_final14Nov08.ppt)
+* `ResearchRoundtableBuildRegressionModel_final14Nov08.pdf` [https://github.com/melindahiggins2000/N736Fall2017/blob/master/ResearchRoundtableBuildRegressionModel_final14Nov08.pdf](https://github.com/melindahiggins2000/N736Fall2017/blob/master/ResearchRoundtableBuildRegressionModel_final14Nov08.pdf)
+
+## Consider Steps, checklists, assumptions, ...
+
+1. Assume that the terms are "linearly"" related to the outcome - that relationship is linear (either directly or through transformations)
+
+2. The "slope" or "relationship" between X & Y is assumed to be "constant" / "consistent" across all levels of X
+    - same slope from 1-to-2 as from 200-to-201
+    - changing from "strongly disagree" - to - "disagree" is assumed to have the same impact on Y as going from "neutral" - to - "agree" [e.g. LiKert scale data] - useful case when looking at both "regression" and "ANOVA" type models can be useful
+        - 5 = "strongly agree"
+        - 4 = "agree"
+        - 3 = "neutral"
+        - 2 = "disagree"
+        - 1 = "strongly disagree"
+    - a "similar" type case for longitudinal data ("repeated measures") where there are 3 sequential "time" points 0, 1, 2. Could treat "time" as continuous (slope over time), but:
+        - 0 = "baseline"
+        - 1 = "immediately post-treatment" - usually greatest measure of treatment effect
+        - 2 = "next follow-up post treatment" - typically no further intervention or treatment was received - this is really a measure of sustained effect, often not a measure of continued "dose" response
+        
+3. We assume that Y was observed for all levels of X and that it was observed "evenly" ("balanced" experimental design) - "Anscome Quartet"
+
+4. The independent variables are independent of one another (no multicollinearity) – although some “mild/minor” correlation may be tolerated (VIF/TOL).
+
+5. Any case which has “missing” data on any of the IVs or DV will be eliminated from the analysis (listwise deletion).
+
+6. The intercept and all coefficients for the IVs are “Fixed.” _[“Random Coefficient Models” to be discussed later.]_
+
+7. We assume that the variance of Y is constant across all levels of X (assumption of homogeneity of variance) - important for regression and ANOVA (e.g. "Levene's test")
+
+8. The "error" term is additive (not multiplicative)
+
+9. Assume "errors" ("residuals") are normally distributed, identical and independent ~iid N(mu,sigma).
+    - normality checks
+    - check to see if residuals are independent - trend by sequnce (collection order of data) - related to sampling independence (e.g. family members are not independent)
+    - see if residuals are related to other X's either in or out of the model (plots of "e" vs X's)
+    - see if residuals are related to Y (plot "e" vs Y)
+    - look for outliers
+    - look for influential values
+
+_[next lesson - discussion of Type I, II and III sums of squares - differences in SPSS, SAS and R]_
+
+
+

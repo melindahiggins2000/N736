@@ -1,0 +1,11 @@
+---
+title: "Bootstrapping"
+---
+
+## Lesson 09: Introduction to Bootstrapping
+
+This lesson introduces you to bootstrapping statistics using `R` and `SAS`.
+
+1. See lesson posted at [https://melindahiggins2000.github.io/N736Fall2017_lesson09/lesson09_boot.html](https://melindahiggins2000.github.io/N736Fall2017_lesson09/lesson09_boot.html)
+
+2. Github repo for Lesson 09 at [https://github.com/melindahiggins2000/N736Fall2017_lesson09](https://github.com/melindahiggins2000/N736Fall2017_lesson09)

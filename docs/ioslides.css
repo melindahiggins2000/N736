@@ -1,0 +1,26 @@
+.gdbar img {
+  width: 85px !important;
+  height: 85px !important;
+}
+
+div.quote-container blockquote p {
+  font-size: 18px;
+}
+
+div.quote-container2 blockquote {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#myImagePage img {
+  width: 60px;
+  height: 90px;
+}
+
+#bigpic img {
+  width: 881px;
+  height: 527px;
+}

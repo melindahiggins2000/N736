@@ -1,0 +1,9 @@
+---
+title: "N736 Fall 2017 - Lesson 21 on Dependent/Paired Data and an Introduction to Repeated Measures ANOVA"
+---
+
+## Github Repository for Lesson 21
+
+See [https://github.com/melindahiggins2000/N736Fall2017_lesson21](https://github.com/melindahiggins2000/N736Fall2017_lesson21)
+
+

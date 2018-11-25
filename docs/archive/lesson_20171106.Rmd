@@ -1,0 +1,9 @@
+---
+title: "N736 Fall 2017 - Lesson 20 on Poisson and Negative Binomial Regression"
+---
+
+## Github Repository for Lesson 20
+
+See [https://github.com/melindahiggins2000/N736Fall2017_lesson20](https://github.com/melindahiggins2000/N736Fall2017_lesson20)
+
+

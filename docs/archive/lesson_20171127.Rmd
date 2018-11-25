@@ -1,0 +1,9 @@
+---
+title: "N736 Fall 2017 - Lesson 25. 11/27/2017 Discriminant Analysis/MANOVA"
+---
+
+## Github Repository for Lesson 25. 11/27/2017 Discriminant Analysis/MANOVA
+
+See [https://github.com/melindahiggins2000/N736Fall2017_lesson25](https://github.com/melindahiggins2000/N736Fall2017_lesson25)
+
+

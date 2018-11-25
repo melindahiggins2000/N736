@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Data Wrangling: January 25, 2017</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
+<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 54px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+
+.section h2 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h3 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h4 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h5 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h6 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">N736</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Home
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-archive"></span>
+     
+    Lessons
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="intro.html">1. Introduction</a>
+    </li>
+    <li>
+      <a href="lesson_02_dataCleaning.html">2. Exploring Data, Cleaning, Assessment</a>
+    </li>
+    <li>
+      <a href="lesson_03_dataReview.html">3. Data Review and Assessment</a>
+    </li>
+    <li>
+      <a href="lesson_04_dataWrangling.html">4. Data Wrangling</a>
+    </li>
+    <li>
+      <a href="lesson_05_descriptiveStats.html">5. Univariate Descriptive Stats</a>
+    </li>
+    <li>
+      <a href="lesson_06_descriptiveStats_pt2.html">6. Hands-on Descriptive Stats</a>
+    </li>
+    <li>
+      <a href="lesson_07_Homework01_AnswerKeyReview.html">7. Homework 01 Answer Key Review</a>
+    </li>
+    <li>
+      <a href="lesson_08_UnivariateBivariate.html">8. Univariate Statistics</a>
+    </li>
+    <li>
+      <a href="lesson_09_Bivariate2.html">9. Bivariate Stats</a>
+    </li>
+    <li>
+      <a href="lesson_10_bootmiss.html">10. Bootstrapping and Missing Data</a>
+    </li>
+    <li>
+      <a href="lesson_11_BuildModels.html">11. Building Models</a>
+    </li>
+    <li>
+      <a href="lesson_12_SimpleRegANOVA.html">12. Simple Regression &amp; ANOVA</a>
+    </li>
+    <li>
+      <a href="lesson_13_MVRegVarSelection.html">13. Multivariate Regression &amp; Variable Selection</a>
+    </li>
+    <li>
+      <a href="lesson_1415_review.html">14,15 Regression Diagnostics and Variable Selection (cont'd)</a>
+    </li>
+    <li>
+      <a href="lesson_16_powerEffectsize.html">16. Power, Sample Size, Effect Size</a>
+    </li>
+    <li>
+      <a href="lesson_17_IntCovMod.html">17. Interactions, Moderators, Covariates, Factors</a>
+    </li>
+    <li>
+      <a href="lesson_18_IntCovMod2.html">18. Modeling Covariates and Interaction/Moderator Effects</a>
+    </li>
+    <li>
+      <a href="lesson_18_IntCovMod2.html">19. Analysis of Covariance (ANCOVA)</a>
+    </li>
+    <li>
+      <a href="lesson_20_logreg.html">20,21. Logistic &amp; Poisson Regression - Generalized Linear Regression</a>
+    </li>
+    <li>
+      <a href="lesson_22_paired.html">22. Dependent/Paired data and Repeated Measures</a>
+    </li>
+    <li>
+      <a href="lesson_23_rmanova.html">23. Repeated Measures ANOVA</a>
+    </li>
+    <li>
+      <a href="lesson_24_mlm.html">24. Multilevel (Mixed or Nested) Linear Models (MLM)</a>
+    </li>
+    <li class="dropdown-header">25. Reliability and Factor Analysis</li>
+    <li class="dropdown-header">26. Discriminant Analysis/MANOVA, Mediators and SEM</li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-file-text"></span>
+     
+    Assignments
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="homework01.html">Homework 01 - due 09/12/2018</a>
+    </li>
+    <li>
+      <a href="homework02.html">Homework 02 - due 09/26/2018</a>
+    </li>
+    <li>
+      <a href="homework03.html">Homework 03 - due 10/10/2018</a>
+    </li>
+    <li>
+      <a href="project01.html">Project - Milestone 01 - due 10/17/2018</a>
+    </li>
+    <li>
+      <a href="homework04.html">Homework 04 - due 10/24/2018</a>
+    </li>
+    <li>
+      <a href="homework05.html">Homework 05 - due 11/14/2018</a>
+    </li>
+    <li>
+      <a href="homework06.html">Homework 06 - due 12/05/2018</a>
+    </li>
+    <li>
+      <a href="homework07.html">Homework 07 - due 12/10/2018</a>
+    </li>
+    <li>
+      <a href="project.html">Project - Milestone 2 &amp; 3 - due 12/10/2018 &amp; 12/17/2018</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="helpdata.html">
+    <span class="fa fa-database"></span>
+     
+    H.E.L.P. Dataset
+  </a>
+</li>
+<li>
+  <a href="about.html">
+    <span class="fa fa-users"></span>
+     
+    Instructor
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-file-text"></span>
+     
+    Syllabus
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="syllabus.html">Overview</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-cog"></span>
+     
+    Useful Stuff
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="datacamp.html">Datacamp</a>
+    </li>
+    <li>
+      <a href="spss.html">SPSS Student Grad Pack</a>
+    </li>
+    <li>
+      <a href="sas.html">SAS University - FREE</a>
+    </li>
+    <li>
+      <a href="help.html">R, RStudio, Git, Github - FREE</a>
+    </li>
+    <li>
+      <a href="stata.html">Stata Student Versions</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="files.html">
+    <span class="fa fa-files-o"></span>
+     
+    Other Files
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="colophon.html">
+    <span class="fa fa-info-circle"></span>
+     
+    Colophon
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Data Wrangling: January 25, 2017</h1>
+
+</div>
+
+
+<div id="data-wrangling-january-25-2017" class="section level2">
+<h2>Data Wrangling: January 25, 2017</h2>
+<p>For today’s class, we will be working with the “N741 Data Wrangling” Github repository <a href="https://github.com/melindahiggins2000/N741DataWrangling" class="uri">https://github.com/melindahiggins2000/N741DataWrangling</a>.</p>
+<ol style="list-style-type: decimal">
+<li>Go to this repository</li>
+<li>Fork a copy to your Github Account</li>
+<li>Open RStudio, create a project for N741 Data Wrangling - using Version Control and Git</li>
+<li>Get the “N741 Data Wrangling” URL from YOUR Github repository (“Clone or Download” - select copy URL to clipboard)</li>
+<li>Paste in the URL and click “Create New Project”</li>
+<li>You should now have a local copy to use for today’s exercises.</li>
+</ol>
+</div>
+
+<hr>
+
+<p>Copyright &copy; <a href="http://melindahiggins2000.github.io/web2">Melinda Higgins, Ph.D.</a>. All contents under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">(CC) BY-NC-SA license</a>,<img src="ccbyncsa_88x31.png" alt="CC-BY-NC-SA" style="width:88px;height:31px;"> unless otherwise noted.
+</p>
+
+<p>
+	<a href=mailto:melinda.higgins@emory.edu>Feedback, Comments (email me)?</a> 
+</p>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+---
+title: "Intro to Git, Github, & Exploring Data"
+---
+
+## <i class="fa fa-github fa-1x"></i> Github
+
+**Github** [https://github.com/](https://github.com/) is a code & file sharing repository similar to Dropbox or Google Drive. However, Github has much more functionality built-in. Github utilizes <i class="fa fa-git-square fa-1x"></i> **Git** version control and tracking. Every file and every version of that file gets a `SHA` (Secure Hash Algorithm) tag, allowing you to track every change in that file from its creation. Not only do you get easy sharing and dissemination of files, you get automatic backup and version control tracking so you never lose your hard work again!
+
+BONUS - Github also works very well with RStudio through Git, allowing you to easily "stay in touch" with your repository as you are working in real time. Github also understands and converts MD (markdown) files on the fly into HTML allowing easy viewing of files in a web-browser interface. Github is also a great platform for hosting static websites (i.e. basic content display). 
+
+1. Signup for an account on Github at [https://github.com/](https://github.com/)
+2. Once you have signed up for an account, get logged in and you can `fork` a copy of today's lesson into your repository (i.e. make a copy into your account). 
+3. You will `fork` this repository https://github.com/melindahiggins2000/N736Testdataset 
+4. You also have the option to download the repository as a **ZIP** file onto your local hard drive.
+
+## <i class="fa fa-git-square fa-1x"></i> Git
+
+Git [https://git-scm.com/](https://git-scm.com/) is a free and open source distributed version control system. There are versions available for Windows/PC, Mac OS and Unix (Linux/Solaris). To utilize the functionality of linking RStudio to Github, you will need to download and install Git on your computer [https://git-scm.com/downloads](https://git-scm.com/downloads).
+
+5. After you install Git onto your computer AND After you fork a copy of the repository to your own Github account, you can then create a new project in RStudio and link your RStudio Project to your Github Account.
+6. Even if you are not using RStudio, you can still utilize Git - we'll do a short example below (and in class today).
+
+## Learn More - "Happy Git and Github for the R User"
+
+"Happy Git and GitHub for the useR" by Jenny Bryan; [http://happygitwithr.com/](http://happygitwithr.com/) is a wonderful resource to get Git and Github up and running and useable on your own computer. 
+
+* _[OPTIONAL]_ See Chapter 6 on how to install R and RStudio and get those up and running on your computer (if you wish to use R and RStudio)
+* See Chapter 7 on downloading and installing Git. Section 7.2 is for Windows and Section 7.3 is for Mac OS
+* See Chapter 8 on getting Git up and running with your Github account
+* _[OPTIONAL]_ See Chapter 9 if you would also like to install a separate Git Client. The RStudio IDE encironment has a limited interface for working with Git, but it can be very slow and not full features. It is possible to only use the Git Bash/command line interface. But if you have larger projects and want to do more version control and tracking and will be working with larger teams managing multiple inputs (i.e. multiple team members), you should read this chapter on the various Git Clients recommended (e.g. Sourcetree [https://www.sourcetreeapp.com/](https://www.sourcetreeapp.com/), GitKracken [https://www.gitkraken.com/](https://www.gitkraken.com/), and GitUp [http://gitup.co/](http://gitup.co/)).
+* Chapter 10 - follow the steps in this chapter to get connected to your Github account and repository.
+
+### Git Bash (CMD window) commands
+
+1. Git commands to get logged into your Github account
+
+```
+$ git config --global user.name 'Jennifer Bryan'
+$ git config --global user.email 'jenny@stat.ubc.ca'
+$ git config --global --list
+```
+
+2. Get logged in to yout Github account at [https://github.com/](https://github.com/)
+3. Create or fork a repository you want. For example, you should have forked a copy of `N736Testdataset` from [https://github.com/melindahiggins2000/N736Testdataset](https://github.com/melindahiggins2000/N736Testdataset)
+4. Open your Git Bash Shell - let's clone the repository! Go to where you want to save your repository - where on your harddrive do you want to create the directory/folder for this repository. For example, on my hard drive I keep everything in `C:\MyGithub`. So, after opening my Git Bash Shell, here is what I type:
+
+```
+$ cd c:\MyGithub
+```
+
+5. Now that I'm where I want to be on my harddrive, let's clone my repository into this directory. When the repo is cloned, a new folder is created with the repo name `N736Testdataset`. To get the `https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git` link - go to your Github repository and click on the `Clone or Download` GREEN button (top right side) and click the `copy to clipboard` box with arrow. You can then "paste" this into the Git Bash shell window. Here is how mine looks. Yours will have your Github account name.
+
+```
+$ git clone https://github.com/melindahiggins2000/N736Testdataset.git
+```
+
+6. Check to see if you got everything - change to your new directory and do a directory listing
+
+```
+$ cd N736Testdataset
+$ dir
+```
+
+7. You are now connected.
+
+### Other things to check as you add/remove/edit files in the future.
+
+8. To see if anything has changed since your last update
+
+```
+$ git status
+```
+
+9. Make a change locally - open the README.md file in your test editor (e.g. notepad) - make some changes, add a line of text. Then run a status check again.
+
+```
+$ git status
+```
+It should say that `README.md` has been modified.
+
+10. Let's add the updated file to your repo. There are 3 commands below:
+
+* the first command adds all of the new files into a list for uploading
+* the next command says you want to commit these files to the repo. Yes, you have to use the `-m` and add a message saying what you did in the quotes (put in a good descriptive message).
+* the final command PUSHes the files you committed to the repo.
+
+```
+$ git add .
+$ git commit -m "readme updated"
+$ git push
+```
+
+11. Suppose there was a change in the repo online back on the Github site. You can then PULL the changes down. Check the status and then pull down the changes and check status again.
+
+```
+$ git status
+$ git pull
+$ git status
+```
+
+## Explore the test dataset
+
+Let's open and explore the test dataset. Open the dataset oin your computer - you can use the `*XLS` or `*XLSX` or `*.CSV` version as you wish.
+
+You should find 10 issues with this dataset. Let's see how many you can find.
+
+
+
