@@ -1,9 +1,76 @@
 ---
-title: "Homework 06"
+title: "Homework 06 - Logistic Regression"
 ---
 
-## Homework 06 - due 11/28/2018
+## Homework 06 - Logistic Regression - due 12/05/2018
 
-### Logistic Regression
+### HELP Dataset
 
-placeholder
+For Homework 06, you will be using the HELP dataset, learn more at:
+
+* [https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/](https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/) &
+* [https://github.com/melindahiggins2000/N736Fall2017_HELPdataset](https://github.com/melindahiggins2000/N736Fall2017_HELPdataset)
+
+### Previous Exercises to Refer to
+
+Refer to the logistic regression analysis example and codes we ran during lesson 18 and 19 - see [https://github.com/melindahiggins2000/N736Fall2017_lesson1819](https://github.com/melindahiggins2000/N736Fall2017_lesson1819)
+
+### Variables to Consider in HELP Dataset
+
+For the HELP dataset:
+
+* OUTCOME VARIABLE: 
+    - consider the variable `e2b` "Number of times in past 6 months entered a detox program - Baseline" 
+    - recode this into a new variable `nodetox` for those who did NOT say they had entered a detox program 6mo prior to baseline and those who did 1 or more times (i.e. code the `e2b` missing as 1 and non-missing as 0 - see codes below to help you get started)
+* PREDICTOR VARIABLE: consider these variables as potential predictors for `nodetox`:
+    - `age`, `female`, `pss_fr`, `pcs`, `mcs`, and `cesd`
+
+### Code to help you get started
+
+* SPSS Code 
+* SAS Code
+* R Code
+
+### Assignment
+
+Complete the following:
+
+1. Consider the continuous variable `mcs` as a predictor for `nodetox`
+    a. run a logistic regression of the probability of not being in a detox program prior to baseline (`nodetox`) given their mental health scores (`mcs`)
+    b. make a plot of the the predicted probability of no detox (`nodetox`) by the mental health scores (`mcs`)
+    c. what value of the `mcs` leads to a probability of not being in a detox program => 0.5? _(hint: use the plot you just made)_
+    
+2. Run a logistic regression model for the probability of not being in a detox program 6mo prior to baseline considering all of these possible predictor variables: `age`, `female`, `pss_fr`, `pcs`, `mcs`, and `cesd`:
+    a. present the final model results (B, SE(of B), p-values, and Odds Ratios)
+    b. write a few sentences describing your results including:
+        i. model fit _(report the Area Under the Curve (AUC) and include a ROC plot)_ - discuss if you think this is a good model or not for predicting not being in a detox program 6mo prior to baseline
+        ii. model classification table results - remember to report the threshold used for the classification table - you can change it from 0.5 if you think a different threshold might work better
+        iii. odds ratios for each significant predictor in the model _("...for every 1 unit change in the predictor the odds of not being in a detox program prior to baseline was x.xxx times higher/lower...")_
+
+### Variables in HELP dataset to be used for Homework 06:
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+helpdata <- readRDS("helpmkh.rds")
+library(tidyverse)
+sub1 <- helpdata %>%
+  select(e2b, age, female, pss_fr,
+         pcs, mcs, cesd)
+
+# create a function to get the label
+# label output from the attributes() function
+getlabel <- function(x) attributes(x)$label
+# getlabel(sub1$age)
+
+library(purrr)
+ldf <- purrr::map_df(sub1, getlabel) # this is a 1x15 tibble data.frame
+# t(ldf) # transpose for easier reading to a 15x1 single column list
+
+# using knitr to get a table of these
+# variable names for Rmarkdown
+library(knitr)
+knitr::kable(t(ldf),
+             col.names = c("Variable Label"),
+             caption="Use these variables from HELP dataset for Homework 06")
+
+```
+

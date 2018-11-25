@@ -11,7 +11,7 @@
 
 
 
-<title>Homework 06</title>
+<title>Homework 06 - Logistic Regression</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -380,10 +380,10 @@ div.tocify {
       <a href="homework05.html">Homework 05 - due 11/14/2018</a>
     </li>
     <li>
-      <a href="homework06.html">Homework 06 - due 11/28/2018</a>
+      <a href="homework06.html">Homework 06 - due 12/05/2018</a>
     </li>
     <li>
-      <a href="homework07.html">Homework 07 - due 12/05/2018</a>
+      <a href="homework07.html">Homework 07 - due 12/10/2018</a>
     </li>
     <li>
       <a href="project.html">Project - Milestone 2 &amp; 3 - due 12/10/2018 &amp; 12/17/2018</a>
@@ -469,16 +469,111 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Homework 06</h1>
+<h1 class="title toc-ignore">Homework 06 - Logistic Regression</h1>
 
 </div>
 
 
-<div id="homework-06---due-11282018" class="section level2">
-<h2>Homework 06 - due 11/28/2018</h2>
-<div id="logistic-regression" class="section level3">
-<h3>Logistic Regression</h3>
-<p>placeholder</p>
+<div id="homework-06---logistic-regression---due-12052018" class="section level2">
+<h2>Homework 06 - Logistic Regression - due 12/05/2018</h2>
+<div id="help-dataset" class="section level3">
+<h3>HELP Dataset</h3>
+<p>For Homework 06, you will be using the HELP dataset, learn more at:</p>
+<ul>
+<li><a href="https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/" class="uri">https://melindahiggins2000.github.io/N736Fall2017_HELPdataset/</a> &amp;</li>
+<li><a href="https://github.com/melindahiggins2000/N736Fall2017_HELPdataset" class="uri">https://github.com/melindahiggins2000/N736Fall2017_HELPdataset</a></li>
+</ul>
+</div>
+<div id="previous-exercises-to-refer-to" class="section level3">
+<h3>Previous Exercises to Refer to</h3>
+<p>Refer to the logistic regression analysis example and codes we ran during lesson 18 and 19 - see <a href="https://github.com/melindahiggins2000/N736Fall2017_lesson1819" class="uri">https://github.com/melindahiggins2000/N736Fall2017_lesson1819</a></p>
+</div>
+<div id="variables-to-consider-in-help-dataset" class="section level3">
+<h3>Variables to Consider in HELP Dataset</h3>
+<p>For the HELP dataset:</p>
+<ul>
+<li>OUTCOME VARIABLE:
+<ul>
+<li>consider the variable <code>e2b</code> “Number of times in past 6 months entered a detox program - Baseline”</li>
+<li>recode this into a new variable <code>nodetox</code> for those who did NOT say they had entered a detox program 6mo prior to baseline and those who did 1 or more times (i.e. code the <code>e2b</code> missing as 1 and non-missing as 0 - see codes below to help you get started)</li>
+</ul></li>
+<li>PREDICTOR VARIABLE: consider these variables as potential predictors for <code>nodetox</code>:
+<ul>
+<li><code>age</code>, <code>female</code>, <code>pss_fr</code>, <code>pcs</code>, <code>mcs</code>, and <code>cesd</code></li>
+</ul></li>
+</ul>
+</div>
+<div id="code-to-help-you-get-started" class="section level3">
+<h3>Code to help you get started</h3>
+<ul>
+<li>SPSS Code</li>
+<li>SAS Code</li>
+<li>R Code</li>
+</ul>
+</div>
+<div id="assignment" class="section level3">
+<h3>Assignment</h3>
+<p>Complete the following:</p>
+<ol style="list-style-type: decimal">
+<li>Consider the continuous variable <code>mcs</code> as a predictor for <code>nodetox</code>
+<ol style="list-style-type: lower-alpha">
+<li>run a logistic regression of the probability of not being in a detox program prior to baseline (<code>nodetox</code>) given their mental health scores (<code>mcs</code>)</li>
+<li>make a plot of the the predicted probability of no detox (<code>nodetox</code>) by the mental health scores (<code>mcs</code>)</li>
+<li>what value of the <code>mcs</code> leads to a probability of not being in a detox program =&gt; 0.5? <em>(hint: use the plot you just made)</em></li>
+</ol></li>
+<li>Run a logistic regression model for the probability of not being in a detox program 6mo prior to baseline considering all of these possible predictor variables: <code>age</code>, <code>female</code>, <code>pss_fr</code>, <code>pcs</code>, <code>mcs</code>, and <code>cesd</code>:
+<ol style="list-style-type: lower-alpha">
+<li>present the final model results (B, SE(of B), p-values, and Odds Ratios)</li>
+<li>write a few sentences describing your results including:
+<ol style="list-style-type: lower-roman">
+<li>model fit <em>(report the Area Under the Curve (AUC) and include a ROC plot)</em> - discuss if you think this is a good model or not for predicting not being in a detox program 6mo prior to baseline</li>
+<li>model classification table results - remember to report the threshold used for the classification table - you can change it from 0.5 if you think a different threshold might work better</li>
+<li>odds ratios for each significant predictor in the model <em>(“…for every 1 unit change in the predictor the odds of not being in a detox program prior to baseline was x.xxx times higher/lower…”)</em></li>
+</ol></li>
+</ol></li>
+</ol>
+</div>
+<div id="variables-in-help-dataset-to-be-used-for-homework-06" class="section level3">
+<h3>Variables in HELP dataset to be used for Homework 06:</h3>
+<table>
+<caption>Use these variables from HELP dataset for Homework 06</caption>
+<thead>
+<tr class="header">
+<th></th>
+<th align="left">Variable Label</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>e2b</td>
+<td align="left">Number of times in past 6 months entered a detox program - Baseline</td>
+</tr>
+<tr class="even">
+<td>age</td>
+<td align="left">Age at baseline (in years)</td>
+</tr>
+<tr class="odd">
+<td>female</td>
+<td align="left">Gender of respondent</td>
+</tr>
+<tr class="even">
+<td>pss_fr</td>
+<td align="left">Perceived Social Support - friends</td>
+</tr>
+<tr class="odd">
+<td>pcs</td>
+<td align="left">SF36 Physical Composite Score - Baseline</td>
+</tr>
+<tr class="even">
+<td>mcs</td>
+<td align="left">SF36 Mental Composite Score - Baseline</td>
+</tr>
+<tr class="odd">
+<td>cesd</td>
+<td align="left">CESD total score - Baseline</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 
