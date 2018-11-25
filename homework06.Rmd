@@ -27,9 +27,9 @@ For the HELP dataset:
 
 ### Code to help you get started
 
-* SPSS Code 
-* SAS Code
-* R Code
+* SPSS Code [https://github.com/melindahiggins2000/N736/raw/master/homework6_SPSSSyntax1.sps](https://github.com/melindahiggins2000/N736/raw/master/homework6_SPSSSyntax1.sps)
+* SAS Code [https://github.com/melindahiggins2000/N736/raw/master/homework6_SAScode.sas](https://github.com/melindahiggins2000/N736/raw/master/homework6_SAScode.sas)
+* R Code [https://github.com/melindahiggins2000/N736/raw/master/homework06_Rcode.R](https://github.com/melindahiggins2000/N736/raw/master/homework06_Rcode.R)
 
 ### Assignment
 
