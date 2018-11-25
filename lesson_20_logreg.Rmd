@@ -22,3 +22,11 @@ See discussion and overview at [https://melindahiggins2000.github.io/N736Fall201
 * SAS Code [https://github.com/melindahiggins2000/N736Fall2017_lesson20/raw/master/lesson20.sas](https://github.com/melindahiggins2000/N736Fall2017_lesson20/raw/master/lesson20.sas)
 * R Code [https://github.com/melindahiggins2000/N736Fall2017_lesson20/raw/master/lesson20_Rcode.R](https://github.com/melindahiggins2000/N736Fall2017_lesson20/raw/master/lesson20_Rcode.R)
 
+### Code - UPDATED 11/25/2018 for Logistic Regression
+
+* Updated SPSS code for logistic regression [https://github.com/melindahiggins2000/N736Fall2017_lesson1819/raw/master/lesson19_Syntax_SPSS_updates.sps](https://github.com/melindahiggins2000/N736Fall2017_lesson1819/raw/master/lesson19_Syntax_SPSS_updates.sps)
+* Updated SAS code for logistic regression [https://github.com/melindahiggins2000/N736Fall2017_lesson1819/raw/master/lesson19_updated.sas](https://github.com/melindahiggins2000/N736Fall2017_lesson1819/raw/master/lesson19_updated.sas)
+* Updated R code for logistic regression [https://github.com/melindahiggins2000/N736Fall2017_lesson1819/raw/master/lesson19_updated_Rcode.R](https://github.com/melindahiggins2000/N736Fall2017_lesson1819/raw/master/lesson19_updated_Rcode.R)
+
+
+
