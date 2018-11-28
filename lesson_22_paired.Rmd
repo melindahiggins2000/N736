@@ -14,5 +14,5 @@ For the first part of this lecture, I will layout the pros and cons of paired da
 * SPSS SYNTAX Code [https://github.com/melindahiggins2000/N736Fall2017_lesson21/raw/master/SPSS_Syntax_lesson21.sps](https://github.com/melindahiggins2000/N736Fall2017_lesson21/raw/master/SPSS_Syntax_lesson21.sps)
 * SAS Dataset [https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sas7bdat](https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sas7bdat)
 * SAS Code [https://github.com/melindahiggins2000/N736Fall2017_lesson21/raw/master/lesson21.sas](https://github.com/melindahiggins2000/N736Fall2017_lesson21/raw/master/lesson21.sas)
-* R Code [https://github.com/melindahiggins2000/N736Fall2017_lesson21/raw/master/lesson21_Rcode.R](https://github.com/melindahiggins2000/N736Fall2017_lesson21/raw/master/lesson21_Rcode.R)
+* R Code [https://github.com/melindahiggins2000/N736Fall2017_lesson21/raw/master/lesson21_Rcode_update.R](https://github.com/melindahiggins2000/N736Fall2017_lesson21/raw/master/lesson21_Rcode_update.R)
 
