@@ -41,7 +41,7 @@ Complete the following:
     c. what value of the `mcs` leads to a probability of not being in a detox program => 0.5? _(hint: use the plot you just made)_
     
 2. Run a logistic regression model for the probability of not being in a detox program 6mo prior to baseline considering all of these possible predictor variables: `age`, `female`, `pss_fr`, `pcs`, `mcs`, and `cesd`:
-    a. present the final model results (B, SE(of B), p-values, and Odds Ratios)
+    a. present the final model results (B, SE(of B) _{if you can compute it}_, p-values, Odds Ratios, and 95% confidence intervals for the Odds Ratios)
     b. write a few sentences describing your results including:
         i. model fit _(report the Area Under the Curve (AUC) and include a ROC plot)_ - discuss if you think this is a good model or not for predicting not being in a detox program 6mo prior to baseline
         ii. model classification table results - remember to report the threshold used for the classification table - you can change it from 0.5 if you think a different threshold might work better
