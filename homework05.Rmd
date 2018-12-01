@@ -4,6 +4,15 @@ title: "Homework 05"
 
 ## Homework 05 - due 11/14/2018
 
+### Answer Key
+
+* R Output (Rmarkdown to HTML) [https://melindahiggins2000.github.io/N736Fall2017_Homework5Key/Homework5Key_Rmarkdown_2018.html](https://melindahiggins2000.github.io/N736Fall2017_Homework5Key/Homework5Key_Rmarkdown_2018.html)
+* R Code [https://github.com/melindahiggins2000/N736Fall2017_Homework5Key/raw/master/Homework5_RCodeKey_2018.R](https://github.com/melindahiggins2000/N736Fall2017_Homework5Key/raw/master/Homework5_RCodeKey_2018.R)
+* SPSS Output [https://melindahiggins2000.github.io/N736Fall2017_Homework5Key/Homework5Key_SPSS_Output.htm](https://melindahiggins2000.github.io/N736Fall2017_Homework5Key/Homework5Key_SPSS_Output.htm)
+* SPSS Code [https://github.com/melindahiggins2000/N736Fall2017_Homework5Key/raw/master/Homework5Key_SPSS_Syntax.sps](https://github.com/melindahiggins2000/N736Fall2017_Homework5Key/raw/master/Homework5Key_SPSS_Syntax.sps)
+* SAS Output [https://melindahiggins2000.github.io/N736Fall2017_Homework5Key/Homework5Key_SAS_output.htm](https://melindahiggins2000.github.io/N736Fall2017_Homework5Key/Homework5Key_SAS_output.htm)
+* SAS Code [https://github.com/melindahiggins2000/N736Fall2017_Homework5Key/raw/master/Homework5Key_SAS_Code.sas](https://github.com/melindahiggins2000/N736Fall2017_Homework5Key/raw/master/Homework5Key_SAS_Code.sas)
+
 ### Analysis of Covariance and Moderation Exercise
 
 For Homework 05, you will be using the HELP dataset, learn more at:
