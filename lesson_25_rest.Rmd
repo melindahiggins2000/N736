@@ -1,0 +1,33 @@
+---
+title: 'Lesson 25, 26 Reliability, Factor Analysis, MANOVA and other topics'
+---
+
+## Lesson 25, 26 Reliability, Factor Analysis, MANOVA and other topics
+
+### Lecture Slides
+
+* Multicollinearity, Factor Analysis and Discriminant Analysis
+    - PPT Slides [https://github.com/melindahiggins2000/N736Fall2017_lesson24/raw/master/ResearchRoundtable_multicollinearity_12Oct2007final_videoMP4.ppt](https://github.com/melindahiggins2000/N736Fall2017_lesson24/raw/master/ResearchRoundtable_multicollinearity_12Oct2007final_videoMP4.ppt)
+    - Embedded Video 1 [https://github.com/melindahiggins2000/N736Fall2017_lesson24/raw/master/NDV3.mp4](https://github.com/melindahiggins2000/N736Fall2017_lesson24/raw/master/NDV3.mp4)
+    - Embedded Video 2 [https://github.com/melindahiggins2000/N736Fall2017_lesson24/raw/master/ProfilePlots2.mp4](https://github.com/melindahiggins2000/N736Fall2017_lesson24/raw/master/ProfilePlots2.mp4)
+
+* Moderation, Mediation
+    - Slides - PPT [https://github.com/melindahiggins2000/N736Fall2017_lesson26/raw/master/ModeratorMediators_21Nov08.ppt](https://github.com/melindahiggins2000/N736Fall2017_lesson26/raw/master/ModeratorMediators_21Nov08.ppt)
+    - Slides - PDF [https://github.com/melindahiggins2000/N736Fall2017_lesson26/raw/master/ModeratorMediators_21Nov08.pdf](https://github.com/melindahiggins2000/N736Fall2017_lesson26/raw/master/ModeratorMediators_21Nov08.pdf)
+
+* Structural Equation Modeling
+    - Slides - PPT [https://github.com/melindahiggins2000/N736Fall2017_lesson26/raw/master/SEMResearchRoundtable_13April2009.pptx](https://github.com/melindahiggins2000/N736Fall2017_lesson26/raw/master/SEMResearchRoundtable_13April2009.pptx)
+    - Slides - PDF [https://github.com/melindahiggins2000/N736Fall2017_lesson26/raw/master/SEMResearchRoundtable_13April2009.pdf](https://github.com/melindahiggins2000/N736Fall2017_lesson26/raw/master/SEMResearchRoundtable_13April2009.pdf)
+    
+### Examples and Analysis Codes - Reliability and Factor Analysis
+
+* R code [https://github.com/melindahiggins2000/N736Fall2017_lesson24/raw/master/lesson24_Rcode.R](https://github.com/melindahiggins2000/N736Fall2017_lesson24/raw/master/lesson24_Rcode.R)
+* R output [https://melindahiggins2000.github.io/N736Fall2017_lesson24/lesson24_Rmarkdown.html](https://melindahiggins2000.github.io/N736Fall2017_lesson24/lesson24_Rmarkdown.html)
+
+* SAS Code [https://github.com/melindahiggins2000/N736Fall2017_lesson24/raw/master/lesson24.sas](https://github.com/melindahiggins2000/N736Fall2017_lesson24/raw/master/lesson24.sas)
+* SAS Output [https://melindahiggins2000.github.io/N736Fall2017_lesson24/SAS_output_lesson24.htm](https://melindahiggins2000.github.io/N736Fall2017_lesson24/SAS_output_lesson24.htm)
+
+* SPSS Code [https://github.com/melindahiggins2000/N736Fall2017_lesson24/raw/master/SPSS_Syntax_lesson24.sps](https://github.com/melindahiggins2000/N736Fall2017_lesson24/raw/master/SPSS_Syntax_lesson24.sps)
+* SPSS Output [https://melindahiggins2000.github.io/N736Fall2017_lesson24/SPSS_Output_lesson24.htm](https://melindahiggins2000.github.io/N736Fall2017_lesson24/SPSS_Output_lesson24.htm)
+
+

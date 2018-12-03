@@ -54,7 +54,9 @@ navbar:
         - text: "24. Multilevel (Mixed or Nested) Linear Models (MLM)"
           href: lesson_24_mlm.html
         - text: "25. Reliability and Factor Analysis"
+          href: lesson_25_rest.html
         - text: "26. Discriminant Analysis/MANOVA, Mediators and SEM"
+          href: lesson_25_rest.html
     - text: "Assignments"
       icon: fa-file-text
       menu:
