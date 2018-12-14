@@ -74,3 +74,13 @@ knitr::kable(t(ldf),
 
 ```
 
+## ANSWER KEY Files and Output
+
+* [R Code](https://github.com/melindahiggins2000/N736Fall2017_Homework6Key/raw/master/Homework6Key_Rcode_2018.R)
+* [R Output - in HTML format from `rmarkdown`](https://melindahiggins2000.github.io/N736Fall2017_Homework6Key/Homework6Key_Rcode_2018.html)
+
+* [SAS Code](https://github.com/melindahiggins2000/N736Fall2017_Homework6Key/raw/master/homework6_SAScode_Key2018.sas)
+* [SAS Output in HTML format](https://melindahiggins2000.github.io/N736Fall2017_Homework6Key/SASOutput_Homework6Key_2018.htm)
+
+* [SPSS Code](https://github.com/melindahiggins2000/N736Fall2017_Homework6Key/raw/master/homework6_SyntaxSPSS_Key2018.sps)
+* [SPSS Output in HTML format](https://melindahiggins2000.github.io/N736Fall2017_Homework6Key/SPSSOutput_Homework6Key_2018.html)
