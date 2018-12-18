@@ -4,6 +4,17 @@ title: "Homework 07"
 
 ## Homework 07 - due 12/10/2018
 
+### ANSWER KEY FILES
+
+* [SPSS Code](https://github.com/melindahiggins2000/N736Fall2017_Homework7Key/raw/master/SPSS_Syntax_Homework7Key_2018.sps)
+* [SPSS Output](https://melindahiggins2000.github.io/N736Fall2017_Homework7Key/SPSS_Output_Homework7Key_2018.htm)
+
+* [SAS Code](https://github.com/melindahiggins2000/N736Fall2017_Homework7Key/raw/master/Homework7Key_SAS_2018.sas)
+* [SAS Output](https://melindahiggins2000.github.io/N736Fall2017_Homework7Key/SAS_output_homework7Key_2018.htm)
+
+* [R Code](https://github.com/melindahiggins2000/N736Fall2017_Homework7Key/raw/master/Homework7Key_Rcode_2018.R)
+* [R Output (with detailed explanation)](https://melindahiggins2000.github.io/N736Fall2017_Homework7Key/Homework7Key_Rmarkdown_2018.html)
+
 ### Repeated Measures ANOVA and Multilevel (MIXED) Linear Models
 
 For Homework 07, you will be using the HELP dataset, learn more at:
