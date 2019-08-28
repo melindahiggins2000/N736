@@ -2,9 +2,7 @@
 title: "Syllabus"
 ---
 
-## _**Syllabus - Updated 10/31/2018**_
-
-_Please note that some of the topics have been updated slightly in the "Class Calendar" section below._
+## _**Syllabus - Updated 08/28/2019**_
 
 ## COURSE NUMBER, TITLE:
 NRSG 736, Quantitative Analysis of Clinical Research Data
@@ -19,15 +17,15 @@ BIOS 500 and 501
 
 DAY         | TIME | LOCATION
 -----------:|:-----|:-----------------
-Mondays     | 11:00 – 11:50 am  | NRSG Room 107
+Mondays     | 11:00 – 11:50 am  | NRSG Room 120
             |                   |
-Wednesdays  |  1:00-2:50 pm     | NRSG Room 107
-__Exception | Wed Sept 12, 2018 | NRSG Room 124
+Wednesdays  |  1:00-2:50 pm     | NRSG Room 120
+            |                   | 
 
 ## Dates:			
 
-* Classes begin August 29 – end December 11, 2018
-* Exam Period December 12 - 22, 2018
+* Classes begin August 28 – end December 10, 2019
+* Exam Period December 11 - 21, 2019
 
 ## Course Objective:
 
@@ -49,7 +47,7 @@ This course builds on the required statistical sequence and focuses on practical
 8. Assessment and testing of data & model assumptions (including missing data)
 9. Introduction to Factor Analysis, Reliability and Discriminant Analysis, and SEM (structural equation modeling) as time allows
 
-## Primary text (Highly Recommended):
+## Primary text (Recommended, but not required):
 
 * Andy Field (Author); Discovering Statistics using IBM SPSS Statistics [Paperback: 952 pages], Publisher: SAGE Publications Ltd; Fourth Edition edition (January 24, 2013), Language: English, ISBN-10: 1446249182, ISBN-13: 978-1446249185 
 * Andy Field (Author); Discovering Statistics using R; First Edition [Paperback: 992 pages], Publisher: SAGE Publications Ltd; First Edition edition (April 5, 2012), Language: English, ISBN-10: 1446200469, ISBN-13: 978-1446200469
@@ -129,25 +127,25 @@ I will strive to post grades for each assignment within a week of turning in you
 
 Additional help outside of class time will be provided as requested (please send email to [mailto:melinda.higgins@emory.edu](mailto:melinda.higgins@emory.edu).
 
-## Class Calendar – Fall 2018
+## Class Calendar – Fall 2019
 
 Mon	| Wed	| Lessons | Topic                                        	| Homework DUE
 ----|-----|--------:|-----------------------------------------------|--------------
----	| 8/29	| --, 1 | Introductions; Course Overview; Getting Started with your stats software (getting setup, get access to your data, getting started); Using Github repositories	| 
---- | 9/5	| --, 2 | Your statistical computing Environment, Data Import and Export (formats), Viewing, Variables, File handling, and Workflow; Data labels, value and missing data coding, other coding considerations, variable types (impact on modeling and graphics);Describing your data, evaluate missing	| H01 due 9/12
-9/10	| 9/12	| 3, 4 |Creating new variables; recoding; data cleaning and data formats; summarizing your data; Data Wrangling	| 
-9/17 | 9/19	| 5, 6  | Univariate, Descriptive Statistics	| H02 due 9/26
-9/24 | 9/26	| 7, 8  | Homework 01 Review and Univariate Statistics (tests and graphics) - continued	| 
-10/1| 10/3	| 9, 10 | Bivariate Stats & Introduction to Bootstrapping & Missing Data	| H03 due 10/10 & PROJECT Milestone 1 due 10/17
---- | 10/10	| --, 11 | Building Models; and Introduction to regression/model diagnostics | 
-10/15	| 10/17	| 12, 13 | More than 2 groups: Introduction to One-way ANOVA and Simple Linear Regression; Multivariate Linear Regression –  Understanding the impact of the Correlation Matrix (confounding, multicollinearity, sequential regression); reviewing multicollinearity and regression assumptions – model building and variable selection methods| H04 due 10/24
-10/22 | 10/24	| 14, 15 | Regression Diagnostics Review for Homework 4; More on Model Building Multivariate Regression and Variable Selection | 
-10/29 | 10/31	| 16, 17 | Power, Sample Size and Effect Sizes; Understanding Factors and Covariates & Evaluating “Theoretical” Covariates (in ANOVA and Regression) and Interaction Effects (Moderation and Testing Homogenity of Slopes assumptions) | H05 due 11/14
-11/05	| 11/07	| 18, 19 | More on modeling covariates, interactions and covariates; ANCOVA - Analysis of Covariance; More than 2: Introduction to Two-way/multivariate ANOVA - blending regression/ANOVA and the GLM (General Linear Model)	| 
-11/12 | 11/14	| 20, 21 | Introduction to “Generalized” Linear Regression - Non-normal and/or Non-continuous outcomes; e.g. binary outcomes via Logistic Regression; brief intro to Poisson, Negative Binomial and other distributions that can be fit to your outcomes | H06 due 12/05
-11/19 | 11/21 (on own)	| 22, -- | Modeling Time/Longitudinal Data: 2 Time points (PRE-POST); Paired t-tests and Wilcoxon Rank Sum Test | 
-11/26 | 11/28 | 23, 24 | Repeated Measures ANOVA (pros and cons), Data structure (restructuring); correlated time points; considerations of Missing Data;  More on longitudinal data modeling; intro to Multilevel “Mixed” Models (nested, clustered, correlated data structures) | H07 due 12/10
-12/3 | 12/05	| 25, 26 | Introduction to “Psychometrics” (Survey/Questionnaire) Instruments, Scoring, missing/skipped items, Factor Analysis, Reliability; Brief Overview of Structural Equation Modeling: Mediation and Moderation; Correlated and Non-Normal Outcomes: MANOVA, Discriminant Analysis; Survival Analysis	| Milestone 2 due 12/10
-12/10 |	---	| --, -- | In class Help on Projects	| 
-. | . |	--, -- | FINAL PROJECT (Milestone #3) DUE NO LATER THAN 12/17/2018 | 	Final Project
+---	| 8/28	| --, 1 | Introductions; Course Overview; Getting Started with your stats software (getting setup, get access to your data, getting started); Using Github repositories	| 
+--- | 9/4	| --, 2 | Your statistical computing Environment, Data Import and Export (formats), Viewing, Variables, File handling, and Workflow; Data labels, value and missing data coding, other coding considerations, variable types (impact on modeling and graphics);Describing your data, evaluate missing	| H01 due 9/11
+9/09	| 9/11	| 3, 4 |Creating new variables; recoding; data cleaning and data formats; summarizing your data; Data Wrangling	| 
+9/16 | 9/18	| 5, 6  | Univariate, Descriptive Statistics	| H02 due 9/25
+9/23 | 9/25	| 7, 8  | Homework 01 Review and Univariate Statistics (tests and graphics) - continued	| 
+9/30 | 10/2	| 9, 10 | Bivariate Stats & Introduction to Bootstrapping & Missing Data	| H03 due 10/09 & PROJECT Milestone 1 due 10/09
+10/7 | 10/9	| 11, 12 | Building Models; and Introduction to regression/model diagnostics | 
+---	| 10/16	| ---, 13 | More than 2 groups: Introduction to One-way ANOVA and Simple Linear Regression; Multivariate Linear Regression –  Understanding the impact of the Correlation Matrix (confounding, multicollinearity, sequential regression); reviewing multicollinearity and regression assumptions – model building and variable selection methods| H04 due 10/23
+10/21 | 10/23	| 14, 15 | Regression Diagnostics Review for Homework 4; More on Model Building Multivariate Regression and Variable Selection | 
+10/28 | 10/30	| 16, 17 | Power, Sample Size and Effect Sizes; Understanding Factors and Covariates & Evaluating “Theoretical” Covariates (in ANOVA and Regression) and Interaction Effects (Moderation and Testing Homogenity of Slopes assumptions) | H05 due 11/06
+11/04	| 11/06	| 18, 19 | More on modeling covariates, interactions and covariates; ANCOVA - Analysis of Covariance; More than 2: Introduction to Two-way/multivariate ANOVA - blending regression/ANOVA and the GLM (General Linear Model)	| 
+11/11 | 11/13	| 20, 21 | Introduction to “Generalized” Linear Regression - Non-normal and/or Non-continuous outcomes; e.g. binary outcomes via Logistic Regression; brief intro to Poisson, Negative Binomial and other distributions that can be fit to your outcomes | H06 due 11/25
+11/18 (AHA) | 11/20 | 22, 23 | Modeling Time/Longitudinal Data: 2 Time points (PRE-POST); Paired t-tests and Wilcoxon Rank Sum Test | 
+11/25 | 11/27 (on own) | 23, 24 | Repeated Measures ANOVA (pros and cons), Data structure (restructuring); correlated time points; considerations of Missing Data;  More on longitudinal data modeling; intro to Multilevel “Mixed” Models (nested, clustered, correlated data structures) | H07 due 12/04
+12/02 | 12/04	| 25, 26 | Introduction to “Psychometrics” (Survey/Questionnaire) Instruments, Scoring, missing/skipped items, Factor Analysis, Reliability; Brief Overview of Structural Equation Modeling: Mediation and Moderation; Correlated and Non-Normal Outcomes: MANOVA, Discriminant Analysis; Survival Analysis	| Milestone 2 due 12/09
+12/09 |	---	| --, -- | In class Help on Projects	| 
+. | . |	--, -- | FINAL PROJECT (Milestone #3) DUE NO LATER THAN 12/16/2018 | 	Final Project
 

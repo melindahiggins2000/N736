@@ -60,23 +60,16 @@ navbar:
     - text: "Assignments"
       icon: fa-file-text
       menu:
-        - text: "Homework 01 - due 09/12/2018"
-          href: homework01.html
-        - text: "Homework 02 - due 09/26/2018"
-          href: homework02.html
-        - text: "Homework 03 - due 10/10/2018"
-          href: homework03.html
-        - text: "Project - Milestone 01 - due 10/17/2018"
+        - text: "Homework 01 - due 09/11/2018"
+        - text: "Homework 02 - due 09/22/2018"
+        - text: "Homework 03 - due 10/09/2018"
+        - text: "Project - Milestone 01 - due 10/09/2018"
           href: project01.html
-        - text: "Homework 04 - due 10/24/2018"
-          href: homework04.html
-        - text: "Homework 05 - due 11/14/2018"
-          href: homework05.html
-        - text: "Homework 06 - due 12/05/2018"
-          href: homework06.html
-        - text: "Homework 07 - due 12/10/2018"
-          href: homework07.html
-        - text: "Project - Milestone 2 & 3 - due 12/10/2018 & 12/17/2018"
+        - text: "Homework 04 - due 10/23/2018"
+        - text: "Homework 05 - due 11/06/2018"
+        - text: "Homework 06 - due 11/25/2018"
+        - text: "Homework 07 - due 12/04/2018"
+        - text: "Project - Milestone 2 & 3 - due 12/09/2018 & 12/16/2018"
           href: project.html
     - text: "H.E.L.P. Dataset"
       icon: fa-database

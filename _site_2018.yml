@@ -1,0 +1,121 @@
+name: "NRSG 736: Quantitative Analysis of Clinical Research Data"
+output_dir: "docs"
+navbar:
+  title: "N736"
+  left:
+    - text: "Home"
+      icon: fa-home
+      href: index.html
+    - text: "Lessons"
+      icon: fa-archive
+      menu:
+        - text: "1. Introduction"
+          href: intro.html
+        - text: "2. Exploring Data, Cleaning, Assessment"
+          href: lesson_02_dataCleaning.html
+        - text: "3. Data Review and Assessment"
+          href: lesson_03_dataReview.html
+        - text: "4. Data Wrangling"
+          href: lesson_04_dataWrangling.html
+        - text: "5. Univariate Descriptive Stats"
+          href: lesson_05_descriptiveStats.html
+        - text: "6. Hands-on Descriptive Stats"
+          href: lesson_06_descriptiveStats_pt2.html
+        - text: "7. Homework 01 Answer Key Review"
+          href: lesson_07_Homework01_AnswerKeyReview.html
+        - text: "8. Univariate Statistics"
+          href: lesson_08_UnivariateBivariate.html
+        - text: "9. Bivariate Stats"
+          href: lesson_09_Bivariate2.html
+        - text: "10. Bootstrapping and Missing Data"
+          href: lesson_10_bootmiss.html
+        - text: "11. Building Models"
+          href: lesson_11_BuildModels.html
+        - text: "12. Simple Regression & ANOVA"
+          href: lesson_12_SimpleRegANOVA.html
+        - text: "13. Multivariate Regression & Variable Selection"
+          href: lesson_13_MVRegVarSelection.html
+        - text: "14,15 Regression Diagnostics and Variable Selection (cont'd)"
+          href: lesson_1415_review.html
+        - text: "16. Power, Sample Size, Effect Size"
+          href: lesson_16_powerEffectsize.html
+        - text: "17. Interactions, Moderators, Covariates, Factors"
+          href: lesson_17_IntCovMod.html
+        - text: "18. Modeling Covariates and Interaction/Moderator Effects"
+          href: lesson_18_IntCovMod2.html
+        - text: "19. Analysis of Covariance (ANCOVA)"
+          href: lesson_18_IntCovMod2.html
+        - text: "20,21. Logistic & Poisson Regression - Generalized Linear Regression"
+          href: lesson_20_logreg.html
+        - text: "22. Dependent/Paired data and Repeated Measures"
+          href: lesson_22_paired.html
+        - text: "23. Repeated Measures ANOVA"
+          href: lesson_23_rmanova.html
+        - text: "24. Multilevel (Mixed or Nested) Linear Models (MLM)"
+          href: lesson_24_mlm.html
+        - text: "25. Reliability and Factor Analysis"
+          href: lesson_25_rest.html
+        - text: "26. Discriminant Analysis/MANOVA, Mediators and SEM"
+          href: lesson_25_rest.html
+    - text: "Assignments"
+      icon: fa-file-text
+      menu:
+        - text: "Homework 01 - due 09/12/2018"
+          href: homework01.html
+        - text: "Homework 02 - due 09/26/2018"
+          href: homework02.html
+        - text: "Homework 03 - due 10/10/2018"
+          href: homework03.html
+        - text: "Project - Milestone 01 - due 10/17/2018"
+          href: project01.html
+        - text: "Homework 04 - due 10/24/2018"
+          href: homework04.html
+        - text: "Homework 05 - due 11/14/2018"
+          href: homework05.html
+        - text: "Homework 06 - due 12/05/2018"
+          href: homework06.html
+        - text: "Homework 07 - due 12/10/2018"
+          href: homework07.html
+        - text: "Project - Milestone 2 & 3 - due 12/10/2018 & 12/17/2018"
+          href: project.html
+    - text: "H.E.L.P. Dataset"
+      icon: fa-database
+      href: helpdata.html
+    - text: "Instructor"
+      icon: fa-users
+      href: about.html
+    - text: "Syllabus"
+      icon: fa-file-text
+      menu:
+        - text: "Overview"
+          href: syllabus.html
+    - text: "Useful Stuff"
+      icon: fa-cog
+      menu:
+        - text: "Datacamp"
+          href: datacamp.html
+        - text: "SPSS Student Grad Pack"
+          href: spss.html
+        - text: "SAS University - FREE"
+          href: sas.html
+        - text: "R, RStudio, Git, Github - FREE"
+          href: help.html
+        - text: "Stata Student Versions"
+          href: stata.html
+    - text: "Other Files"
+      icon: fa-files-o
+      href: files.html
+  right:
+    - text: "Colophon"
+      icon: fa-info-circle
+      href: colophon.html
+output:
+  html_document:
+    theme: lumen
+    toc: true
+    toc_float: true
+    highlight: kate
+    include:
+      after_body: footer.html
+    css: [styles.css, font-awesome-4.7.0/css/font-awesome.css]
+    self_contained: yes

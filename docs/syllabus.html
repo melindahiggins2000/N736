@@ -23,9 +23,8 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
-<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
-<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 
 
@@ -60,9 +59,7 @@ h6 {
 <link rel="stylesheet" href="styles.css" type="text/css" />
 <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.css" type="text/css" />
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -87,6 +84,9 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
@@ -101,7 +101,6 @@ body {
   padding-top: 59px;
   margin-top: -59px;
 }
-
 .section h2 {
   padding-top: 59px;
   margin-top: -59px;
@@ -121,6 +120,43 @@ body {
 .section h6 {
   padding-top: 59px;
   margin-top: -59px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -142,18 +178,75 @@ $(document).ready(function () {
 });
 </script>
 
-
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -231,8 +324,6 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -241,6 +332,16 @@ div.tocify {
 
 
 </style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -365,32 +466,18 @@ div.tocify {
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
+    <li class="dropdown-header">Homework 01 - due 09/11/2018</li>
+    <li class="dropdown-header">Homework 02 - due 09/22/2018</li>
+    <li class="dropdown-header">Homework 03 - due 10/09/2018</li>
     <li>
-      <a href="homework01.html">Homework 01 - due 09/12/2018</a>
+      <a href="project01.html">Project - Milestone 01 - due 10/09/2018</a>
     </li>
+    <li class="dropdown-header">Homework 04 - due 10/23/2018</li>
+    <li class="dropdown-header">Homework 05 - due 11/06/2018</li>
+    <li class="dropdown-header">Homework 06 - due 11/25/2018</li>
+    <li class="dropdown-header">Homework 07 - due 12/04/2018</li>
     <li>
-      <a href="homework02.html">Homework 02 - due 09/26/2018</a>
-    </li>
-    <li>
-      <a href="homework03.html">Homework 03 - due 10/10/2018</a>
-    </li>
-    <li>
-      <a href="project01.html">Project - Milestone 01 - due 10/17/2018</a>
-    </li>
-    <li>
-      <a href="homework04.html">Homework 04 - due 10/24/2018</a>
-    </li>
-    <li>
-      <a href="homework05.html">Homework 05 - due 11/14/2018</a>
-    </li>
-    <li>
-      <a href="homework06.html">Homework 06 - due 12/05/2018</a>
-    </li>
-    <li>
-      <a href="homework07.html">Homework 07 - due 12/10/2018</a>
-    </li>
-    <li>
-      <a href="project.html">Project - Milestone 2 &amp; 3 - due 12/10/2018 &amp; 12/17/2018</a>
+      <a href="project.html">Project - Milestone 2 &amp; 3 - due 12/09/2018 &amp; 12/16/2018</a>
     </li>
   </ul>
 </li>
@@ -478,9 +565,8 @@ div.tocify {
 </div>
 
 
-<div id="syllabus---updated-10312018" class="section level2">
-<h2><em><strong>Syllabus - Updated 10/31/2018</strong></em></h2>
-<p><em>Please note that some of the topics have been updated slightly in the “Class Calendar” section below.</em></p>
+<div id="syllabus---updated-08282019" class="section level2">
+<h2><em><strong>Syllabus - Updated 08/28/2019</strong></em></h2>
 </div>
 <div id="course-number-title" class="section level2">
 <h2>COURSE NUMBER, TITLE:</h2>
@@ -508,7 +594,7 @@ div.tocify {
 <tr class="odd">
 <td align="right">Mondays</td>
 <td align="left">11:00 – 11:50 am</td>
-<td align="left">NRSG Room 107</td>
+<td align="left">NRSG Room 120</td>
 </tr>
 <tr class="even">
 <td align="right"></td>
@@ -517,12 +603,11 @@ div.tocify {
 <tr class="odd">
 <td align="right">Wednesdays</td>
 <td align="left">1:00-2:50 pm</td>
-<td align="left">NRSG Room 107</td>
+<td align="left">NRSG Room 120</td>
 </tr>
 <tr class="even">
-<td align="right">__Exception</td>
-<td align="left">Wed Sept 12, 2018</td>
-<td align="left">NRSG Room 124</td>
+<td align="right"></td>
+<td align="left"></td>
 </tr>
 </tbody>
 </table>
@@ -530,8 +615,8 @@ div.tocify {
 <div id="dates" class="section level2">
 <h2>Dates:</h2>
 <ul>
-<li>Classes begin August 29 – end December 11, 2018</li>
-<li>Exam Period December 12 - 22, 2018</li>
+<li>Classes begin August 28 – end December 10, 2019</li>
+<li>Exam Period December 11 - 21, 2019</li>
 </ul>
 </div>
 <div id="course-objective" class="section level2">
@@ -556,8 +641,8 @@ div.tocify {
 <li>Introduction to Factor Analysis, Reliability and Discriminant Analysis, and SEM (structural equation modeling) as time allows</li>
 </ol>
 </div>
-<div id="primary-text-highly-recommended" class="section level2">
-<h2>Primary text (Highly Recommended):</h2>
+<div id="primary-text-recommended-but-not-required" class="section level2">
+<h2>Primary text (Recommended, but not required):</h2>
 <ul>
 <li>Andy Field (Author); Discovering Statistics using IBM SPSS Statistics [Paperback: 952 pages], Publisher: SAGE Publications Ltd; Fourth Edition edition (January 24, 2013), Language: English, ISBN-10: 1446249182, ISBN-13: 978-1446249185</li>
 <li>Andy Field (Author); Discovering Statistics using R; First Edition [Paperback: 992 pages], Publisher: SAGE Publications Ltd; First Edition edition (April 5, 2012), Language: English, ISBN-10: 1446200469, ISBN-13: 978-1446200469</li>
@@ -659,8 +744,8 @@ div.tocify {
 <h2>Instructor provided help as needed/as requested:</h2>
 <p>Additional help outside of class time will be provided as requested (please send email to <a href="mailto:melinda.higgins@emory.edu">mailto:melinda.higgins@emory.edu</a>.</p>
 </div>
-<div id="class-calendar-fall-2018" class="section level2">
-<h2>Class Calendar – Fall 2018</h2>
+<div id="class-calendar-fall-2019" class="section level2">
+<h2>Class Calendar – Fall 2019</h2>
 <table>
 <colgroup>
 <col width="5%" />
@@ -681,111 +766,111 @@ div.tocify {
 <tbody>
 <tr class="odd">
 <td>—</td>
-<td>8/29</td>
+<td>8/28</td>
 <td align="right">–, 1</td>
 <td>Introductions; Course Overview; Getting Started with your stats software (getting setup, get access to your data, getting started); Using Github repositories</td>
 <td></td>
 </tr>
 <tr class="even">
 <td>—</td>
-<td>9/5</td>
+<td>9/4</td>
 <td align="right">–, 2</td>
 <td>Your statistical computing Environment, Data Import and Export (formats), Viewing, Variables, File handling, and Workflow; Data labels, value and missing data coding, other coding considerations, variable types (impact on modeling and graphics);Describing your data, evaluate missing</td>
-<td>H01 due 9/12</td>
+<td>H01 due 9/11</td>
 </tr>
 <tr class="odd">
-<td>9/10</td>
-<td>9/12</td>
+<td>9/09</td>
+<td>9/11</td>
 <td align="right">3, 4</td>
 <td>Creating new variables; recoding; data cleaning and data formats; summarizing your data; Data Wrangling</td>
 <td></td>
 </tr>
 <tr class="even">
-<td>9/17</td>
-<td>9/19</td>
+<td>9/16</td>
+<td>9/18</td>
 <td align="right">5, 6</td>
 <td>Univariate, Descriptive Statistics</td>
-<td>H02 due 9/26</td>
+<td>H02 due 9/25</td>
 </tr>
 <tr class="odd">
-<td>9/24</td>
-<td>9/26</td>
+<td>9/23</td>
+<td>9/25</td>
 <td align="right">7, 8</td>
 <td>Homework 01 Review and Univariate Statistics (tests and graphics) - continued</td>
 <td></td>
 </tr>
 <tr class="even">
-<td>10/1</td>
-<td>10/3</td>
+<td>9/30</td>
+<td>10/2</td>
 <td align="right">9, 10</td>
 <td>Bivariate Stats &amp; Introduction to Bootstrapping &amp; Missing Data</td>
-<td>H03 due 10/10 &amp; PROJECT Milestone 1 due 10/17</td>
+<td>H03 due 10/09 &amp; PROJECT Milestone 1 due 10/09</td>
 </tr>
 <tr class="odd">
-<td>—</td>
-<td>10/10</td>
-<td align="right">–, 11</td>
+<td>10/7</td>
+<td>10/9</td>
+<td align="right">11, 12</td>
 <td>Building Models; and Introduction to regression/model diagnostics</td>
 <td></td>
 </tr>
 <tr class="even">
-<td>10/15</td>
-<td>10/17</td>
-<td align="right">12, 13</td>
+<td>—</td>
+<td>10/16</td>
+<td align="right">—, 13</td>
 <td>More than 2 groups: Introduction to One-way ANOVA and Simple Linear Regression; Multivariate Linear Regression – Understanding the impact of the Correlation Matrix (confounding, multicollinearity, sequential regression); reviewing multicollinearity and regression assumptions – model building and variable selection methods</td>
-<td>H04 due 10/24</td>
+<td>H04 due 10/23</td>
 </tr>
 <tr class="odd">
-<td>10/22</td>
-<td>10/24</td>
+<td>10/21</td>
+<td>10/23</td>
 <td align="right">14, 15</td>
 <td>Regression Diagnostics Review for Homework 4; More on Model Building Multivariate Regression and Variable Selection</td>
 <td></td>
 </tr>
 <tr class="even">
-<td>10/29</td>
-<td>10/31</td>
+<td>10/28</td>
+<td>10/30</td>
 <td align="right">16, 17</td>
 <td>Power, Sample Size and Effect Sizes; Understanding Factors and Covariates &amp; Evaluating “Theoretical” Covariates (in ANOVA and Regression) and Interaction Effects (Moderation and Testing Homogenity of Slopes assumptions)</td>
-<td>H05 due 11/14</td>
+<td>H05 due 11/06</td>
 </tr>
 <tr class="odd">
-<td>11/05</td>
-<td>11/07</td>
+<td>11/04</td>
+<td>11/06</td>
 <td align="right">18, 19</td>
 <td>More on modeling covariates, interactions and covariates; ANCOVA - Analysis of Covariance; More than 2: Introduction to Two-way/multivariate ANOVA - blending regression/ANOVA and the GLM (General Linear Model)</td>
 <td></td>
 </tr>
 <tr class="even">
-<td>11/12</td>
-<td>11/14</td>
+<td>11/11</td>
+<td>11/13</td>
 <td align="right">20, 21</td>
 <td>Introduction to “Generalized” Linear Regression - Non-normal and/or Non-continuous outcomes; e.g. binary outcomes via Logistic Regression; brief intro to Poisson, Negative Binomial and other distributions that can be fit to your outcomes</td>
-<td>H06 due 12/05</td>
+<td>H06 due 11/25</td>
 </tr>
 <tr class="odd">
-<td>11/19</td>
-<td>11/21 (on own)</td>
-<td align="right">22, –</td>
+<td>11/18 (AHA)</td>
+<td>11/20</td>
+<td align="right">22, 23</td>
 <td>Modeling Time/Longitudinal Data: 2 Time points (PRE-POST); Paired t-tests and Wilcoxon Rank Sum Test</td>
 <td></td>
 </tr>
 <tr class="even">
-<td>11/26</td>
-<td>11/28</td>
+<td>11/25</td>
+<td>11/27 (on own)</td>
 <td align="right">23, 24</td>
 <td>Repeated Measures ANOVA (pros and cons), Data structure (restructuring); correlated time points; considerations of Missing Data; More on longitudinal data modeling; intro to Multilevel “Mixed” Models (nested, clustered, correlated data structures)</td>
-<td>H07 due 12/10</td>
+<td>H07 due 12/04</td>
 </tr>
 <tr class="odd">
-<td>12/3</td>
-<td>12/05</td>
+<td>12/02</td>
+<td>12/04</td>
 <td align="right">25, 26</td>
 <td>Introduction to “Psychometrics” (Survey/Questionnaire) Instruments, Scoring, missing/skipped items, Factor Analysis, Reliability; Brief Overview of Structural Equation Modeling: Mediation and Moderation; Correlated and Non-Normal Outcomes: MANOVA, Discriminant Analysis; Survival Analysis</td>
-<td>Milestone 2 due 12/10</td>
+<td>Milestone 2 due 12/09</td>
 </tr>
 <tr class="even">
-<td>12/10</td>
+<td>12/09</td>
 <td>—</td>
 <td align="right">–, –</td>
 <td>In class Help on Projects</td>
@@ -795,7 +880,7 @@ div.tocify {
 <td>.</td>
 <td>.</td>
 <td align="right">–, –</td>
-<td>FINAL PROJECT (Milestone #3) DUE NO LATER THAN 12/17/2018</td>
+<td>FINAL PROJECT (Milestone #3) DUE NO LATER THAN 12/16/2018</td>
 <td>Final Project</td>
 </tr>
 </tbody>
