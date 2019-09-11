@@ -2,7 +2,7 @@
 title: "Homework 01"
 ---
 
-## Homework 01 - due 09/12/2018
+## Homework 01 - due 09/11/2019
 
 The Homework 01 assignment is posted at [https://github.com/melindahiggins2000/N736Testdataset/blob/master/Homework01.pdf](https://github.com/melindahiggins2000/N736Testdataset/blob/master/Homework01.pdf). 
 
