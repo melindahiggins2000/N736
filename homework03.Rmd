@@ -16,7 +16,7 @@ Using the HELP dataset:
 
 ## Report Template for Homework 03
 
-See the WORD document template `N736Homework03_Template.docx` you can download from [https://github.com/melindahiggins2000/N736Fall2017/blob/master/N736Homework03_Template.docx](https://github.com/melindahiggins2000/N736Fall2017/blob/master/N736Homework03_Template.docx) - click "Download".
+See the WORD document template `N736Homework03_Template.docx` you can download from [https://github.com/melindahiggins2000/N736/raw/master/N736Homework03_Template.docx](https://github.com/melindahiggins2000/N736/raw/master/N736Homework03_Template.docx) - click "Download".
 
 ## Variables in HELP dataset to be used for Homework 03
 
