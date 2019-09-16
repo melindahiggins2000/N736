@@ -65,6 +65,7 @@ navbar:
         - text: "Homework 02 - due 09/25/2019"
           href: homework02.html
         - text: "Homework 03 - due 10/09/2019"
+          href: homework03.html
         - text: "Project - Milestone 01 - due 10/09/2019"
           href: project01.html
         - text: "Homework 04 - due 10/23/2019"
