@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -73,7 +73,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -222,6 +221,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -234,48 +234,9 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <style type="text/css">
 
@@ -289,6 +250,12 @@ $(document).ready(function ()  {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -467,23 +434,21 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="homework01.html">Homework 01 - due 09/11/2019</a>
+      <a href="homework01.html">Homework 01 - due 09/02/2020</a>
     </li>
     <li>
-      <a href="homework02.html">Homework 02 - due 09/25/2019</a>
+      <a href="homework02.html">Homework 02 - due 09/16/2020</a>
     </li>
+    <li class="dropdown-header">Homework 03 - due 09/30/2020</li>
     <li>
-      <a href="homework03.html">Homework 03 - due 10/09/2019</a>
+      <a href="project01.html">Project - Milestone 01 - due 09/30/2020</a>
     </li>
+    <li class="dropdown-header">Homework 04 - due 10/14/2020</li>
+    <li class="dropdown-header">Homework 05 - due 10/28/2020</li>
+    <li class="dropdown-header">Homework 06 - due 11/11/2020</li>
+    <li class="dropdown-header">Homework 07 - due 11/24/2020</li>
     <li>
-      <a href="project01.html">Project - Milestone 01 - due 10/09/2019</a>
-    </li>
-    <li class="dropdown-header">Homework 04 - due 10/23/2019</li>
-    <li class="dropdown-header">Homework 05 - due 11/06/2019</li>
-    <li class="dropdown-header">Homework 06 - due 11/25/2019</li>
-    <li class="dropdown-header">Homework 07 - due 12/04/2019</li>
-    <li>
-      <a href="project.html">Project - Milestone 2 &amp; 3 - due 12/09/2019 &amp; 12/16/2019</a>
+      <a href="project.html">Project - Milestone 2 &amp; 3 - due 11/24/2020 &amp; 12/07/2020</a>
     </li>
   </ul>
 </li>
@@ -519,7 +484,7 @@ div.tocify {
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     <span class="fa fa-cog"></span>
      
-    Useful Stuff
+    Software
      
     <span class="caret"></span>
   </a>
@@ -575,9 +540,9 @@ div.tocify {
 <h2><i class="fa fa-github fa-1x"></i> <strong>Github</strong> Repositories</h2>
 <p>Some files (code, data, files, etc) for this course may be shared and placed into various <strong>Github</strong> repositories. Each of these repositories can be “Cloned or Downloaded (as a ZIP)” to your local harddrive for easy offline reference OR they can be “forked” so that a copy of the repository is “copied” into YOUR Github account. If you “fork” a copy be sure you are logged into your Github account first. Here are the <strong>Github</strong> repositories to date:</p>
 <ol style="list-style-type: decimal">
-<li>Gapminder Example (given in N741 on 01/18/2017) <a href="https://github.com/melindahiggins2000/N741gapminder1" class="uri">https://github.com/melindahiggins2000/N741gapminder1</a>
+<li>Gapminder Example (given in N741 on 01/18/2017) <a href="https://github.com/melindahiggins2000/N741gapminder1">https://github.com/melindahiggins2000/N741gapminder1</a>
 <ul>
-<li>This repository contains the <code>Rmarkdown</code> (RMD) and related files associated with a lesson done in N741 (“Lesson 2” done on 01/18/2017). These RMD files showed some initial <code>Rmarkdown</code> syntax with <code>R</code> chunks showcasing examples from the <code>gapminder</code> package, based on the vignette at <a href="https://github.com/jennybc/gapminder" class="uri">https://github.com/jennybc/gapminder</a>.</li>
+<li>This repository contains the <code>Rmarkdown</code> (RMD) and related files associated with a lesson done in N741 (“Lesson 2” done on 01/18/2017). These RMD files showed some initial <code>Rmarkdown</code> syntax with <code>R</code> chunks showcasing examples from the <code>gapminder</code> package, based on the vignette at <a href="https://github.com/jennybc/gapminder">https://github.com/jennybc/gapminder</a>.</li>
 <li>This repository also contains an RMD file with some examples.</li>
 </ul></li>
 </ol>
@@ -588,26 +553,26 @@ div.tocify {
 <ol style="list-style-type: decimal">
 <li>Installing R, RStudio, Creating and “knitting” your first simple <code>Rmarkdown</code> file
 <ul>
-<li><a href="https://youtu.be/MsV5dJ2reQ4" class="uri">https://youtu.be/MsV5dJ2reQ4</a></li>
+<li><a href="https://youtu.be/MsV5dJ2reQ4">https://youtu.be/MsV5dJ2reQ4</a></li>
 </ul></li>
 <li>Installing Git for Windows
 <ul>
-<li><a href="https://youtu.be/2HKwywX7Wls" class="uri">https://youtu.be/2HKwywX7Wls</a></li>
+<li><a href="https://youtu.be/2HKwywX7Wls">https://youtu.be/2HKwywX7Wls</a></li>
 </ul></li>
 <li>Worked Example and Hints for Homework 01
 <ul>
-<li><a href="https://youtu.be/WlqyYwwEC8w" class="uri">https://youtu.be/WlqyYwwEC8w</a></li>
+<li><a href="https://youtu.be/WlqyYwwEC8w">https://youtu.be/WlqyYwwEC8w</a></li>
 </ul></li>
-<li>Video tutorial for creating the Github output MD format at <a href="https://youtu.be/SY-Uo3hLC18" class="uri">https://youtu.be/SY-Uo3hLC18</a>
+<li>Video tutorial for creating the Github output MD format at <a href="https://youtu.be/SY-Uo3hLC18">https://youtu.be/SY-Uo3hLC18</a>
 <ul>
-<li>This short (~5 min) video is on creating a “Github-flavored” markdown file. If you haven’t noticed yet, take a look back at your Github repository and look at one of your RMD files. You’ll notice that for the RMD file you can view the text and R code but no R output is shown. This is because the R code is not executed via Github (remember R is on your local machine not “in the cloud”). Instead, you need to create a “markdown” MD file that does have the R output included. To do this, there is a “github_document” output format you can use that will create a “github-flavored” MD (markdown) file that Github will display with both your R code and R output in the same document. See the RStudio documentation at <a href="http://rmarkdown.rstudio.com/github_document_format.html" class="uri">http://rmarkdown.rstudio.com/github_document_format.html</a></li>
+<li>This short (~5 min) video is on creating a “Github-flavored” markdown file. If you haven’t noticed yet, take a look back at your Github repository and look at one of your RMD files. You’ll notice that for the RMD file you can view the text and R code but no R output is shown. This is because the R code is not executed via Github (remember R is on your local machine not “in the cloud”). Instead, you need to create a “markdown” MD file that does have the R output included. To do this, there is a “github_document” output format you can use that will create a “github-flavored” MD (markdown) file that Github will display with both your R code and R output in the same document. See the RStudio documentation at <a href="http://rmarkdown.rstudio.com/github_document_format.html">http://rmarkdown.rstudio.com/github_document_format.html</a></li>
 </ul></li>
-<li>Video on Publishing Your Reports to RPubs <a href="https://youtu.be/nW2TJ134ea0" class="uri">https://youtu.be/nW2TJ134ea0</a></li>
+<li>Video on Publishing Your Reports to RPubs <a href="https://youtu.be/nW2TJ134ea0">https://youtu.be/nW2TJ134ea0</a></li>
 </ol>
 <div id="youtube-playlist-for-n741" class="section level3">
 <h3>YouTube Playlist for N741</h3>
 <ul>
-<li>All of these Videos have been compiled into a N741 You Tube “playlist” at <a href="https://www.youtube.com/playlist?list=PLUDpSUA5mvSzL7XwtIZjxeZpP9aLMk4C6" class="uri">https://www.youtube.com/playlist?list=PLUDpSUA5mvSzL7XwtIZjxeZpP9aLMk4C6</a></li>
+<li>All of these Videos have been compiled into a N741 You Tube “playlist” at <a href="https://www.youtube.com/playlist?list=PLUDpSUA5mvSzL7XwtIZjxeZpP9aLMk4C6">https://www.youtube.com/playlist?list=PLUDpSUA5mvSzL7XwtIZjxeZpP9aLMk4C6</a></li>
 </ul>
 </div>
 </div>
@@ -638,6 +603,49 @@ $(document).ready(function () {
 });
 
 
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->

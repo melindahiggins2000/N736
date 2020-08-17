@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -73,7 +73,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -222,6 +221,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -234,48 +234,9 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <style type="text/css">
 
@@ -289,6 +250,12 @@ $(document).ready(function ()  {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -467,23 +434,21 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="homework01.html">Homework 01 - due 09/11/2019</a>
+      <a href="homework01.html">Homework 01 - due 09/02/2020</a>
     </li>
     <li>
-      <a href="homework02.html">Homework 02 - due 09/25/2019</a>
+      <a href="homework02.html">Homework 02 - due 09/16/2020</a>
     </li>
+    <li class="dropdown-header">Homework 03 - due 09/30/2020</li>
     <li>
-      <a href="homework03.html">Homework 03 - due 10/09/2019</a>
+      <a href="project01.html">Project - Milestone 01 - due 09/30/2020</a>
     </li>
+    <li class="dropdown-header">Homework 04 - due 10/14/2020</li>
+    <li class="dropdown-header">Homework 05 - due 10/28/2020</li>
+    <li class="dropdown-header">Homework 06 - due 11/11/2020</li>
+    <li class="dropdown-header">Homework 07 - due 11/24/2020</li>
     <li>
-      <a href="project01.html">Project - Milestone 01 - due 10/09/2019</a>
-    </li>
-    <li class="dropdown-header">Homework 04 - due 10/23/2019</li>
-    <li class="dropdown-header">Homework 05 - due 11/06/2019</li>
-    <li class="dropdown-header">Homework 06 - due 11/25/2019</li>
-    <li class="dropdown-header">Homework 07 - due 12/04/2019</li>
-    <li>
-      <a href="project.html">Project - Milestone 2 &amp; 3 - due 12/09/2019 &amp; 12/16/2019</a>
+      <a href="project.html">Project - Milestone 2 &amp; 3 - due 11/24/2020 &amp; 12/07/2020</a>
     </li>
   </ul>
 </li>
@@ -519,7 +484,7 @@ div.tocify {
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     <span class="fa fa-cog"></span>
      
-    Useful Stuff
+    Software
      
     <span class="caret"></span>
   </a>
@@ -571,18 +536,18 @@ div.tocify {
 </div>
 
 
-<div id="homework-01---due-09112019" class="section level2">
-<h2>Homework 01 - due 09/11/2019</h2>
-<p>The Homework 01 assignment is posted at <a href="https://github.com/melindahiggins2000/N736Testdataset/blob/master/Homework01.pdf" class="uri">https://github.com/melindahiggins2000/N736Testdataset/blob/master/Homework01.pdf</a>.</p>
+<div id="homework-01---due-09022020" class="section level2">
+<h2>Homework 01 - due 09/02/2020</h2>
+<p>The Homework 01 assignment is posted at <a href="https://github.com/melindahiggins2000/N736Homework01/blob/master/Homework01.pdf">https://github.com/melindahiggins2000/N736Homework01/blob/master/Homework01.pdf</a>.</p>
 <p>Download Links - click each link to download the file you want:</p>
 <ul>
-<li><a href="https://github.com/melindahiggins2000/N736Testdataset/raw/master/Homework01.pdf">PDF of Homework 01 Assignment</a></li>
-<li><a href="https://github.com/melindahiggins2000/N736Testdataset/raw/master/Dataset_02.csv">CSV Datafile</a></li>
-<li><a href="https://github.com/melindahiggins2000/N736Testdataset/raw/master/Dataset_02.xls">XLS Excel Datafile</a></li>
-<li><a href="https://github.com/melindahiggins2000/N736Testdataset/raw/master/Dataset_02.xlsx">XLSX Excel Datafile</a></li>
+<li><a href="https://github.com/melindahiggins2000/N736Homework01/blob/master/Homework01.pdf">PDF of Homework 01 Assignment</a></li>
+<li><a href="https://raw.githubusercontent.com/melindahiggins2000/N736Homework01/master/Dataset_02.csv">CSV Datafile</a></li>
+<li><a href="https://github.com/melindahiggins2000/N736Homework01/blob/master/Dataset_02.xls?raw=true">XLS Excel Datafile</a></li>
+<li><a href="https://github.com/melindahiggins2000/N736Homework01/blob/master/Dataset_02.xlsx?raw=true">XLSX Excel Datafile</a></li>
 <li>CODEBOOK for dataset <a href="https://github.com/melindahiggins2000/N736Homework01/blob/master/Dataset_02_Codebook.pdf">Codebook PDF</a></li>
 </ul>
-<p><strong>NOTES from Class 09/05/2018</strong> <a href="homework1_notes.txt" class="uri">homework1_notes.txt</a></p>
+<p><strong>NOTES from Class 09/05/2018</strong> <a href="homework1_notes.txt">homework1_notes.txt</a></p>
 </div>
 <div id="other-files-that-might-help-you-get-started" class="section level2">
 <h2>Other files that <em>might</em> help you get started:</h2>
@@ -593,10 +558,10 @@ div.tocify {
 <li><a href="https://github.com/melindahiggins2000/N736Homework01/raw/master/Dataset_02_fixq2.xls">Dataset_02_fixq2.xls</a></li>
 <li><a href="https://github.com/melindahiggins2000/N736Homework01/raw/master/Dataset_02_fixq2.xlsx">Dataset_02_fixq2.xlsx</a></li>
 </ul></li>
-<li>Getting started with the data in R <a href="https://github.com/melindahiggins2000/N736Homework01/blob/master/hmwk01_getStarted.pdf" class="uri">https://github.com/melindahiggins2000/N736Homework01/blob/master/hmwk01_getStarted.pdf</a></li>
-<li>R program to import the data <a href="https://github.com/melindahiggins2000/N736/raw/master/homework01_getStarted.R" class="uri">https://github.com/melindahiggins2000/N736/raw/master/homework01_getStarted.R</a></li>
-<li>Getting started with the data in SAS <a href="https://github.com/melindahiggins2000/N736Homework01/blob/master/hmwk01_getStarted.sas" class="uri">https://github.com/melindahiggins2000/N736Homework01/blob/master/hmwk01_getStarted.sas</a></li>
-<li>other helpful datasets and files at <a href="https://github.com/melindahiggins2000/N736Homework01" class="uri">https://github.com/melindahiggins2000/N736Homework01</a></li>
+<li>Getting started with the data in R <a href="https://github.com/melindahiggins2000/N736Homework01/blob/master/hmwk01_getStarted.pdf">https://github.com/melindahiggins2000/N736Homework01/blob/master/hmwk01_getStarted.pdf</a></li>
+<li>R program to import the data <a href="https://github.com/melindahiggins2000/N736/raw/master/homework01_getStarted.R">https://github.com/melindahiggins2000/N736/raw/master/homework01_getStarted.R</a></li>
+<li>Getting started with the data in SAS <a href="https://github.com/melindahiggins2000/N736Homework01/blob/master/hmwk01_getStarted.sas">https://github.com/melindahiggins2000/N736Homework01/blob/master/hmwk01_getStarted.sas</a></li>
+<li>other helpful datasets and files at <a href="https://github.com/melindahiggins2000/N736Homework01">https://github.com/melindahiggins2000/N736Homework01</a></li>
 </ul>
 </div>
 <div id="instructions-for-homework-01" class="section level2">
@@ -606,7 +571,7 @@ div.tocify {
 <li>Create an analysis report that explains <strong><code>every step you did</code></strong> - including anything you did manually. Ideally, everything you do to the dataset for fixing the errors or identifying the issues you spot in the data should be done using CODE (aka SYNTAX) so that someone else can take your code and reproduce your results. <em>[Remember, that “someone else” might be you in a few weeks when you’ve forgotten what you did earlier…]</em></li>
 <li>Provide comments and an explanation in your analysis report and in your code for each issue you find and fix.</li>
 <li>HINT: There are 10 issues to identify or problems to fix in this dataset. One of the issues might have to be done manually, but you should still explain what you did to fix it, even if you did it manually.</li>
-<li>Turn in - upload to CANVAS no later than <strong>Sept 12, 2018 11:59pm</strong>:
+<li>Turn in - upload to CANVAS no later than <strong>Sept 2, 2020 11:59pm</strong>:
 <ol style="list-style-type: upper-alpha">
 <li>An analysis/data preparation report (in either <code>DOC</code> or <code>PDF</code> format) - don’t forget to format your report nicely, make sure your name and date is included and</li>
 <li>your code/syntax with your comments and commands used to reproduce your results (you can upload your code in either <code>*.R</code>, <code>*.sas</code>, <code>*.sps</code> or <code>*.txt</code> (i.e. plain text) formats) or pasted into your report.</li>
@@ -616,11 +581,7 @@ div.tocify {
 <div id="homework-01-answer-key" class="section level2">
 <h2>Homework 01 Answer Key</h2>
 <p>N736 Homework 01 - Answer Key - codes and associated files</p>
-<ul>
-<li>R Code for Answer Key <a href="https://github.com/melindahiggins2000/N736_Homework01_Key/raw/master/Homework01Key_RScript.R" class="uri">https://github.com/melindahiggins2000/N736_Homework01_Key/raw/master/Homework01Key_RScript.R</a></li>
-<li>SAS Code for Answer Key <a href="https://github.com/melindahiggins2000/N736_Homework01_Key/raw/master/Homework01Key_SASprogram.sas" class="uri">https://github.com/melindahiggins2000/N736_Homework01_Key/raw/master/Homework01Key_SASprogram.sas</a></li>
-<li>SPSS Code for Answer Key <a href="https://github.com/melindahiggins2000/N736_Homework01_Key/raw/master/Homework01Key_SPSSsyntax.sps" class="uri">https://github.com/melindahiggins2000/N736_Homework01_Key/raw/master/Homework01Key_SPSSsyntax.sps</a></li>
-</ul>
+<p>TO BE POSTED …</p>
 </div>
 
 <hr>
@@ -649,6 +610,49 @@ $(document).ready(function () {
 });
 
 
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -73,7 +73,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -222,6 +221,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -234,48 +234,9 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <style type="text/css">
 
@@ -289,6 +250,12 @@ $(document).ready(function ()  {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -467,23 +434,21 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="homework01.html">Homework 01 - due 09/11/2019</a>
+      <a href="homework01.html">Homework 01 - due 09/02/2020</a>
     </li>
     <li>
-      <a href="homework02.html">Homework 02 - due 09/25/2019</a>
+      <a href="homework02.html">Homework 02 - due 09/16/2020</a>
     </li>
+    <li class="dropdown-header">Homework 03 - due 09/30/2020</li>
     <li>
-      <a href="homework03.html">Homework 03 - due 10/09/2019</a>
+      <a href="project01.html">Project - Milestone 01 - due 09/30/2020</a>
     </li>
+    <li class="dropdown-header">Homework 04 - due 10/14/2020</li>
+    <li class="dropdown-header">Homework 05 - due 10/28/2020</li>
+    <li class="dropdown-header">Homework 06 - due 11/11/2020</li>
+    <li class="dropdown-header">Homework 07 - due 11/24/2020</li>
     <li>
-      <a href="project01.html">Project - Milestone 01 - due 10/09/2019</a>
-    </li>
-    <li class="dropdown-header">Homework 04 - due 10/23/2019</li>
-    <li class="dropdown-header">Homework 05 - due 11/06/2019</li>
-    <li class="dropdown-header">Homework 06 - due 11/25/2019</li>
-    <li class="dropdown-header">Homework 07 - due 12/04/2019</li>
-    <li>
-      <a href="project.html">Project - Milestone 2 &amp; 3 - due 12/09/2019 &amp; 12/16/2019</a>
+      <a href="project.html">Project - Milestone 2 &amp; 3 - due 11/24/2020 &amp; 12/07/2020</a>
     </li>
   </ul>
 </li>
@@ -519,7 +484,7 @@ div.tocify {
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     <span class="fa fa-cog"></span>
      
-    Useful Stuff
+    Software
      
     <span class="caret"></span>
   </a>
@@ -578,32 +543,32 @@ div.tocify {
 <div id="exploring-this-test-dataset" class="section level2">
 <h2>Exploring this test dataset</h2>
 <p>During class we will discuss and identify some of the issues with this dataset.</p>
-<p><strong>NOTES from Class Today</strong> <a href="homework1_notes.txt" class="uri">homework1_notes.txt</a></p>
+<p><strong>NOTES from Class Today</strong> <a href="homework1_notes.txt">homework1_notes.txt</a></p>
 </div>
 <div id="class-discussion-and-video" class="section level2">
 <h2>Class discussion and video</h2>
 <p>Today’s class will be recorded and the video posted at the <strong>EchoALP</strong> link on Canvas for NRSG 736.</p>
 <p>Weblinks to be discussed during class:</p>
 <ul>
-<li><p>Journal of Biostatistics - author guidelines for “Reproducible Research” <a href="https://academic.oup.com/biostatistics/pages/General_Instructions" class="uri">https://academic.oup.com/biostatistics/pages/General_Instructions</a>.</p></li>
-<li><p>Washington Post Article on “An Alarming Number of Scientific Papers Contain Excel Errors” <a href="https://www.washingtonpost.com/news/wonk/wp/2016/08/26/an-alarming-number-of-scientific-papers-contain-excel-errors/?utm_term=.8ec47ce8bc16" class="uri">https://www.washingtonpost.com/news/wonk/wp/2016/08/26/an-alarming-number-of-scientific-papers-contain-excel-errors/?utm_term=.8ec47ce8bc16</a>.</p></li>
-<li><p>Genome Biology 2016 Paper on “Gene name error are widespread in the scientific literature” <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7" class="uri">https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7</a>.</p></li>
-<li><p>“The Excel Error heard Around the World” <a href="https://newrepublic.com/article/112951/rogoff-reinhart-and-world-excel-error-research" class="uri">https://newrepublic.com/article/112951/rogoff-reinhart-and-world-excel-error-research</a> &amp; more at <a href="http://nymag.com/daily/intelligencer/2013/04/grad-student-who-shook-global-austerity-movement.html" class="uri">http://nymag.com/daily/intelligencer/2013/04/grad-student-who-shook-global-austerity-movement.html</a>.</p></li>
-<li><p>“How Bright Promise in Cancer Testing Fell Apart” - Duke cancer trials controversy <a href="http://www.nytimes.com/2011/07/08/health/research/08genes.html?mcubz=1" class="uri">http://www.nytimes.com/2011/07/08/health/research/08genes.html?mcubz=1</a> &amp; “An array of errors” <a href="http://www.economist.com/node/21528593" class="uri">http://www.economist.com/node/21528593</a>.</p></li>
-<li><p>“A Manifesto for Reproducible Science” <a href="https://www.nature.com/articles/s41562-016-0021" class="uri">https://www.nature.com/articles/s41562-016-0021</a>.</p></li>
-<li><p>Center for Open Science <a href="https://cos.io/" class="uri">https://cos.io/</a> &amp; COS History <a href="https://cos.io/about/brief-history-cos-2013-2017/" class="uri">https://cos.io/about/brief-history-cos-2013-2017/</a>.</p></li>
-<li><p>Science “One in Five Genetics Papers Contains Errors Thanks to Microsoft Excel” <a href="http://www.sciencemag.org/news/sifter/one-five-genetics-papers-contains-errors-thanks-microsoft-excel" class="uri">http://www.sciencemag.org/news/sifter/one-five-genetics-papers-contains-errors-thanks-microsoft-excel</a>.</p></li>
+<li><p>Journal of Biostatistics - author guidelines for “Reproducible Research” <a href="https://academic.oup.com/biostatistics/pages/General_Instructions">https://academic.oup.com/biostatistics/pages/General_Instructions</a>.</p></li>
+<li><p>Washington Post Article on “An Alarming Number of Scientific Papers Contain Excel Errors” <a href="https://www.washingtonpost.com/news/wonk/wp/2016/08/26/an-alarming-number-of-scientific-papers-contain-excel-errors/?utm_term=.8ec47ce8bc16">https://www.washingtonpost.com/news/wonk/wp/2016/08/26/an-alarming-number-of-scientific-papers-contain-excel-errors/?utm_term=.8ec47ce8bc16</a>.</p></li>
+<li><p>Genome Biology 2016 Paper on “Gene name error are widespread in the scientific literature” <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7">https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7</a>.</p></li>
+<li><p>“The Excel Error heard Around the World” <a href="https://newrepublic.com/article/112951/rogoff-reinhart-and-world-excel-error-research">https://newrepublic.com/article/112951/rogoff-reinhart-and-world-excel-error-research</a> &amp; more at <a href="http://nymag.com/daily/intelligencer/2013/04/grad-student-who-shook-global-austerity-movement.html">http://nymag.com/daily/intelligencer/2013/04/grad-student-who-shook-global-austerity-movement.html</a>.</p></li>
+<li><p>“How Bright Promise in Cancer Testing Fell Apart” - Duke cancer trials controversy <a href="http://www.nytimes.com/2011/07/08/health/research/08genes.html?mcubz=1">http://www.nytimes.com/2011/07/08/health/research/08genes.html?mcubz=1</a> &amp; “An array of errors” <a href="http://www.economist.com/node/21528593">http://www.economist.com/node/21528593</a>.</p></li>
+<li><p>“A Manifesto for Reproducible Science” <a href="https://www.nature.com/articles/s41562-016-0021">https://www.nature.com/articles/s41562-016-0021</a>.</p></li>
+<li><p>Center for Open Science <a href="https://cos.io/">https://cos.io/</a> &amp; COS History <a href="https://cos.io/about/brief-history-cos-2013-2017/">https://cos.io/about/brief-history-cos-2013-2017/</a>.</p></li>
+<li><p>Science “One in Five Genetics Papers Contains Errors Thanks to Microsoft Excel” <a href="http://www.sciencemag.org/news/sifter/one-five-genetics-papers-contains-errors-thanks-microsoft-excel">http://www.sciencemag.org/news/sifter/one-five-genetics-papers-contains-errors-thanks-microsoft-excel</a>.</p></li>
 </ul>
 </div>
 <div id="other-links-you-might-want-to-explore" class="section level2">
 <h2>Other links you might want to explore</h2>
 <ul>
-<li><p>Gitbook <a href="https://www.gitbook.com/" class="uri">https://www.gitbook.com/</a>.</p></li>
-<li><p>Bookdown <a href="https://bookdown.org" class="uri">https://bookdown.org</a>.</p></li>
-<li><p>Yihui Xie’s book on the <code>bookdown</code> package <a href="https://bookdown.org/yihui/bookdown/" class="uri">https://bookdown.org/yihui/bookdown/</a>.</p></li>
-<li><p>Github repo for Yihui Xie’s “Dynamic Documents with R and knitr” - 1st 3 chapters available online <a href="https://github.com/yihui/knitr-book" class="uri">https://github.com/yihui/knitr-book</a>.</p></li>
-<li><p>Garrett Grolemund and Hadley Wickham’s book “R for Data Science” - also online at <a href="http://r4ds.had.co.nz/" class="uri">http://r4ds.had.co.nz/</a> &amp; if you’re interested, here is the Github repo for their book <a href="https://github.com/hadley/r4ds" class="uri">https://github.com/hadley/r4ds</a>.</p></li>
-<li><p>Tidyverse <a href="https://www.tidyverse.org/" class="uri">https://www.tidyverse.org/</a>.</p></li>
+<li><p>Gitbook <a href="https://www.gitbook.com/">https://www.gitbook.com/</a>.</p></li>
+<li><p>Bookdown <a href="https://bookdown.org">https://bookdown.org</a>.</p></li>
+<li><p>Yihui Xie’s book on the <code>bookdown</code> package <a href="https://bookdown.org/yihui/bookdown/">https://bookdown.org/yihui/bookdown/</a>.</p></li>
+<li><p>Github repo for Yihui Xie’s “Dynamic Documents with R and knitr” - 1st 3 chapters available online <a href="https://github.com/yihui/knitr-book">https://github.com/yihui/knitr-book</a>.</p></li>
+<li><p>Garrett Grolemund and Hadley Wickham’s book “R for Data Science” - also online at <a href="http://r4ds.had.co.nz/">http://r4ds.had.co.nz/</a> &amp; if you’re interested, here is the Github repo for their book <a href="https://github.com/hadley/r4ds">https://github.com/hadley/r4ds</a>.</p></li>
+<li><p>Tidyverse <a href="https://www.tidyverse.org/">https://www.tidyverse.org/</a>.</p></li>
 </ul>
 </div>
 
@@ -633,6 +598,49 @@ $(document).ready(function () {
 });
 
 
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->

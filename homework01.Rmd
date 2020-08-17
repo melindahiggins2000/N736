@@ -2,16 +2,16 @@
 title: "Homework 01"
 ---
 
-## Homework 01 - due 09/11/2019
+## Homework 01 - due 09/02/2020
 
-The Homework 01 assignment is posted at [https://github.com/melindahiggins2000/N736Testdataset/blob/master/Homework01.pdf](https://github.com/melindahiggins2000/N736Testdataset/blob/master/Homework01.pdf). 
+The Homework 01 assignment is posted at [https://github.com/melindahiggins2000/N736Homework01/blob/master/Homework01.pdf](https://github.com/melindahiggins2000/N736Homework01/blob/master/Homework01.pdf). 
 
 Download Links - click each link to download the file you want:
 
-* [PDF of Homework 01 Assignment](https://github.com/melindahiggins2000/N736Testdataset/raw/master/Homework01.pdf) 
-* [CSV Datafile](https://github.com/melindahiggins2000/N736Testdataset/raw/master/Dataset_02.csv)
-* [XLS Excel Datafile](https://github.com/melindahiggins2000/N736Testdataset/raw/master/Dataset_02.xls)
-* [XLSX Excel Datafile](https://github.com/melindahiggins2000/N736Testdataset/raw/master/Dataset_02.xlsx)
+* [PDF of Homework 01 Assignment](https://github.com/melindahiggins2000/N736Homework01/blob/master/Homework01.pdf)
+* [CSV Datafile](https://raw.githubusercontent.com/melindahiggins2000/N736Homework01/master/Dataset_02.csv)
+* [XLS Excel Datafile](https://github.com/melindahiggins2000/N736Homework01/blob/master/Dataset_02.xls?raw=true)
+* [XLSX Excel Datafile](https://github.com/melindahiggins2000/N736Homework01/blob/master/Dataset_02.xlsx?raw=true)
 * CODEBOOK for dataset [Codebook PDF](https://github.com/melindahiggins2000/N736Homework01/blob/master/Dataset_02_Codebook.pdf)
 
 **NOTES from Class 09/05/2018** [homework1_notes.txt](homework1_notes.txt)
@@ -34,7 +34,7 @@ Download Links - click each link to download the file you want:
 2. Create an analysis report that explains **`every step you did`** - including anything you did manually. Ideally, everything you do to the dataset for fixing the errors or identifying the issues you spot in the data should be done using CODE (aka SYNTAX) so that someone else can take your code and reproduce your results. _[Remember, that "someone else" might be you in a few weeks when you've forgotten what you did earlier...]_
 3. Provide comments and an explanation in your analysis report and in your code for each issue you find and fix.
 4. HINT: There are 10 issues to identify or problems to fix in this dataset. One of the issues might have to be done manually, but you should still explain what you did to fix it, even if you did it manually.
-5. Turn in - upload to CANVAS no later than **Sept 12, 2018 11:59pm**:
+5. Turn in - upload to CANVAS no later than **Sept 2, 2020 11:59pm**:
     (A) An analysis/data preparation report (in either `DOC` or `PDF` format) - don't forget to format your report nicely, make sure your name and date is included and
     (B) your code/syntax with your comments and commands used to reproduce your results (you can upload your code in either `*.R`, `*.sas`, `*.sps` or `*.txt` (i.e. plain text) formats) or pasted into your report.
     
@@ -42,7 +42,4 @@ Download Links - click each link to download the file you want:
 
 N736 Homework 01 - Answer Key - codes and associated files
 
-* R Code for Answer Key [https://github.com/melindahiggins2000/N736_Homework01_Key/raw/master/Homework01Key_RScript.R](https://github.com/melindahiggins2000/N736_Homework01_Key/raw/master/Homework01Key_RScript.R)
-* SAS Code for Answer Key [https://github.com/melindahiggins2000/N736_Homework01_Key/raw/master/Homework01Key_SASprogram.sas](https://github.com/melindahiggins2000/N736_Homework01_Key/raw/master/Homework01Key_SASprogram.sas)
-* SPSS Code for Answer Key [https://github.com/melindahiggins2000/N736_Homework01_Key/raw/master/Homework01Key_SPSSsyntax.sps](https://github.com/melindahiggins2000/N736_Homework01_Key/raw/master/Homework01Key_SPSSsyntax.sps)
-
+TO BE POSTED ...

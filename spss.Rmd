@@ -4,6 +4,17 @@ title: "SPSS - where to purchase, download and install"
 
 ## SPSS
 
+****UPDATED FALL 2020****
+
+Emory is currently allowing students to download and install SPSS using the campus site license - for FREE.
+
+1. Go to [https://software.emory.edu](https://software.emory.edu) - click on "Software Express" and log in with your Emory credentials.
+2. Agree to the agreement
+3. Scroll down and download the SPSS version you wish - both v.26 and v.27 are available.
+4. Make note of the KEY - you will need this code to license SPSS after you download it and get it installed on your computer.
+
+## Other links to purchasing SPSS
+
 Go to IBM’s website for student grad pack versions at https://www-03.ibm.com/software/products/en/spss-stats-gradpack 
 
 There are several links at this website for purchasing students versions of SPSS. There are 3 options:

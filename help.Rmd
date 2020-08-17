@@ -9,15 +9,11 @@ See YouTube Video for Installing R, RStudio and Rmarkdown at [https://youtu.be/M
 * Download R from [https://cran.r-project.org/](https://cran.r-project.org/)
 * Download RStudio Desktop from [https://www.rstudio.com/products/rstudio/download/](https://www.rstudio.com/products/rstudio/download/)
 
-
 ### Learning R
 
-* [Code School - TRYR](http://tryr.codeschool.com/)
-    + **DO THIS FIRST** Code School is an online learning environment. The **TRYR** site is completely free and is a great place to start learning r. You don't even need to have the R software installed! I highly encourage you to run through at least module 1 - but the more you complete, the better!
+* [RStudio Education](https://education.rstudio.com/)
 * [Data Camp](https://www.datacamp.com/)
     + DataCamp is another great place to start learning online. You need to create an account to get started. There are many FREE courses available on R.
-* [RStudio Online Learning](https://www.rstudio.com/resources/training/online-learning/)
-    + RStudio also provides a wealth of tutorials, articles, and examples exist to help you learn R and its extensions.
 * [UCLA Institute for Digital Research and Education (IDRE)](http://www.ats.ucla.edu/stat/r/)
     + The IDRE by UCLA is an excellent source for help with many statistical software pages and analyses including R.
 * [SWIRL](http://swirlstats.com/)
@@ -40,9 +36,15 @@ The websites listed below all provide information on how to get help in R.
 On the main RStudio website [https://www.rstudio.com/products/rstudio/](https://www.rstudio.com/products/rstudio/) there is a short overview video. But also check out:
 
 * Feature overview [https://www.rstudio.com/products/rstudio/features/](https://www.rstudio.com/products/rstudio/features/)
-* Online learning for R, Rmarkdown, RStudio and more [https://www.rstudio.com/online-learning/](https://www.rstudio.com/online-learning/)
+* Online learning for R, Rmarkdown, RStudio and more [RStudio Education](https://education.rstudio.com/)
 * Webinars [https://www.rstudio.com/resources/webinars/](https://www.rstudio.com/resources/webinars/)
 * lots of helpful cheatsheets [https://www.rstudio.com/resources/cheatsheets/](https://www.rstudio.com/resources/cheatsheets/)
+
+## Rmarkdown reports
+
+* [RMarkdown](http://rmarkdown.rstudio.com/index.html)
+* [Knitr examples](http://yihui.name/knitr/demo/showcase/)
+* Karl Broman's website [Knitr in a Knutshell](http://kbroman.org/knitr_knutshell/) tutorial
 
 ## Github
 

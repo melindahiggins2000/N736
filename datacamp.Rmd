@@ -4,7 +4,8 @@ title: "Datacamp"
 
 ![](datacampLogoHorizontal.png)
 
-As a student in this course, I have created a learners group for education at [https://www.datacamp.com/](https://www.datacamp.com/). You should all have received an invitation to join this group at Datacamp.
+For all students in this course, I have created a learners group "NRSG 736 Quantitative Analysis Fall 2020" for education at [https://www.datacamp.com/](https://www.datacamp.com/). You should all have received an invitation to join this group at Datacamp.
 
-While enrolled you will have access to the 160+ courses on R, Python and other programming courses for 6 months for free.
+While enrolled you will have access to the Datacamp catalog which currently includes 330+ courses on R, Python, SQL and other programming courses for 6 months for free.
 
+There are numerous skill tracks and career tracks that are helpful to follow.

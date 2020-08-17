@@ -12,41 +12,24 @@ _**Open discussion**_
 
 ## Setting up software for the course
 
+See Details under "Software" TAB of this website.
+
 Your options for software for this course include:
 
-* SAS (using SAS University - FREE)
-    - [https://www.sas.com/en_us/software/university-edition/download-software.html](https://www.sas.com/en_us/software/university-edition/download-software.html)
-    
-* SPSS (Student Versio - Premium Grad Pack edition preferred - Stadard edition will work)
-    - [http://www-03.ibm.com/software/products/en/spss-stats-gradpack](http://www-03.ibm.com/software/products/en/spss-stats-gradpack)
-
+* SAS (using SAS University - FREE) [https://www.sas.com/en_us/software/university-edition.html](https://www.sas.com/en_us/software/university-edition.html)
+* SPSS - FREE from Emory Fall 2020, [https://software.emory.edu](https://software.emory.edu)
 * R/RStudio - FREE
     - [https://cran.r-project.org/](https://cran.r-project.org/)
     - [https://www.rstudio.com/products/rstudio/download/](https://www.rstudio.com/products/rstudio/download/)
+* OPTIONAL - VERSION CONTROL
     - Git
         - It is suggested if you plan on using R/RStudio - also install Git on your computer to enable the version tracking software and "link" back to your Github repositories
         - [https://git-scm.com/downloads](https://git-scm.com/downloads) - this includes links for both Windows and Mac
         - and for Windows [https://git-for-windows.github.io/](https://git-for-windows.github.io/)
     - Also see "Happy Git and GitHub for the useR" by Jenny Bryan at [http://happygitwithr.com/](http://happygitwithr.com/)
-* Github
-    - It is also suggested, even if you do not want to use R/RStudio, go ahead and setup an account on Github, since many of the lessons and code examples will be saved and hosted on Github.
-    - [https://github.com/](https://github.com/)
-
-## Setting up R and RStudio
-
-1. See [Pre R Workshop Setup Instructions](https://melindahiggins2000.gitbooks.io/a-series-of-r-workshops/content/preWorkshop/index.html) This online "Book" has information on R, installing R and RStudio, and places to get help.
-
-2. [Youtube Video](https://www.youtube.com/watch?v=MsV5dJ2reQ4) on Installing R, RStudio and Compiling your first Rmarkdown report.
-
-## Rmarkdown reports
-
-In addition to the YouTube video demonstration above, also learn more at:
-
-* [RMarkdown](http://rmarkdown.rstudio.com/index.html)
-
-* [Knitr examples](http://yihui.name/knitr/demo/showcase/)
-
-* Karl Broman's website [Knitr in a Knutshell](http://kbroman.org/knitr_knutshell/) tutorial
+    - Github
+        - It is also suggested, even if you do not want to use R/RStudio, go ahead and setup an account on Github, since many of the lessons and code examples will be saved and hosted on Github.
+        - [https://github.com/](https://github.com/)
 
 
 

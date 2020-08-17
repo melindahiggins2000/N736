@@ -5,6 +5,10 @@ title: "N736 Quantitative Analysis of Clinical Research Data"
 ## COURSE NUMBER, TITLE:		
 N736: Quantitative Analysis of Clinical Research Data
 
+## CLASS DAYS AND TIMES:
+* Mondays 11:00-11:50am via ZOOM [https://zoom.us/j/97444269739?pwd=eGprRDVMUFlSNmFjR3pBcU1jVG84dz09](https://zoom.us/j/97444269739?pwd=eGprRDVMUFlSNmFjR3pBcU1jVG84dz09)
+* Wednesdays 1:00-2:50pm via ZOOM [https://zoom.us/j/92063999396?pwd=aFZNdnlFZG5CQnlDeFlkTllLcnVLZz09](https://zoom.us/j/92063999396?pwd=aFZNdnlFZG5CQnlDeFlkTllLcnVLZz09)
+
 ## Course Objective:
 To build and expand upon the statistical theory and methods learned in BIOS 500 and 501 and improve the student’s statistical software experience and programming skills with SAS, SPSS or R to improve research scholarship and dissemination.
 

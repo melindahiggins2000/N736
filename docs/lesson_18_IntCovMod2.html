@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -73,7 +73,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -222,6 +221,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -234,48 +234,9 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <style type="text/css">
 
@@ -289,6 +250,12 @@ $(document).ready(function ()  {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -467,23 +434,21 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="homework01.html">Homework 01 - due 09/11/2019</a>
+      <a href="homework01.html">Homework 01 - due 09/02/2020</a>
     </li>
     <li>
-      <a href="homework02.html">Homework 02 - due 09/25/2019</a>
+      <a href="homework02.html">Homework 02 - due 09/16/2020</a>
     </li>
+    <li class="dropdown-header">Homework 03 - due 09/30/2020</li>
     <li>
-      <a href="homework03.html">Homework 03 - due 10/09/2019</a>
+      <a href="project01.html">Project - Milestone 01 - due 09/30/2020</a>
     </li>
+    <li class="dropdown-header">Homework 04 - due 10/14/2020</li>
+    <li class="dropdown-header">Homework 05 - due 10/28/2020</li>
+    <li class="dropdown-header">Homework 06 - due 11/11/2020</li>
+    <li class="dropdown-header">Homework 07 - due 11/24/2020</li>
     <li>
-      <a href="project01.html">Project - Milestone 01 - due 10/09/2019</a>
-    </li>
-    <li class="dropdown-header">Homework 04 - due 10/23/2019</li>
-    <li class="dropdown-header">Homework 05 - due 11/06/2019</li>
-    <li class="dropdown-header">Homework 06 - due 11/25/2019</li>
-    <li class="dropdown-header">Homework 07 - due 12/04/2019</li>
-    <li>
-      <a href="project.html">Project - Milestone 2 &amp; 3 - due 12/09/2019 &amp; 12/16/2019</a>
+      <a href="project.html">Project - Milestone 2 &amp; 3 - due 11/24/2020 &amp; 12/07/2020</a>
     </li>
   </ul>
 </li>
@@ -519,7 +484,7 @@ div.tocify {
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     <span class="fa fa-cog"></span>
      
-    Useful Stuff
+    Software
      
     <span class="caret"></span>
   </a>
@@ -576,20 +541,20 @@ div.tocify {
 <div id="code-and-models" class="section level3">
 <h3>Code and Models</h3>
 <ul>
-<li>HELP Dataset SPSS Format <a href="https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sav" class="uri">https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sav</a></li>
-<li>SPSS SYNTAX Code<a href="https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/lesson17_SPSS_Syntax_2018.sps" class="uri">https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/lesson17_SPSS_Syntax_2018.sps</a></li>
-<li>SPSS Output <a href="https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/lesson17_SPSS_Output_2018.spv" class="uri">https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/lesson17_SPSS_Output_2018.spv</a></li>
-<li>SPSS Output in HTML format <a href="https://melindahiggins2000.github.io/N736Fall2017_lesson17/lesson17_SPSS_Output_2018.htm" class="uri">https://melindahiggins2000.github.io/N736Fall2017_lesson17/lesson17_SPSS_Output_2018.htm</a></li>
-<li>SAS Dataset <a href="https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sas7bdat" class="uri">https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sas7bdat</a></li>
-<li>SAS Code <a href="https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/lesson17_SAS_2018.sas" class="uri">https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/lesson17_SAS_2018.sas</a></li>
-<li>R Code <a href="https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/lesson18_2018_R.R" class="uri">https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/lesson18_2018_R.R</a></li>
+<li>HELP Dataset SPSS Format <a href="https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sav">https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sav</a></li>
+<li>SPSS SYNTAX Code<a href="https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/lesson17_SPSS_Syntax_2018.sps">https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/lesson17_SPSS_Syntax_2018.sps</a></li>
+<li>SPSS Output <a href="https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/lesson17_SPSS_Output_2018.spv">https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/lesson17_SPSS_Output_2018.spv</a></li>
+<li>SPSS Output in HTML format <a href="https://melindahiggins2000.github.io/N736Fall2017_lesson17/lesson17_SPSS_Output_2018.htm">https://melindahiggins2000.github.io/N736Fall2017_lesson17/lesson17_SPSS_Output_2018.htm</a></li>
+<li>SAS Dataset <a href="https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sas7bdat">https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/helpmkh.sas7bdat</a></li>
+<li>SAS Code <a href="https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/lesson17_SAS_2018.sas">https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/lesson17_SAS_2018.sas</a></li>
+<li>R Code <a href="https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/lesson18_2018_R.R">https://github.com/melindahiggins2000/N736Fall2017_lesson17/raw/master/lesson18_2018_R.R</a></li>
 </ul>
 </div>
 <div id="slides" class="section level3">
 <h3>Slides</h3>
 <ul>
-<li>PPT Slides on Covariates, Moderators and Mediators <a href="https://github.com/melindahiggins2000/N736/raw/master/ModeratorMediators_21Nov08.ppt" class="uri">https://github.com/melindahiggins2000/N736/raw/master/ModeratorMediators_21Nov08.ppt</a></li>
-<li>Slides in PDF format on Covariates, Moderators &amp; Mediators <a href="https://github.com/melindahiggins2000/N736/raw/master/ModeratorMediators_21Nov08.pdf" class="uri">https://github.com/melindahiggins2000/N736/raw/master/ModeratorMediators_21Nov08.pdf</a></li>
+<li>PPT Slides on Covariates, Moderators and Mediators <a href="https://github.com/melindahiggins2000/N736/raw/master/ModeratorMediators_21Nov08.ppt">https://github.com/melindahiggins2000/N736/raw/master/ModeratorMediators_21Nov08.ppt</a></li>
+<li>Slides in PDF format on Covariates, Moderators &amp; Mediators <a href="https://github.com/melindahiggins2000/N736/raw/master/ModeratorMediators_21Nov08.pdf">https://github.com/melindahiggins2000/N736/raw/master/ModeratorMediators_21Nov08.pdf</a></li>
 </ul>
 </div>
 </div>
@@ -620,6 +585,49 @@ $(document).ready(function () {
 });
 
 
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->

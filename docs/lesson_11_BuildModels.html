@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -73,7 +73,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -222,6 +221,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -234,48 +234,9 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <style type="text/css">
 
@@ -289,6 +250,12 @@ $(document).ready(function ()  {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -467,23 +434,21 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="homework01.html">Homework 01 - due 09/11/2019</a>
+      <a href="homework01.html">Homework 01 - due 09/02/2020</a>
     </li>
     <li>
-      <a href="homework02.html">Homework 02 - due 09/25/2019</a>
+      <a href="homework02.html">Homework 02 - due 09/16/2020</a>
     </li>
+    <li class="dropdown-header">Homework 03 - due 09/30/2020</li>
     <li>
-      <a href="homework03.html">Homework 03 - due 10/09/2019</a>
+      <a href="project01.html">Project - Milestone 01 - due 09/30/2020</a>
     </li>
+    <li class="dropdown-header">Homework 04 - due 10/14/2020</li>
+    <li class="dropdown-header">Homework 05 - due 10/28/2020</li>
+    <li class="dropdown-header">Homework 06 - due 11/11/2020</li>
+    <li class="dropdown-header">Homework 07 - due 11/24/2020</li>
     <li>
-      <a href="project01.html">Project - Milestone 01 - due 10/09/2019</a>
-    </li>
-    <li class="dropdown-header">Homework 04 - due 10/23/2019</li>
-    <li class="dropdown-header">Homework 05 - due 11/06/2019</li>
-    <li class="dropdown-header">Homework 06 - due 11/25/2019</li>
-    <li class="dropdown-header">Homework 07 - due 12/04/2019</li>
-    <li>
-      <a href="project.html">Project - Milestone 2 &amp; 3 - due 12/09/2019 &amp; 12/16/2019</a>
+      <a href="project.html">Project - Milestone 2 &amp; 3 - due 11/24/2020 &amp; 12/07/2020</a>
     </li>
   </ul>
 </li>
@@ -519,7 +484,7 @@ div.tocify {
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     <span class="fa fa-cog"></span>
      
-    Useful Stuff
+    Software
      
     <span class="caret"></span>
   </a>
@@ -576,15 +541,15 @@ div.tocify {
 <p>This lesson begins the discussion of building models - regression models (linear regression, logistic regression, generalized linear models) and ANOVA (one-way, two-way, mixed) and others…</p>
 <p>We will be referring to the PPT/PDF slides: <em>(click on the links to download the files)</em></p>
 <ul>
-<li><p><code>ResearchRoundtableBuildRegressionModel_final14Nov08.ppt</code> <a href="https://github.com/melindahiggins2000/N736Fall2017/raw/master/ResearchRoundtableBuildRegressionModel_final14Nov08.ppt" class="uri">https://github.com/melindahiggins2000/N736Fall2017/raw/master/ResearchRoundtableBuildRegressionModel_final14Nov08.ppt</a></p></li>
-<li><p><code>ResearchRoundtableBuildRegressionModel_final14Nov08.pdf</code> <a href="https://github.com/melindahiggins2000/N736Fall2017/raw/master/ResearchRoundtableBuildRegressionModel_final14Nov08.pdf" class="uri">https://github.com/melindahiggins2000/N736Fall2017/raw/master/ResearchRoundtableBuildRegressionModel_final14Nov08.pdf</a></p></li>
+<li><p><code>ResearchRoundtableBuildRegressionModel_final14Nov08.ppt</code> <a href="https://github.com/melindahiggins2000/N736Fall2017/raw/master/ResearchRoundtableBuildRegressionModel_final14Nov08.ppt">https://github.com/melindahiggins2000/N736Fall2017/raw/master/ResearchRoundtableBuildRegressionModel_final14Nov08.ppt</a></p></li>
+<li><p><code>ResearchRoundtableBuildRegressionModel_final14Nov08.pdf</code> <a href="https://github.com/melindahiggins2000/N736Fall2017/raw/master/ResearchRoundtableBuildRegressionModel_final14Nov08.pdf">https://github.com/melindahiggins2000/N736Fall2017/raw/master/ResearchRoundtableBuildRegressionModel_final14Nov08.pdf</a></p></li>
 </ul>
 </div>
 <div id="consider-steps-checklists-assumptions" class="section level2">
 <h2>Consider Steps, checklists, assumptions, …</h2>
 <ol style="list-style-type: decimal">
-<li><p>Assume that the terms are “linearly”&quot; related to the outcome - that relationship is linear (either directly or through transformations)</p></li>
-<li>The “slope” or “relationship” between X &amp; Y is assumed to be “constant” / “consistent” across all levels of X
+<li><p>Assume that the terms are “linearly”" related to the outcome - that relationship is linear (either directly or through transformations)</p></li>
+<li><p>The “slope” or “relationship” between X &amp; Y is assumed to be “constant” / “consistent” across all levels of X</p>
 <ul>
 <li>same slope from 1-to-2 as from 200-to-201</li>
 <li>changing from “strongly disagree” - to - “disagree” is assumed to have the same impact on Y as going from “neutral” - to - “agree” [e.g. LiKert scale data] - useful case when looking at both “regression” and “ANOVA” type models can be useful
@@ -603,7 +568,7 @@ div.tocify {
 </ul></li>
 </ul></li>
 <li><p>We assume that Y was observed for all levels of X and that it was observed “evenly” (“balanced” experimental design) - “Anscome Quartet”</p></li>
-<li>The independent variables are independent of one another (no multicollinearity) – although some “mild/minor” correlation may be tolerated. Check the Variance Inflation Factor <strong>(VIF)</strong> and/or the Tolerance <strong>(TOL)</strong>, which is the inverse of the <strong>VIF</strong>.
+<li><p>The independent variables are independent of one another (no multicollinearity) – although some “mild/minor” correlation may be tolerated. Check the Variance Inflation Factor <strong>(VIF)</strong> and/or the Tolerance <strong>(TOL)</strong>, which is the inverse of the <strong>VIF</strong>.</p>
 <ul>
 <li><strong>VIF</strong> ’s should be &lt;10, some people say <strong>VIF</strong> &lt;5.</li>
 <li>I usually start getting suspicious when <strong>VIF</strong> &gt; 2.</li>
@@ -611,9 +576,9 @@ div.tocify {
 </ul></li>
 <li><p>Any case which has “missing” data on any of the IVs or DV will be eliminated from the analysis (listwise deletion).</p></li>
 <li><p>The intercept and all coefficients for the IVs are “Fixed.” <em>[“Random Coefficient Models” to be discussed later.]</em></p></li>
-<li><p>We assume that the variance of Y is constant across all levels of X (assumption of homogeneity of variance) - important for regression and ANOVA (e.g. “Levene’s test”)</p></li>
+<li><p>We assume that the variance of Y is constant across all levels of X (assumption of homogeneity of variance) - important for regression and ANOVA (e.g. “Levene’s test”)</p></li>
 <li><p>The “error” term is additive (not multiplicative)</p></li>
-<li>Assume “errors” (“residuals”) are normally distributed, identical and independent ~iid N(mu,sigma).
+<li><p>Assume “errors” (“residuals”) are normally distributed, identical and independent ~iid N(mu,sigma).</p>
 <ul>
 <li>normality checks</li>
 <li>check to see if residuals are independent - trend by sequnce (collection order of data) - related to sampling independence (e.g. family members are not independent)</li>
@@ -652,6 +617,49 @@ $(document).ready(function () {
 });
 
 
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->

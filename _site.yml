@@ -60,19 +60,18 @@ navbar:
     - text: "Assignments"
       icon: fa-file-text
       menu:
-        - text: "Homework 01 - due 09/11/2019"
+        - text: "Homework 01 - due 09/02/2020"
           href: homework01.html
-        - text: "Homework 02 - due 09/25/2019"
+        - text: "Homework 02 - due 09/16/2020"
           href: homework02.html
-        - text: "Homework 03 - due 10/09/2019"
-          href: homework03.html
-        - text: "Project - Milestone 01 - due 10/09/2019"
+        - text: "Homework 03 - due 09/30/2020"
+        - text: "Project - Milestone 01 - due 09/30/2020"
           href: project01.html
-        - text: "Homework 04 - due 10/23/2019"
-        - text: "Homework 05 - due 11/06/2019"
-        - text: "Homework 06 - due 11/25/2019"
-        - text: "Homework 07 - due 12/04/2019"
-        - text: "Project - Milestone 2 & 3 - due 12/09/2019 & 12/16/2019"
+        - text: "Homework 04 - due 10/14/2020"
+        - text: "Homework 05 - due 10/28/2020"
+        - text: "Homework 06 - due 11/11/2020"
+        - text: "Homework 07 - due 11/24/2020"
+        - text: "Project - Milestone 2 & 3 - due 11/24/2020 & 12/07/2020"
           href: project.html
     - text: "H.E.L.P. Dataset"
       icon: fa-database
@@ -85,7 +84,7 @@ navbar:
       menu:
         - text: "Overview"
           href: syllabus.html
-    - text: "Useful Stuff"
+    - text: "Software"
       icon: fa-cog
       menu:
         - text: "Datacamp"
