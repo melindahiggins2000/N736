@@ -564,15 +564,21 @@ div.tocify {
 <li>Follow this process for ALL of your exercises, homeworks and project(s). This will help you stay organized and avoid file location problems with software. Most software assumes that the files you are inoutting, using and saving are in this project folder.</li>
 </ol>
 <hr />
-<pre><code>* R projects (should) always start with defining your project folder [File/New Project]</code></pre>
+<ul>
+<li>R projects (should) always start with defining your project folder [File/New Project]</li>
+</ul>
 <p><img src="images/Rnewproject.png" alt="rnewproj" /></p>
 <p><img src="images/Rnewproject2.png" alt="rnewproj2" /></p>
 <hr />
-<pre><code>* SAS begins by defining a library using a `libname` statement</code></pre>
+<ul>
+<li>SAS begins by defining a library using a <code>libname</code> statement</li>
+</ul>
 <p><img src="images/SASnewproject.png" alt="sasnewproj" /></p>
 <hr />
-<pre><code>* SPSS is the most flexible. It typically defaults to remembering which folder you were in when you last exited the software. 
-* Go to EDIT/OPTIONS and choose &quot;File Locations&quot; TAB</code></pre>
+<ul>
+<li><p>SPSS is the most flexible. It typically defaults to remembering which folder you were in when you last exited the software.</p></li>
+<li><p>Go to EDIT/OPTIONS and choose “File Locations” TAB</p></li>
+</ul>
 <p><img src="images/SPSSeditoptions.png" alt="spssnewproj1" /></p>
 <p>You can either keep the “Last Folder Used” default setting or go ahead and override this setting and put in your project folder path in the “Specified folder” for Data files and Other files. You need to do this AT THE BEGINNING and REDO for every new project.</p>
 <p><img src="images/SPSSfilelocations.png" alt="spssnewproj2" /></p>
@@ -581,18 +587,33 @@ div.tocify {
 </div>
 <div id="import-csv-data-into-your-software" class="section level2">
 <h2>IMPORT CSV Data into your software</h2>
+<p>Details are provided below for importing the data into each stats software: <code>SPSS</code>, <code>SAS</code> and <code>R</code>.</p>
 <hr />
-<p><strong><code>SPSS</code></strong></p>
+<div id="spss" class="section level3">
+<h3>SPSS</h3>
+<p style="background-color:powderblue;font-size:30px;">
+SPSS - Import CSV Data File
+</p>
 <p><img src="images/SPSSimportcsv.png" alt="spssimportdata" /></p>
 <p>Follow the steps in the wizard. Click “PASTE” to save the SYNTAX for importing this datafile.</p>
 <p><img src="images/SPSSimportcsv2.png" alt="spssimportdata2" /></p>
 <hr />
-<p><strong><code>SAS</code></strong></p>
+</div>
+<div id="sas" class="section level3">
+<h3>SAS</h3>
+<p style="background-color:powderblue;font-size:30px;">
+SAS - Import CSV Data File
+</p>
 <p><img src="images/SASimportdata.png" alt="sasimportdata" /></p>
 <p>Follow the steps in the wizard. At the end you have the option to save the SAS (program) which will save the code for importing this dataset.</p>
 <p><img src="images/SASimportdata2.png" alt="sasimportdata2" /></p>
 <hr />
-<p><strong><code>R</code></strong></p>
+</div>
+<div id="r" class="section level3">
+<h3>R</h3>
+<p style="background-color:powderblue;font-size:30px;">
+R - Import CSV Data File
+</p>
 <p><img src="images/Rimportdata.png" alt="rimportdata" /></p>
 <p>You can choose either the base or readr options:</p>
 <p><code>base</code> R import:</p>
@@ -602,6 +623,7 @@ div.tocify {
 <p><code>readr</code> package (tidyverse) import:</p>
 <p>The R code for this import is shown in the CODE PREVIEW at the bottom right - you can cut and paste this code to save for future use.</p>
 <p><img src="images/Rimportdata2.png" alt="rimportdata2" /></p>
+</div>
 </div>
 <div id="previous-notes---reviewing-the-dataset---for-homework-01" class="section level2">
 <h2>Previous Notes - Reviewing the dataset - for Homework 01</h2>

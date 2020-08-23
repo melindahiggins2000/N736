@@ -36,7 +36,7 @@ On Windows, click at top to get full path name.
 
 -----
 
-    * R projects (should) always start with defining your project folder [File/New Project]
+* R projects (should) always start with defining your project folder [File/New Project]
     
 ![rnewproj](images/Rnewproject.png)
 
@@ -44,14 +44,15 @@ On Windows, click at top to get full path name.
 
 -----
     
-    * SAS begins by defining a library using a `libname` statement
+* SAS begins by defining a library using a `libname` statement
     
 ![sasnewproj](images/SASnewproject.png)
 
 -----
 
-    * SPSS is the most flexible. It typically defaults to remembering which folder you were in when you last exited the software. 
-    * Go to EDIT/OPTIONS and choose "File Locations" TAB
+* SPSS is the most flexible. It typically defaults to remembering which folder you were in when you last exited the software. 
+
+* Go to EDIT/OPTIONS and choose "File Locations" TAB
     
 ![spssnewproj1](images/SPSSeditoptions.png)
 
@@ -63,9 +64,13 @@ You can either keep the "Last Folder Used" default setting or go ahead and overr
 
 ## IMPORT CSV Data into your software
 
+Details are provided below for importing the data into each stats software: `SPSS`, `SAS` and `R`.
+
 -----
 
-**`SPSS`**
+### SPSS
+
+<p style="background-color:powderblue;font-size:30px;">SPSS - Import CSV Data File</p>
 
 ![spssimportdata](images/SPSSimportcsv.png)
 
@@ -75,7 +80,9 @@ Follow the steps in the wizard. Click "PASTE" to save the SYNTAX for importing t
 
 -----
 
-**`SAS`**
+### SAS
+
+<p style="background-color:powderblue;font-size:30px;">SAS - Import CSV Data File</p>
 
 ![sasimportdata](images/SASimportdata.png)
 
@@ -85,7 +92,9 @@ Follow the steps in the wizard. At the end you have the option to save the SAS (
 
 -----
 
-**`R`**
+### R
+
+<p style="background-color:powderblue;font-size:30px;">R - Import CSV Data File</p>
 
 ![rimportdata](images/Rimportdata.png)
 
