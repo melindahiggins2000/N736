@@ -13,6 +13,7 @@
 
 <title>Homework 03</title>
 
+<script src="site_libs/header-attrs-2.3/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
@@ -559,75 +560,79 @@ div.tocify {
 <h2>Variables in HELP dataset to be used for Homework 03</h2>
 <table>
 <caption>Use these variables from HELP dataset for Homework 03</caption>
+<colgroup>
+<col width="9%" />
+<col width="90%" />
+</colgroup>
 <thead>
 <tr class="header">
-<th></th>
+<th align="left"></th>
 <th align="left">Variable Label</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>age</td>
+<td align="left">age</td>
 <td align="left">Age at baseline (in years)</td>
 </tr>
 <tr class="even">
-<td>female</td>
+<td align="left">female</td>
 <td align="left">Gender of respondent</td>
 </tr>
 <tr class="odd">
-<td>racegrp</td>
+<td align="left">racegrp</td>
 <td align="left">Racial Group of Respondent</td>
 </tr>
 <tr class="even">
-<td>homeless</td>
+<td align="left">homeless</td>
 <td align="left">One or more nights on the street or shelter in past 6 months</td>
 </tr>
 <tr class="odd">
-<td>a15a</td>
+<td align="left">a15a</td>
 <td align="left">Number of nights in overnigh shelter in past 6 months</td>
 </tr>
 <tr class="even">
-<td>a15b</td>
+<td align="left">a15b</td>
 <td align="left">Number of nights on the street in past 6 months</td>
 </tr>
 <tr class="odd">
-<td>d1</td>
+<td align="left">d1</td>
 <td align="left">How many times hospitalized for medical problems (lifetime)</td>
 </tr>
 <tr class="even">
-<td>e2b</td>
+<td align="left">e2b</td>
 <td align="left">Number of times in past 6 months entered a detox program - Baseline</td>
 </tr>
 <tr class="odd">
-<td>g1b</td>
+<td align="left">g1b</td>
 <td align="left">Experienced serious thoughts of suicide (last 30 days) - Baseline</td>
 </tr>
 <tr class="even">
-<td>i1</td>
+<td align="left">i1</td>
 <td align="left">Average number of drinks (standard units) consumed per day (in past 30 days) - Baseline</td>
 </tr>
 <tr class="odd">
-<td>i2</td>
+<td align="left">i2</td>
 <td align="left">Maximum number of drinks (standard units) consumed per day (in past 30 days)</td>
 </tr>
 <tr class="even">
-<td>pcs</td>
+<td align="left">pcs</td>
 <td align="left">SF36 Physical Composite Score - Baseline</td>
 </tr>
 <tr class="odd">
-<td>mcs</td>
+<td align="left">mcs</td>
 <td align="left">SF36 Mental Composite Score - Baseline</td>
 </tr>
 <tr class="even">
-<td>cesd</td>
+<td align="left">cesd</td>
 <td align="left">CESD total score - Baseline</td>
 </tr>
 <tr class="odd">
-<td>treat</td>
+<td align="left">treat</td>
 <td align="left">Randomization Group</td>
 </tr>
 <tr class="even">
-<td>pss_fr</td>
+<td align="left">pss_fr</td>
 <td align="left">Perceived Social Support - friends</td>
 </tr>
 </tbody>
@@ -692,7 +697,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0

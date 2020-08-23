@@ -2,19 +2,119 @@
 title: "Exploring Data, Cleaning, Assessment"
 ---
 
-## Reviewing the dataset - for Homework 01
+## Exploring this test dataset
+
+During class we will discuss and identify some of the issues with this dataset - click on link to download the data in CSV (comma separated format) format [Dataset_02_fixq2.csv](https://github.com/melindahiggins2000/N736Homework01/raw/master/Dataset_02_fixq2.csv).
+
+NOTE: CSV files are basically TEXT files where each value is entered on rows separated by columns. Each column is assumed to be a different VARIABLE (a different FIELD). Each row is assumed to be a different RECORD - think of a patient's medical file/folder.
+
+## Project Organization
+
+1. Create a folder on your computer for this project. For example "C:\\N736\\exercise01". Click on New Folder and type in the name of the folder you want. Repeat to create the subfolders.
+
+**NOTE**: On Windows the folder separator is the left-tilt "back-slash" \\. However on a MAC the folder separator is the right-tilt "forward-slash" /. Be sure to check how these folder paths need to be input for (A) your operating system and (B) software. For example, I am on a Windows operating system which expects "\\", but when I am using `R` I have to type my folder paths using the "/".
+
+#### Create Folder - using File Explorer on Windows operating system
+
+![exfolder1](images/exercise01_createfolder1.png)
+
+Type in name of folder
+
+![exfolder2](images/exercise01_createfolder2.png)
+
+Repeat again for subfolder. 
+
+On Windows, click at top to get full path name.
+
+![exfolder3](images/exercise01_createfolder3.png)
+
+2. Now put the data file you just downloaded [Dataset_02_fixq2.csv](https://github.com/melindahiggins2000/N736Homework01/raw/master/Dataset_02_fixq2.csv) into this folder. This will be the folder you use for ALL files associated with this exercise.
+
+![exfolder4](images/exercise01_createfolder4.png)
+
+3. Follow this process for ALL of your exercises, homeworks and project(s). This will help you stay organized and avoid file location problems with software. Most software assumes that the files you are inoutting, using and saving are in this project folder. 
+
+-----
+
+    * R projects (should) always start with defining your project folder [File/New Project]
+    
+![rnewproj](images/Rnewproject.png)
+
+![rnewproj2](images/Rnewproject2.png)
+
+-----
+    
+    * SAS begins by defining a library using a `libname` statement
+    
+![sasnewproj](images/SASnewproject.png)
+
+-----
+
+    * SPSS is the most flexible. It typically defaults to remembering which folder you were in when you last exited the software. 
+    * Go to EDIT/OPTIONS and choose "File Locations" TAB
+    
+![spssnewproj1](images/SPSSeditoptions.png)
+
+You can either keep the "Last Folder Used" default setting or go ahead and override this setting and put in your project folder path in the "Specified folder" for Data files and Other files. You need to do this AT THE BEGINNING and REDO for every new project.
+
+![spssnewproj2](images/SPSSfilelocations.png)
+
+![spssnewproj3](images/SPSSfilelocations2.png)
+
+## IMPORT CSV Data into your software
+
+-----
+
+**`SPSS`**
+
+![spssimportdata](images/SPSSimportcsv.png)
+
+Follow the steps in the wizard. Click "PASTE" to save the SYNTAX for importing this datafile.
+
+![spssimportdata2](images/SPSSimportcsv2.png)
+
+-----
+
+**`SAS`**
+
+![sasimportdata](images/SASimportdata.png)
+
+Follow the steps in the wizard. At the end you have the option to save the SAS (program) which will save the code for importing this dataset.
+
+![sasimportdata2](images/SASimportdata2.png)
+
+-----
+
+**`R`**
+
+![rimportdata](images/Rimportdata.png)
+
+You can choose either the base or readr options:
+
+`base` R import:
+
+![rimportdata3](images/Rimportdata3.png)
+
+After clicking IMPORT you can see the R code run for this import in the CONSOLE window. You can save this code for future use as needed.
+
+![rimportdata4](images/Rimportdata4.png)
+
+`readr` package (tidyverse) import:
+
+The R code for this import is shown in the CODE PREVIEW at the bottom right - you can cut and paste this code to save for future use.
+
+![rimportdata2](images/Rimportdata2.png)
+
+
+## Previous Notes - Reviewing the dataset - for Homework 01
 
 In today's class we'll get started exploring and finding the issues and problems with the dataset you'll be working with for Homework 01. See Homework 1 instructions.
 
-## Exploring this test dataset
-
-During class we will discuss and identify some of the issues with this dataset.
-
 **NOTES from Class Today** [homework1_notes.txt](homework1_notes.txt)
 
-## Class discussion and video
+## ALL Class discussions and videos
 
-Today's class will be recorded and the video posted at the **EchoALP** link on Canvas for NRSG 736.
+All classes will be recorded and the video posted at the **EchoALP** link on Canvas for NRSG 736.
 
 Weblinks to be discussed during class:
 

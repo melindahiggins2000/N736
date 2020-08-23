@@ -13,6 +13,7 @@
 
 <title>Exploring Data, Cleaning, Assessment</title>
 
+<script src="site_libs/header-attrs-2.3/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
@@ -536,18 +537,80 @@ div.tocify {
 </div>
 
 
-<div id="reviewing-the-dataset---for-homework-01" class="section level2">
-<h2>Reviewing the dataset - for Homework 01</h2>
-<p>In today’s class we’ll get started exploring and finding the issues and problems with the dataset you’ll be working with for Homework 01. See Homework 1 instructions.</p>
-</div>
 <div id="exploring-this-test-dataset" class="section level2">
 <h2>Exploring this test dataset</h2>
-<p>During class we will discuss and identify some of the issues with this dataset.</p>
+<p>During class we will discuss and identify some of the issues with this dataset - click on link to download the data in CSV (comma separated format) format <a href="https://github.com/melindahiggins2000/N736Homework01/raw/master/Dataset_02_fixq2.csv">Dataset_02_fixq2.csv</a>.</p>
+<p>NOTE: CSV files are basically TEXT files where each value is entered on rows separated by columns. Each column is assumed to be a different VARIABLE (a different FIELD). Each row is assumed to be a different RECORD - think of a patient’s medical file/folder.</p>
+</div>
+<div id="project-organization" class="section level2">
+<h2>Project Organization</h2>
+<ol style="list-style-type: decimal">
+<li>Create a folder on your computer for this project. For example “C:\N736\exercise01”. Click on New Folder and type in the name of the folder you want. Repeat to create the subfolders.</li>
+</ol>
+<p><strong>NOTE</strong>: On Windows the folder separator is the left-tilt “back-slash” \. However on a MAC the folder separator is the right-tilt “forward-slash” /. Be sure to check how these folder paths need to be input for (A) your operating system and (B) software. For example, I am on a Windows operating system which expects “\”, but when I am using <code>R</code> I have to type my folder paths using the “/”.</p>
+<div id="create-folder---using-file-explorer-on-windows-operating-system" class="section level4">
+<h4>Create Folder - using File Explorer on Windows operating system</h4>
+<p><img src="images/exercise01_createfolder1.png" alt="exfolder1" /></p>
+<p>Type in name of folder</p>
+<p><img src="images/exercise01_createfolder2.png" alt="exfolder2" /></p>
+<p>Repeat again for subfolder.</p>
+<p>On Windows, click at top to get full path name.</p>
+<p><img src="images/exercise01_createfolder3.png" alt="exfolder3" /></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Now put the data file you just downloaded <a href="https://github.com/melindahiggins2000/N736Homework01/raw/master/Dataset_02_fixq2.csv">Dataset_02_fixq2.csv</a> into this folder. This will be the folder you use for ALL files associated with this exercise.</li>
+</ol>
+<p><img src="images/exercise01_createfolder4.png" alt="exfolder4" /></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Follow this process for ALL of your exercises, homeworks and project(s). This will help you stay organized and avoid file location problems with software. Most software assumes that the files you are inoutting, using and saving are in this project folder.</li>
+</ol>
+<hr />
+<pre><code>* R projects (should) always start with defining your project folder [File/New Project]</code></pre>
+<p><img src="images/Rnewproject.png" alt="rnewproj" /></p>
+<p><img src="images/Rnewproject2.png" alt="rnewproj2" /></p>
+<hr />
+<pre><code>* SAS begins by defining a library using a `libname` statement</code></pre>
+<p><img src="images/SASnewproject.png" alt="sasnewproj" /></p>
+<hr />
+<pre><code>* SPSS is the most flexible. It typically defaults to remembering which folder you were in when you last exited the software. 
+* Go to EDIT/OPTIONS and choose &quot;File Locations&quot; TAB</code></pre>
+<p><img src="images/SPSSeditoptions.png" alt="spssnewproj1" /></p>
+<p>You can either keep the “Last Folder Used” default setting or go ahead and override this setting and put in your project folder path in the “Specified folder” for Data files and Other files. You need to do this AT THE BEGINNING and REDO for every new project.</p>
+<p><img src="images/SPSSfilelocations.png" alt="spssnewproj2" /></p>
+<p><img src="images/SPSSfilelocations2.png" alt="spssnewproj3" /></p>
+</div>
+</div>
+<div id="import-csv-data-into-your-software" class="section level2">
+<h2>IMPORT CSV Data into your software</h2>
+<hr />
+<p><strong><code>SPSS</code></strong></p>
+<p><img src="images/SPSSimportcsv.png" alt="spssimportdata" /></p>
+<p>Follow the steps in the wizard. Click “PASTE” to save the SYNTAX for importing this datafile.</p>
+<p><img src="images/SPSSimportcsv2.png" alt="spssimportdata2" /></p>
+<hr />
+<p><strong><code>SAS</code></strong></p>
+<p><img src="images/SASimportdata.png" alt="sasimportdata" /></p>
+<p>Follow the steps in the wizard. At the end you have the option to save the SAS (program) which will save the code for importing this dataset.</p>
+<p><img src="images/SASimportdata2.png" alt="sasimportdata2" /></p>
+<hr />
+<p><strong><code>R</code></strong></p>
+<p><img src="images/Rimportdata.png" alt="rimportdata" /></p>
+<p>You can choose either the base or readr options:</p>
+<p><code>base</code> R import:</p>
+<p><img src="images/Rimportdata3.png" alt="rimportdata3" /></p>
+<p>After clicking IMPORT you can see the R code run for this import in the CONSOLE window. You can save this code for future use as needed.</p>
+<p><img src="images/Rimportdata4.png" alt="rimportdata4" /></p>
+<p><code>readr</code> package (tidyverse) import:</p>
+<p>The R code for this import is shown in the CODE PREVIEW at the bottom right - you can cut and paste this code to save for future use.</p>
+<p><img src="images/Rimportdata2.png" alt="rimportdata2" /></p>
+</div>
+<div id="previous-notes---reviewing-the-dataset---for-homework-01" class="section level2">
+<h2>Previous Notes - Reviewing the dataset - for Homework 01</h2>
+<p>In today’s class we’ll get started exploring and finding the issues and problems with the dataset you’ll be working with for Homework 01. See Homework 1 instructions.</p>
 <p><strong>NOTES from Class Today</strong> <a href="homework1_notes.txt">homework1_notes.txt</a></p>
 </div>
-<div id="class-discussion-and-video" class="section level2">
-<h2>Class discussion and video</h2>
-<p>Today’s class will be recorded and the video posted at the <strong>EchoALP</strong> link on Canvas for NRSG 736.</p>
+<div id="all-class-discussions-and-videos" class="section level2">
+<h2>ALL Class discussions and videos</h2>
+<p>All classes will be recorded and the video posted at the <strong>EchoALP</strong> link on Canvas for NRSG 736.</p>
 <p>Weblinks to be discussed during class:</p>
 <ul>
 <li><p>Journal of Biostatistics - author guidelines for “Reproducible Research” <a href="https://academic.oup.com/biostatistics/pages/General_Instructions">https://academic.oup.com/biostatistics/pages/General_Instructions</a>.</p></li>
@@ -630,7 +693,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0

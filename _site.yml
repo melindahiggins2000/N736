@@ -114,3 +114,4 @@ output:
       after_body: footer.html
     css: [styles.css, font-awesome-4.7.0/css/font-awesome.css]
     self_contained: yes
+    fig_caption: false

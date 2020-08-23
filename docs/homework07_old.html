@@ -13,6 +13,7 @@
 
 <title>Homework 07</title>
 
+<script src="site_libs/header-attrs-2.3/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
@@ -591,37 +592,37 @@ div.tocify {
 <caption>Use these variables from HELP dataset for Homework 07</caption>
 <thead>
 <tr class="header">
-<th></th>
+<th align="left"></th>
 <th align="left">Variable Label</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>id</td>
+<td align="left">id</td>
 <td align="left">Subject ID</td>
 </tr>
 <tr class="even">
-<td>treat</td>
+<td align="left">treat</td>
 <td align="left">Randomization Group</td>
 </tr>
 <tr class="odd">
-<td>cesd</td>
+<td align="left">cesd</td>
 <td align="left">CESD total score - Baseline</td>
 </tr>
 <tr class="even">
-<td>cesd1</td>
+<td align="left">cesd1</td>
 <td align="left">CESD total score - 6mo</td>
 </tr>
 <tr class="odd">
-<td>cesd2</td>
+<td align="left">cesd2</td>
 <td align="left">CESD total score - 12mo</td>
 </tr>
 <tr class="even">
-<td>cesd3</td>
+<td align="left">cesd3</td>
 <td align="left">CESD total score - 18mo</td>
 </tr>
 <tr class="odd">
-<td>cesd4</td>
+<td align="left">cesd4</td>
 <td align="left">CESD total score - 24mo</td>
 </tr>
 </tbody>
@@ -686,7 +687,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0

@@ -13,6 +13,7 @@
 
 <title>Colophon of Website</title>
 
+<script src="site_libs/header-attrs-2.3/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
@@ -29,19 +30,18 @@
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css" data-origin="pandoc">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
 div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -62,9 +62,9 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #a0a0a0;  padding-le
 div.sourceCode
   { color: #1f1c1b; background-color: #ffffff; }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span. { color: #1f1c1b; } /* Normal */
+code span { color: #1f1c1b; } /* Normal */
 code span.al { color: #bf0303; background-color: #f7e6e6; font-weight: bold; } /* Alert */
 code span.an { color: #ca60ca; } /* Annotation */
 code span.at { color: #0057ae; } /* Attribute */
@@ -638,9 +638,9 @@ div.tocify {
 </div>
 <div id="session-info" class="section level2">
 <h2>Session Info</h2>
-<p>Website was last updated on Mon Aug 17 15:48:22 2020 and built under the following <code>sessionInfo()</code>:</p>
+<p>Website was last updated on Sun Aug 23 08:30:01 2020 and built under the following <code>sessionInfo()</code>:</p>
 <p>Session information:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">sessionInfo</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="kw">sessionInfo</span>()</span></code></pre></div>
 <pre><code>## R version 3.6.3 (2020-02-29)
 ## Platform: x86_64-w64-mingw32/x64 (64-bit)
 ## Running under: Windows 10 x64 (build 18363)
@@ -658,10 +658,10 @@ div.tocify {
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] compiler_3.6.3  magrittr_1.5    tools_3.6.3     htmltools_0.4.0
-##  [5] yaml_2.2.1      Rcpp_1.0.4      stringi_1.4.6   rmarkdown_2.1  
-##  [9] knitr_1.28      stringr_1.4.0   xfun_0.12       digest_0.6.25  
-## [13] rlang_0.4.7     evaluate_0.14</code></pre>
+##  [1] compiler_3.6.3  magrittr_1.5    tools_3.6.3     htmltools_0.5.0
+##  [5] yaml_2.2.1      stringi_1.4.6   rmarkdown_2.3   knitr_1.29.4   
+##  [9] stringr_1.4.0   xfun_0.16       digest_0.6.25   rlang_0.4.7    
+## [13] evaluate_0.14</code></pre>
 </div>
 
 <hr>
@@ -722,7 +722,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
