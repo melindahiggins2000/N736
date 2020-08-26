@@ -27,7 +27,11 @@ Download Links - click each link to download the file you want:
     
 * For those of you using **`R`**, see the [`hmwk01_getStarted.Rmd`](https://raw.githubusercontent.com/melindahiggins2000/N736Homework01/master/hmwk01_getStarted.Rmd) or [`hmwk01_getStarted.pdf`](https://github.com/melindahiggins2000/N736Homework01/blob/master/hmwk01_getStarted.pdf) to see the R code and explanation to get started. You can even use this `*.Rmd` (Rmarkdown) file to get started on your homework report.
 
+* **UPDATE FALL 2020** - R code to get started [hmwk01_getStarted_R_Fall2020.R](https://raw.githubusercontent.com/melindahiggins2000/N736Homework01/master/hmwk01_getStarted_R_Fall2020.R).
+
 * For those of you using **`SAS`**, see the [`hmwk01_SASgetStarted.sas`](https://raw.githubusercontent.com/melindahiggins2000/N736Homework01/master/hmwk01_SASgetStarted.sas) SAS code program to get started working with the dataset.
+
+* **UPDATE FALL 2020** - SAS code to get started [hmwk01_SASgetStarted_Fall2020.sas](https://raw.githubusercontent.com/melindahiggins2000/N736Homework01/master/hmwk01_SASgetStarted_Fall2020.sas).
 
 * For those of you using **`SPSS`**, see the [`hmwk01_SPSSgetStarted.sps`](https://raw.githubusercontent.com/melindahiggins2000/N736Homework01/master/hmwk01_SPSSgetStarted.sps) SAS code program to get started working with the dataset.
 
