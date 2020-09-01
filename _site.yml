@@ -15,14 +15,13 @@ navbar:
           href: lesson_02_dataCleaning.html
         - text: "3. Data Review and Assessment"
           href: lesson_03_dataReview.html
-        - text: "4. Data Wrangling"
+        - text: "4. Data Wrangling - skip"
           href: lesson_04_dataWrangling.html
         - text: "5. Univariate Descriptive Stats"
           href: lesson_05_descriptiveStats.html
         - text: "6. Hands-on Descriptive Stats"
           href: lesson_06_descriptiveStats_pt2.html
-        - text: "7. Homework 01 Answer Key Review"
-          href: lesson_07_Homework01_AnswerKeyReview.html
+        - text: "7. Homework 01 Answer Key Review- later"
         - text: "8. Univariate Statistics"
           href: lesson_08_UnivariateBivariate.html
         - text: "9. Bivariate Stats"
@@ -65,6 +64,7 @@ navbar:
         - text: "Homework 02 - due 09/16/2020"
           href: homework02.html
         - text: "Homework 03 - due 09/30/2020"
+          href: homework03.html
         - text: "Project - Milestone 01 - due 09/30/2020"
           href: project01.html
         - text: "Homework 04 - due 10/14/2020"
