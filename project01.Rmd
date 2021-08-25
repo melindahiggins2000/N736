@@ -2,7 +2,7 @@
 title: "Project - Milestone 01"
 ---
 
-## Project - Milestone 01 - due 09/30/2020
+## Project - Milestone 01 - due 10/13/2021
 
 For your class project (30% of your final grade), there will be 3 milestones. For this first milestone, please prepare a report with the following:
 
